@@ -47,23 +47,22 @@ The flatify feature is the most innovative and easy-to-use feature of Chameleon.
 
 ![Flatfiy Demo](http://i.imgur.com/QByU4w7.png)
 
-## Project Information
-###Requirements
+##Requirements
 
 * Built with and for Objective-C
 * Requires a minimum of iOS 6.0 (No active development for anything earlier, but may work with 5.0)
 * Requires Xcode 5.1.1 for use in any iOS Project
 * Uses Apple LLVM compiler 5.1
 
-###License
+##License
 Chameleon is released and distributed under the terms and conditions of the [MIT license](https://github.com/VAlexander/Chameleon/blob/master/LICENSE).
 
-###Contributions
+##Contributions
 If you run into problems, please open up an issue. I also actively welcome pull requests. By contributing to Chameleon you agree that your contributions will be licensed under its MIT license.
 
 If you use the Chameleon framework in your app I would love to hear about it! Drop me a line at madewithchameleon@gmail.com or hit me up on [twitter](http://twitter.com/viccsmind).
 
-###Special Thanks
+##Special Thanks
 Huge thanks to the following people for helping make Chameleon possible (seriously).
 
 * **Asia Kwan** *(Wondering where the super awesome name idea for this framework came from? Thank her awesome mind! Not only did she pitch many ideas and suggestions, but she also reworded the entire documentation on here to make it more clear, concise, and eloquent).*
@@ -74,7 +73,7 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 
 * **[Ahmet Sulek](https://twitter.com/ahmetsulek)**  *(Chameleon was inspired by my constant use of [FlatUIColors](http://flatuicolors.com) which is an awesome project that Ahmet built. Half of the colors used in Chameleon stemmed from his project!).*
 
-### To Do List
+## To Do List
 * Cocoapod Support
 * Update Sample App
 * Xcode In-App Documentation
@@ -223,10 +222,10 @@ You can then retrieve each individual color the same way you would normally retr
 ###Flatify
 Again, this is the hallmark feature of Chameleon. Although 99% of objects can be identified and recolored, the `Flatify` feature can, as of yet, only be called from a `UIViewController` class. Other controllers will soon be supported.
 
-If a `UIViewController` is embedded inside a `UINavigationController`, then its `navigationBar` and anything inside of it can be "flatified" (Take a look at the sample app for more information).
+If a `UIViewController` is embedded inside a `UINavigationController`, the `navigationBar` and anything inside of it can be "flatified" (Take a look at the sample app for more information).
 
 #####Implementing Flatify
-Implementing this feature is so easy, there was no need to build a Chameleon shorthand. All you have to do is:
+Implementing this feature is so easy, there was no need to build a Chameleon shorthand.
 
 ######Normal Convention:
 `[self flatfify];`
