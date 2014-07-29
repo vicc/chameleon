@@ -79,7 +79,7 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 * Xcode In-App Documentation
 * Swift Version
 * Color Scheme From Images
-* Added Flatify Support for other controllers
+* Flatify Support for other Controllers
 
 ##Documentation
 All methods, properties, and types available in the Chameleon Framework are documented below. Although many people are not huge fans of macro files, I have included an optional "shorthand syntax" for each of the methods, properties, and types documented below.
