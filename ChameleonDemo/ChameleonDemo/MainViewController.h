@@ -1,0 +1,14 @@
+//
+//  ViewController.h
+//  ChameleonDemo
+//
+//  Created by Vicc Alexander on 7/24/14.
+//  Copyright (c) 2014 Vicc Alexander. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "Chameleon.h"
+
+@interface MainViewController : UITableViewController <UITableViewDelegate>
+
+@end
