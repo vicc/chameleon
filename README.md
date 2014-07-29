@@ -194,7 +194,7 @@ ContrastColorOf(backgroundColor);
 
 Note: If a clear color is passed to this method, it will return a `flatWhite` color by default.
 
-####Flat Version of Non-F1lat Color
+####Flat Version of Non-Flat Color
 As mentioned previously, this feature is unique to Chameleon. While this feature is in its early stages of operation and can be improved, it is accurate in finding the nearest flat version of any color in the spectrum, and very simple to use:
 
 ######Normal Convention:
