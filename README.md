@@ -241,7 +241,9 @@ NSMutableArray *colorArray = [[NSMutableArray alloc] init];
 
 ######Normal Convention:
 ```objective-c
-[colorArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:(ColorScheme)colorScheme for:(UIColor *)color flatScheme:(BOOL)isFlatScheme]];
+[colorArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:(ColorScheme)colorScheme 
+                                                                  for:(UIColor *)color 
+                                                           flatScheme:(BOOL)isFlatScheme]];
 ```
 
 ######Chameleon Shorthand:
@@ -254,7 +256,9 @@ Assuming you want to generate an analogous color scheme for the light shade of F
 
 ######Normal Convention:
 ```objective-c
-[colorArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogousfor:[UIColor flatRedColor] flatScheme:YES]];
+[colorArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogous 
+                                                                  for:[UIColor flatRedColor] 
+                                                           flatScheme:YES]];
 ```
 
 ######Chameleon Shorthand:
