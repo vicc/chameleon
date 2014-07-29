@@ -41,7 +41,7 @@
 #define StatusBarContrastColorOf(backgroundColor) [ChameleonStatusBar statusBarStyleForColor:backgroundColor]
 
 //NSArray Methods Shorthand
-#define ColorScheme(colorSchemeType,color,isFlatScheme) [NSArray arrayOfColorsWithColorScheme:colorSchemeType for:color flatScheme:(BOOL)isFlat]
+#define #define ColorScheme(colorSchemeType,color,isFlatScheme) [NSArray arrayOfColorsWithColorScheme:colorSchemeType for:color flatScheme:isFlatScheme]
 
 //Special Colors Shorthand
 #define RandomFlatColor [UIColor randomFlatColor]
