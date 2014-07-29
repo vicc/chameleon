@@ -1,6 +1,7 @@
 Chameleon for iOS
 =========
 
+
 ![Chameleon Header](http://i.imgur.com/GkcP4e9.png)
 
 ## Introduction
@@ -46,22 +47,23 @@ The flatify feature is the most innovative and easy-to-use feature of Chameleon.
 
 ![Flatfiy Demo](http://i.imgur.com/QByU4w7.png)
 
-##Requirements
+## Project Information
+###Requirements
 
 * Built with and for Objective-C
 * Requires a minimum of iOS 6.0 (No active development for anything earlier, but may work with 5.0)
 * Requires Xcode 5.1.1 for use in any iOS Project
 * Uses Apple LLVM compiler 5.1
 
-##License
+###License
 Chameleon is released and distributed under the terms and conditions of the [MIT license](https://github.com/VAlexander/Chameleon/blob/master/LICENSE).
 
-##Contributions
+###Contributions
 If you run into problems, please open up an issue. I also actively welcome pull requests. By contributing to Chameleon you agree that your contributions will be licensed under its MIT license.
 
 If you use the Chameleon framework in your app I would love to hear about it! Drop me a line at madewithchameleon@gmail.com or hit me up on [twitter](http://twitter.com/viccsmind).
 
-##Special Thanks
+###Special Thanks
 Huge thanks to the following people for helping make Chameleon possible (seriously).
 
 * **Asia Kwan** *(Wondering where the super awesome name idea for this framework came from? Thank her awesome mind! Not only did she pitch many ideas and suggestions, but she also reworded the entire documentation on here to make it more clear, concise, and eloquent).*
@@ -72,7 +74,7 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 
 * **[Ahmet Sulek](https://twitter.com/ahmetsulek)**  *(Chameleon was inspired by my constant use of [FlatUIColors](http://flatuicolors.com) which is an awesome project that Ahmet built. Half of the colors used in Chameleon stemmed from his project!).*
 
-## To Do List
+### To Do List
 * Cocoapod Support
 * Update Sample App
 * Xcode In-App Documentation
@@ -96,7 +98,6 @@ And that's it.
 
 ###Usage
 To use the myriad of features in Chameleon, include the following import:
-
 `#import <Chameleon.h>`
 
 ###UIColor Methods
@@ -158,7 +159,7 @@ Here's an example:
 
 Note: If a clear color is passed to this method, it will return a `flatWhite` color by default.
 
-####Flat Version of Non-Flat Color
+####Flat Version of Non-F1lat Color
 As mentioned previously, this feature is unique to Chameleon. While this feature is in its early stages of operation and can be improved, it is accurate in finding the nearest flat version of any color in the spectrum, and very simple to use:
 
 ######Normal Convention:
@@ -192,7 +193,7 @@ A complementary color scheme uses opposite colors on the color wheel. To put int
 A triadic scheme uses evenly spaced colors on the color wheel. The colors tend to be richly vivid and offer a higher degree of contrast while, at the same time, retain color harmony. Let one color dominate and use the two others for accent.
 
 ####Getting Colors in a Color Scheme
-To retrive an array of colors, first make sure to initialize an `NSMutableArray` (in case you want to use the same array to replace with different colors later):
+To retrive an array of colors, first make sure to initialize an NSMutableArray (in case you want to use the same array to replace with different colors later):
 
 `NSMutableArray *colorArray = [[NSMutableArray alloc] init];`
 
@@ -222,10 +223,10 @@ You can then retrieve each individual color the same way you would normally retr
 ###Flatify
 Again, this is the hallmark feature of Chameleon. Although 99% of objects can be identified and recolored, the `Flatify` feature can, as of yet, only be called from a `UIViewController` class. Other controllers will soon be supported.
 
-If a `UIViewController` is embedded inside a `UINavigationController` the `navigationBar`, anything inside of it can be "flatified" (Take a look at the sample app for more information).
+If a `UIViewController` is embedded inside a `UINavigationController`, then its `navigationBar` and anything inside of it can be "flatified" (Take a look at the sample app for more information).
 
 #####Implementing Flatify
-Implementing this feature is so easy, there was no need to build a Chameleon shorthand.
+Implementing this feature is so easy, there was no need to build a Chameleon shorthand. All you have to do is:
 
 ######Normal Convention:
 `[self flatfify];`
