@@ -116,44 +116,64 @@ To use the myriad of features in Chameleon, include the following import:
 Using a flat color is as easy as adding any other color in your app (if not easier). For example, to set a view's background property to a flat color with a dark shade, you simply have to do the following:
 
 ######Normal Convention:
-`self.view.backgroundColor = [UIColor flatGreenColorDark];`
+```objective-c
+self.view.backgroundColor = [UIColor flatGreenColorDark];
+```
 
 ######Chameleon Shorthand:
-`self.view.backgroundColor = FlatGreenDark;`
+```objective-c
+self.view.backgroundColor = FlatGreenDark;
+```
 
 Setting the color for a light shade is the same, except without adding the *Dark* suffix. (By default, all colors without a *Dark* suffix are light shades). For example:
 
 ######Normal Convention:
-`self.view.backgroundColor = [UIColor flatGreenColor];`
+```objective-c
+self.view.backgroundColor = [UIColor flatGreenColor];
+```
 
 ######Chameleon Shorthand:
-`self.view.backgroundColor = FlatGreen;`
+```objective-c
+self.view.backgroundColor = FlatGreen;
+```
 
 ####Random Flat Color
 There are two ways to generate a random flat color. If you have no preference as to whether you want a light shade or a dark shade, you can do the following:
 
 ######Normal Convention:
-`self.view.backgroundColor = [UIColor randomFlatColor];`
+```objective-c
+self.view.backgroundColor = [UIColor randomFlatColor];
+```
 
 ######Chameleon Shorthand:
-`self.view.backgroundColor = RandomFlatColor;`
+```objective-c
+self.view.backgroundColor = RandomFlatColor;
+```
 
 Otherwise, you can perform the following method call to specify whether it should return either a light or dark shade:
 
 ######Normal Convention:
-`[UIColor colorWithRandomFlatColorOfShadeStyle:light];`
+```objective-c
+[UIColor colorWithRandomFlatColorOfShadeStyle:light];
+```
 
 ######Chameleon Shorthand:
-`RandomColorWithShade(light);`
+```objective-c
+RandomColorWithShade(light);
+```
 
 ####Complementary Color
 To generate a complementary color, perform the following method call, remembering to specify the color whose complement you want:
 
 ######Normal Convention:
-`[UIColor colorWithComplementaryFlatColorOf:(UIColor *)color];`
+```objective-c
+[UIColor colorWithComplementaryFlatColorOf:(UIColor *)color];
+```
 
 ######Chameleon Shorthand:
-`ComplementaryColorOf(color);`
+```objective-c
+ComplementaryColorOf(color);
+```
 
 ####Contrasting Color
 The contrasting color feature returns either a `FlatBlackDark` color a `FlatWhite` color depending on what the algorithm believes is a better choice.
@@ -163,10 +183,14 @@ If you're trying to set a `UILabel's textColor` property, make sure you provide 
 Here's an example:
 
 ######Normal Convention:
-`[UIColor colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor];`
+```objective-c
+[UIColor colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor];
+```
 
 ######Chameleon Shorthand:
-`ContrastColorOf(backgroundColor);`
+```objective-c
+ContrastColorOf(backgroundColor);
+```
 
 Note: If a clear color is passed to this method, it will return a `flatWhite` color by default.
 
@@ -174,18 +198,23 @@ Note: If a clear color is passed to this method, it will return a `flatWhite` co
 As mentioned previously, this feature is unique to Chameleon. While this feature is in its early stages of operation and can be improved, it is accurate in finding the nearest flat version of any color in the spectrum, and very simple to use:
 
 ######Normal Convention:
-`[UIColor colorWithFlatVersionOf:(UIColor *)color];`
+```objective-c
+[UIColor colorWithFlatVersionOf:(UIColor *)color];
+```
 
 ######Chameleon Shorthand:
-`FlatVersionOf(color);`
+```objective-c
+FlatVersionOf(color);
+```
 
 ###UIStatusBarStyle Methods
 ####Contrasting UIStatusBarStyle
 Many apps on the market, even the most popular ones, overlook this aspect of a beautiful app: the status bar style. Assuming you have a `ViewController` embedded in a `NavigationController`, do the following in the `NavigationController`'s class:
-
-    - (UIStatusBarStyle)preferredStatusBarStyle {
+```objective-c
+- (UIStatusBarStyle)preferredStatusBarStyle {
     return [ChameleonStatusBar statusBarStyleForColor:(UIColor *)backgroundColor];
-    }
+}
+```
 
 Note: You should set the `backgroundColor` of the `navigationBar`'s `barTintColor` property if you want the status bar text to always contrast the navigation bar. If you're only using a `ViewController` just call this method in that controller's respective class file.
 
@@ -206,30 +235,38 @@ A triadic scheme uses evenly spaced colors on the color wheel. The colors tend t
 ####Getting Colors in a Color Scheme
 To retrive an array of colors, first make sure to initialize an NSMutableArray (in case you want to use the same array to replace with different colors later):
 
-`NSMutableArray *colorArray = [[NSMutableArray alloc] init];`
+```objective-c
+NSMutableArray *colorArray = [[NSMutableArray alloc] init];
+```
 
 ######Normal Convention:
-    [colorArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:(ColorScheme)colorScheme 
-                                                                       for:(UIColor *)color
-                                                                flatScheme:(BOOL)isFlatScheme]];
+```objective-c
+[colorArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:(ColorScheme)colorScheme for:(UIColor *)color flatScheme:(BOOL)isFlatScheme]];
+```
 
 ######Chameleon Shorthand:
-`[colorArray addObjectsFromArray:ColorScheme(colorScheme, color, isFlatScheme)];`
+```objective-c
+[colorArray addObjectsFromArray:ColorScheme(colorScheme, color, isFlatScheme)];
+```
 
 #####Example:
 Assuming you want to generate an analogous color scheme for the light shade of Flat Red, perform the following method call:
 
 ######Normal Convention:
-    [colorArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogous 
-                                                                       for:[UIColor flatRedColor] 
-                                                                flatScheme:YES]];
+```objective-c
+[colorArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogousfor:[UIColor flatRedColor] flatScheme:YES]];
+```
 
 ######Chameleon Shorthand:
-`colorArray addObjectsFromArray:ColorScheme(ColorSchemeAnalogous, flatRedColor, YES)];`
+```objective-c
+colorArray addObjectsFromArray:ColorScheme(ColorSchemeAnalogous, flatRedColor, YES)];
+```
 
 You can then retrieve each individual color the same way you would normally retrive any object from an array:
 
-`UIColor *firstColor = colorArray[0];`
+```objective-c
+UIColor *firstColor = colorArray[0];
+```
 
 ###Flatify
 Again, this is the hallmark feature of Chameleon. Although 99% of objects can be identified and recolored, the `Flatify` feature can, as of yet, only be called from a `UIViewController` class. Other controllers will soon be supported.
@@ -240,7 +277,10 @@ If a `UIViewController` is embedded inside a `UINavigationController`, the `navi
 Implementing this feature is so easy, there was no need to build a Chameleon shorthand.
 
 ######Normal Convention:
-`[self flatfify];`
+```objective-c
+[self flatfify];
+```
+
 
 #####Implementing Flatify With Contrasting Colors
 
@@ -249,7 +289,9 @@ We've also built a secondary flatify feature that not only flattens object color
 To implement this perform the following method call:
 
 ######Normal Convention:
-`[self flatifyAndContrast];`
+```objective-c
+[self flatifyAndContrast];
+```
 
 *Note: In order to ship out Chameleon as soon as possible, some features were overlooked. However, they will be added promptly, here's a couple of things that may not work with the flatify feature:*
 
