@@ -88,8 +88,9 @@ All methods, properties, and types available in the Chameleon Framework are docu
 ####CocoaPods Installation
 Chameleon is now available on [CocoaPods](http://cocoapods.org). Just add the following to your project Podfile:
 
-`pod 'ChameleonFramework'`
-
+```ruby
+pod 'ChameleonFramework'
+```
 ####Manual Installation
 Drag and drop the Chameleon folder into your project, and make sure you check the following boxes.
 
@@ -101,10 +102,14 @@ And that's it.
 To use the myriad of features in Chameleon, include the following import:
 
 ###### Manual Import:
-`#import <Chameleon.h>`
+```objective-c
+#import <Chameleon.h>
+```
 
 ###### Cocoapods Import:
-`#import "ChameleonFramework/Chameleon.h"`
+```objective-c
+#import "ChameleonFramework/Chameleon.h"
+```
 
 ###UIColor Methods
 ####Flat Colors
