@@ -74,7 +74,7 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 * **[Ahmet Sulek](https://twitter.com/ahmetsulek)**  *(Chameleon was inspired by my constant use of [FlatUIColors](http://flatuicolors.com) which is an awesome project that Ahmet built. Half of the colors used in Chameleon stemmed from his project!).*
 
 ## To Do List
-* Cocoapod Support
+* ~~Cocoapod Support~~
 * Update Sample App
 * Xcode In-App Documentation
 * Swift Version
@@ -86,7 +86,9 @@ All methods, properties, and types available in the Chameleon Framework are docu
 
 ###Installation
 ####CocoaPods Installation
-CocoaPod support is coming soon!
+Chameleon is now available on [CocoaPods](http://cocoapods.org). Just add the following to your project Podfile:
+
+`pod 'ChameleonFramework'`
 
 ####Manual Installation
 Drag and drop the Chameleon folder into your project, and make sure you check the following boxes.
@@ -97,7 +99,12 @@ And that's it.
 
 ###Usage
 To use the myriad of features in Chameleon, include the following import:
+
+###### Manual Import:
 `#import <Chameleon.h>`
+
+###### Cocoapods Import:
+`#import "ChameleonFramework/Chameleon.h"`
 
 ###UIColor Methods
 ####Flat Colors
