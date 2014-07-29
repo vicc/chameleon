@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "ChameleonFramework"
   s.version      = "1.0.0"
-  s.summary      = "A Lightweight x Powerful Color Framework for iOS"
+  s.summary      = "A Lightweight x Powerful Flat Color Framework for iOS"
   s.homepage     = "https://github.com/VAlexander/Chameleon"
   s.screenshots  = "http://i.imgur.com/GkcP4e9.png", "http://i.imgur.com/K648Zzr.png", "http://i.imgur.com/QByU4w7.png"
 
