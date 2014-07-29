@@ -8,7 +8,7 @@ Chameleon for iOS
 
 **Chameleon** is a lightweight, yet powerful, color framework for iOS. It is built on the idea that software applications should function effortlessly while simultaneously maintaining their beautiful interfaces.
 
-Chameleon is the **first and only** color framework on the market that focuses its full attention and efforts on "flat colors". With Chameleon, you can easily forget about RGB values, wasting hours figuring out the right color combinations to use in your app, and worrying about whether your text will be readable on the various background colors of your app. 
+Chameleon is the **first and only** color framework on the market that focuses its full attention and efforts on "flat colors". With Chameleon, you can easily forget about `UIColor` RGB values, wasting hours figuring out the right color combinations to use in your app, and worrying about whether your text will be readable on the various background colors of your app. 
 
 ### Chameleon vs Other Color Libraries
 
