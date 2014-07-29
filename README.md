@@ -225,7 +225,7 @@ Again, this is the hallmark feature of Chameleon. Although 99% of objects can be
 If a `UIViewController` is embedded inside a `UINavigationController` the `navigationBar`, anything inside of it can be "flatified" (Take a look at the sample app for more information).
 
 #####Implementing Flatify
-Implementing this feature is so easy, there was no need to build a Chameleon shorthand. All you have to do is:
+Implementing this feature is so easy, there was no need to build a Chameleon shorthand.
 
 ######Normal Convention:
 `[self flatfify];`
