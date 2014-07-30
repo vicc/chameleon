@@ -20,7 +20,7 @@ Chameleon solves problems that many other color libraries tend to overlook. With
 
 Chameleon features over 24 hand-picked colors that come in both light and dark shades. 
 
-![Swatches](http://i.imgur.com/K648Zzr.png)
+![Swatches](http://i.imgur.com/Hs8ICtJ.png)
 
 ### Flat Color Schemes
 
