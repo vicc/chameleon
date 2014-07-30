@@ -55,7 +55,7 @@ The flatify feature is the most innovative and easy-to-use feature of Chameleon.
 * Uses Apple LLVM compiler 5.1
 
 ##License
-Chameleon is released and distributed under the terms and conditions of the [MIT license](https://github.com/VAlexander/Chameleon/blob/master/LICENSE).
+Chameleon is released and distributed under the terms and conditions of the [MIT license](https://github.com/VAlexander/Chameleon/blob/master/LICENSE.md).
 
 ##Contributions
 If you run into problems, please open up an issue. I also actively welcome pull requests. By contributing to Chameleon you agree that your contributions will be licensed under its MIT license.
