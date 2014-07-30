@@ -101,12 +101,12 @@ And that's it.
 ###Usage
 To use the myriad of features in Chameleon, include the following import:
 
-###### Manual Import:
+###### If you installed Chameleon manually:
 ```objective-c
 #import <Chameleon.h>
 ```
 
-###### Cocoapods Import:
+###### If you installed Chameleon using cocoapods:
 ```objective-c
 #import "ChameleonFramework/Chameleon.h"
 ```
