@@ -126,7 +126,7 @@
 }
 
 + (UIColor *)flatYellowColor {
-    return rgb(241, 196, 15);
+    return rgb(255, 205, 2);
 }
 
 #pragma mark - Chameleon - Dark Shades
@@ -224,7 +224,7 @@
 }
 
 + (UIColor *)flatYellowColorDark {
-    return rgb(243, 156, 18);
+    return rgb(255, 168, 0);
 }
 
 #pragma mark - Chameleon - "Color With" Methods
