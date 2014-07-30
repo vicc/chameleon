@@ -92,23 +92,23 @@ Chameleon is now available on [CocoaPods](http://cocoapods.org). Just add the fo
 pod 'ChameleonFramework'
 ```
 ####Manual Installation
-Drag and drop the Chameleon folder into your project, and make sure you check the following boxes.
+If you rather install this framework manually, just drag and drop the Chameleon folder into your project, and make sure you check the following boxes.
 
 ![Manual Installation](http://i.imgur.com/gDXaF5F.png)
 
-And that's it.
+And that's it. :)
 
 ###Usage
 To use the myriad of features in Chameleon, include the following import:
 
-###### If you installed Chameleon manually:
-```objective-c
-#import <Chameleon.h>
-```
-
 ###### If you installed Chameleon using cocoapods:
 ```objective-c
 #import "ChameleonFramework/Chameleon.h"
+```
+
+###### If you installed Chameleon manually:
+```objective-c
+#import "Chameleon.h"
 ```
 
 ###UIColor Methods
