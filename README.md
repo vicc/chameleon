@@ -282,7 +282,7 @@ Implementing this feature is so easy, there was no need to build a Chameleon sho
 
 ######Normal Convention:
 ```objective-c
-[self flatfify];
+[self flatify];
 ```
 
 
