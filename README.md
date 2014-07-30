@@ -233,7 +233,7 @@ A complementary color scheme uses opposite colors on the color wheel. To put int
 A triadic scheme uses evenly spaced colors on the color wheel. The colors tend to be richly vivid and offer a higher degree of contrast while, at the same time, retain color harmony. Let one color dominate and use the two others for accent.
 
 ####Getting Colors in a Color Scheme
-To retrive an array of colors, first make sure to initialize an NSMutableArray (in case you want to use the same array to replace with different colors later):
+To retrieve an array of colors, first make sure to initialize an NSMutableArray (in case you want to use the same array to replace with different colors later):
 
 ```objective-c
 NSMutableArray *colorArray = [[NSMutableArray alloc] init];
@@ -266,7 +266,7 @@ Assuming you want to generate an analogous color scheme for the light shade of F
 colorArray addObjectsFromArray:ColorScheme(ColorSchemeAnalogous, flatRedColor, YES)];
 ```
 
-You can then retrieve each individual color the same way you would normally retrive any object from an array:
+You can then retrieve each individual color the same way you would normally retrieve any object from an array:
 
 ```objective-c
 UIColor *firstColor = colorArray[0];
