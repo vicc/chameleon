@@ -657,17 +657,17 @@
 
 // Array of All Red Values of Every Flat Color
 + (NSArray *)redValues {
-    return @[@"38", @"52", @"94", @"52", @"149", @"46", @"26", @"52", @"230", @"155", @"231", @"241", @"236" ,@"43" ,@"41" ,@"80" ,@"45" ,@"127" ,@"39" ,@"22" ,@"44" ,@"211" ,@"142" ,@"192" ,@"189" ,@"243", @"240", @"213", @"244", @"212", @"116", @"91", @"94", @"79", @"121", @"102", @"239", @"217", @"163", @"142", @"58", @"53", @"165", @"142", @"172", @"140", @"80", @"57"];
+    return @[@38, @52, @94, @52, @149, @46, @26, @52, @230, @155, @231, @255, @236, @43, @41, @80, @45, @127, @39, @22, @44, @211, @142, @192, @189, @255, @240, @213, @244, @212, @116, @91, @94, @79, @121, @102, @239, @217, @163, @142, @58, @53, @165, @142, @172, @140, @80, @57];
 }
 
 // Array of All Green Values of Every Flat Color
 + (NSArray *)greenValues {
-    return @[@"38", @"152", @"69", @"95", @"165", @"204", @"188", @"73", @"126", @"89", @"76", @"196", @"240" ,@"43" ,@"128" ,@"59" ,@"80" ,@"140" ,@"174" ,@"160" ,@"62" ,@"84" ,@"68" ,@"57" ,@"195" ,@"156", @"222", @"194", @"124", @"92", @"94", @"72", @"52", @"43", @"48", @"38", @"113", @"84", @"134", @"114", @"111", @"98", @"198", @"176", @"196", @"166", @"101", @"76"];
+    return @[@38, @152, @69, @95, @165, @204, @188, @73, @126, @89, @76, @205, @240, @43, @128, @59, @80, @140, @174, @160, @62, @84, @68, @57, @195, @168, @222, @194, @124, @92, @94, @72, @52, @43, @48, @38, @113, @84, @134, @114, @111, @98, @198, @176, @196, @166, @101, @76];
 }
 
 // Array of All Blue Values of Every Flat Color
 + (NSArray *)blueValues {
-    return @[@"38", @"219", @"52", @"65", @"166", @"113", @"156", @"94", @"34", @"182", @"60", @"15", @"241" ,@"43" ,@"185" ,@"44" ,@"54" ,@"141" ,@"96" ,@"133" ,@"80" ,@"0" ,@"173" ,@"43" ,@"199" ,@"18", @"180", @"149", @"195", @"158", @"197", @"162", @"94", @"79", @"42", @"33", @"122", @"89", @"113", @"94", @"129", @"114", @"59", @"33", @"253", @"225", @"161", @"129"];
+    return @[@38, @219, @52, @65, @166, @113, @156, @94, @34, @182, @60, @2, @241, @43, @185, @44, @54, @141, @96, @133, @80, @0, @173, @43, @199, @0, @180, @149, @195, @158, @197, @162, @94, @79, @42, @33, @122, @89, @113, @94, @129, @114, @59, @33, @253, @225, @161, @129];
 }
 
 //Compare flat color values to the input color's values
@@ -676,7 +676,7 @@
     //Keep track of our index
     float index = 0;
     
-    //Start with big numbers to make sure the first comparison gets saved.
+    //Start with a randombig number to make sure the first comparison gets saved.
     float smallestDistance = 1000000;
     float previousDistance = 1000000;
     float currentDistance;
@@ -685,14 +685,14 @@
     for (int i=0; i<[[self redValues] count]; i++ ) {
         
         if (i!=0 ) {
-            previousDistance = [self totalSumOfDifferencesFromr1:r1 r2:[((NSNumber *)[[self redValues] objectAtIndex:i-1]) floatValue]
-                                                             g1:g1 g2:[((NSNumber *)[[self greenValues] objectAtIndex:i-1]) floatValue]
-                                                             b1:b1 b2:[((NSNumber *)[[self blueValues] objectAtIndex:i-1]) floatValue]];
+            previousDistance = [self totalSumOfDifferencesFromr1:r1 r2:[[self redValues][i - 1] floatValue]
+                                                              g1:g1 g2:[[self greenValues][i - 1] floatValue]
+                                                              b1:b1 b2:[[self blueValues][i - 1] floatValue]];
         }
         
-        currentDistance = [self totalSumOfDifferencesFromr1:r1 r2:[((NSNumber *)[[self redValues] objectAtIndex:i]) floatValue]
-                                                        g1:g1 g2:[((NSNumber *)[[self greenValues] objectAtIndex:i]) floatValue]
-                                                        b1:b1 b2:[((NSNumber *)[[self blueValues] objectAtIndex:i]) floatValue]];
+        currentDistance = [self totalSumOfDifferencesFromr1:r1 r2:[[[self redValues] objectAtIndex:i] floatValue]
+                                                         g1:g1 g2:[[[self greenValues] objectAtIndex:i] floatValue]
+                                                         b1:b1 b2:[[[self blueValues] objectAtIndex:i] floatValue]];
         
         //We're only interested in the smallest difference
         if (currentDistance < previousDistance) {
