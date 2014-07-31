@@ -42,7 +42,7 @@ Oh... Chameleon works with the status bar as well. : )
 
 ![Status Bar](http://i.imgur.com/rTz01Qb.gif)
 
-### Flatify
+### Flatify (Beta)
 The flatify feature is the most innovative and easy-to-use feature of Chameleon. With only one line of code, every single color on the screen can be converted into the closest flat version of themselves. It works with both storyboard objects and programmatically-created objects.
 
 ![Flatfiy Demo](http://i.imgur.com/QByU4w7.png)
@@ -272,8 +272,10 @@ You can then retrieve each individual color the same way you would normally retr
 UIColor *firstColor = colorArray[0];
 ```
 
-###Flatify
-Again, this is the hallmark feature of Chameleon. Although 99% of objects can be identified and recolored, the `Flatify` feature can, as of yet, only be called from a `UIViewController` class. Other controllers will soon be supported.
+###Flatify (Beta)
+Again, this is the hallmark feature of Chameleon. Although 99% of objects can be identified and recolored, the `Flatify` feature can, as of yet, only be called from a `UIViewController` class. Other controllers will soon be supported. Keep in mind this is a beta feature, and it may not be 100% spot-on. :)
+
+*Note: Although all colors will flatify to the closest accurate flat color, sometimes our eyes may not agree with it visually. For example some blues may flatten to purple, but I'm figuring out a way to factor in more visually pleasing results.*
 
 If a `UIViewController` is embedded inside a `UINavigationController`, the `navigationBar` and anything inside of it can be "flatified" (Take a look at the sample app for more information).
 
