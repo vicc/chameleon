@@ -81,7 +81,7 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 * Color Scheme From Images
 * Flatify Support for other Controllers
 * UIAppearance Convenience Methods
-* Switch from RGB over to HSB Values
+* Switch from RGB values over to HSB
 
 ##Documentation
 All methods, properties, and types available in the Chameleon Framework are documented below. Although many people are not huge fans of macro files, I have included an optional "shorthand syntax" for each of the methods, properties, and types documented below.
