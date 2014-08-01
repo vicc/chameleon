@@ -73,13 +73,15 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 
 * **[Ahmet Sulek](https://twitter.com/ahmetsulek)**  *(Chameleon was inspired by my constant use of [FlatUIColors](http://flatuicolors.com) which is an awesome project that Ahmet built. Half of the colors used in Chameleon stemmed from his project!).*
 
-## To Do List
+## To Do List (In no particular order)
 * ~~Cocoapod Support~~
 * Update Sample App
 * Xcode In-App Documentation
 * Swift Version
 * Color Scheme From Images
 * Flatify Support for other Controllers
+* UIAppearance Convenience Methods
+* Switch from RGB over to HSB Values
 
 ##Documentation
 All methods, properties, and types available in the Chameleon Framework are documented below. Although many people are not huge fans of macro files, I have included an optional "shorthand syntax" for each of the methods, properties, and types documented below.
