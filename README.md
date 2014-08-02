@@ -45,7 +45,7 @@ Oh... Chameleon works with the status bar as well. : )
 ### Flatify (Beta)
 The flatify feature is the most innovative and easy-to-use feature of Chameleon. With only one line of code, every single color on the screen can be converted into the closest flat version of themselves. It works with both storyboard objects and programmatically-created objects.
 
-![Flatfiy Demo](http://i.imgur.com/QByU4w7.png)
+![Flatify Demo](http://i.imgur.com/QByU4w7.png)
 
 ##Requirements
 
@@ -212,9 +212,18 @@ FlatVersionOf(color);
 ###UIStatusBarStyle Methods
 ####Contrasting UIStatusBarStyle
 Many apps on the market, even the most popular ones, overlook this aspect of a beautiful app: the status bar style. Assuming you have a `ViewController` embedded in a `NavigationController`, do the following in the `NavigationController`'s class:
+
+######Normal Convention:
 ```objective-c
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return [ChameleonStatusBar statusBarStyleForColor:(UIColor *)backgroundColor];
+}
+```
+
+######Chameleon Shorthand:
+```objective-c
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return StatusBarContrastColorOf((UIColor *)backgroundColor);
 }
 ```
 
