@@ -15,22 +15,22 @@ Chameleon is the **first and only** color framework on the market that focuses i
 Chameleon solves problems that many other color libraries tend to overlook. With their distracting and superfluous features, other libraries confuse and misdirect developers. They create extensions that display a few colors, but leave developers to essentially create cohesive color palettes and replace countless lines of `UIColor` code if they desire to switch to a "flat color" themselves. But now, with only a few characters of code, Chameleon does all the heavy lifting.
 
 ## Table of Contents
-⦿ [Product Features](https://github.com/VAlexander/Chameleon#product-features)  
-⦿ [Requirements](https://github.com/VAlexander/Chameleon#requirements)  
-⦿ [License](https://github.com/VAlexander/Chameleon#license)  
-⦿ [Contributions](https://github.com/VAlexander/Chameleon#contributions)   
-⦿ [Documentation](https://github.com/VAlexander/Chameleon#documentation)   
+⦿ [🌟 Product Features](https://github.com/VAlexander/Chameleon#-product-features)  
+⦿ [⚠️ Requirements](https://github.com/VAlexander/Chameleon#-requirements)  
+⦿ [🔑 License](https://github.com/VAlexander/Chameleon#-license)  
+⦿ [👥 Contributions](https://github.com/VAlexander/Chameleon#-contributions)   
+⦿ [📗 Documentation](https://github.com/VAlexander/Chameleon#-documentation)   
 &nbsp;&nbsp;￮ [Installation](https://github.com/VAlexander/Chameleon#installation)  
 &nbsp;&nbsp;￮ [Usage](https://github.com/VAlexander/Chameleon#usage)  
 &nbsp;&nbsp;￮ [UIColor Methods](https://github.com/VAlexander/Chameleon#uicolor-methods)  
 &nbsp;&nbsp;￮ [UIStatusBarStyle Methods](https://github.com/VAlexander/Chameleon#uistatusbarstyle-methods)    
 &nbsp;&nbsp;￮ [Color Scheme Methods](https://github.com/VAlexander/Chameleon#color-schemes)    
 &nbsp;&nbsp;￮ [Flatify Methods (Beta)](https://github.com/VAlexander/Chameleon#color-schemes)  
-⦿ [Special Thanks](https://github.com/VAlexander/Chameleon#special-thanks)    
-⦿ [To Do List](https://github.com/VAlexander/Chameleon#-to-do-list)  
+⦿ [👏 Special Thanks](https://github.com/VAlexander/Chameleon#-special-thanks)    
+⦿ [📝 To Do List](https://github.com/VAlexander/Chameleon#-to-do-list)  
 
 
-## Product Features
+## 🌟 Product Features
 
 ### 100% Flat & Gorgeous
 
@@ -63,22 +63,22 @@ The flatify feature is the most innovative and easy-to-use feature of Chameleon.
 
 ![Flatify Demo](http://i.imgur.com/QByU4w7.png)
 
-##Requirements
+## ⚠️ Requirements
 
 * Built with and for Objective-C
 * Requires a minimum of iOS 6.0 (No active development for anything earlier, but may work with 5.0)
 * Requires Xcode 5.1.1 for use in any iOS Project
 * Uses Apple LLVM compiler 5.1
 
-##License
+## 🔑 License
 Chameleon is released and distributed under the terms and conditions of the [MIT license](https://github.com/VAlexander/Chameleon/blob/master/LICENSE.md).
 
-##Contributions
+## 👥 Contributions
 If you run into problems, please open up an issue. I also actively welcome pull requests. By contributing to Chameleon you agree that your contributions will be licensed under its MIT license.
 
 If you use the Chameleon framework in your app I would love to hear about it! Drop me a line at madewithchameleon@gmail.com or hit me up on [twitter](http://twitter.com/viccsmind).
 
-##Documentation
+## 📗 Documentation
 All methods, properties, and types available in the Chameleon Framework are documented below. Although many people are not huge fans of macro files, I have included an optional "shorthand syntax" for each of the methods, properties, and types documented below.
 
 ###Installation
@@ -310,7 +310,7 @@ To implement this perform the following method call:
 * *Objects stored in a `UIView` that is located on top another `UIView`.*
 * *`UIStatusBarStyle`(In the mean time, use the status bar methods provided above).*
 
-##Special Thanks
+## 👏 Special Thanks
 Huge thanks to the following people for helping make Chameleon possible (seriously).
 
 * **Asia Kwan** *(Wondering where the super awesome name idea for this framework came from? Thank her awesome mind! Not only did she pitch many ideas and suggestions, but she also reworded the entire documentation on here to make it more clear, concise, and eloquent).*
