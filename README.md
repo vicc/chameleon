@@ -27,7 +27,7 @@ Chameleon solves problems that many other color libraries tend to overlook. With
 &nbsp;&nbsp;￮ [Color Scheme Methods](https://github.com/VAlexander/Chameleon#color-schemes)    
 &nbsp;&nbsp;￮ [Flatify Methods (Beta)](https://github.com/VAlexander/Chameleon#color-schemes)  
 ⦿ [Special Thanks](https://github.com/VAlexander/Chameleon#special-thanks)    
-⦿ [To Do List](https://github.com/VAlexander/Chameleon#to-do-list-in-no-particular-order)  
+⦿ [To Do List](https://github.com/VAlexander/Chameleon#-to-do-list)  
 
 
 ## Product Features
