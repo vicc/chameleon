@@ -16,19 +16,21 @@ Chameleon solves problems that many other color libraries tend to overlook. With
 
 ## Table of Contents
 ⦿ [🌟 Product Features](https://github.com/VAlexander/Chameleon#-product-features)  
-⦿ [⚠️ Requirements](https://github.com/VAlexander/Chameleon#-requirements)  
+⦿ [⚠️ Requirements](https://github.com/VAlexander/Chameleon#%EF%B8%8F-requirements)  
 ⦿ [🔑 License](https://github.com/VAlexander/Chameleon#-license)  
 ⦿ [👥 Contributions](https://github.com/VAlexander/Chameleon#-contributions)   
 ⦿ [📗 Documentation](https://github.com/VAlexander/Chameleon#-documentation)   
+⦿ [👏 Special Thanks](https://github.com/VAlexander/Chameleon#-special-thanks)    
+⦿ [📝 To Do List](https://github.com/VAlexander/Chameleon#-to-do-list)  
+
+<!--- 
 &nbsp;&nbsp;￮ [Installation](https://github.com/VAlexander/Chameleon#installation)  
 &nbsp;&nbsp;￮ [Usage](https://github.com/VAlexander/Chameleon#usage)  
 &nbsp;&nbsp;￮ [UIColor Methods](https://github.com/VAlexander/Chameleon#uicolor-methods)  
 &nbsp;&nbsp;￮ [UIStatusBarStyle Methods](https://github.com/VAlexander/Chameleon#uistatusbarstyle-methods)    
-&nbsp;&nbsp;￮ [Color Scheme Methods](https://github.com/VAlexander/Chameleon#color-schemes)    
-&nbsp;&nbsp;￮ [Flatify Methods (Beta)](https://github.com/VAlexander/Chameleon#color-schemes)  
-⦿ [👏 Special Thanks](https://github.com/VAlexander/Chameleon#-special-thanks)    
-⦿ [📝 To Do List](https://github.com/VAlexander/Chameleon#-to-do-list)  
-
+&nbsp;&nbsp;￮ [Color Scheme Methods](https://github.com/VAlexander/Chameleon#color-schemes-methods)    
+&nbsp;&nbsp;￮ [Flatify Methods (Beta)](https://github.com/VAlexander/Chameleon#flatify-methods-beta) 
+--->
 
 ## 🌟 Product Features
 
