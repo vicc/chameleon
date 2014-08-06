@@ -327,6 +327,7 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 *No particular order.*
 * ~~Cocoapod Support~~
 * ~~Table of Contents~~
+* Storyboard Color Picker Support
 * Update Sample App
 * Xcode In-App Documentation
 * Swift Version
