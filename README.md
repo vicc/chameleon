@@ -14,6 +14,22 @@ Chameleon is the **first and only** color framework on the market that focuses i
 
 Chameleon solves problems that many other color libraries tend to overlook. With their distracting and superfluous features, other libraries confuse and misdirect developers. They create extensions that display a few colors, but leave developers to essentially create cohesive color palettes and replace countless lines of `UIColor` code if they desire to switch to a "flat color" themselves. But now, with only a few characters of code, Chameleon does all the heavy lifting.
 
+## Table of Contents
+⦿ [Product Features](https://github.com/VAlexander/Chameleon#product-features)  
+⦿ [Requirements](https://github.com/VAlexander/Chameleon#requirements)  
+⦿ [License](https://github.com/VAlexander/Chameleon#license)  
+⦿ [Contributions](https://github.com/VAlexander/Chameleon#contributions)   
+⦿ [Documentation](https://github.com/VAlexander/Chameleon#documentation)   
+&nbsp;&nbsp;￮ [Installation](https://github.com/VAlexander/Chameleon#installation)  
+&nbsp;&nbsp;￮ [Usage](https://github.com/VAlexander/Chameleon#usage)  
+&nbsp;&nbsp;￮ [UIColor Methods](https://github.com/VAlexander/Chameleon#uicolor-methods)  
+&nbsp;&nbsp;￮ [UIStatusBarStyle Methods](https://github.com/VAlexander/Chameleon#uistatusbarstyle-methods)    
+&nbsp;&nbsp;￮ [Color Scheme Methods](https://github.com/VAlexander/Chameleon#color-schemes)    
+&nbsp;&nbsp;￮ [Flatify Methods (Beta)](https://github.com/VAlexander/Chameleon#color-schemes)  
+⦿ [Special Thanks](https://github.com/VAlexander/Chameleon#special-thanks)    
+⦿ [To Do List](https://github.com/VAlexander/Chameleon#to-do-list-in-no-particular-order)  
+
+
 ## Product Features
 
 ### 100% Flat & Gorgeous
@@ -61,27 +77,6 @@ Chameleon is released and distributed under the terms and conditions of the [MIT
 If you run into problems, please open up an issue. I also actively welcome pull requests. By contributing to Chameleon you agree that your contributions will be licensed under its MIT license.
 
 If you use the Chameleon framework in your app I would love to hear about it! Drop me a line at madewithchameleon@gmail.com or hit me up on [twitter](http://twitter.com/viccsmind).
-
-##Special Thanks
-Huge thanks to the following people for helping make Chameleon possible (seriously).
-
-* **Asia Kwan** *(Wondering where the super awesome name idea for this framework came from? Thank her awesome mind! Not only did she pitch many ideas and suggestions, but she also reworded the entire documentation on here to make it more clear, concise, and eloquent).*
-
-* **[Saul López](https://twitter.com/SaaauuuuL)** *(MIT Genius. He aided with several algorithms, including color difference formulas and euclidian distances).*
-
-* **[Marlon López](https://twitter.com/marlonmaxmm)** *(King Beta Tester. He filtered ideas and tested the framework in its various stages. S/O: Thanks for all the time you dedicated to listening about this)!*
-
-* **[Ahmet Sulek](https://twitter.com/ahmetsulek)**  *(Chameleon was inspired by my constant use of [FlatUIColors](http://flatuicolors.com) which is an awesome project that Ahmet built. Half of the colors used in Chameleon stemmed from his project!).*
-
-## To Do List (In no particular order)
-* ~~Cocoapod Support~~
-* Update Sample App
-* Xcode In-App Documentation
-* Swift Version
-* Color Scheme From Images
-* Flatify Support for other Controllers
-* UIAppearance Convenience Methods
-* Switch from RGB values over to HSB
 
 ##Documentation
 All methods, properties, and types available in the Chameleon Framework are documented below. Although many people are not huge fans of macro files, I have included an optional "shorthand syntax" for each of the methods, properties, and types documented below.
@@ -229,7 +224,7 @@ Many apps on the market, even the most popular ones, overlook this aspect of a b
 
 Note: You should set the `backgroundColor` of the `navigationBar`'s `barTintColor` property if you want the status bar text to always contrast the navigation bar. If you're only using a `ViewController` just call this method in that controller's respective class file.
 
-###Color Schemes
+###Color Schemes Methods
 *Note: Due to the limited number of flat colors currently available, color schemes may return results that reuse certain flat colors. Because of this redundancy, we have provided an option to return either a flat color scheme or a non-flat color scheme until more flat colors are added to the inventory.*
 
 The initial color can be either a non-flat color or flat color. Chameleon will return an `NSArray` of 5 `UIColors` in which the original color will be the third object of the scheme. This allows for Chameleon to designate the colors of the color scheme (2 colors counter-clockwise and 2 clockwise from the initial color), and thus, the chosen colors are aligned specifically in that order. 
@@ -283,7 +278,7 @@ You can then retrieve each individual color the same way you would normally retr
 UIColor *firstColor = colorArray[0];
 ```
 
-###Flatify (Beta)
+###Flatify Methods (Beta)
 Again, this is the hallmark feature of Chameleon. Although 99% of objects can be identified and recolored, the `Flatify` feature can, as of yet, only be called from a `UIViewController` class. Other controllers will soon be supported. Keep in mind this is a beta feature, and it may not be 100% spot-on. :)
 
 *Note: Although all colors will flatify to the closest accurate flat color, sometimes our eyes may not agree with it visually. For example some blues may flatten to purple, but I'm figuring out a way to factor in more visually pleasing results.*
@@ -314,4 +309,26 @@ To implement this perform the following method call:
 
 * *Objects stored in a `UIView` that is located on top another `UIView`.*
 * *`UIStatusBarStyle`(In the mean time, use the status bar methods provided above).*
+
+##Special Thanks
+Huge thanks to the following people for helping make Chameleon possible (seriously).
+
+* **Asia Kwan** *(Wondering where the super awesome name idea for this framework came from? Thank her awesome mind! Not only did she pitch many ideas and suggestions, but she also reworded the entire documentation on here to make it more clear, concise, and eloquent).*
+
+* **[Saul López](https://twitter.com/SaaauuuuL)** *(MIT Genius. He aided with several algorithms, including color difference formulas and euclidian distances).*
+
+* **[Marlon López](https://twitter.com/marlonmaxmm)** *(King Beta Tester. He filtered ideas and tested the framework in its various stages. S/O: Thanks for all the time you dedicated to listening about this)!*
+
+* **[Ahmet Sulek](https://twitter.com/ahmetsulek)**  *(Chameleon was inspired by my constant use of [FlatUIColors](http://flatuicolors.com) which is an awesome project that Ahmet built. Half of the colors used in Chameleon stemmed from his project!).*
+
+## 📝 To Do List
+*No particular order.*
+* ~~Cocoapod Support~~
+* Update Sample App
+* Xcode In-App Documentation
+* Swift Version
+* Color Scheme From Images
+* Flatify Support for other Controllers
+* UIAppearance Convenience Methods
+* Switch from RGB values over to HSB
 
