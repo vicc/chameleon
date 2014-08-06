@@ -326,6 +326,7 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 ## 📝 To Do List
 *No particular order.*
 * ~~Cocoapod Support~~
+* ~~Table of Contents~~
 * Update Sample App
 * Xcode In-App Documentation
 * Swift Version
