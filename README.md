@@ -15,11 +15,11 @@ Chameleon is the **first and only** color framework on the market that focuses i
 Chameleon solves problems that many other color libraries tend to overlook. With their distracting and superfluous features, other libraries confuse and misdirect developers. They create extensions that display a few colors, but leave developers to essentially create cohesive color palettes and replace countless lines of `UIColor` code if they desire to switch to a "flat color" themselves. But now, with only a few characters of code, Chameleon does all the heavy lifting.
 
 ## Table of Contents
-[‚óè Product FeaturesÌºü Product Features](https://github.com/VAlexander/Chameleon#product-features)  
-[‚óè RequirementsÌ†ºRe](https://github.com/VAlexander/Chameleon#%EF%B8%8F-requirements)  
-[‚óè LicenseÌ†Ω](https://github.com/VAlexander/Chameleon#-license)  
-[‚óè ContributionsÌ†ΩCntributions](https://github.com/VAlexander/Chameleon#-contributions)   
-[‚óè DocumentationÌ†ΩDocumentation](https://github.com/VAlexander/Chameleon#-documentation)   
+[‚óè Product Features](https://github.com/VAlexander/Chameleon#product-features)  
+[‚óè Requirements](https://github.com/VAlexander/Chameleon#%EF%B8%8F-requirements)  
+[‚óè License](https://github.com/VAlexander/Chameleon#-license)  
+[‚óè Contributions](https://github.com/VAlexander/Chameleon#-contributions)   
+[‚óè Documentation](https://github.com/VAlexander/Chameleon#-documentation)   
 [‚óè Special Thanks](https://github.com/VAlexander/Chameleon#-special-thanks)    
 [‚óè To Do List](https://github.com/VAlexander/Chameleon#-to-do-list)  
 
