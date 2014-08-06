@@ -28,6 +28,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "ChameleonMacros.h"
 
 //Shade Styles Supported By Chameleon
