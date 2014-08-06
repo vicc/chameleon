@@ -15,7 +15,7 @@ Chameleon is the **first and only** color framework on the market that focuses i
 Chameleon solves problems that many other color libraries tend to overlook. With their distracting and superfluous features, other libraries confuse and misdirect developers. They create extensions that display a few colors, but leave developers to essentially create cohesive color palettes and replace countless lines of `UIColor` code if they desire to switch to a "flat color" themselves. But now, with only a few characters of code, Chameleon does all the heavy lifting.
 
 ## Table of Contents
-[🌟 Product Features](https://github.com/VAlexander/Chameleon#-product-features)  
+[🌟 Product Features](https://github.com/VAlexander/Chameleon#product-features)  
 [⚠️ Requirements](https://github.com/VAlexander/Chameleon#%EF%B8%8F-requirements)  
 [🔑 License](https://github.com/VAlexander/Chameleon#-license)  
 [👥 Contributions](https://github.com/VAlexander/Chameleon#-contributions)   
@@ -32,7 +32,7 @@ Chameleon solves problems that many other color libraries tend to overlook. With
 &nbsp;&nbsp;￮ [Flatify Methods (Beta)](https://github.com/VAlexander/Chameleon#flatify-methods-beta) 
 --->
 
-## 🌟 Product Features
+## Product Features
 
 ### 100% Flat & Gorgeous
 
