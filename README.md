@@ -24,7 +24,7 @@ Chameleon solves problems that many other color libraries tend to overlook. With
 [● To Do List](https://github.com/VAlexander/Chameleon#-to-do-list)  
 
 New Features!  
-[● Storyboard Add-On]()
+[● Storyboard Add-On](https://github.com/VAlexander/Chameleon#storyboard-add-on)
 
 <!--- 
 &nbsp;&nbsp;￮ [Installation](https://github.com/VAlexander/Chameleon#installation)  
@@ -101,7 +101,7 @@ If you rather install this framework manually, just drag and drop the Chameleon 
 And that's it. :)
 
 ####Storyboard Add-On
-Using Chameleon's awesome palette in Storyboard is easy! Simply download [Chameleon Palette](https://github.com/VAlexander/Chameleon/blob/master/Extras/Chameleon.dmg?raw=true) and install it.
+Using Chameleon's awesome palette in Storyboard is easy! Simply download [Chameleon Palette]() and install it.
 
 Once installed, make sure you restart XCode. You'll find all of Chameleon's awesome colors in the Palette Color Picker whenever you need it! :)
 
