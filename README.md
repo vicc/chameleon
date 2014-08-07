@@ -97,6 +97,13 @@ If you rather install this framework manually, just drag and drop the Chameleon 
 
 And that's it. :)
 
+####Storyboard Support
+Using Chameleon's awesome palette in Storyboard is easy! Simply download [Chameleon Palette](https://github.com/VAlexander/Chameleon/blob/master/Extras/Chameleon.dmg?raw=true) and install it.
+
+Once installed, make sure you restart XCode. You'll find all of Chameleon's awesome colors in the Palette Color Picker whenever you need it! :)
+
+![Chameleon Palette](http://i.imgur.com/QhhPFHY.gif)
+
 ###Usage
 To use the myriad of features in Chameleon, include the following import:
 
@@ -327,7 +334,7 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 *No particular order.*
 * ~~Cocoapod Support~~
 * ~~Table of Contents~~
-* Storyboard Color Picker Support
+* ~~Storyboard Color Picker Support~~
 * Update Sample App
 * Xcode In-App Documentation
 * Swift Version
