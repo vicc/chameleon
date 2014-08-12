@@ -253,20 +253,16 @@ A triadic scheme uses evenly spaced colors on the color wheel. The colors tend t
 ####Getting Colors in a Color Scheme
 To retrieve an array of colors, first make sure to initialize an NSMutableArray (in case you want to use the same array to replace with different colors later):
 
-```objective-c
-NSMutableArray *colorArray = [[NSMutableArray alloc] init];
-```
-
 ######Normal Convention:
 ```objective-c
-[colorArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:(ColorScheme)colorScheme 
-                                                                  for:(UIColor *)color 
-                                                           flatScheme:(BOOL)isFlatScheme]];
+NSMutableArray *colorArray = [NSMutableArray alloc] initWithArray:[NSArray arrayOfColorsWithColorScheme:(ColorScheme)colorScheme 
+                                                                                                    for:(UIColor *)color 
+                                                                                             flatScheme:(BOOL)isFlatScheme]];
 ```
 
 ######Chameleon Shorthand:
 ```objective-c
-[colorArray addObjectsFromArray:ColorScheme(colorScheme, color, isFlatScheme)];
+NSMutableArray *colorArray = [[NSMutableArray alloc] initWithArray:ColorScheme(colorSchemeType, color, isFlatScheme)];
 ```
 
 #####Example:
@@ -274,21 +270,25 @@ Assuming you want to generate an analogous color scheme for the light shade of F
 
 ######Normal Convention:
 ```objective-c
-[colorArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogous 
-                                                                  for:[UIColor flatRedColor] 
-                                                           flatScheme:YES]];
+NSMutableArray *colorArray = [NSMutableArray alloc] initWithArray:[NSArray arrayOfColorsWithColorScheme::ColorSchemeAnalogous
+                                                                                                    for:[UIColor flatRedColor] 
+                                                                                             flatScheme:YES]];
 ```
 
 ######Chameleon Shorthand:
 ```objective-c
-colorArray addObjectsFromArray:ColorScheme(ColorSchemeAnalogous, flatRedColor, YES)];
+NSMutableArray *colorArray = [[NSMutableArray alloc] initWithArray:ColorScheme(ColorSchemeAnalogous, FlatRed, YES)];
 ```
+
+
 
 You can then retrieve each individual color the same way you would normally retrieve any object from an array:
 
 ```objective-c
 UIColor *firstColor = colorArray[0];
 ```
+
+
 
 ###Flatify Methods (Beta)
 Again, this is the hallmark feature of Chameleon. Although 99% of objects can be identified and recolored, the `Flatify` feature can, as of yet, only be called from a `UIViewController` class. Other controllers will soon be supported. Keep in mind this is a beta feature, and it may not be 100% spot-on. :)
