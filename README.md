@@ -2,7 +2,7 @@ Chameleon for iOS
 =========
 
 
-![Chameleon Header](http://i.imgur.com/GkcP4e9.png)
+![Chameleon Header](http://i.imgur.com/E5hHBMG.gif)
 
 ## Introduction
 
@@ -68,6 +68,24 @@ The flatify feature is the most innovative and easy-to-use feature of Chameleon.
 
 ![Flatify Demo](http://i.imgur.com/QByU4w7.png)
 
+### Gradient Colors ![New](http://i.imgur.com/BX3b9ES.png)
+With iOS 7, Apple mainstreamed flat colors. Now, with the impending release of iOS 8, Chameleon strives to elevate the game. Say 'hello' to gradient colors. Using one line of code, you can easily set any object's color properties to a gradient (background colors, text colors, tint colors, etc). Other features, like Chameleon's contrasting feature, can also be applied to create a seamless product. Experimentation is encouraged, and gutsiness is applauded!
+
+![Gradients](http://i.imgur.com/7hTa5Pd.png) 
+
+### Xcode Quick Help Documentation ![New](http://i.imgur.com/BX3b9ES.png)
+
+Chameleon's documentation, while written as clearly and concisely as possible (Thank [Asia](https://github.com/aekwan) for that!), may still render some slightly confused. But don't fret! Staying true to our vision of simplifying the entire color process, we added Xcode Quick Help's Documentation Support! Simply highlight a Chameleon method or tap it with three fingers to find out more about what it is and what it does!
+
+![Xcode Quick Help Documentation](http://i.imgur.com/p4KkQ9X.png)
+  
+### Storyboard Palette ![New](http://i.imgur.com/BX3b9ES.png)
+
+If you're like me and love to use storyboard, Chameleon's got you covered. We've provided you with a quick and easy way to access Chameleon colors right from Storyboard, and any other app that uses the color picker (i.e. TextEdit).
+
+![Chameleon Palette](http://i.imgur.com/QhhPFHY.gif)
+
+
 ## ⚠️ Requirements
 
 * Built with and for Objective-C
@@ -81,7 +99,7 @@ Chameleon is released and distributed under the terms and conditions of the [MIT
 ## 👥 Contributions
 If you run into problems, please open up an issue. I also actively welcome pull requests. By contributing to Chameleon you agree that your contributions will be licensed under its MIT license.
 
-If you use the Chameleon framework in your app I would love to hear about it! Drop me a line at madewithchameleon@gmail.com or hit me up on [twitter](http://twitter.com/viccsmind).
+If you use the Chameleon framework in your app I would love to hear about it! Drop me a line at [madewithchameleon@gmail.com](mailto:madewithchameleon@gmail.com?Subject=We%20Used%20Chameleon!) or hit me up on [twitter](http://twitter.com/viccsmind).
 
 ## 📗 Documentation
 All methods, properties, and types available in the Chameleon Framework are documented below. Although many people are not huge fans of macro files, I have included an optional "shorthand syntax" for each of the methods, properties, and types documented below.
@@ -98,14 +116,14 @@ If you rather install this framework manually, just drag and drop the Chameleon 
 
 ![Manual Installation](http://i.imgur.com/gDXaF5F.png)
 
-And that's it. :)
+Note: Don't forget to manually import the *QuartzCore* & *CoreGraphics* framework if you plan on using gradient colors!
 
-####Storyboard Add-On
+####Storyboard Add-On ![New](http://i.imgur.com/BX3b9ES.png)
 Using Chameleon's awesome palette in Storyboard is easy! Simply download and install [Chameleon Palette](https://github.com/VAlexander/Chameleon/blob/master/Extras/Chameleon.dmg?raw=true).
 
 Once installed, make sure to restart XCode. You'll find all of Chameleon's colors in the Palette Color Picker whenever they're needed! :)
 
-![Chameleon Palette](http://i.imgur.com/QhhPFHY.gif)
+![Chameleon Palette](http://i.imgur.com/XqpFUSt.png)
 
 ###Usage
 To use the myriad of features in Chameleon, include the following import:
@@ -168,7 +186,7 @@ Otherwise, you can perform the following method call to specify whether it shoul
 
 ######Chameleon Shorthand:
 ```objective-c
-RandomColorWithShade(light);
+RandomFlatColorWithShade(light);
 ```
 
 ####Complementary Color
@@ -181,11 +199,11 @@ To generate a complementary color, perform the following method call, rememberin
 
 ######Chameleon Shorthand:
 ```objective-c
-ComplementaryColorOf(color);
+ComplementaryFlatColorOf(color);
 ```
 
 ####Contrasting Color
-The contrasting color feature returns either a `FlatBlackDark` color a `FlatWhite` color depending on what the algorithm believes is a better choice.
+The contrasting color feature returns either a dark color a light color depending on what the Chameleon algorithm believes is a better choice. You can specify whether the dark or light colors are flat: *([UIColor flatWhiteColor] & [UIColor flatBlackColorDark])* or non-flat *([UIColor whiteColor] & [UIColor blackColor]).*
 
 If you're trying to set a `UILabel's textColor` property, make sure you provide the `UILabel's backgroundColor`. If your label has a clear `backgroundColor`, just provide the `backgroundColor` property of the object directly behind the `UILabel`.
 
@@ -193,15 +211,15 @@ Here's an example:
 
 ######Normal Convention:
 ```objective-c
-[UIColor colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor];
+[UIColor colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor isFlat:(BOOL)flat];
 ```
 
 ######Chameleon Shorthand:
 ```objective-c
-ContrastColorOf(backgroundColor);
+ContrastColorOf(backgroundColor, isFlat);
 ```
 
-Note: If a clear color is passed to this method, it will return a `flatWhite` color by default.
+Note: As off Chameleon 1.1.0, *colorWithContrastingBlackOrWhiteColorOn:* is deprecated. Please use the methods listed above.
 
 ####Flat Version of Non-Flat Color
 As mentioned previously, this feature is unique to Chameleon. While this feature is in its early stages of operation and can be improved, it is accurate in finding the nearest flat version of any color in the spectrum, and very simple to use:
@@ -215,6 +233,25 @@ As mentioned previously, this feature is unique to Chameleon. While this feature
 ```objective-c
 FlatVersionOf(color);
 ```
+
+#### Gradient Color ![New](http://i.imgur.com/BX3b9ES.png)
+Using a gradient to color an object usually requires a couple of lines of code plus many more lines to superimpose smart contrasting text. Thankfully, Chameleon takes care of that for you. We've introduced a new way to have multicolored objects, and that's with gradients!
+
+#####Gradient Styles
+At the moment, Chameleon only provides two simple linear gradient styles. You can either impose gradient that goes from top to bottom or left to right of a secreen. More styles are coming soon!
+
+Gradients can be creaed from any number of colors you desire as long as at least two colors is provided. Don't forget that the contrasting text feature is also compatible with gradient colors!
+
+######Normal Convention:
+```objective-c
+[UIColor colorWithGradientStyle:(GradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors];
+```
+
+######Chameleon Shorthand:
+```objective-c
+GradientColor(gradientStyle, frame, colors);
+```
+Note: If you use the Chameleon Shorthand, and use the NSArray literal ```@[]``` to set the array of colors, make sure you add parenthesis around it, or else you'll get an error.
 
 ###UIStatusBarStyle Methods
 ####Contrasting UIStatusBarStyle
@@ -305,7 +342,6 @@ Implementing this feature is so easy, there was no need to build a Chameleon sho
 [self flatify];
 ```
 
-
 #####Implementing Flatify With Contrasting Colors
 
 We've also built a secondary flatify feature that not only flattens object colors, but also recognizes text and tint colors. After detecting such properties, it applies smart contrast to them, returning either a`flatBlackDark` or `flatWhite` color.
@@ -325,7 +361,7 @@ To implement this perform the following method call:
 ## 👏 Special Thanks
 Huge thanks to the following people for helping make Chameleon possible (seriously).
 
-* **Asia Kwan** *(Wondering where the super awesome name idea for this framework came from? Thank her awesome mind! Not only did she pitch many ideas and suggestions, but she also reworded the entire documentation on here to make it more clear, concise, and eloquent).*
+* **[Asia Kwan](https://github.com/aekwan)** *(Wondering where the super awesome name idea for this framework came from? Thank her awesome mind! Not only did she pitch many ideas and suggestions, but she also reworded the entire documentation on here to make it more clear, concise, and eloquent).*
 
 * **[Saul López](https://twitter.com/SaaauuuuL)** *(MIT Genius. He aided with several algorithms, including color difference formulas and euclidian distances).*
 
@@ -335,14 +371,53 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 
 ## 📝 To Do List
 *No particular order.*
-* ~~Cocoapods Support~~
-* ~~Table of Contents~~
-* ~~Storyboard Color Picker Add-On~~
+* ~~Cocoapods Support~~ ![1.0.1](http://i.imgur.com/8Li5aRR.png)
+* ~~Table of Contents~~ ![1.0.1](http://i.imgur.com/8Li5aRR.png)
+* ~~Storyboard Color Picker Add-On~~ ![1.1.0](http://i.imgur.com/Py4QvaK.png)
+* ~~Xcode In-App Documentation~~ ![1.1.0](http://i.imgur.com/Py4QvaK.png)
+* ~~Switch from RGB values over to HSB and LAB~~ ![1.1.0](http://i.imgur.com/Py4QvaK.png)
+* ~~Gradient Colors~~ ![1.1.0](http://i.imgur.com/Py4QvaK.png)
 * Update Sample App
-* Xcode In-App Documentation
 * Swift Version
 * Color Scheme From Images
 * Flatify Support for other Controllers
 * UIAppearance Convenience Methods
-* Switch from RGB values over to HSB
+
+## 📄 Change Log
+### 1.1.0
+* Added Gradient Colors
+* Added Storyboard Palette Add-on
+* Added Xcode Quick Help Documentation Support
+* Switched from RGB colorspace to HSB & LAB colorspaces (closer to human perception)
+* Implemented `ContrastingColor` which supports all alphas and has additional support for non-flat and flat colors
+* Changed Color difference algorithm so that it now uses CIE:2000 formula
+* Changed `RandomFlatColors` from enum to nsarray values
+* Edited `RandomFlatColor` so that it will no longer spit out the same color back to back
+* Switched complementary and triadic fourth and fifth colors order.
+* New Macro: `ClearColor`
+
+###### Deprecated Methods
+* `colorWithContrastingBlackOrWhiteColorOn:`
+
+Replaced with: `colorWithContrastingBlackOrWhiteColorOn:isFlat:`  
+
+###### Deprecated Macros
+* `ContrastingColorOf(backgroundColor)`  
+
+Replaced with: `ContrastingColorOf(backgroundColor, isFlat)`
+
+* `ComplementaryColorOf(color)`
+
+Replaced with: `ComplementaryFlatColorOf(color)`
+
+* `RandomColorWithShade(shade)`
+
+Replaced with: `RandomFlatColorWithShade(shade)`
+
+### 1.0.1
+* Added Table of Contents
+* Fixed a couple of spelling errors
+* Extra '#define' deleted
+* Imported UIKit in ChameleonStatusBar.h and NSArray+Chameleon.h
+
 
