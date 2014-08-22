@@ -1,8 +1,9 @@
 Chameleon for iOS
 =========
 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Chameleon Header](http://i.imgur.com/E5hHBMG.gif)
+<p align="center">
+  <img src="http://i.imgur.com/E5hHBMG.gif" alt="Chameleon by Vicc Alexander"/>
+</p>
 
 ## Introduction
 
@@ -40,13 +41,16 @@ Chameleon solves problems that many other color libraries tend to overlook. With
 
 Chameleon features over 24 hand-picked colors that come in both light and dark shades. 
 
-![Swatches](http://i.imgur.com/Hs8ICtJ.png)
+<p align="center">
+  <img src="http://i.imgur.com/Hs8ICtJ.png" alt="Swatches"/>
+</p>
 
 ### Flat Color Schemes
 
 Chameleon equips you with 3 different classes of flat color schemes that can be generated from a flat or non-flat color. *In the examples below, the white stars indicate the color used to generate the schemes.*
 
 ###### Analogous Flat Color Scheme
+
 ![Analogous Scheme](http://i.imgur.com/cPAkSWA.png)
 
 ###### Complementary Flat Color Scheme
@@ -60,29 +64,39 @@ With a plethora of color choices available for text, it's difficult to choose on
 
 Oh... Chameleon works with the status bar as well. : )
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Status Bar](http://i.imgur.com/rTz01Qb.gif)
+<p align="center">
+  <img src="http://i.imgur.com/rTz01Qb.gif" alt="Status Bar"/>
+</p>
 
 ### Flatify (Beta)
 The flatify feature is the most innovative and easy-to-use feature of Chameleon. With only one line of code, every single color on the screen can be converted into the closest flat version of themselves. It works with both storyboard objects and programmatically-created objects.
 
-![Flatify Demo](http://i.imgur.com/QByU4w7.png)
+<p align="center">
+  <img src="http://i.imgur.com/QByU4w7.png" alt="Flatify Demo"/>
+</p>
 
 ### Gradient Colors ![New](http://i.imgur.com/BX3b9ES.png)
 With iOS 7, Apple mainstreamed flat colors. Now, with the impending release of iOS 8, Chameleon strives to elevate the game. Say 'hello' to gradient colors. Using one line of code, you can easily set any object's color properties to a gradient (background colors, text colors, tint colors, etc). Other features, like Chameleon's contrasting feature, can also be applied to create a seamless product. Experimentation is encouraged, and gutsiness is applauded!
 
-![Gradients](http://i.imgur.com/7hTa5Pd.png) 
+<p align="center">
+  <img src="http://i.imgur.com/7hTa5Pd.png" alt="Gradients"/>
+</p>
 
 ### Xcode Quick Help Documentation ![New](http://i.imgur.com/BX3b9ES.png)
 
 Chameleon's documentation, while written as clearly and concisely as possible (Thank [Asia](https://github.com/aekwan) for that!), may still render some slightly confused. But don't fret! Staying true to our vision of simplifying the entire color process, we added Xcode Quick Help's Documentation Support! Simply highlight a Chameleon method or tap it with three fingers to find out more about what it is and what it does!
 
-![Xcode Quick Help Documentation](http://i.imgur.com/p4KkQ9X.png)
+<p align="center">
+  <img src="http://i.imgur.com/p4KkQ9X.png" alt="Xcode Quick Help Documentation"/>
+</p>
   
 ### Storyboard Palette ![New](http://i.imgur.com/BX3b9ES.png)
 
 If you're like me and love to use storyboard, Chameleon's got you covered. We've provided you with a quick and easy way to access Chameleon colors right from Storyboard, and any other app that uses the color picker (i.e. TextEdit).
 
-![Chameleon Palette](http://i.imgur.com/QhhPFHY.gif)
+<p align="center">
+  <img src="http://i.imgur.com/QhhPFHY.gif" alt="Chameleon Palette"/>
+</p>
 
 
 ## ⚠️ Requirements
@@ -122,7 +136,9 @@ pod 'ChameleonFramework'
 ####Manual Installation
 If you rather install this framework manually, just drag and drop the Chameleon folder into your project, and make sure you check the following boxes.
 
-![Manual Installation](http://i.imgur.com/gDXaF5F.png)
+<p align="center">
+  <img src="http://i.imgur.com/gDXaF5F.png" alt="Manual Installation"/>
+</p>
 
 Note: Don't forget to manually import the *QuartzCore* & *CoreGraphics* framework if you plan on using gradient colors!
 
@@ -131,7 +147,9 @@ Using Chameleon's awesome palette in Storyboard is easy! Simply download and ins
 
 Once installed, make sure to restart XCode. You'll find all of Chameleon's colors in the Palette Color Picker whenever they're needed! :)
 
-![Chameleon Palette](http://i.imgur.com/XqpFUSt.png)
+<p align="center">
+  <img src="http://i.imgur.com/XqpFUSt.png" alt="Chameleon Palette"/>
+</p>
 
 ###Usage
 To use the myriad of features in Chameleon, include the following import:
