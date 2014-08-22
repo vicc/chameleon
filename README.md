@@ -60,7 +60,7 @@ With a plethora of color choices available for text, it's difficult to choose on
 
 Oh... Chameleon works with the status bar as well. : )
 
-![Status Bar](http://i.imgur.com/rTz01Qb.gif)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Status Bar](http://i.imgur.com/rTz01Qb.gif)
 
 ### Flatify (Beta)
 The flatify feature is the most innovative and easy-to-use feature of Chameleon. With only one line of code, every single color on the screen can be converted into the closest flat version of themselves. It works with both storyboard objects and programmatically-created objects.
