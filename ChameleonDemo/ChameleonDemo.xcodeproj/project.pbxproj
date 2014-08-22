@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C7655AF19A6AED600257304 /* ChameleonStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7655A619A6AED600257304 /* ChameleonStatusBar.m */; };
+		0C7655B019A6AED600257304 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7655A819A6AED600257304 /* NSArray+Chameleon.m */; };
+		0C7655B119A6AED600257304 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7655AA19A6AED600257304 /* UIColor+Chameleon.m */; };
+		0C7655B219A6AED600257304 /* UIColor+CIELAB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7655AC19A6AED600257304 /* UIColor+CIELAB.m */; };
+		0C7655B319A6AED600257304 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7655AE19A6AED600257304 /* UIViewController+Chameleon.m */; };
+		0C7655B619A6BF5000257304 /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7655B519A6BF5000257304 /* GradientViewController.m */; };
+		0C7655B819A6C79A00257304 /* 5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C7655B719A6C79A00257304 /* 5@2x.png */; };
 		0CC0046419812351008E24FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC0046319812351008E24FD /* Foundation.framework */; };
 		0CC0046619812351008E24FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC0046519812351008E24FD /* CoreGraphics.framework */; };
 		0CC0046819812351008E24FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC0046719812351008E24FD /* UIKit.framework */; };
@@ -21,10 +28,6 @@
 		0CC0048519812352008E24FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC0046719812351008E24FD /* UIKit.framework */; };
 		0CC0048D19812352008E24FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0CC0048B19812352008E24FD /* InfoPlist.strings */; };
 		0CC0048F19812352008E24FD /* ChameleonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC0048E19812352008E24FD /* ChameleonDemoTests.m */; };
-		0CC004A51981250C008E24FD /* ChameleonStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC0049E1981250C008E24FD /* ChameleonStatusBar.m */; };
-		0CC004A61981250C008E24FD /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC004A01981250C008E24FD /* NSArray+Chameleon.m */; };
-		0CC004A71981250C008E24FD /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC004A21981250C008E24FD /* UIColor+Chameleon.m */; };
-		0CC004A81981250C008E24FD /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC004A41981250C008E24FD /* UIViewController+Chameleon.m */; };
 		0CC004B419818DBA008E24FD /* icons license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0CC004AF19818DBA008E24FD /* icons license.txt */; };
 		0CC004BA19818F2F008E24FD /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CC004B619818F2F008E24FD /* 1@2x.png */; };
 		0CC004BB19818F2F008E24FD /* 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CC004B719818F2F008E24FD /* 4@2x.png */; };
@@ -51,6 +54,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C7655A319A6AED600257304 /* Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = ../../Chameleon/Chameleon.h; sourceTree = "<group>"; };
+		0C7655A419A6AED600257304 /* ChameleonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = ../../Chameleon/ChameleonMacros.h; sourceTree = "<group>"; };
+		0C7655A519A6AED600257304 /* ChameleonStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChameleonStatusBar.h; path = ../../Chameleon/ChameleonStatusBar.h; sourceTree = "<group>"; };
+		0C7655A619A6AED600257304 /* ChameleonStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChameleonStatusBar.m; path = ../../Chameleon/ChameleonStatusBar.m; sourceTree = "<group>"; };
+		0C7655A719A6AED600257304 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "../../Chameleon/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		0C7655A819A6AED600257304 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "../../Chameleon/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		0C7655A919A6AED600257304 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "../../Chameleon/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		0C7655AA19A6AED600257304 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "../../Chameleon/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		0C7655AB19A6AED600257304 /* UIColor+CIELAB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+CIELAB.h"; path = "../../Chameleon/UIColor+CIELAB.h"; sourceTree = "<group>"; };
+		0C7655AC19A6AED600257304 /* UIColor+CIELAB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CIELAB.m"; path = "../../Chameleon/UIColor+CIELAB.m"; sourceTree = "<group>"; };
+		0C7655AD19A6AED600257304 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "../../Chameleon/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		0C7655AE19A6AED600257304 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "../../Chameleon/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		0C7655B419A6BF5000257304 /* GradientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientViewController.h; sourceTree = "<group>"; };
+		0C7655B519A6BF5000257304 /* GradientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientViewController.m; sourceTree = "<group>"; };
+		0C7655B719A6C79A00257304 /* 5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5@2x.png"; sourceTree = "<group>"; };
 		0CC0046019812351008E24FD /* ChameleonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChameleonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC0046319812351008E24FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0CC0046519812351008E24FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,16 +88,6 @@
 		0CC0048A19812352008E24FD /* ChameleonDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChameleonDemoTests-Info.plist"; sourceTree = "<group>"; };
 		0CC0048C19812352008E24FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0CC0048E19812352008E24FD /* ChameleonDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChameleonDemoTests.m; sourceTree = "<group>"; };
-		0CC0049B1981250C008E24FD /* Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = ../../Chameleon/Chameleon.h; sourceTree = "<group>"; };
-		0CC0049C1981250C008E24FD /* ChameleonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = ../../Chameleon/ChameleonMacros.h; sourceTree = "<group>"; };
-		0CC0049D1981250C008E24FD /* ChameleonStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChameleonStatusBar.h; path = ../../Chameleon/ChameleonStatusBar.h; sourceTree = "<group>"; };
-		0CC0049E1981250C008E24FD /* ChameleonStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChameleonStatusBar.m; path = ../../Chameleon/ChameleonStatusBar.m; sourceTree = "<group>"; };
-		0CC0049F1981250C008E24FD /* NSArray+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "../../Chameleon/NSArray+Chameleon.h"; sourceTree = "<group>"; };
-		0CC004A01981250C008E24FD /* NSArray+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "../../Chameleon/NSArray+Chameleon.m"; sourceTree = "<group>"; };
-		0CC004A11981250C008E24FD /* UIColor+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "../../Chameleon/UIColor+Chameleon.h"; sourceTree = "<group>"; };
-		0CC004A21981250C008E24FD /* UIColor+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "../../Chameleon/UIColor+Chameleon.m"; sourceTree = "<group>"; };
-		0CC004A31981250C008E24FD /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "../../Chameleon/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
-		0CC004A41981250C008E24FD /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "../../Chameleon/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
 		0CC004AF19818DBA008E24FD /* icons license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "icons license.txt"; sourceTree = "<group>"; };
 		0CC004B619818F2F008E24FD /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
 		0CC004B719818F2F008E24FD /* 4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4@2x.png"; sourceTree = "<group>"; };
@@ -172,6 +180,8 @@
 				0CC004C21981AC35008E24FD /* Row2ViewController.m */,
 				0CC004D6198227DF008E24FD /* Row4ViewController.h */,
 				0CC004D7198227DF008E24FD /* Row4ViewController.m */,
+				0C7655B419A6BF5000257304 /* GradientViewController.h */,
+				0C7655B519A6BF5000257304 /* GradientViewController.m */,
 				0CC004D5198215E0008E24FD /* Row3Controllers */,
 				0CC004A919818CE4008E24FD /* Images */,
 				0CC0049A198124F8008E24FD /* Chameleon */,
@@ -213,16 +223,18 @@
 		0CC0049A198124F8008E24FD /* Chameleon */ = {
 			isa = PBXGroup;
 			children = (
-				0CC0049B1981250C008E24FD /* Chameleon.h */,
-				0CC0049C1981250C008E24FD /* ChameleonMacros.h */,
-				0CC0049D1981250C008E24FD /* ChameleonStatusBar.h */,
-				0CC0049E1981250C008E24FD /* ChameleonStatusBar.m */,
-				0CC0049F1981250C008E24FD /* NSArray+Chameleon.h */,
-				0CC004A01981250C008E24FD /* NSArray+Chameleon.m */,
-				0CC004A11981250C008E24FD /* UIColor+Chameleon.h */,
-				0CC004A21981250C008E24FD /* UIColor+Chameleon.m */,
-				0CC004A31981250C008E24FD /* UIViewController+Chameleon.h */,
-				0CC004A41981250C008E24FD /* UIViewController+Chameleon.m */,
+				0C7655A319A6AED600257304 /* Chameleon.h */,
+				0C7655A419A6AED600257304 /* ChameleonMacros.h */,
+				0C7655A519A6AED600257304 /* ChameleonStatusBar.h */,
+				0C7655A619A6AED600257304 /* ChameleonStatusBar.m */,
+				0C7655A719A6AED600257304 /* NSArray+Chameleon.h */,
+				0C7655A819A6AED600257304 /* NSArray+Chameleon.m */,
+				0C7655A919A6AED600257304 /* UIColor+Chameleon.h */,
+				0C7655AA19A6AED600257304 /* UIColor+Chameleon.m */,
+				0C7655AB19A6AED600257304 /* UIColor+CIELAB.h */,
+				0C7655AC19A6AED600257304 /* UIColor+CIELAB.m */,
+				0C7655AD19A6AED600257304 /* UIViewController+Chameleon.h */,
+				0C7655AE19A6AED600257304 /* UIViewController+Chameleon.m */,
 			);
 			name = Chameleon;
 			sourceTree = "<group>";
@@ -235,6 +247,7 @@
 				0CC004B919818F2F008E24FD /* 2@2x.png */,
 				0CC004B819818F2F008E24FD /* 3@2x.png */,
 				0CC004B719818F2F008E24FD /* 4@2x.png */,
+				0C7655B719A6C79A00257304 /* 5@2x.png */,
 				0CC004C71981B8AF008E24FD /* dice@2x.png */,
 			);
 			name = Images;
@@ -331,6 +344,7 @@
 			files = (
 				0CC0047C19812352008E24FD /* Images.xcassets in Resources */,
 				0CC0046E19812352008E24FD /* InfoPlist.strings in Resources */,
+				0C7655B819A6C79A00257304 /* 5@2x.png in Resources */,
 				0CC004BA19818F2F008E24FD /* 1@2x.png in Resources */,
 				0CC004C81981B8AF008E24FD /* dice@2x.png in Resources */,
 				0CC004BB19818F2F008E24FD /* 4@2x.png in Resources */,
@@ -356,9 +370,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC004A71981250C008E24FD /* UIColor+Chameleon.m in Sources */,
-				0CC004A51981250C008E24FD /* ChameleonStatusBar.m in Sources */,
+				0C7655B619A6BF5000257304 /* GradientViewController.m in Sources */,
+				0C7655B319A6AED600257304 /* UIViewController+Chameleon.m in Sources */,
 				0CC004C31981AC35008E24FD /* Row2ViewController.m in Sources */,
+				0C7655B219A6AED600257304 /* UIColor+CIELAB.m in Sources */,
+				0C7655B119A6AED600257304 /* UIColor+Chameleon.m in Sources */,
+				0C7655AF19A6AED600257304 /* ChameleonStatusBar.m in Sources */,
 				0CC0047A19812352008E24FD /* MainViewController.m in Sources */,
 				0CC004C61981AEF3008E24FD /* MainNavigationController.m in Sources */,
 				0CC0047419812352008E24FD /* AppDelegate.m in Sources */,
@@ -366,9 +383,8 @@
 				0CC004D41981E74C008E24FD /* TriadicViewController.m in Sources */,
 				0CC0047019812352008E24FD /* main.m in Sources */,
 				0CC004D11981E631008E24FD /* ComplementaryViewController.m in Sources */,
+				0C7655B019A6AED600257304 /* NSArray+Chameleon.m in Sources */,
 				0CC004CE1981E349008E24FD /* AnalogousViewController.m in Sources */,
-				0CC004A61981250C008E24FD /* NSArray+Chameleon.m in Sources */,
-				0CC004A81981250C008E24FD /* UIViewController+Chameleon.m in Sources */,
 				0CC004C019819536008E24FD /* Row1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,11 +510,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChameleonDemo/ChameleonDemo-Prefix.pch";
 				INFOPLIST_FILE = "ChameleonDemo/ChameleonDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -508,11 +526,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChameleonDemo/ChameleonDemo-Prefix.pch";
 				INFOPLIST_FILE = "ChameleonDemo/ChameleonDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

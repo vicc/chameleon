@@ -25,24 +25,24 @@
     
     //Randomize backgroundColor & contrast titleColor
     randomButton.backgroundColor = [UIColor randomFlatColor];
-    randomButton.titleLabel.textColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:randomButton.backgroundColor];
+    randomButton.titleLabel.textColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:randomButton.backgroundColor isFlat:NO];
     
     //Bracket notation for setting the text color
-    //[randomButton setTitleColor:[UIColor colorWithContrastingBlackOrWhiteColorOn:randomButton.backgroundColor] forState:UIControlStateApplication];
+    //[randomButton setTitleColor:[UIColor colorWithContrastingBlackOrWhiteColorOn:randomButton.backgroundColor isFlat:NO] forState:UIControlStateApplication];
     
     //Randomize textView's colors
     randomTextView.backgroundColor = [UIColor colorWithComplementaryFlatColorOf:randomButton.backgroundColor];
-    randomTextView.textColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:randomTextView.backgroundColor];
+    randomTextView.textColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:randomTextView.backgroundColor isFlat:NO];
  
     /* - Shorthand
      
      //Randomize backgroundColor & contrast titleColor
      randomButton.backgroundColor = RandomFlatColor;
-     randomButton.titleLabel.textColor = ContrastColorOf(randomButton.backgroundColor);
+     randomButton.titleLabel.textColor = ContrastColorOf(randomButton.backgroundColor, NO);
      
      //Randomize textView's colors
      randomTextView.backgroundColor = ComplementaryColorOf(randomButton.backgroundColor);
-     randomTextView.textColor = ContrastColorOf(randomTextView.backgroundColor);
+     randomTextView.textColor = ContrastColorOf(randomTextView.backgroundColor, NO);
      
      */
 }
@@ -54,10 +54,10 @@
     [self setNeedsStatusBarAppearanceUpdate];
     
     //Color all navigation items accordingly to new barTintColor
-    self.navigationController.navigationBar.tintColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:self.navigationController.navigationBar.barTintColor];
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:self.navigationController.navigationBar.barTintColor isFlat:NO];
     
     //Color titleLabel's textColor accordingly to new barTintColor
-    titleLabel.textColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:self.navigationController.navigationBar.barTintColor];
+    titleLabel.textColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:self.navigationController.navigationBar.barTintColor isFlat:NO];
 
     
     /* - Shorthand
@@ -67,10 +67,10 @@
      [self setNeedsStatusBarAppearanceUpdate];
      
      //Color all navigation items accordingly to new barTintColor
-     self.navigationController.navigationBar.tintColor = ContrastColorOf(self.navigationController.navigationBar.barTintColor);
+     self.navigationController.navigationBar.tintColor = ContrastColorOf(self.navigationController.navigationBar.barTintColor, NO);
      
      //Color titleLabel's textColor accordingly to new barTintColor
-     titleLabel.textColor = ContrastColorOf(self.navigationController.navigationBar.barTintColor);
+     titleLabel.textColor = ContrastColorOf(self.navigationController.navigationBar.barTintColor, NO);
      
      */
 }
@@ -79,21 +79,21 @@
     
     //Randomize backgroundColor & contrast titleColor
     [randomButton setBackgroundColor:[UIColor randomFlatColor]];
-    [randomButton setTitleColor:[UIColor colorWithContrastingBlackOrWhiteColorOn:randomButton.backgroundColor] forState:UIControlStateNormal];
+    [randomButton setTitleColor:[UIColor colorWithContrastingBlackOrWhiteColorOn:randomButton.backgroundColor isFlat:NO] forState:UIControlStateNormal];
     
     //Randomize textView's colors
     [randomTextView setBackgroundColor:[UIColor colorWithComplementaryFlatColorOf:randomButton.backgroundColor]];
-    [randomTextView setTextColor:[UIColor colorWithContrastingBlackOrWhiteColorOn:randomTextView.backgroundColor]];
+    [randomTextView setTextColor:[UIColor colorWithContrastingBlackOrWhiteColorOn:randomTextView.backgroundColor isFlat:NO]];
 
     /* Shorthand
      
      //Randomize backgroundColor & contrast titleColor
      //[randomButton setBackgroundColor:RandomFlatColor];
-     //[randomButton setTitleColor:ContrastColorOf(randomButton.backgroundColor) forState:UIControlStateNormal];
+     //[randomButton setTitleColor:ContrastColorOf(randomButton.backgroundColor, NO) forState:UIControlStateNormal];
      
      //Randomize textView's colors
      [randomTextView setBackgroundColor:ComplementaryColorOf(randomButton.backgroundColor)];
-     [randomTextView setTextColor:ContrastColorOf(randomTextView.backgroundColor)];
+     [randomTextView setTextColor:ContrastColorOf(randomTextView.backgroundColor, NO)];
      
      */
 }

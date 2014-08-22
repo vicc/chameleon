@@ -28,450 +28,511 @@
  */
 
 #import "UIColor+Chameleon.h"
+#import "ChameleonMacros.h"
+#import "UIColor+CIELAB.h"
+#import <objc/runtime.h>
 
 @implementation UIColor (Chameleon)
+
+@dynamic gradientImage;
+
+#pragma mark - Chameleon - Getter & Setter Methods for Instance Variables
+
++ (void)setGradientImage:(UIImage *)gradientImage {
+    
+    objc_setAssociatedObject(self, @selector(gradientImage), gradientImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
++ (UIImage *)gradientImage {
+    return objc_getAssociatedObject(self, @selector(gradientImage));
+}
 
 #pragma mark - Chameleon - Light Shades
 
 + (UIColor *)flatBlackColor {
-    return rgb(43, 43, 43);
+    return hsb(0, 0, 17);
 }
 
 + (UIColor *)flatBlueColor {
-    return rgb(80, 101, 161);
+    return hsb(224, 50, 63);
 }
 
 + (UIColor *)flatBrownColor {
-    return rgb(94, 69, 52);
+    return hsb(24, 45, 37);
 }
 
 + (UIColor *)flatCoffeeColor {
-    return rgb(163, 134, 113);
+    return hsb(25, 31, 64);
 }
 
 + (UIColor *)flatForestGreenColor {
-    return rgb(52, 95, 65);
+    return hsb(138, 45, 37);
 }
 
 + (UIColor *)flatGrayColor {
-    return rgb(149, 165, 166);
+    return hsb(184, 10, 65);
 }
 
 + (UIColor *)flatGreenColor {
-    return rgb(46, 204, 113);
+    return hsb(145, 77, 80);
 }
 
 + (UIColor *)flatLimeColor {
-    return rgb(165, 198, 59);
+    return hsb(74, 70, 78);
 }
 
 + (UIColor *)flatMagentaColor {
-    return rgb(155, 89, 182);
+    return hsb(283, 51, 71);
 }
 
 + (UIColor *)flatMaroonColor {
-    return rgb(121, 48, 42);
+    return hsb(5, 65, 47);
 }
 
 + (UIColor *)flatMintColor {
-    return rgb(26, 188, 156);
+    return hsb(168, 86, 74);
 }
 
 + (UIColor *)flatNavyBlueColor {
-    return rgb(52, 73, 94);
+    return hsb(210, 45, 37);
 }
 
 + (UIColor *)flatOrangeColor {
-    return rgb(230, 126, 34);
+    return hsb(28, 85, 90);
 }
 
 + (UIColor *)flatPinkColor {
-    return rgb(245, 110, 166);
+    return hsb(324, 49, 96);
 }
 
 + (UIColor *)flatPlumColor {
-    return rgb(94, 52, 94);
+    return hsb(300, 45, 37);
 }
 
 + (UIColor *)flatPowderBlueColor {
-    return rgb(172, 196, 253);
+    return hsb(222, 24, 95);
 }
 
 + (UIColor *)flatPurpleColor {
-    return rgb(116, 94, 197);
+    return hsb(253, 52, 77);
 }
 
 + (UIColor *)flatRedColor {
-    return rgb(231, 76, 60);
+    return hsb(6, 74, 91);
 }
 
 + (UIColor *)flatSandColor {
-    return rgb(240, 222, 180);
+    return hsb(42, 25, 94);
 }
 
 + (UIColor *)flatSkyBlueColor {
-    return rgb(52, 152, 219);
+    return hsb(204, 76, 86);
 }
 
 + (UIColor *)flatTealColor {
-    return rgb(58, 111, 129);
+    return hsb(195, 55, 51);
 }
 
 + (UIColor *)flatWatermelonColor {
-    return rgb(239, 113, 122);
+    return hsb(356, 53, 94);
 }
 
 + (UIColor *)flatWhiteColor {
-    return rgb(236, 240, 241);
+    return hsb(192, 2, 95);
 }
 
 + (UIColor *)flatYellowColor {
-    return rgb(255, 205, 2);
+    return hsb(48, 99, 100);
 }
 
 #pragma mark - Chameleon - Dark Shades
 
 + (UIColor *)flatBlackColorDark {
-    return rgb(38, 38, 38);
+    return hsb(0, 0, 15);
 }
 
 + (UIColor *)flatBlueColorDark {
-    return rgb(57, 76, 129);
+    return hsb(224, 56, 51);
 }
 
 + (UIColor *)flatBrownColorDark {
-    return rgb(80, 59, 44);
+    return hsb(25, 45, 31);
 }
 
 + (UIColor *)flatCoffeeColorDark {
-    return rgb(142, 114, 94);
+    return hsb(25, 34, 56);
 }
 
 + (UIColor *)flatForestGreenColorDark {
-    return rgb(45, 80, 54);
+    return hsb(135, 44, 31);
 }
 
 + (UIColor *)flatGrayColorDark {
-    return rgb(127, 140, 141);
+    return hsb(184, 10, 55);
 }
 
 + (UIColor *)flatGreenColorDark {
-    return rgb(39, 174, 96);
+    return hsb(145, 78, 68);
 }
 
 + (UIColor *)flatLimeColorDark {
-    return rgb(142, 176, 33);
+    return hsb(74, 81, 69);
 }
 
 + (UIColor *)flatMagentaColorDark {
-    return rgb(142, 68, 173);
+    return hsb(282, 61, 68);
 }
 
 + (UIColor *)flatMaroonColorDark {
-    return rgb(102, 38, 33);
+    return hsb(4, 68, 40);
 }
 
 + (UIColor *)flatMintColorDark {
-    return rgb(22, 160, 133);
+    return hsb(168, 86, 63);
 }
 
 + (UIColor *)flatNavyBlueColorDark {
-    return rgb(44, 62, 80);
+    return hsb(210, 45, 31);
 }
 
 + (UIColor *)flatOrangeColorDark {
-    return rgb(211, 84, 0);
+    return hsb(24, 100, 83);
 }
 
 + (UIColor *)flatPinkColorDark {
-    return rgb(219, 86, 142);
+    return hsb(327, 57, 83);
 }
 
 + (UIColor *)flatPlumColorDark {
-    return rgb(79, 43, 79);
+    return hsb(300, 46, 31);
 }
 
 + (UIColor *)flatPowderBlueColorDark {
-    return rgb(140, 166, 225);
+    return hsb(222, 28, 84);
 }
 
 + (UIColor *)flatPurpleColorDark {
-    return rgb(91, 72, 162);
+    return hsb(253, 56, 64);
 }
 
 + (UIColor *)flatRedColorDark {
-    return rgb(192, 57, 43);
+    return hsb(6, 78, 75);
 }
 
 + (UIColor *)flatSandColorDark {
-    return rgb(213, 194, 149);
+    return hsb(42, 30, 84);
 }
 
 + (UIColor *)flatSkyBlueColorDark {
-    return rgb(41, 128, 185);
+    return hsb(204, 78, 73);
 }
 
 + (UIColor *)flatTealColorDark {
-    return rgb(53, 98, 114);
+    return hsb(196, 54, 45);
 }
 
 + (UIColor *)flatWatermelonColorDark {
-    return rgb(217, 84, 89);
+    return hsb(358, 61, 85);
 }
 
 + (UIColor *)flatWhiteColorDark {
-    return rgb(189, 195, 199);
+    return hsb(204, 5, 78);
 }
 
 + (UIColor *)flatYellowColorDark {
-    return rgb(255, 168, 0);
+    return hsb(40, 100, 100);
 }
 
 #pragma mark - Chameleon - "Color With" Methods
 
 + (UIColor *)colorWithComplementaryFlatColorOf:(UIColor *)color {
     
-    // Convert our RGB Values to HSB
-    CGFloat h,s,b,a;
-    
-    // Check to make sure we have an actual color to work with (Clear returns clear)
-    if (![color getHue:&h saturation:&s brightness:&b alpha:&a]) {
-        return nil;
+    //Check if input UIColor is a gradient aka a pattern
+    if (CGColorGetPattern(color.CGColor)) {
+        
+        //Let's find the average color of the image and contrast against that.
+        CGSize size = {1, 1};
+        
+        //Create a 1x1 bitmap context
+        UIGraphicsBeginImageContext(size);
+        CGContextRef ctx = UIGraphicsGetCurrentContext();
+        
+        //Set the interpolation quality to medium
+        CGContextSetInterpolationQuality(ctx, kCGInterpolationMedium);
+        
+        //Draw image scaled down to this 1x1 pixel
+        [[self gradientImage] drawInRect:(CGRect){.size = size} blendMode:kCGBlendModeCopy alpha:1];
+        
+        //Read the RGB values from the context's buffer
+        uint8_t *data = CGBitmapContextGetData(ctx);
+        color = [UIColor colorWithRed:data[2] / 255.0f
+                                          green:data[1] / 255.0f
+                                           blue:data[0] / 255.0f
+                                          alpha:1];
+        UIGraphicsEndImageContext();
     }
     
-    //Multiply our value by 360 to convert to degrees
-    h *= 360;
+    // Extract & Check to make sure we have an actual color to work with (Clear returns clear)
+    CGFloat hue, saturation, brightness, alpha;
+    [color getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
     
-    // Select a color 180 degrees away on the colorwheel (i.e. for 50 it would be 230).
-    h += 180.0f;
-    if (h > 360.f) { h -= 360.0f;}
+    //Check if color is transparent
+    if (alpha == 0) {
+        return [UIColor clearColor];
+    }
     
-    // Convert back to an RGB color
-    UIColor *complementaryColor = [UIColor colorWithHue:h/360 saturation:s brightness:b alpha:a];
+    //Multiply our value by their max values to convert
+    hue *= 360;
+    saturation *= 100;
+    brightness *= 100;
     
-    //Create floats and assign our input color's rgb values to them
-    CGFloat red, green, blue, alpha;
-    [complementaryColor getRed:&red green:&green blue:&blue alpha:&alpha];
-    
-    //Multiply our values by 255 to convert
-    red *= 255;
-    green *= 255;
-    blue *= 255;
+    //Select a color with a hue 180 degrees away on the colorwheel (i.e. for 50 it would be 230).
+    hue += 180.0f;
+    if (hue > 360.f) {
+        hue -= 360.0f;
+    }
     
     //Round to the nearest whole number after multiplying
-    red = roundf(red);
-    green = roundf(green);
-    blue = roundf(blue);
+    hue = roundf(hue);
+    saturation = roundf(saturation);
+    brightness = roundf(brightness);
     
-    //Return complimentary color
-    return [self closestFlatColorR:red G:green B:blue];
+    //Store complimentary nonflat color
+    UIColor *complimentaryNonFlatColor = [UIColor colorWithHue:hue/360.0 saturation:saturation/100.0 brightness:brightness/100.0 alpha:alpha];
+    
+    //Retrieve LAB values from our complimentary nonflat color & return nearest flat color
+    return [self colorWithFlatVersionOf:complimentaryNonFlatColor];
 }
+
 
 + (UIColor *)colorWithFlatVersionOf:(UIColor *)color {
     
-    //Returns a flat version of the input color
-    CGFloat red, green, blue, alpha;
-    [color getRed:&red green:&green blue:&blue alpha:&alpha];
+    //Check if input UIColor is a gradient aka a pattern
+    if (CGColorGetPattern(color.CGColor)) {
+        
+        //Let's find the average color of the image and contrast against that.
+        CGSize size = {1, 1};
+        
+        //Create a 1x1 bitmap context
+        UIGraphicsBeginImageContext(size);
+        CGContextRef ctx = UIGraphicsGetCurrentContext();
+        
+        //Set the interpolation quality to medium
+        CGContextSetInterpolationQuality(ctx, kCGInterpolationMedium);
+        
+        //Draw image scaled down to this 1x1 pixel
+        [[self gradientImage] drawInRect:(CGRect){.size = size} blendMode:kCGBlendModeCopy alpha:1];
+        
+        //Read the RGB values from the context's buffer
+        uint8_t *data = CGBitmapContextGetData(ctx);
+        color = [UIColor colorWithRed:data[2] / 255.0f
+                                green:data[1] / 255.0f
+                                 blue:data[0] / 255.0f
+                                alpha:1];
+        UIGraphicsEndImageContext();
+    }
     
-    // Check to make sure we have an actual color to work with (Clear returns clear)
-    if (![color getRed:&red green:&green blue:&blue alpha:&alpha]) {
+    //Create CGFloats to hold our color values
+    CGFloat L, A, B, alpha;
+    
+    //Get LAB values for our color
+    [color getLightness:&L valueForA:&A valueForB:&B alpha:&alpha];
+    
+    if (![color getLightness:&L valueForA:&A valueForB:&B alpha:&alpha]) {
         return nil;
     }
     
-    //Multiply our values by 255 to convert
-    red *= 255;
-    green *= 255;
-    blue *= 255;
-    
-    //Round to the nearest whole number after multiplying
-    red = roundf(red);
-    green = roundf(green);
-    blue = roundf(blue);
-    
-    //Return flat color
-    return [self closestFlatColorR:red G:green B:blue];
+    //Find the nearest flat color
+    return [self nearestFlatColorForL:L A:A B:B alpha:1.0];
 }
 
+
+/* 
+ Deprecated as of version 1.1.0 Please use the method below this one.
+*/
+ 
 + (UIColor *)colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor {
+    
+    //Check if UIColor is a gradient aka a pattern
+    if (CGColorGetPattern(backgroundColor.CGColor)) {
+        
+        //Let's find the average color of the image and contrast against that.
+        CGSize size = {1, 1};
+        
+        //Create a 1x1 bitmap context
+        UIGraphicsBeginImageContext(size);
+        CGContextRef ctx = UIGraphicsGetCurrentContext();
+        
+        //Set the interpolation quality to medium
+        CGContextSetInterpolationQuality(ctx, kCGInterpolationMedium);
+        
+        //Draw image scaled down to this 1x1 pixel
+        [[self gradientImage] drawInRect:(CGRect){.size = size} blendMode:kCGBlendModeCopy alpha:1];
+        
+        //Read the RGB values from the context's buffer
+        uint8_t *data = CGBitmapContextGetData(ctx);
+        backgroundColor = [UIColor colorWithRed:data[2] / 255.0f
+                                          green:data[1] / 255.0f
+                                           blue:data[0] / 255.0f
+                                          alpha:1];
+        UIGraphicsEndImageContext();
+    }
     
     //Calculate Luminance
     CGFloat luminance;
-    CGFloat red, green, blue;
+    CGFloat red, green, blue, alpha;
     
-    //Check for clear or uncalculatable color and assume white - (Clear)
-    if (![backgroundColor getRed:&red green:&green blue:&blue alpha:nil]) {
-        return [UIColor flatWhiteColor];
+    //Check if color is transparent
+    if (alpha == 0) {
+        return [UIColor clearColor];
     }
     
     // Relative luminance in colorimetric spaces - http://en.wikipedia.org/wiki/Luminance_(relative)
 	red *= 0.2126f; green *= 0.7152f; blue *= 0.0722f;
     luminance = red + green + blue;
     
+    return (luminance > 0.5f) ? hsba(0, 0, 15, alpha) : hsba(192, 2, 95, alpha);
+}
+
++ (UIColor *)colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor isFlat:(BOOL)flat {
+    
+    //Check if UIColor is a gradient aka a pattern
+    if (CGColorGetPattern(backgroundColor.CGColor)) {
+        
+        //Let's find the average color of the image and contrast against that.
+        CGSize size = {1, 1};
+        
+        //Create a 1x1 bitmap context
+        UIGraphicsBeginImageContext(size);
+        CGContextRef ctx = UIGraphicsGetCurrentContext();
+        
+        //Set the interpolation quality to medium
+        CGContextSetInterpolationQuality(ctx, kCGInterpolationMedium);
+        
+        //Draw image scaled down to this 1x1 pixel
+        [[self gradientImage] drawInRect:(CGRect){.size = size} blendMode:kCGBlendModeCopy alpha:1];
+        
+        //Read the RGB values from the context's buffer
+        uint8_t *data = CGBitmapContextGetData(ctx);
+        backgroundColor = [UIColor colorWithRed:data[2] / 255.0f
+                                         green:data[1] / 255.0f
+                                          blue:data[0] / 255.0f
+                                         alpha:1];
+        UIGraphicsEndImageContext();
+    }
+    
+    //Calculate Luminance
+    CGFloat luminance;
+    CGFloat red, green, blue, alpha;
+    [backgroundColor getRed:&red green:&green blue:&blue alpha:&alpha];
+    
+    //Check if color is transparent
+    if (alpha == 0) {
+        return [UIColor clearColor];
+    }
+    
+    // Relative luminance in colorimetric spaces - http://en.wikipedia.org/wiki/Luminance_(relative)
+	red *= 0.2126f; green *= 0.7152f; blue *= 0.0722f;
+    luminance = red + green + blue;
+    
+    if (flat == NO) {
+        return (luminance > 0.5f) ? rgba(0, 0, 0, alpha) : rgba(255, 255, 255, alpha);
+    } else {
+        return (luminance > 0.5f) ? hsba(0, 0, 15, alpha) : hsba(192, 2, 95, alpha);
+    }
+    
     return (luminance > 0.5f) ? [UIColor flatBlackColorDark] : [UIColor flatWhiteColor];
+}
+
++ (UIColor *)colorWithGradientStyle:(GradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors; {
+    
+    //Create our background gradient layer
+    CAGradientLayer *backgroundGradientLayer = [CAGradientLayer layer];
+    
+    //Set the frame to our object's bounds
+    backgroundGradientLayer.frame = frame;
+    
+    //To simplfy formatting, we'll iterate through our colors array and create a mutable array with their CG counterparts
+    NSMutableArray *cgColors = [[NSMutableArray alloc] init];
+    for (UIColor *color in colors) {
+        [cgColors addObject:(id)[color CGColor]];
+    }
+    
+    switch (gradientStyle) {
+        case linearLeftToRight: {
+            
+            //Set out gradient's colors
+            backgroundGradientLayer.colors = cgColors;
+            
+            //Specify the direction our gradient will take
+            [backgroundGradientLayer setStartPoint:CGPointMake(0.0, 0.5)];
+            [backgroundGradientLayer setEndPoint:CGPointMake(1.0, 0.5)];
+            
+            //Convert our CALayer to a UIImage object
+            UIGraphicsBeginImageContext(backgroundGradientLayer.bounds.size);
+            [backgroundGradientLayer renderInContext:UIGraphicsGetCurrentContext()];
+            UIImage *backgroundColorImage = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+        
+            [self setGradientImage:backgroundColorImage];
+            return [UIColor colorWithPatternImage:backgroundColorImage];
+        }
+            
+        case linearTopToBottom:
+        default: {
+            
+            //Set out gradient's colors
+            backgroundGradientLayer.colors = cgColors;
+            
+            //Convert our CALayer to a UIImage object
+            UIGraphicsBeginImageContext(backgroundGradientLayer.bounds.size);
+            [backgroundGradientLayer renderInContext:UIGraphicsGetCurrentContext()];
+            UIImage *backgroundColorImage = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+            
+            [self setGradientImage:backgroundColorImage];
+            return [UIColor colorWithPatternImage:backgroundColorImage];
+        }
+            
+    }
 }
 
 #pragma mark - Chameleon - Random Color Methods
 
++ (NSInteger)generateRandomNumberWithMax:(NSInteger)max {
+    
+    //Choose a random number between 0 and our number of available colors
+    return arc4random_uniform((UInt32)max);
+}
+
 + (UIColor *)randomFlatColor {
     
     //Number of colors to choose from
-    const NSInteger numberOfPossibleColors = 48;
+    const uint32_t numberOfPossibleColors = 48;
     
     //Chose one of those colors at random
-    u_int32_t randomColorChosen = arc4random_uniform(numberOfPossibleColors);
+    NSInteger randomColorChosen = [[self class] generateRandomNumberWithMax:numberOfPossibleColors];
     
-    //Assign a random color based on randomColorChosen
-    UIColor *randomColor;
-    switch (randomColorChosen) {
-        case 0:
-            randomColor = [self flatBlackColor];
-            break;
-        case 1:
-            randomColor = [self flatBlackColorDark];
-            break;
-        case 2:
-            randomColor = [self flatSkyBlueColor];
-            break;
-        case 3:
-            randomColor = [self flatSkyBlueColorDark];
-            break;
-        case 4:
-            randomColor = [self flatBrownColor];
-            break;
-        case 5:
-            randomColor = [self flatBrownColorDark];
-            break;
-        case 6:
-            randomColor = [self flatForestGreenColor];
-            break;
-        case 7:
-            randomColor = [self flatForestGreenColorDark];
-            break;
-        case 8:
-            randomColor = [self flatGrayColor];
-            break;
-        case 9:
-            randomColor = [self flatGrayColorDark];
-            break;
-        case 10:
-            randomColor = [self flatGreenColor];
-            break;
-        case 11:
-            randomColor = [self flatGreenColorDark];
-            break;
-        case 12:
-            randomColor = [self flatMagentaColor];
-            break;
-        case 13:
-            randomColor = [self flatMagentaColorDark];
-            break;
-        case 14:
-            randomColor = [self flatMintColor];
-            break;
-        case 15:
-            randomColor = [self flatMintColorDark];
-            break;
-        case 16:
-            randomColor = [self flatNavyBlueColor];
-            break;
-        case 17:
-            randomColor = [self flatNavyBlueColorDark];
-            break;
-        case 18:
-            randomColor = [self flatOrangeColor];
-            break;
-        case 19:
-            randomColor = [self flatOrangeColorDark];
-            break;
-        case 20:
-            randomColor = [self flatPinkColor];
-            break;
-        case 21:
-            randomColor = [self flatPinkColorDark];
-            break;
-        case 22:
-            randomColor = [self flatPurpleColor];
-            break;
-        case 23:
-            randomColor = [self flatPurpleColorDark];
-            break;
-        case 24:
-            randomColor = [self flatRedColor];
-            break;
-        case 25:
-            randomColor = [self flatRedColorDark];
-            break;
-        case 26:
-            randomColor = [self flatSandColor];
-            break;
-        case 27:
-            randomColor = [self flatSandColorDark];
-            break;
-        case 28:
-            randomColor = [self flatWhiteColor];
-            break;
-        case 29:
-            randomColor = [self flatWhiteColorDark];
-            break;
-        case 30:
-            randomColor = [self flatYellowColor];
-            break;
-        case 31:
-            randomColor = [self flatYellowColorDark];
-            break;
-        case 32:
-            randomColor = [self flatPlumColor];
-            break;
-        case 33:
-            randomColor = [self flatPlumColorDark];
-            break;
-        case 34:
-            randomColor = [self flatMaroonColor];
-            break;
-        case 35:
-            randomColor = [self flatMaroonColorDark];
-            break;
-        case 36:
-            randomColor = [self flatWatermelonColor];
-            break;
-        case 37:
-            randomColor = [self flatWatermelonColorDark];
-            break;
-        case 38:
-            randomColor = [self flatCoffeeColor];
-            break;
-        case 39:
-            randomColor = [self flatCoffeeColorDark];
-            break;
-        case 40:
-            randomColor = [self flatTealColor];
-            break;
-        case 41:
-            randomColor = [self flatTealColorDark];
-            break;
-        case 42:
-            randomColor = [self flatLimeColor];
-            break;
-        case 43:
-            randomColor = [self flatLimeColorDark];
-            break;
-        case 44:
-            randomColor = [self flatPowderBlueColor];
-            break;
-        case 45:
-            randomColor = [self flatPowderBlueColorDark];
-            break;
-        case 46:
-            randomColor = [self flatBlueColor];
-            break;
-        case 47:
-            randomColor = [self flatBlueColorDark];
-            break;
-        default:
-            NSAssert(0, @"Oops! Unrecognized color selected as random color.");
-            break;
+    //Check if a previous random number exists
+    if (![[NSUserDefaults standardUserDefaults] integerForKey:@"previousRandomNumber"]) {
+        
+        //If no previous number exists, save it as such and find the matching color
+        [[NSUserDefaults standardUserDefaults] setInteger:randomColorChosen forKey:@"previousRandomNumber"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+    } else {
+        
+        //Keep generating a random number until it is different than the one generated last time
+        while (randomColorChosen == [[NSUserDefaults standardUserDefaults] integerForKey:@"previousRandomNumber"]) {
+            randomColorChosen = [[self class] generateRandomNumberWithMax:numberOfPossibleColors];
+        }
+        
+        //Once a new number has been generated then store it as the previous number for next time and proceed
+        [[NSUserDefaults standardUserDefaults] setInteger:randomColorChosen forKey:@"previousRandomNumber"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
     }
-    return randomColor;
+    
+    return [[self flatColors] objectAtIndex:randomColorChosen];
 }
 
 + (UIColor *)colorWithRandomFlatColorOfShadeStyle:(ShadeStyle)shadeStyle {
@@ -480,7 +541,26 @@
     const NSInteger numberOfPossibleColors = 24;
     
     //Chose one of those colors at random
-    u_int32_t randomColorChosen = arc4random_uniform(numberOfPossibleColors);
+    NSInteger randomColorChosen = [[self class] generateRandomNumberWithMax:numberOfPossibleColors];
+    
+    //Check if a previous random number exists
+    if (![[NSUserDefaults standardUserDefaults] integerForKey:@"previousRandomNumber"]) {
+        
+        //If no previous number exists, save it as such and find the matching color
+        [[NSUserDefaults standardUserDefaults] setInteger:randomColorChosen forKey:@"previousRandomNumber"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+    } else {
+        
+        //Keep generating a random number until it is different than the one generated last time
+        while (randomColorChosen == [[NSUserDefaults standardUserDefaults] integerForKey:@"previousRandomNumber"]) {
+            randomColorChosen = [[self class] generateRandomNumberWithMax:numberOfPossibleColors];
+        }
+        
+        //Once a new number has been generated then store it as the previous number for next time and proceed
+        [[NSUserDefaults standardUserDefaults] setInteger:randomColorChosen forKey:@"previousRandomNumber"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
     
     //Assign a random color based on randomColorChosen
     UIColor *randomColor;
@@ -488,211 +568,139 @@
     //Return a color depending on the specified shade
     switch (shadeStyle) {
         case dark: {
-            switch (randomColorChosen) {
-                case 0:
-                    randomColor = [self flatBlackColorDark];
-                    break;
-                case 1:
-                    randomColor = [self flatSkyBlueColorDark];
-                    break;
-                case 2:
-                    randomColor = [self flatBrownColorDark];
-                    break;
-                case 3:
-                    randomColor = [self flatForestGreenColorDark];
-                    break;
-                case 4:
-                    randomColor = [self flatGrayColorDark];
-                    break;
-                case 5:
-                    randomColor = [self flatGreenColorDark];
-                    break;
-                case 6:
-                    randomColor = [self flatMagentaColorDark];
-                    break;
-                case 7:
-                    randomColor = [self flatMintColorDark];
-                    break;
-                case 8:
-                    randomColor = [self flatNavyBlueColorDark];
-                    break;
-                case 9:
-                    randomColor = [self flatOrangeColorDark];
-                    break;
-                case 10:
-                    randomColor = [self flatPinkColorDark];
-                    break;
-                case 11:
-                    randomColor = [self flatPurpleColorDark];
-                    break;
-                case 12:
-                    randomColor = [self flatRedColorDark];
-                    break;
-                case 13:
-                    randomColor = [self flatSandColorDark];
-                    break;
-                case 14:
-                    randomColor = [self flatWhiteColorDark];
-                    break;
-                case 15:
-                    randomColor = [self flatYellowColorDark];
-                    break;
-                case 16:
-                    randomColor = [self flatPlumColorDark];
-                    break;
-                case 17:
-                    randomColor = [self flatMaroonColorDark];
-                    break;
-                case 18:
-                    randomColor = [self flatWatermelonColorDark];
-                    break;
-                case 19:
-                    randomColor = [self flatCoffeeColorDark];
-                    break;
-                case 20:
-                    randomColor = [self flatTealColorDark];
-                    break;
-                case 21:
-                    randomColor = [self flatLimeColorDark];
-                    break;
-                case 22:
-                    randomColor = [self flatPowderBlueColorDark];
-                    break;
-                case 23:
-                    randomColor = [self flatBlueColorDark];
-                    break;
-                default:
-                    NSAssert(0, @"Oops! Unrecognized color selected as random color.");
-                    break;
-            } break;
+            
+            NSArray *darkColors = @[FlatBlackDark, FlatBlueDark, FlatBrownDark, FlatCoffeeDark, FlatForestGreenDark, FlatGrayDark, FlatGreenDark, FlatLimeDark, FlatMagentaDark, FlatMaroonDark, FlatMintDark, FlatNavyBlueDark, FlatOrangeDark, FlatPinkDark, FlatPlumDark, FlatPowderBlueDark, FlatPurpleDark, FlatRedDark, FlatSandDark, FlatSkyBlueDark, FlatTealDark, FlatWatermelonDark, FlatWhiteDark, FlatYellowDark];
+            
+            randomColor = [darkColors objectAtIndex:randomColorChosen];
+            
         }
             
         case light:
         default: {
+        
+            NSArray *lightColors = @[FlatBlack, FlatBlue, FlatBrown, FlatCoffee, FlatForestGreen, FlatGray, FlatGreen, FlatLime, FlatMagenta, FlatMaroon, FlatMint, FlatNavyBlue, FlatOrange, FlatPink, FlatPlum, FlatPowderBlue, FlatPurple, FlatRed, FlatSand, FlatSkyBlue, FlatTeal, FlatWatermelon, FlatWhite, FlatYellow];
             
-            switch (randomColorChosen) {
-                case 0:
-                    randomColor = [self flatBlackColor];
-                    break;
-                case 1:
-                    randomColor = [self flatSkyBlueColor];
-                    break;
-                case 2:
-                    randomColor = [self flatBrownColor];
-                    break;
-                case 3:
-                    randomColor = [self flatForestGreenColor];
-                    break;
-                case 4:
-                    randomColor = [self flatGrayColor];
-                    break;
-                case 5:
-                    randomColor = [self flatGreenColor];
-                    break;
-                case 6:
-                    randomColor = [self flatMagentaColor];
-                    break;
-                case 7:
-                    randomColor = [self flatMintColor];
-                    break;
-                case 8:
-                    randomColor = [self flatNavyBlueColor];
-                    break;
-                case 9:
-                    randomColor = [self flatOrangeColor];
-                    break;
-                case 10:
-                    randomColor = [self flatPinkColor];
-                    break;
-                case 11:
-                    randomColor = [self flatPurpleColor];
-                    break;
-                case 12:
-                    randomColor = [self flatRedColor];
-                    break;
-                case 13:
-                    randomColor = [self flatSandColor];
-                    break;
-                case 14:
-                    randomColor = [self flatWhiteColor];
-                    break;
-                case 15:
-                    randomColor = [self flatYellowColor];
-                    break;
-                case 16:
-                    randomColor = [self flatPlumColor];
-                    break;
-                case 17:
-                    randomColor = [self flatMaroonColor];
-                    break;
-                case 18:
-                    randomColor = [self flatWatermelonColor];
-                    break;
-                case 19:
-                    randomColor = [self flatCoffeeColor];
-                    break;
-                case 20:
-                    randomColor = [self flatTealColor];
-                    break;
-                case 21:
-                    randomColor = [self flatLimeColor];
-                    break;
-                case 22:
-                    randomColor = [self flatPowderBlueColor];
-                    break;
-                case 23:
-                    randomColor = [self flatBlueColor];
-                    break;
-                default:
-                    NSAssert(0, @"Oops! Unrecognized color selected as random color.");
-                    break;
-            } break;
+            randomColor = [lightColors objectAtIndex:randomColorChosen];
         }
-    }
 
     return randomColor;
+    
+    }
 }
+
 
 #pragma mark - Chameleon Internal Methods
 
-// Array of All Red Values of Every Flat Color
-+ (NSArray *)redValues {
-    return @[@38, @52, @94, @52, @149, @46, @26, @52, @230, @155, @231, @255, @236, @43, @41, @80, @45, @127, @39, @22, @44, @211, @142, @192, @189, @255, @240, @213, @244, @212, @116, @91, @94, @79, @121, @102, @239, @217, @163, @142, @58, @53, @165, @142, @172, @140, @80, @57];
+//Array of all our colors
++ (NSArray *)flatColors {
+    
+    return @[FlatBlack, FlatBlackDark, FlatBlue, FlatBlueDark, FlatBrown, FlatBrownDark, FlatCoffee, FlatCoffeeDark, FlatForestGreen, FlatForestGreenDark, FlatGray, FlatGrayDark, FlatGreen, FlatGreenDark, FlatLime, FlatLimeDark, FlatMagenta, FlatMagentaDark, FlatMaroon, FlatMaroonDark, FlatMint, FlatMintDark, FlatNavyBlue, FlatNavyBlueDark, FlatOrange, FlatOrangeDark, FlatPink, FlatPinkDark, FlatPlum, FlatPlumDark, FlatPowderBlue, FlatPowderBlueDark, FlatPurple, FlatPurpleDark, FlatRed, FlatRedDark, FlatSand, FlatSandDark, FlatSkyBlue, FlatSkyBlueDark, FlatTeal, FlatTealDark, FlatWatermelon, FlatWatermelonDark, FlatWhite, FlatWhiteDark, FlatYellow, FlatYellowDark];
 }
 
-// Array of All Green Values of Every Flat Color
-+ (NSArray *)greenValues {
-    return @[@38, @152, @69, @95, @165, @204, @188, @73, @126, @89, @76, @205, @240, @43, @128, @59, @80, @140, @174, @160, @62, @84, @68, @57, @195, @168, @222, @194, @124, @92, @94, @72, @52, @43, @48, @38, @113, @84, @134, @114, @111, @98, @198, @176, @196, @166, @101, @76];
+//Calculate the total sum of differences - Euclidian distance
+//Chameleon is now using the CIEDE2000 formula to calculate distances between 2 colors.
+//More info: http://en.wikipedia.org/wiki/Color_difference
++ (float)totalSumOfDifferencesFroml1:(CGFloat)L1 l2:(CGFloat)L2 a1:(CGFloat)A1
+                                  a2:(CGFloat)A2 b1:(CGFloat)B1 b2:(CGFloat)B2 {
+
+    //Get C Values in LCH from LAB Values
+    CGFloat C1 = sqrt(pow(A1, 2) + pow(B1, 2));
+    CGFloat C2 = sqrt(pow(A2, 2) + pow(B2, 2));
+    
+    //CIE Weights
+    CGFloat KL = 1;
+    CGFloat KC = 1;
+    CGFloat KH = 1;
+    
+    //Variables specifically set for CIE:2000
+    CGFloat DeltaPrimeL = L2 - L1;
+    CGFloat MeanL = ((L1 + L2) / 2);
+    CGFloat MeanC = ((C1 + C2) / 2);
+    CGFloat A1Prime = A1 + A1 / 2 * (1 - sqrt(pow(MeanC, 7.0) / (pow(MeanC, 7.0) + pow(25.0, 7.0))));
+    CGFloat A2Prime = A2 + A2 / 2 * (1 - sqrt(pow(MeanC, 7.0) / (pow(MeanC, 7.0) + pow(25.0, 7.0))));
+    CGFloat C1Prime = sqrt(pow(A1Prime, 2) + pow(B1, 2));
+    CGFloat C2Prime = sqrt(pow(A2Prime, 2) + pow(B2, 2));
+    CGFloat DeltaPrimeC = C1Prime - C2Prime;
+    CGFloat DeltaC = C1 - C2;
+    CGFloat MeanCPrime = (C1Prime + C2Prime) / 2;
+    CGFloat H1Prime = fmodf(atan2(B1, A1Prime), (360.0 * M_PI/180));
+    CGFloat H2Prime = fmodf(atan2(B2, A2Prime), (360.0 * M_PI/180));
+    
+    //Run everything through our △H' Function
+    CGFloat hDeltaPrime = 0;
+    if (fabsf(H1Prime - H2Prime) <= (180.0 * M_PI/180)) {
+        
+        hDeltaPrime = H2Prime - H1Prime;
+        
+    } else if (H2Prime <= H1Prime) {
+        
+        hDeltaPrime = (H2Prime - H1Prime) + ((360.0 * M_PI/180));
+        
+    } else {
+        
+        hDeltaPrime = (H2Prime - H1Prime) - ((360.0 * M_PI/180));
+    }
+    
+    CGFloat deltaHPrime = 2 * (sqrt(C1Prime*C2Prime)) * sin(hDeltaPrime/2);
+    
+    //Get Mean H' Value
+    CGFloat MeanHPrime = 0;
+    if (fabsf(H1Prime-H2Prime) > (180.0 * M_PI/180)) {
+        
+        MeanHPrime = (H1Prime + H2Prime + (360.0 * M_PI/180)) / 2;
+        
+    } else {
+        
+        MeanHPrime = (H1Prime + H2Prime) / 2;
+    }
+    
+    CGFloat T =  1 - 0.17 * cos(MeanHPrime - (30.0 * M_PI/180)) + 0.24 * cos(2 * MeanHPrime)+0.32 * cos(3 * MeanHPrime + (6.0 * M_PI/180)) - 0.20 * cos(4 * MeanHPrime - (63.0 * M_PI/180));
+    
+    CGFloat SL = 1 + (0.015 * pow((MeanL - 50), 2))/sqrt(20 + pow((MeanL - 50), 2));
+    CGFloat SC = 1 + 0.045 * MeanCPrime;
+    CGFloat SH = 1 + 0.015 * MeanCPrime * T;
+    
+    CGFloat RT = -2 * sqrt(pow(MeanCPrime, 7) / (pow(MeanCPrime, 7) + pow(25.0, 7))) * sin((60.0 * M_PI/180)* exp(-1 * pow((MeanCPrime - (275.0 * M_PI/180)) / (25.0 * M_PI/180), 2)));
+    
+    
+    //Get total difference
+    CGFloat TotalDifference = sqrt(pow((DeltaPrimeL / (KL * SL)), 2) + pow((DeltaPrimeC / (KC * SC)), 2) + pow((deltaHPrime / (KH * SH)), 2) + RT * (DeltaC / (KC * SC)) * (deltaHPrime / (KH * SH)));
+    
+    return TotalDifference;
 }
 
-// Array of All Blue Values of Every Flat Color
-+ (NSArray *)blueValues {
-    return @[@38, @219, @52, @65, @166, @113, @156, @94, @34, @182, @60, @2, @241, @43, @185, @44, @54, @141, @96, @133, @80, @0, @173, @43, @199, @0, @180, @149, @195, @158, @197, @162, @94, @79, @42, @33, @122, @89, @113, @94, @129, @114, @59, @33, @253, @225, @161, @129];
-}
-
-//Compare flat color values to the input color's values
-+ (UIColor *)closestFlatColorR:(float)r1 G:(float)g1 B:(float)b1 {
++ (UIColor *)nearestFlatColorForL:(CGFloat)l1 A:(CGFloat)a1 B:(CGFloat)b1 alpha:(CGFloat)alpha{
     
     //Keep track of our index
     float index = 0;
     
-    //Start with a randombig number to make sure the first comparison gets saved.
+    //Start with a random big number to make sure the first comparison gets saved.
     float smallestDistance = 1000000;
     float previousDistance = 1000000;
     float currentDistance;
     
-    //We're interested in the color with values returning the smallest sum of total differences so we need to cross reference our input color's values with every flat color's value
-    for (int i=0; i<[[self redValues] count]; i++ ) {
+    //Our values
+    CGFloat l2, a2, b2;
+    
+    //We're interested in the color with values returning the smallest sum of total differences so we need to cross reference our input color's values with every flat color's values
+    for (int i=0; i<[[self flatColors] count]; i++ ) {
         
+        //Check that index is not zero
         if (i!=0 ) {
-            previousDistance = [self totalSumOfDifferencesFromr1:r1 r2:[[self redValues][i - 1] floatValue]
-                                                              g1:g1 g2:[[self greenValues][i - 1] floatValue]
-                                                              b1:b1 b2:[[self blueValues][i - 1] floatValue]];
+            //Extract LAB values from colors in array and store it as the previous index
+            [[self flatColors][i - 1] getLightness:&l2 valueForA:&a2 valueForB:&b2 alpha:nil];
+            
+            previousDistance = [self totalSumOfDifferencesFroml1:l1 l2:l2
+                                                              a1:a1 a2:a2
+                                                              b1:b1 b2:b2];
         }
         
-        currentDistance = [self totalSumOfDifferencesFromr1:r1 r2:[[[self redValues] objectAtIndex:i] floatValue]
-                                                         g1:g1 g2:[[[self greenValues] objectAtIndex:i] floatValue]
-                                                         b1:b1 b2:[[[self blueValues] objectAtIndex:i] floatValue]];
+        //Extract LAB values from colors in array and store it as the current index
+        [[self flatColors][i] getLightness:&l2 valueForA:&a2 valueForB:&b2 alpha:nil];
+        
+        currentDistance = [self totalSumOfDifferencesFroml1:l1 l2:l2
+                                                         a1:a1 a2:a2
+                                                         b1:b1 b2:b2];
         
         //We're only interested in the smallest difference
         if (currentDistance < previousDistance) {
@@ -702,29 +710,14 @@
             }
         }
     }
+
     
-    //Collect the RGB Values of the color where the smallest difference was returned
-    float newRed = [[[self redValues] objectAtIndex:index] floatValue];
-    float newGreen = [[[self greenValues] objectAtIndex:index] floatValue];
-    float newBlue = [[[self blueValues] objectAtIndex:index] floatValue];
-    
+    //Collect the RGB Values of the color where the smallest difference was found
+    CGFloat red, green, blue;
+    [[[self flatColors] objectAtIndex:index] getRed:&red green:&green blue:&blue alpha:nil];
+
     //Return the closest flat color
-    return rgb(newRed, newGreen, newBlue);
+    return rgba(red*255, green*255, blue*255, alpha);
 }
-
-//Calculate the total sum of differences
-+ (float)totalSumOfDifferencesFromr1:(float)r1 r2:(float)r2 g1:(float)g1 g2:(float)g2 b1:(float)b1 b2:(float)b2 {
-    
-    /*
-     We could also use a weighted approach (CIE94), but since we're rounding off the closest flat color it probably won't matter.
-     //float d = sqrt(powf(((r2-r1)*0.3),2)+powf(((g2-g1)*0.59),2)+powf(((b2-b1)*0.11),2));
-     More info: http://bit.ly/CIE94colordistance
-     */
-     
-    float d = sqrt(powf((r2-r1),2)+powf((g2-g1),2)+powf((b2-b1),2));
-    return d;
-}
-
-
 
 @end

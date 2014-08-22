@@ -31,7 +31,14 @@
 
 @interface UIViewController (Chameleon)
 
+/**
+ *  Find and convert every color object in a UIViewController to its closest flat color in the LAB colorspace.
+ */
 - (void)flatify;
+
+/**
+ *  Find and convert every color object in a UIViewController to its closest flat color in the LAB colorspace. Converts all text to either a white or black color depending on what contrasts more with the color beneath the text.
+ */
 - (void)flatifyAndContrast;
 
 @end

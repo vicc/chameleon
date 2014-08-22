@@ -28,6 +28,8 @@
  */
 
 #import "NSArray+Chameleon.h"
+#import "ChameleonMacros.h"
+#import "UIColor+CIELAB.h"
 
 @implementation NSArray (Chameleon)
 
@@ -35,24 +37,14 @@
 
 + (NSArray *)arrayOfColorsWithColorScheme:(ColorScheme)colorScheme for:(UIColor *)color flatScheme:(BOOL)isFlatScheme {
     
-    //Splt our color int HSB values
+    //Extract HSB values from input color
     CGFloat h, s, b, a;
     [color getHue:&h saturation:&s brightness:&b alpha:&a];
     
-    // Check to make sure we have an actual color to work with (Clear returns clear)
-    if (![color getHue:&h saturation:&s brightness:&b alpha:&a]) {
-        return nil;
-    }
-    
-    //Multiply our values by the highest possible value to convert
+    //Multiply our values by the max value to convert
     h *= 360;
     s *= 100;
     b *= 100;
-    
-    //Round to the nearest whole number after multiplying
-    h = roundf(h);
-    s = roundf(s);
-    b = roundf(b);
 
     //Choose Between Schemes
     switch (colorScheme) {
@@ -72,7 +64,7 @@
 
 #pragma mark - Chameleon - Internal Color Scheme Methods
 
-//Creates an array with 2 analagous colors on both sides of the predefined color
+//Creates an array with 2 analagous colors on each side of the predefined color
 + (NSArray *)analogousColorSchemeFromHue:(CGFloat)h Saturation:(CGFloat)s Brightness:(CGFloat)b flat:(BOOL)isFlat {
     
     UIColor *firstColor = [UIColor colorWithHue:([[self class] add:-32 to:h])/360
@@ -113,7 +105,7 @@
     return @[firstColor, secondColor, thirdColor, fourthColor, fifthColor];
 }
 
-// Creates an array of 5 colors, both 90 degrees and 180 deggres away from the predefined colors on both sides
+// Creates an array of 5 colors, both 90 degrees and 180 degrees away from the predefined colors on both sides
 + (NSArray *)complementaryColorSchemeFromHue:(CGFloat)h Saturation:(CGFloat)s Brightness:(CGFloat)b flat:(BOOL)isFlat {
     
     UIColor *firstColor = [UIColor colorWithHue:h/360
@@ -132,14 +124,15 @@
                                           alpha:1.0];
     
     UIColor *fourthColor = [UIColor colorWithHue:[[self class] add:180 to:h]/360
-                                      saturation:(s+20)/100
-                                      brightness:(b-30)/100
-                                           alpha:1.0];
-    
-    UIColor *fifthColor = [UIColor colorWithHue:[[self class] add:180 to:h]/360
                                      saturation:s/100
                                      brightness:b/100
                                           alpha:1.0];
+    
+    UIColor *fifthColor = [UIColor colorWithHue:[[self class] add:180 to:h]/360
+                                      saturation:(s+20)/100
+                                      brightness:(b-30)/100
+                                           alpha:1.0];
+
     
     if (isFlat) {
         
@@ -155,7 +148,7 @@
    
 }
 
-// Creates an array of 5 colors, both 120 degrees and 240 deggres away from the predefined colors on both sides
+// Creates an array of 5 colors, both 120 degrees and 240 degrees away from the predefined colors on both sides
 + (NSArray *)triadicColorSchemeFromHue:(CGFloat)h Saturation:(CGFloat)s Brightness:(CGFloat)b flat:(BOOL)isFlat  {
     
     UIColor *firstColor = [UIColor colorWithHue:[[self class] add:120 to:h]/360
@@ -174,14 +167,14 @@
                                           alpha:1.0];
     
     UIColor *fourthColor = [UIColor colorWithHue:[[self class] add:240 to:h]/360
-                                      saturation:s/100
-                                      brightness:(b-30)/100
+                                      saturation:(7*s/6)/100
+                                      brightness:(b-5)/100
                                            alpha:1.0];
     
     UIColor *fifthColor = [UIColor colorWithHue:[[self class] add:240 to:h]/360
-                                     saturation:(7*s/6)/100
-                                     brightness:(b-5)/100
-                                          alpha:1.0];
+                                      saturation:s/100
+                                      brightness:(b-30)/100
+                                           alpha:1.0];
     
     if (isFlat) {
         
@@ -217,63 +210,128 @@
     }
 }
 
-// Array of All Red Values of Every Flat Color
-+ (NSArray *)redValues {
-    return @[@38, @52, @94, @52, @149, @46, @26, @52, @230, @155, @231, @255, @236, @43, @41, @80, @45, @127, @39, @22, @44, @211, @142, @192, @189, @255, @240, @213, @244, @212, @116, @91, @94, @79, @121, @102, @239, @217, @163, @142, @58, @53, @165, @142, @172, @140, @80, @57];
-}
-
-// Array of All Green Values of Every Flat Color
-+ (NSArray *)greenValues {
-    return @[@38, @152, @69, @95, @165, @204, @188, @73, @126, @89, @76, @205, @240, @43, @128, @59, @80, @140, @174, @160, @62, @84, @68, @57, @195, @168, @222, @194, @124, @92, @94, @72, @52, @43, @48, @38, @113, @84, @134, @114, @111, @98, @198, @176, @196, @166, @101, @76];
-}
-
-// Array of All Blue Values of Every Flat Color
-+ (NSArray *)blueValues {
-    return @[@38, @219, @52, @65, @166, @113, @156, @94, @34, @182, @60, @2, @241, @43, @185, @44, @54, @141, @96, @133, @80, @0, @173, @43, @199, @0, @180, @149, @195, @158, @197, @162, @94, @79, @42, @33, @122, @89, @113, @94, @129, @114, @59, @33, @253, @225, @161, @129];
-}
-
 + (UIColor *)colorWithFlatVersionOf:(UIColor *)color {
     
-    //Returns a flat version of the input color
-    CGFloat red, green, blue, alpha;
-    [color getRed:&red green:&green blue:&blue alpha:&alpha];
+    //Create CGFloats to hold our color values
+    CGFloat L, A, B, alpha;
     
-    //Convert into 0-255 Scale
-    red *= 255;
-    green *= 255;
-    blue *= 255;
+    //Get LAB values for our color
+    [color getLightness:&L valueForA:&A valueForB:&B alpha:&alpha];
     
-    //Round to the nearest whole number after multiplying
-    red = roundf(red);
-    green = roundf(green);
-    blue = roundf(blue);
-    
-    return [self closestFlatColorR:red G:green B:blue];
+    //Find the nearest flat color
+    return [self nearestFlatColorForL:L A:A B:B alpha:1.0];
 }
 
-//Compare flat color values to the input color's values
-+ (UIColor *)closestFlatColorR:(float)r1 G:(float)g1 B:(float)b1 {
+//Array of all our colors
++ (NSArray *)flatColors {
+    
+    return @[FlatBlack, FlatBlackDark, FlatBlue, FlatBlueDark, FlatBrown, FlatBrownDark, FlatCoffee, FlatCoffeeDark, FlatForestGreen, FlatForestGreenDark, FlatGray, FlatGrayDark, FlatGreen, FlatGreenDark, FlatLime, FlatLimeDark, FlatMagenta, FlatMagentaDark, FlatMaroon, FlatMaroonDark, FlatMint, FlatMintDark, FlatNavyBlue, FlatNavyBlueDark, FlatOrange, FlatOrangeDark, FlatPink, FlatPinkDark, FlatPlum, FlatPlumDark, FlatPowderBlue, FlatPowderBlueDark, FlatPurple, FlatPurpleDark, FlatRed, FlatRedDark, FlatSand, FlatSandDark, FlatSkyBlue, FlatSkyBlueDark, FlatTeal, FlatTealDark, FlatWatermelon, FlatWatermelonDark, FlatWhite, FlatWhiteDark, FlatYellow, FlatYellowDark];
+}
+
+//Calculate the total sum of differences - Euclidian distance
+//Chameleon is now using the CIEDE2000 formula to calculate distances between 2 colors.
+//More info: http://en.wikipedia.org/wiki/Color_difference
++ (float)totalSumOfDifferencesFroml1:(CGFloat)L1 l2:(CGFloat)L2 a1:(CGFloat)A1
+                                  a2:(CGFloat)A2 b1:(CGFloat)B1 b2:(CGFloat)B2 {
+    
+    //Get C Values in LCH from LAB Values
+    CGFloat C1 = sqrt(pow(A1, 2) + pow(B1, 2));
+    CGFloat C2 = sqrt(pow(A2, 2) + pow(B2, 2));
+    
+    //CIE Weights
+    CGFloat KL = 1;
+    CGFloat KC = 1;
+    CGFloat KH = 1;
+    
+    //Variables specifically set for CIE:2000
+    CGFloat DeltaPrimeL = L2 - L1;
+    CGFloat MeanL = ((L1 + L2) / 2);
+    CGFloat MeanC = ((C1 + C2) / 2);
+    CGFloat A1Prime = A1 + A1 / 2 * (1 - sqrt(pow(MeanC, 7.0) / (pow(MeanC, 7.0) + pow(25.0, 7.0))));
+    CGFloat A2Prime = A2 + A2 / 2 * (1 - sqrt(pow(MeanC, 7.0) / (pow(MeanC, 7.0) + pow(25.0, 7.0))));
+    CGFloat C1Prime = sqrt(pow(A1Prime, 2) + pow(B1, 2));
+    CGFloat C2Prime = sqrt(pow(A2Prime, 2) + pow(B2, 2));
+    CGFloat DeltaPrimeC = C1Prime - C2Prime;
+    CGFloat DeltaC = C1 - C2;
+    CGFloat MeanCPrime = (C1Prime + C2Prime) / 2;
+    CGFloat H1Prime = fmodf(atan2(B1, A1Prime), (360.0 * M_PI/180));
+    CGFloat H2Prime = fmodf(atan2(B2, A2Prime), (360.0 * M_PI/180));
+    
+    //Run everything through our △H' Function
+    CGFloat hDeltaPrime = 0;
+    if (fabsf(H1Prime - H2Prime) <= (180.0 * M_PI/180)) {
+        
+        hDeltaPrime = H2Prime - H1Prime;
+        
+    } else if (H2Prime <= H1Prime) {
+        
+        hDeltaPrime = (H2Prime - H1Prime) + ((360.0 * M_PI/180));
+        
+    } else {
+        
+        hDeltaPrime = (H2Prime - H1Prime) - ((360.0 * M_PI/180));
+    }
+    
+    CGFloat deltaHPrime = 2 * (sqrt(C1Prime*C2Prime)) * sin(hDeltaPrime/2);
+    
+    //Get Mean H' Value
+    CGFloat MeanHPrime = 0;
+    if (fabsf(H1Prime-H2Prime) > (180.0 * M_PI/180)) {
+        
+        MeanHPrime = (H1Prime + H2Prime + (360.0 * M_PI/180)) / 2;
+        
+    } else {
+        
+        MeanHPrime = (H1Prime + H2Prime) / 2;
+    }
+    
+    CGFloat T =  1 - 0.17 * cos(MeanHPrime - (30.0 * M_PI/180)) + 0.24 * cos(2 * MeanHPrime)+0.32 * cos(3 * MeanHPrime + (6.0 * M_PI/180)) - 0.20 * cos(4 * MeanHPrime - (63.0 * M_PI/180));
+    
+    CGFloat SL = 1 + (0.015 * pow((MeanL - 50), 2))/sqrt(20 + pow((MeanL - 50), 2));
+    CGFloat SC = 1 + 0.045 * MeanCPrime;
+    CGFloat SH = 1 + 0.015 * MeanCPrime * T;
+    
+    CGFloat RT = -2 * sqrt(pow(MeanCPrime, 7) / (pow(MeanCPrime, 7) + pow(25.0, 7))) * sin((60.0 * M_PI/180)* exp(-1 * pow((MeanCPrime - (275.0 * M_PI/180)) / (25.0 * M_PI/180), 2)));
+    
+    
+    //Get total difference
+    CGFloat TotalDifference = sqrt(pow((DeltaPrimeL / (KL * SL)), 2) + pow((DeltaPrimeC / (KC * SC)), 2) + pow((deltaHPrime / (KH * SH)), 2) + RT * (DeltaC / (KC * SC)) * (deltaHPrime / (KH * SH)));
+    
+    return TotalDifference;
+}
+
++ (UIColor *)nearestFlatColorForL:(CGFloat)l1 A:(CGFloat)a1 B:(CGFloat)b1 alpha:(CGFloat)alpha{
     
     //Keep track of our index
     float index = 0;
     
-    //Start with a randombig number to make sure the first comparison gets saved.
+    //Start with a random big number to make sure the first comparison gets saved.
     float smallestDistance = 1000000;
     float previousDistance = 1000000;
     float currentDistance;
     
-    //We're interested in the color with values returning the smallest sum of total differences so we need to cross reference our input color's values with every flat color's value
-    for (int i=0; i<[[self redValues] count]; i++ ) {
+    //Our values
+    CGFloat l2, a2, b2;
+    
+    //We're interested in the color with values returning the smallest sum of total differences so we need to cross reference our input color's values with every flat color's values
+    for (int i=0; i<[[self flatColors] count]; i++ ) {
         
+        //Check that index is not zero
         if (i!=0 ) {
-            previousDistance = [self totalSumOfDifferencesFromr1:r1 r2:[[self redValues][i - 1] floatValue]
-                                                              g1:g1 g2:[[self greenValues][i - 1] floatValue]
-                                                              b1:b1 b2:[[self blueValues][i - 1] floatValue]];
+            //Extract LAB values from colors in array and store it as the previous index
+            [[self flatColors][i - 1] getLightness:&l2 valueForA:&a2 valueForB:&b2 alpha:nil];
+            
+            previousDistance = [self totalSumOfDifferencesFroml1:l1 l2:l2
+                                                              a1:a1 a2:a2
+                                                              b1:b1 b2:b2];
         }
         
-        currentDistance = [self totalSumOfDifferencesFromr1:r1 r2:[[[self redValues] objectAtIndex:i] floatValue]
-                                                         g1:g1 g2:[[[self greenValues] objectAtIndex:i] floatValue]
-                                                         b1:b1 b2:[[[self blueValues] objectAtIndex:i] floatValue]];
+        //Extract LAB values from colors in array and store it as the current index
+        [[self flatColors][i] getLightness:&l2 valueForA:&a2 valueForB:&b2 alpha:nil];
+        
+        currentDistance = [self totalSumOfDifferencesFroml1:l1 l2:l2
+                                                         a1:a1 a2:a2
+                                                         b1:b1 b2:b2];
         
         //We're only interested in the smallest difference
         if (currentDistance < previousDistance) {
@@ -284,26 +342,13 @@
         }
     }
     
-    //Collect the RGB Values of the color where the smallest difference was returned
-    float newRed = [[[self redValues] objectAtIndex:index] floatValue];
-    float newGreen = [[[self greenValues] objectAtIndex:index] floatValue];
-    float newBlue = [[[self blueValues] objectAtIndex:index] floatValue];
+    
+    //Collect the RGB Values of the color where the smallest difference was found
+    CGFloat red, green, blue;
+    [[[self flatColors] objectAtIndex:index] getRed:&red green:&green blue:&blue alpha:nil];
     
     //Return the closest flat color
-    return rgb(newRed, newGreen, newBlue);
-}
-
-//Calculate the total sum of differences
-+ (float)totalSumOfDifferencesFromr1:(float)r1 r2:(float)r2 g1:(float)g1 g2:(float)g2 b1:(float)b1 b2:(float)b2 {
-    
-    /*
-     We could also use a weighted approach (CIE94), but since we're rounding off the closest flat color it probably won't matter.
-     //float d = sqrt(powf(((r2-r1)*0.3),2)+powf(((g2-g1)*0.59),2)+powf(((b2-b1)*0.11),2));
-     More info: http://bit.ly/CIE94colordistance
-     */
-    
-    float d = sqrt(powf((r2-r1),2)+powf((g2-g1),2)+powf((b2-b1),2));
-    return d;
+    return rgba(red*255, green*255, blue*255, alpha);
 }
 
 @end

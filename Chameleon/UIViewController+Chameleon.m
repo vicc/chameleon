@@ -60,7 +60,7 @@
     
     //Quick solution to flatifying navigation bars in view controllers (could be implemented better)
     [self.navigationController.navigationBar setBarTintColor:FlatVersionOf(self.navigationController.navigationBar.barTintColor)];
-    [self.navigationController.navigationBar setTintColor:ContrastColorOf(self.navigationController.navigationBar.barTintColor)];
+    [self.navigationController.navigationBar setTintColor:ContrastColorOf(self.navigationController.navigationBar.barTintColor, YES)];
 }
 
 - (void)flatifyColorsForView:(UIView *)view withContrast:(BOOL)contrast {
@@ -226,8 +226,8 @@
                             forState:UIControlStateNormal];
             
         } else {
-            [godButton setTintColor:ContrastColorOf(godButton.backgroundColor)];
-            [godButton setTitleColor:ContrastColorOf(godButton.backgroundColor)
+            [godButton setTintColor:ContrastColorOf(godButton.backgroundColor, YES)];
+            [godButton setTitleColor:ContrastColorOf(godButton.backgroundColor, YES)
                             forState:UIControlStateNormal];
         }
     }
@@ -275,7 +275,7 @@
             [godSegmentedControl setTintColor:FlatVersionOf(godSegmentedControl.tintColor)];
             
         } else {
-            [godSegmentedControl setTintColor:ContrastColorOf(godSegmentedControl.backgroundColor)];
+            [godSegmentedControl setTintColor:ContrastColorOf(godSegmentedControl.backgroundColor, YES)];
         }
     }
 }
@@ -311,7 +311,7 @@
         if (!godStepper.backgroundColor) {
             [godStepper setTintColor:FlatVersionOf(godStepper.tintColor)];
         } else {
-            [godStepper setTintColor:ContrastColorOf(godStepper.backgroundColor)];
+            [godStepper setTintColor:ContrastColorOf(godStepper.backgroundColor, YES)];
         }
     }
 }
@@ -351,7 +351,7 @@
         if (!godTextField.backgroundColor) {
             [godTextField setTextColor:FlatVersionOf(godTextField.textColor)];
         } else {
-            [godTextField setTextColor:ContrastColorOf(godTextField.backgroundColor)];
+            [godTextField setTextColor:ContrastColorOf(godTextField.backgroundColor, YES)];
         }
     }
 }
@@ -395,9 +395,9 @@
             [godLabel setHighlightedTextColor:FlatVersionOf(godLabel.highlightedTextColor)];
             
         } else {
-            [godLabel setTextColor:ContrastColorOf(godLabel.backgroundColor)];
-            [godLabel setTintColor:ContrastColorOf(godLabel.backgroundColor)];
-            [godLabel setHighlightedTextColor:ComplementaryColorOf(godLabel.backgroundColor)];
+            [godLabel setTextColor:ContrastColorOf(godLabel.backgroundColor, YES)];
+            [godLabel setTintColor:ContrastColorOf(godLabel.backgroundColor, YES)];
+            [godLabel setHighlightedTextColor:ComplementaryFlatColorOf(godLabel.backgroundColor)];
         }
     }
 }
@@ -438,10 +438,10 @@
         [godNavigationBar.topItem.titleView setBackgroundColor:FlatVersionOf(godNavigationBar.topItem.titleView.backgroundColor)];
         
         if (godNavigationBar.barTintColor) {
-            [godNavigationBar.topItem.titleView setTintColor:ContrastColorOf(godNavigationBar.barTintColor)];
+            [godNavigationBar.topItem.titleView setTintColor:ContrastColorOf(godNavigationBar.barTintColor, YES)];
         } else {
             if (godNavigationBar.backgroundColor) {
-                [godNavigationBar.topItem.titleView setTintColor:ContrastColorOf(godNavigationBar.backgroundColor)];
+                [godNavigationBar.topItem.titleView setTintColor:ContrastColorOf(godNavigationBar.backgroundColor, YES)];
             } else {
                 [godNavigationBar.topItem.titleView setTintColor:FlatVersionOf(godNavigationBar.topItem.titleView.tintColor)];
             }
@@ -455,11 +455,11 @@
         UINavigationItem *godNavigationItem = (UINavigationItem *)view;
         
         if (godNavigationItem.titleView.backgroundColor) {
-            [godNavigationItem.backBarButtonItem setTintColor:ContrastColorOf(godNavigationItem.titleView.backgroundColor)];
-            [godNavigationItem.leftBarButtonItem setTintColor:ContrastColorOf(godNavigationItem.titleView.backgroundColor)];
-            [godNavigationItem.rightBarButtonItem setTintColor:ContrastColorOf(godNavigationItem.titleView.backgroundColor)];
+            [godNavigationItem.backBarButtonItem setTintColor:ContrastColorOf(godNavigationItem.titleView.backgroundColor, YES)];
+            [godNavigationItem.leftBarButtonItem setTintColor:ContrastColorOf(godNavigationItem.titleView.backgroundColor, YES)];
+            [godNavigationItem.rightBarButtonItem setTintColor:ContrastColorOf(godNavigationItem.titleView.backgroundColor, YES)];
             [godNavigationItem.titleView setBackgroundColor:FlatVersionOf(godNavigationItem.titleView.backgroundColor)];
-            [godNavigationItem.titleView setTintColor:ContrastColorOf(godNavigationItem.titleView.backgroundColor)];
+            [godNavigationItem.titleView setTintColor:ContrastColorOf(godNavigationItem.titleView.backgroundColor, YES)];
         } else {
             [godNavigationItem.backBarButtonItem setTintColor:FlatVersionOf(godNavigationItem.backBarButtonItem.tintColor)];
             [godNavigationItem.leftBarButtonItem setTintColor:FlatVersionOf(godNavigationItem.leftBarButtonItem.tintColor)];
@@ -564,7 +564,7 @@
         [godTextView setTintColor:FlatVersionOf(godTextView.tintColor)];
         
         if (godTextView.backgroundColor) {
-            [godTextView setTextColor:ContrastColorOf(godTextView.backgroundColor)];
+            [godTextView setTextColor:ContrastColorOf(godTextView.backgroundColor, YES)];
         } else {
             [godTextView setTextColor:FlatVersionOf(godTextView.textColor)];
         }
