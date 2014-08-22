@@ -380,7 +380,7 @@
     
     //Calculate Luminance
     CGFloat luminance;
-    CGFloat red, green, blue, alpha;
+    CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha = 0.0;
     
     //Check if color is transparent
     if (alpha == 0) {
@@ -423,7 +423,7 @@
     
     //Calculate Luminance
     CGFloat luminance;
-    CGFloat red, green, blue, alpha;
+    CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha = 0.0;
     [backgroundColor getRed:&red green:&green blue:&blue alpha:&alpha];
     
     //Check if color is transparent
