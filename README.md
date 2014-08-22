@@ -2,7 +2,7 @@ Chameleon for iOS
 =========
 
 
-![Chameleon Header](http://i.imgur.com/E5hHBMG.gif)
+&nbsp;&nbsp;&nbsp;&nbsp;![Chameleon Header](http://i.imgur.com/E5hHBMG.gif)
 
 ## Introduction
 
