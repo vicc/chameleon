@@ -19,12 +19,11 @@ Chameleon solves problems that many other color libraries tend to overlook. With
 [● Requirements](https://github.com/VAlexander/Chameleon#%EF%B8%8F-requirements)  
 [● License](https://github.com/VAlexander/Chameleon#-license)  
 [● Contributions](https://github.com/VAlexander/Chameleon#-contributions)   
-[● Documentation](https://github.com/VAlexander/Chameleon#-documentation)   
+[● Documentation](https://github.com/VAlexander/Chameleon#-documentation)  
+[● Storyboard Add-On](https://github.com/VAlexander/Chameleon#storyboard-add-on)  
 [● Special Thanks](https://github.com/VAlexander/Chameleon#-special-thanks)    
 [● To Do List](https://github.com/VAlexander/Chameleon#-to-do-list)  
-
-New Features!  
-[● Storyboard Add-On](https://github.com/VAlexander/Chameleon#storyboard-add-on)
+[● Change Log](https://github.com/VAlexander/Chameleon#-change-log)  
 
 <!--- 
 &nbsp;&nbsp;￮ [Installation](https://github.com/VAlexander/Chameleon#installation)  
@@ -103,6 +102,15 @@ If you use the Chameleon framework in your app I would love to hear about it! Dr
 
 ## 📗 Documentation
 All methods, properties, and types available in the Chameleon Framework are documented below. Although many people are not huge fans of macro files, I have included an optional "shorthand syntax" for each of the methods, properties, and types documented below.
+
+#####Documentation Table of Contents  
+[● Installation](https://github.com/VAlexander/Chameleon#installation)  
+[● Storyboard-Add On](https://github.com/VAlexander/Chameleon#storyboard-add-on-)  
+[● Usage](https://github.com/VAlexander/Chameleon#usage)  
+[● UIColor Methods](https://github.com/VAlexander/Chameleon#uicolor-methods)  
+[● UIStatusBarStyle Methods](https://github.com/VAlexander/Chameleon#uistatusbarstyle-methods)  
+[● Color Scheme Methods](https://github.com/VAlexander/Chameleon#color-schemes-methods)  
+[● Flatify Methods (Beta)](https://github.com/VAlexander/Chameleon#flatify-methods-beta)  
 
 ###Installation
 ####CocoaPods Installation
