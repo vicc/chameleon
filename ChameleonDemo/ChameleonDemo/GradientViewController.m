@@ -9,7 +9,7 @@
 #import "GradientViewController.h"
 
 @implementation GradientViewController
-@synthesize colorButton1, colorButton2, topToBottomGradientLabel, leftToRightGradientLabel;
+@synthesize colorButton1, colorButton2, topToBottomGradientLabel, leftToRightGradientLabel, radialGradientLabel;
 
 - (void)viewDidLoad {
     
@@ -39,29 +39,34 @@
 - (void)updateGradientColors {
     
     //Top to Bottom Gradient Color
-    topToBottomGradientLabel.backgroundColor = [UIColor colorWithGradientStyle:linearTopToBottom
+    topToBottomGradientLabel.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom
                                                                      withFrame:topToBottomGradientLabel.bounds
                                                                      andColors:@[colorButton1.backgroundColor, colorButton2.backgroundColor]];
+    
+    topToBottomGradientLabel.textColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:topToBottomGradientLabel.backgroundColor isFlat:NO];
 
     /*
      Shorthand:
      
-     topToBottomGradientLabel.backgroundColor = GradientColor(linearTopToBottom, topToBottomGradientLabel.bounds, (@[colorButton1.backgroundColor, colorButton2.backgroundColor]));
+     topToBottomGradientLabel.backgroundColor = GradientColor(UIGradientStyleTopToBottom, topToBottomGradientLabel.bounds, (@[colorButton1.backgroundColor, colorButton2.backgroundColor]));
      
      // Make sure to wrap NSArray literals in a set of paranthesis --> Correct: (@[]) | Wrong: @[]
      
      */
     
-    
-    
-    topToBottomGradientLabel.textColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:topToBottomGradientLabel.backgroundColor isFlat:NO];
-    
-    //Top to Bottom Gradient Color
-    leftToRightGradientLabel.backgroundColor = [UIColor colorWithGradientStyle:linearLeftToRight
+    //Left to Right Gradient Color
+    leftToRightGradientLabel.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleLeftToRight
                                                                      withFrame:leftToRightGradientLabel.bounds
                                                                      andColors:@[colorButton1.backgroundColor, colorButton2.backgroundColor]];
+    
     leftToRightGradientLabel.textColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:leftToRightGradientLabel.backgroundColor isFlat:NO];
     
+    
+    
+    //Radial Gradient Color
+    radialGradientLabel.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleRadial withFrame:radialGradientLabel.bounds andColors:@[colorButton1.backgroundColor, colorButton2.backgroundColor]];
+    
+    radialGradientLabel.textColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:radialGradientLabel.backgroundColor isFlat:NO];
 }
 
 - (void)didReceiveMemoryWarning {

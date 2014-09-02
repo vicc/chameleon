@@ -13,8 +13,10 @@
 
 @property (nonatomic, weak) IBOutlet UIButton *colorButton1;
 @property (nonatomic, weak) IBOutlet UIButton *colorButton2;
+
 @property (nonatomic, weak) IBOutlet UILabel *topToBottomGradientLabel;
 @property (nonatomic, weak) IBOutlet UILabel *leftToRightGradientLabel;
+@property (nonatomic, weak) IBOutlet UILabel *radialGradientLabel;
 
 - (IBAction)randomizeColor1;
 - (IBAction)randomizeColor2;

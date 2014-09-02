@@ -10,29 +10,29 @@
 	<string>ChameleonDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>FF0E0758-8A1F-4DE0-8BF7-7E81A7A60BA1</key>
+		<key>E0B209C7A4E91C81F6E11778DB7ADBB4E577529E</key>
 		<string>https://github.com/VAlexander/Chameleon.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ChameleonDemo/ChameleonDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>FF0E0758-8A1F-4DE0-8BF7-7E81A7A60BA1</key>
+		<key>E0B209C7A4E91C81F6E11778DB7ADBB4E577529E</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/VAlexander/Chameleon.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>FF0E0758-8A1F-4DE0-8BF7-7E81A7A60BA1</string>
+	<string>E0B209C7A4E91C81F6E11778DB7ADBB4E577529E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>FF0E0758-8A1F-4DE0-8BF7-7E81A7A60BA1</string>
+			<string>E0B209C7A4E91C81F6E11778DB7ADBB4E577529E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Chameleon</string>
 		</dict>

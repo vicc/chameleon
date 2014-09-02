@@ -35,7 +35,6 @@
 #define FlatVersionOf(color) [UIColor colorWithFlatVersionOf:color]
 #define RandomFlatColorWithShade(shade) [UIColor colorWithRandomFlatColorOfShadeStyle:shade]
 #define ContrastColorOf(backgroundColor, returnFlat) [UIColor colorWithContrastingBlackOrWhiteColorOn:backgroundColor isFlat:returnFlat]
-
 #define GradientColor(gradientStyle, frame, colors) [UIColor colorWithGradientStyle:gradientStyle withFrame:frame andColors:colors]
 
 #pragma mark - Chameleon - UIStatusBar Methods Shorthand

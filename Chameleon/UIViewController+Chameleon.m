@@ -31,6 +31,8 @@
 #import "UIColor+Chameleon.h"
 #import "ChameleonMacros.h"
 
+#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+
 @implementation UIViewController (Chameleon)
 
 #pragma mark - Chameleon - Public Methods
@@ -507,7 +509,16 @@
         UITabBar *godTabBar = (UITabBar *)view;
         [godTabBar setBackgroundColor:FlatVersionOf(godTabBar.backgroundColor)];
         [godTabBar setBarTintColor:FlatVersionOf(godTabBar.barTintColor)];
-        [godTabBar setSelectedImageTintColor:FlatVersionOf(godTabBar.selectedImageTintColor)];
+        
+        if (SYSTEM_VERSION_LESS_THAN(@"8.0")) {
+            #pragma clang diagnostic push
+            #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            [godTabBar setSelectedImageTintColor:FlatVersionOf(godTabBar.selectedImageTintColor)];
+            #pragma clang diagnostic pop
+        } else {
+            [godTabBar setTintColor:FlatVersionOf(godTabBar.tintColor)];
+        }
+        
         [godTabBar setTintColor:FlatVersionOf(godTabBar.tintColor)];
         
     }

@@ -33,29 +33,33 @@
 /**
  *  Defines the gradient style and direction of the gradient color.
  */
-typedef NS_ENUM (NSUInteger, GradientStyle) {
-    /**
-     *  Returns a gradual blend between colors originating at the topmost point of an object's frame, and ending at the bottommost point of the object's frame.
-     */
-    linearTopToBottom,
+typedef NS_ENUM (NSUInteger, UIGradientStyle) {
     /**
      *  Returns a gradual blend between colors originating at the leftmost point of an object's frame, and ending at the rightmost point of the object's frame.
      */
-    linearLeftToRight,
+    UIGradientStyleLeftToRight,
+    /**
+     *  Returns a gradual blend between colors originating at the center of an object's frame, and ending at all edges of the object's frame. NOTE: Supports a Maximum of 2 Colors.
+     */
+    UIGradientStyleRadial,
+    /**
+     *  Returns a gradual blend between colors originating at the topmost point of an object's frame, and ending at the bottommost point of the object's frame.
+     */
+    UIGradientStyleTopToBottom
 };
 
 /**
  *  Defines the shade of a any flat color.
  */
-typedef NS_ENUM (NSInteger, ShadeStyle) {
+typedef NS_ENUM (NSInteger, UIShadeStyle) {
     /**
      *  Returns the light shade version of a flat color.
      */
-    light,
+    UIShadeStyleLight,
     /**
      *  Returns the dark shade version of a flat color.
      */
-    dark
+    UIShadeStyleDark
 };
 
 @interface UIColor (Chameleon)
@@ -460,7 +464,7 @@ typedef NS_ENUM (NSInteger, ShadeStyle) {
  *  
  *  @return A flat UIColor object in the HSB colorspace.
  */
-+ (UIColor *)colorWithRandomFlatColorOfShadeStyle:(ShadeStyle)shadeStyle;
++ (UIColor *)colorWithRandomFlatColorOfShadeStyle:(UIShadeStyle)shadeStyle;
 
 /**
  *  Creates and returns a gradient as a color object with an alpha value of 1.0
@@ -471,7 +475,7 @@ typedef NS_ENUM (NSInteger, ShadeStyle) {
  *
  *  @return A UIColor object using colorWithPattern.
  */
-+ (UIColor *)colorWithGradientStyle:(GradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors;
++ (UIColor *)colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors;
 
 #pragma mark - Chameleon Deprecated Methods as of 1.1.0
 

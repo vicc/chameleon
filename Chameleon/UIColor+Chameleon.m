@@ -444,7 +444,7 @@
     return (luminance > 0.5f) ? [UIColor flatBlackColorDark] : [UIColor flatWhiteColor];
 }
 
-+ (UIColor *)colorWithGradientStyle:(GradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors; {
++ (UIColor *)colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors; {
     
     //Create our background gradient layer
     CAGradientLayer *backgroundGradientLayer = [CAGradientLayer layer];
@@ -459,7 +459,7 @@
     }
     
     switch (gradientStyle) {
-        case linearLeftToRight: {
+        case UIGradientStyleLeftToRight: {
             
             //Set out gradient's colors
             backgroundGradientLayer.colors = cgColors;
@@ -478,7 +478,43 @@
             return [UIColor colorWithPatternImage:backgroundColorImage];
         }
             
-        case linearTopToBottom:
+        case UIGradientStyleRadial: {
+            
+            UIGraphicsBeginImageContextWithOptions(frame.size, 0, 1);
+            
+            //Specific the spread of the gradient (For now this gradient only takes 2 locations)
+            CGFloat locations[2] = {0.0, 1.0};
+
+            //Default to the RGB Colorspace
+            CGColorSpaceRef myColorspace = CGColorSpaceCreateDeviceRGB();
+            CFArrayRef arrayRef = (__bridge CFArrayRef)cgColors;
+            
+            //Create our Fradient
+            CGGradientRef myGradient = CGGradientCreateWithColors(myColorspace, arrayRef, locations);
+            
+ 
+            // Normalise the 0-1 ranged inputs to the width of the image
+            CGPoint myCentrePoint = CGPointMake(0.5 * frame.size.width, 0.5 * frame.size.height);
+            float myRadius = MIN(frame.size.width, frame.size.height) * 1.0;
+            
+            // Draw our Gradient
+            CGContextDrawRadialGradient (UIGraphicsGetCurrentContext(), myGradient, myCentrePoint,
+                                         0, myCentrePoint, myRadius,
+                                         kCGGradientDrawsAfterEndLocation);
+            
+            // Grab it as an Image
+            UIImage *backgroundColorImage = UIGraphicsGetImageFromCurrentImageContext();
+            
+            // Clean up
+            CGColorSpaceRelease(myColorspace); // Necessary?
+            CGGradientRelease(myGradient); // Necessary?
+            UIGraphicsEndImageContext();
+            
+            [self setGradientImage:backgroundColorImage];
+            return [UIColor colorWithPatternImage:backgroundColorImage];
+        }
+            
+        case UIGradientStyleTopToBottom:
         default: {
             
             //Set out gradient's colors
@@ -535,7 +571,7 @@
     return [[self flatColors] objectAtIndex:randomColorChosen];
 }
 
-+ (UIColor *)colorWithRandomFlatColorOfShadeStyle:(ShadeStyle)shadeStyle {
++ (UIColor *)colorWithRandomFlatColorOfShadeStyle:(UIShadeStyle)shadeStyle {
     
     //Number of colors to choose from
     const NSInteger numberOfPossibleColors = 24;
@@ -567,7 +603,7 @@
     
     //Return a color depending on the specified shade
     switch (shadeStyle) {
-        case dark: {
+        case UIShadeStyleDark: {
             
             NSArray *darkColors = @[FlatBlackDark, FlatBlueDark, FlatBrownDark, FlatCoffeeDark, FlatForestGreenDark, FlatGrayDark, FlatGreenDark, FlatLimeDark, FlatMagentaDark, FlatMaroonDark, FlatMintDark, FlatNavyBlueDark, FlatOrangeDark, FlatPinkDark, FlatPlumDark, FlatPowderBlueDark, FlatPurpleDark, FlatRedDark, FlatSandDark, FlatSkyBlueDark, FlatTealDark, FlatWatermelonDark, FlatWhiteDark, FlatYellowDark];
             
@@ -575,7 +611,7 @@
             
         }
             
-        case light:
+        case UIShadeStyleLight:
         default: {
         
             NSArray *lightColors = @[FlatBlack, FlatBlue, FlatBrown, FlatCoffee, FlatForestGreen, FlatGray, FlatGreen, FlatLime, FlatMagenta, FlatMaroon, FlatMint, FlatNavyBlue, FlatOrange, FlatPink, FlatPlum, FlatPowderBlue, FlatPurple, FlatRed, FlatSand, FlatSkyBlue, FlatTeal, FlatWatermelon, FlatWhite, FlatYellow];
