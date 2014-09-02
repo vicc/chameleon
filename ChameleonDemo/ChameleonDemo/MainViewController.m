@@ -34,7 +34,10 @@
     //Create custom label for titleView
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0, 150, 40)];
     titleLabel.text = @"Chameleon";
-    titleLabel.textColor = [UIColor colorWithGradientStyle:linearLeftToRight withFrame:titleLabel.bounds andColors:@[FlatLime, FlatGreenDark]];
+    titleLabel.textColor = [UIColor colorWithGradientStyle:UIGradientStyleLeftToRight
+                                                 withFrame:titleLabel.bounds
+                                                 andColors:@[FlatLime, FlatGreenDark]];
+    
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.adjustsFontSizeToFitWidth = YES;
     titleLabel.textAlignment = NSTextAlignmentCenter;

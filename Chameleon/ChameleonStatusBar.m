@@ -51,4 +51,5 @@
     return (luminance > 0.5f) ? UIStatusBarStyleDefault : UIStatusBarStyleLightContent;
 }
 
+
 @end

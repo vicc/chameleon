@@ -41,4 +41,5 @@
  */
 + (UIStatusBarStyle)statusBarStyleForColor:(UIColor *)backgroundColor;
 
+
 @end
