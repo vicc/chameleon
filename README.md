@@ -73,6 +73,8 @@ With iOS 7, Apple mainstreamed flat colors. Now, with the impending release of i
 
 ![Gradients](http://i.imgur.com/7hTa5Pd.png) 
 
+![](http://i.imgur.com/DqJGhN2.png)
+
 ### Xcode Quick Help Documentation ![New](http://i.imgur.com/BX3b9ES.png)
 
 Chameleon's documentation, while written as clearly and concisely as possible (Thank [Asia](https://github.com/aekwan) for that!), may still render some slightly confused. But don't fret! Staying true to our vision of simplifying the entire color process, we added Xcode Quick Help's Documentation Support! Simply highlight a Chameleon method or tap it with three fingers to find out more about what it is and what it does!
@@ -181,13 +183,17 @@ Otherwise, you can perform the following method call to specify whether it shoul
 
 ######Normal Convention:
 ```objective-c
-[UIColor colorWithRandomFlatColorOfShadeStyle:light];
+[UIColor colorWithRandomFlatColorOfShadeStyle:UIShadeStyleLight];
 ```
 
 ######Chameleon Shorthand:
 ```objective-c
-RandomFlatColorWithShade(light);
+RandomFlatColorWithShade(UIShadeStyleLight);
 ```
+
+**UIShadeStyles:**
+* `UIShadeStyleLight`
+* `UIShadeStyleDark`
 
 ####Complementary Color
 To generate a complementary color, perform the following method call, remembering to specify the color whose complement you want:
@@ -238,13 +244,16 @@ FlatVersionOf(color);
 Using a gradient to color an object usually requires a couple of lines of code plus many more lines to superimpose smart contrasting text. Thankfully, Chameleon takes care of that for you. We've introduced a new way to have multicolored objects, and that's with gradients!
 
 #####Gradient Styles
-At the moment, Chameleon only provides two simple linear gradient styles. You can either impose gradient that goes from top to bottom or left to right of a secreen. More styles are coming soon!
+Chameleon provides three simple gradient styles. Gradients can be created from any number of colors you desire as long as at least two colors are provided. Don't forget that the contrasting text feature is also compatible with gradient colors!
 
-Gradients can be creaed from any number of colors you desire as long as at least two colors is provided. Don't forget that the contrasting text feature is also compatible with gradient colors!
+**UIGradientStyles:**
+* `UIGradientStyleLeftToRight`
+* `UIGradientStyleTopToBottom`
+* `UIGradientStyleRadial`
 
 ######Normal Convention:
 ```objective-c
-[UIColor colorWithGradientStyle:(GradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors];
+[UIColor colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors];
 ```
 
 ######Chameleon Shorthand:
@@ -252,6 +261,8 @@ Gradients can be creaed from any number of colors you desire as long as at least
 GradientColor(gradientStyle, frame, colors);
 ```
 Note: If you use the Chameleon Shorthand, and use the NSArray literal ```@[]``` to set the array of colors, make sure you add parenthesis around it, or else you'll get an error.
+
+Note: Also note that `UIGradientStyleRadial` only uses a maximum of 2 colors at the moment. So if more colors are provided, they will not show.
 
 ###UIStatusBarStyle Methods
 ####Contrasting UIStatusBarStyle
@@ -377,6 +388,8 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 * ~~Xcode In-App Documentation~~ ![1.1.0](http://i.imgur.com/Py4QvaK.png)
 * ~~Switch from RGB values over to HSB and LAB~~ ![1.1.0](http://i.imgur.com/Py4QvaK.png)
 * ~~Gradient Colors~~ ![1.1.0](http://i.imgur.com/Py4QvaK.png)
+* ~~Update GradientStyle & ShadeStyle Syntax~~ ![1.1.1](http://i.imgur.com/AHxj8Rb.png)
+* ~~Add Radial Gradient Support~~ ![1.1.1](http://i.imgur.com/AHxj8Rb.png)
 * Update Sample App
 * Swift Version
 * Color Scheme From Images
@@ -384,6 +397,15 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 * UIAppearance Convenience Methods
 
 ## 📄 Change Log
+### 1.1.1
+* ```ShadeStyle``` is now ```UIShadeStyle```
+* ```GradientStyle``` is now ```UIGradientStyle```
+* ```light``` is now ```UIShadeStyleLight```
+* ```dark``` is now ```UIShadeStyleDark```
+* ```linearGradientLeftToRight``` is now ```UIGradientStyleLeftToRight```
+* ```linearGradientTopToBottom``` is now ```UIGradientStyleTopToBottom```
+* Added: ```UIGradientStyleRadial```
+
 ### 1.1.0
 * Added Gradient Colors
 * Added Storyboard Palette Add-on
