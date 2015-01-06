@@ -397,7 +397,7 @@ To implement this perform the following method call:
 * *`UIStatusBarStyle`(In the mean time, use the status bar methods provided above).*
 
 ## 👑 Author
-Chameleon was developed by Vicc Alexander [(@ViccsMind)](https://twitter.com/viccsmind).
+Chameleon was developed by **Vicc Alexander** [(@ViccsMind)](https://twitter.com/viccsmind).
 
 ## 👏 Special Thanks
 Huge thanks to the following people for helping make Chameleon possible (seriously).
