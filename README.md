@@ -396,8 +396,8 @@ To implement this perform the following method call:
 * *Objects stored in a `UIView` that is located on top another `UIView`.*
 * *`UIStatusBarStyle`(In the mean time, use the status bar methods provided above).*
 
-## í ½ğŸ‘‘ Author
-Chameleon is a library developed solely by Vicc Alexander (UC Berkeley '13). Twitter: [@ViccsMind](https://twitter.com/viccsmind)
+## ğŸ‘‘ Author
+Chameleon was developed by Vicc Alexander [(@ViccsMind)](https://twitter.com/viccsmind).
 
 ## ğŸ‘ Special Thanks
 Huge thanks to the following people for helping make Chameleon possible (seriously).
