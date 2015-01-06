@@ -21,7 +21,8 @@ Chameleon solves problems that many other color libraries tend to overlook. With
 [● License](https://github.com/VAlexander/Chameleon#-license)  
 [● Contributions](https://github.com/VAlexander/Chameleon#-contributions)   
 [● Documentation](https://github.com/VAlexander/Chameleon#-documentation)  
-[● Storyboard Add-On](https://github.com/VAlexander/Chameleon#storyboard-add-on-)  
+[● Storyboard Add-On](https://github.com/VAlexander/Chameleon#storyboard-add-on-) 
+[● Author](https://github.com/VAlexander/Chameleon#-author)   
 [● Special Thanks](https://github.com/VAlexander/Chameleon#-special-thanks)    
 [● To Do List](https://github.com/VAlexander/Chameleon#-to-do-list)  
 [● Change Log](https://github.com/VAlexander/Chameleon#-change-log)  
@@ -394,6 +395,9 @@ To implement this perform the following method call:
 
 * *Objects stored in a `UIView` that is located on top another `UIView`.*
 * *`UIStatusBarStyle`(In the mean time, use the status bar methods provided above).*
+
+## ���👑 Author
+Chameleon is a library developed solely by Vicc Alexander (UC Berkeley '13). Twitter: [@ViccsMind](https://twitter.com/viccsmind)
 
 ## 👏 Special Thanks
 Huge thanks to the following people for helping make Chameleon possible (seriously).
