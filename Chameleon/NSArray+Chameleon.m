@@ -35,7 +35,7 @@
 
 #pragma mark - Chameleon - Public Color Scheme Methods
 
-+ (NSArray *)arrayOfColorsWithColorScheme:(ColorScheme)colorScheme for:(UIColor *)color flatScheme:(BOOL)isFlatScheme {
++ (NSArray *)arrayOfColorsWithColorScheme:(ColorScheme)colorScheme with:(UIColor *)color flatScheme:(BOOL)isFlatScheme {
     
     //Extract HSB values from input color
     CGFloat h, s, b, a;

@@ -43,7 +43,7 @@
 
 #pragma mark - Chameleon - NSArray Methods Shorthand
 //NSArray Methods Shorthand
-#define ColorScheme(colorSchemeType,color,isFlatScheme) [NSArray arrayOfColorsWithColorScheme:colorSchemeType for:color flatScheme:isFlatScheme]
+#define ColorScheme(colorSchemeType,color,isFlatScheme) [NSArray arrayOfColorsWithColorScheme:colorSchemeType with:color flatScheme:isFlatScheme]
 
 #pragma mark - Chameleon - Special Colors Shorthand
 //Special Colors Shorthand
