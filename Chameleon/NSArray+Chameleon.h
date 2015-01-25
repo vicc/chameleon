@@ -61,6 +61,6 @@ typedef NS_ENUM (NSInteger, ColorScheme) {
  *
  *  @return An array of 5 color objects in the HSB colorspace.
  */
-+ (NSArray *)arrayOfColorsWithColorScheme:(ColorScheme)colorScheme for:(UIColor *)color flatScheme:(BOOL)isFlatScheme;
++ (NSArray *)arrayOfColorsWithColorScheme:(ColorScheme)colorScheme with:(UIColor *)color flatScheme:(BOOL)isFlatScheme;
 
 @end
