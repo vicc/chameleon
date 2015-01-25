@@ -331,7 +331,7 @@ To retrieve an array of colors, first make sure to initialize an NSMutableArray 
 ######Normal Convention:
 ```objective-c
 NSMutableArray *colorArray = [NSMutableArray alloc] initWithArray:[NSArray arrayOfColorsWithColorScheme:(ColorScheme)colorScheme 
-                                                                                                    for:(UIColor *)color 
+                                                                                                    with:(UIColor *)color 
                                                                                              flatScheme:(BOOL)isFlatScheme]];
 ```
 
@@ -345,8 +345,8 @@ Assuming you want to generate an analogous color scheme for the light shade of F
 
 ######Normal Convention:
 ```objective-c
-NSMutableArray *colorArray = [NSMutableArray alloc] initWithArray:[NSArray arrayOfColorsWithColorScheme::ColorSchemeAnalogous
-                                                                                                    for:[UIColor flatRedColor] 
+NSMutableArray *colorArray = [NSMutableArray alloc] initWithArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogous
+                                                                                                    with:[UIColor flatRedColor] 
                                                                                              flatScheme:YES]];
 ```
 
