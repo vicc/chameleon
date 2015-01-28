@@ -5,7 +5,7 @@
  
  The MIT License (MIT)
  
- Copyright (c) 2014 Vicc Alexander.
+ Copyright (c) 2014-2015 Vicc Alexander.
  
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -30,6 +30,7 @@
 #import "UIColor+Chameleon.h"
 
 #pragma mark - Chameleon - UIColor Methods Shorthand
+
 //UIColor Methods Shorthand
 #define ComplementaryFlatColorOf(color) [UIColor colorWithComplementaryFlatColorOf:color]
 #define FlatVersionOf(color) [UIColor colorWithFlatVersionOf:color]
@@ -38,19 +39,23 @@
 #define GradientColor(gradientStyle, frame, colors) [UIColor colorWithGradientStyle:gradientStyle withFrame:frame andColors:colors]
 
 #pragma mark - Chameleon - UIStatusBar Methods Shorthand
+
 //UIStatusBar Methods Shorthand
 #define StatusBarContrastColorOf(backgroundColor) [ChameleonStatusBar statusBarStyleForColor:backgroundColor]
 
 #pragma mark - Chameleon - NSArray Methods Shorthand
+
 //NSArray Methods Shorthand
 #define ColorScheme(colorSchemeType,color,isFlatScheme) [NSArray arrayOfColorsWithColorScheme:colorSchemeType with:color flatScheme:isFlatScheme]
 
 #pragma mark - Chameleon - Special Colors Shorthand
+
 //Special Colors Shorthand
 #define RandomFlatColor [UIColor randomFlatColor]
 #define ClearColor [UIColor clearColor]
 
 #pragma mark - Chameleon - Light Shades Shorthand
+
 //Chameleon Flat Colors - Light Shades Shorthand
 #define FlatBlack [UIColor flatBlackColor]
 #define FlatBlue [UIColor flatBlueColor]
@@ -78,6 +83,7 @@
 #define FlatYellow [UIColor flatYellowColor]
 
 #pragma mark - Chameleon - Dark Shades Shorthand
+
 //Chameleon Flat Colors - Dark Shades Shorthand
 #define FlatBlackDark [UIColor flatBlackColorDark]
 #define FlatBlueDark [UIColor flatBlueColorDark]

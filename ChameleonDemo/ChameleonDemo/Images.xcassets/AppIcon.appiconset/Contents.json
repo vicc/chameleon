@@ -15,6 +15,11 @@
       "idiom" : "iphone",
       "filename" : "120.png",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "60x60",
+      "scale" : "3x"
     }
   ],
   "info" : {

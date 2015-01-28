@@ -3,7 +3,7 @@
 //  ChameleonDemo
 //
 //  Created by Vicc Alexander on 7/24/14.
-//  Copyright (c) 2014 Vicc Alexander. All rights reserved.
+//  Copyright (c) 2014 - 2015 Vicc Alexander. All rights reserved.
 //
 
 #import "AnalogousViewController.h"
@@ -20,11 +20,11 @@
 
     //Flat Array
     flatArray = [[NSMutableArray alloc] init];
-    [flatArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogous for:self.mainView.backgroundColor flatScheme:YES]];
+    [flatArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogous with:self.mainView.backgroundColor flatScheme:YES]];
     
     //Non-flat array
     nonFlatArray = [[NSMutableArray alloc] init];
-    [nonFlatArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogous for:self.mainView.backgroundColor flatScheme:NO]];
+    [nonFlatArray addObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogous with:self.mainView.backgroundColor flatScheme:NO]];
     
     /* - Shorthand Version
      
@@ -61,10 +61,10 @@
     self.mainView.backgroundColor = [UIColor randomFlatColor];
     
     //Flat Array
-    [flatArray replaceObjectsInRange:NSMakeRange(0, 4) withObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogous for:self.mainView.backgroundColor flatScheme:YES]];
+    [flatArray replaceObjectsInRange:NSMakeRange(0, 4) withObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogous with:self.mainView.backgroundColor flatScheme:YES]];
     
     //Non-flat array
-    [nonFlatArray replaceObjectsInRange:NSMakeRange(0, 4) withObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogous for:self.mainView.backgroundColor flatScheme:NO]];
+    [nonFlatArray replaceObjectsInRange:NSMakeRange(0, 4) withObjectsFromArray:[NSArray arrayOfColorsWithColorScheme:ColorSchemeAnalogous with:self.mainView.backgroundColor flatScheme:NO]];
     
     /* - Shorthand
     

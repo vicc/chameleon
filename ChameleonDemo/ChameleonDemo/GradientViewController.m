@@ -3,7 +3,7 @@
 //  ChameleonDemo
 //
 //  Created by Vicc Alexander on 8/21/14.
-//  Copyright (c) 2014 Vicc Alexander. All rights reserved.
+//  Copyright (c) 2014 - 2015 Vicc Alexander. All rights reserved.
 //
 
 #import "GradientViewController.h"
@@ -16,8 +16,9 @@
     [super viewDidLoad];
 
     //Make buttons into circles
-    colorButton1.layer.cornerRadius = 50;
-    colorButton2.layer.cornerRadius = 50;
+    colorButton1.layer.cornerRadius = colorButton1.bounds.size.width/2;
+    colorButton2.layer.cornerRadius = colorButton2.bounds.size.width/2;
+    ;
 }
 
 - (IBAction)randomizeColor1 {

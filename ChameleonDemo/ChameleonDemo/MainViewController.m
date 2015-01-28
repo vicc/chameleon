@@ -3,7 +3,7 @@
 //  ChameleonDemo
 //
 //  Created by Vicc Alexander on 7/24/14.
-//  Copyright (c) 2014 Vicc Alexander. All rights reserved.
+//  Copyright (c) 2014 - 2015 Vicc Alexander. All rights reserved.
 //
 
 #import "MainViewController.h"
@@ -18,6 +18,7 @@
     [self createTitleLabel];
 }
 
+
 - (void)viewWillAppear:(BOOL)animated {
     
     //Revert navigation bar to default settings
@@ -29,10 +30,11 @@
     }
 }
 
+
 - (void)createTitleLabel {
     
     //Create custom label for titleView
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0, 150, 40)];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];
     titleLabel.text = @"Chameleon";
     titleLabel.textColor = [UIColor colorWithGradientStyle:UIGradientStyleLeftToRight
                                                  withFrame:titleLabel.bounds

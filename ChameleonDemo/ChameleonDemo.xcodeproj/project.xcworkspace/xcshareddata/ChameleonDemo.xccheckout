@@ -14,7 +14,7 @@
 		<string>https://github.com/VAlexander/Chameleon.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ChameleonDemo/ChameleonDemo.xcodeproj/project.xcworkspace</string>
+	<string>ChameleonDemo/ChameleonDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E0B209C7A4E91C81F6E11778DB7ADBB4E577529E</key>
