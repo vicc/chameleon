@@ -63,4 +63,19 @@ typedef NS_ENUM (NSInteger, ColorScheme) {
  */
 + (NSArray *)arrayOfColorsWithColorScheme:(ColorScheme)colorScheme with:(UIColor *)color flatScheme:(BOOL)isFlatScheme;
 
+#pragma mark - Chameleon Deprecated Methods as of 1.1.2
+
+/**
+ *  Generates and creates an array of 5 color objects in the HSB colorspace from the specified color.
+ *
+ *  @param colorScheme  The color scheme with which to select colors using a specified color.
+ *  @param color        The specified color which the color scheme is built around.
+ *  @param isFlatScheme Pass YES to return flat color objects.
+ *
+ *  @deprecated
+ *
+ *  @return An array of 5 color objects in the HSB colorspace.
+ */
++ (NSArray *)arrayOfColorsWithColorScheme:(ColorScheme)colorScheme for:(UIColor *)color flatScheme:(BOOL)isFlatScheme __attribute((deprecated(" Use -arrayOfColorsWithColorScheme:with:flatScheme: instead (First deprecated in Chameleon 1.1.2).")));
+
 @end

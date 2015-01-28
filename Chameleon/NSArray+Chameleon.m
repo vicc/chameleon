@@ -35,6 +35,37 @@
 
 #pragma mark - Chameleon - Public Color Scheme Methods
 
+/*
+ Deprecated as of version 1.1.2 Please use the method below this one.
+ */
+
++ (NSArray *)arrayOfColorsWithColorScheme:(ColorScheme)colorScheme for:(UIColor *)color flatScheme:(BOOL)isFlatScheme {
+    
+    //Extract HSB values from input color
+    CGFloat h, s, b, a;
+    [color getHue:&h saturation:&s brightness:&b alpha:&a];
+    
+    //Multiply our values by the max value to convert
+    h *= 360;
+    s *= 100;
+    b *= 100;
+    
+    //Choose Between Schemes
+    switch (colorScheme) {
+        case ColorSchemeAnalogous:
+            if (isFlatScheme) return [self analogousColorSchemeFromHue:h Saturation:s Brightness:b flat:YES];
+            else return [self analogousColorSchemeFromHue:h Saturation:s Brightness:b flat:NO];
+        case ColorSchemeComplementary:
+            if (isFlatScheme) return [self complementaryColorSchemeFromHue:h Saturation:s Brightness:b flat:YES];
+            else return [self complementaryColorSchemeFromHue:h Saturation:s Brightness:b flat:NO];
+        case ColorSchemeTriadic:
+            if (isFlatScheme) return [self triadicColorSchemeFromHue:h Saturation:s Brightness:b flat:YES];
+            else return [self triadicColorSchemeFromHue:h Saturation:s Brightness:b flat:NO];
+        default:
+            NSAssert(0, @"Oops! Unrecognized color scheme provided as random color.");
+    }
+}
+
 + (NSArray *)arrayOfColorsWithColorScheme:(ColorScheme)colorScheme with:(UIColor *)color flatScheme:(BOOL)isFlatScheme {
     
     //Extract HSB values from input color
