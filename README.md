@@ -399,6 +399,8 @@ To implement this perform the following method call:
 ## 👑 Author
 Chameleon was developed by **Vicc Alexander** [(@ViccsMind)](https://twitter.com/viccsmind).
 
+Using Chameleon in your App? [Let me know](https://twitter.com/viccsmind). 🌈📲  
+
 ## 👏 Special Thanks
 Huge thanks to the following people for helping make Chameleon possible (seriously).
 
