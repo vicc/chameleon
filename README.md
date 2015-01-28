@@ -408,8 +408,6 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 
 * **[Marlon López](https://twitter.com/marlonmaxmm)** *(King Beta Tester. He filtered ideas and tested the framework in its various stages. S/O: Thanks for all the time you dedicated to listening about this)!*
 
-* **[Ahmet Sulek](https://twitter.com/ahmetsulek)**  *(Chameleon was inspired by my constant use of [FlatUIColors](http://flatuicolors.com) which is an awesome project that Ahmet built. Half of the colors used in Chameleon stemmed from his project!).*
-
 ## 📝 To Do List
 *No particular order.*
 * ~~Cocoapods Support~~ ![1.0.1](http://i.imgur.com/8Li5aRR.png)
@@ -420,6 +418,7 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 * ~~Gradient Colors~~ ![1.1.0](http://i.imgur.com/Py4QvaK.png)
 * ~~Update GradientStyle & ShadeStyle Syntax~~ ![1.1.1](http://i.imgur.com/AHxj8Rb.png)
 * ~~Add Radial Gradient Support~~ ![1.1.1](http://i.imgur.com/AHxj8Rb.png)
+* ~~Fix Swift Conflict with `initWithArray:for:flatScheme:` method~~  ![1.1.1](http://i.imgur.com/7NrZ7yx.png)
 * Update Sample App
 * Swift Version
 * Color Scheme From Images
@@ -427,6 +426,15 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 * UIAppearance Convenience Methods
 
 ## 📄 Change Log
+### 1.1.2
+• Updated Copyright in all files and launch images  
+• Added Launch Image in example project for iPhone 6 & iPhone 6 Plus  
+
+###### Deprecated Methods
+ * ~~`initWithArray:for:flatScheme:`~~
+
+Replaced with: `initWithArray:with:flatScheme:`  
+
 ### 1.1.1
 * ```ShadeStyle``` is now ```UIShadeStyle```
 * ```GradientStyle``` is now ```UIGradientStyle```
@@ -449,20 +457,20 @@ Huge thanks to the following people for helping make Chameleon possible (serious
 * New Macro: `ClearColor`
 
 ###### Deprecated Methods
-* `colorWithContrastingBlackOrWhiteColorOn:`
+* ~~`colorWithContrastingBlackOrWhiteColorOn:`~~
 
 Replaced with: `colorWithContrastingBlackOrWhiteColorOn:isFlat:`  
 
 ###### Deprecated Macros
-* `ContrastingColorOf(backgroundColor)`  
+* ~~`ContrastingColorOf(backgroundColor)`~~  
 
 Replaced with: `ContrastingColorOf(backgroundColor, isFlat)`
 
-* `ComplementaryColorOf(color)`
+* ~~`ComplementaryColorOf(color)`~~
 
 Replaced with: `ComplementaryFlatColorOf(color)`
 
-* `RandomColorWithShade(shade)`
+* ~~`RandomColorWithShade(shade)`~~
 
 Replaced with: `RandomFlatColorWithShade(shade)`
 
