@@ -77,7 +77,7 @@ The flatify feature is the most innovative and easy-to-use feature of Chameleon.
 </p>
 
 ### Gradient Colors ![New](http://i.imgur.com/BX3b9ES.png)
-With iOS 7, Apple mainstreamed flat colors. Now, with the impending release of iOS 8, Chameleon strives to elevate the game. Say 'hello' to gradient colors. Using one line of code, you can easily set any object's color properties to a gradient (background colors, text colors, tint colors, etc). Other features, like Chameleon's contrasting feature, can also be applied to create a seamless product. Experimentation is encouraged, and gutsiness is applauded!
+With iOS 7, Apple mainstreamed flat colors. Now, with the release of iOS 8, Chameleon strives to elevate the game. Say 'hello' to gradient colors. Using one line of code, you can easily set any object's color properties to a gradient (background colors, text colors, tint colors, etc). Other features, like Chameleon's contrasting feature, can also be applied to create a seamless product. Experimentation is encouraged, and gutsiness is applauded!
 
 <p align="center">
   <img src="http://i.imgur.com/7hTa5Pd.png" alt="Gradients"/>
