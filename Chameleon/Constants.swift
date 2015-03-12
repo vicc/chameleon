@@ -61,8 +61,10 @@ func StatusBarContrastColorOf(backgroundColor: UIColor) -> UIStatusBarStyle {
 // MARK: - Chameleon - NSArray Methods Shorthand
 
 //NSArray Methods Shorthand
-// TODO Extension needed ?
-
+// TODO Array Extension needed ;)
+func ColorScheme(_colorSchemeType: ColorScheme, _color: UIColor, _isFlatScheme: Bool) -> NSArray {
+    return NSArray(ofColorsWithColorScheme: _colorSchemeType, with: _color, flatScheme: _isFlatScheme)
+}
 
 // MARK: - Chameleon - Special Colors Shorthand
 
