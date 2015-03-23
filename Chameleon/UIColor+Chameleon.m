@@ -469,7 +469,7 @@
             [backgroundGradientLayer setEndPoint:CGPointMake(1.0, 0.5)];
             
             //Convert our CALayer to a UIImage object
-            UIGraphicsBeginImageContext(backgroundGradientLayer.bounds.size);
+            UIGraphicsBeginImageContextWithOptions(backgroundGradientLayer.bounds.size,NO, [UIScreen mainScreen].scale);
             [backgroundGradientLayer renderInContext:UIGraphicsGetCurrentContext()];
             UIImage *backgroundColorImage = UIGraphicsGetImageFromCurrentImageContext();
             UIGraphicsEndImageContext();
@@ -479,8 +479,7 @@
         }
             
         case UIGradientStyleRadial: {
-            
-            UIGraphicsBeginImageContextWithOptions(frame.size, 0, 1);
+            UIGraphicsBeginImageContextWithOptions(frame.size,NO, [UIScreen mainScreen].scale);
             
             //Specific the spread of the gradient (For now this gradient only takes 2 locations)
             CGFloat locations[2] = {0.0, 1.0};
@@ -521,7 +520,7 @@
             backgroundGradientLayer.colors = cgColors;
             
             //Convert our CALayer to a UIImage object
-            UIGraphicsBeginImageContext(backgroundGradientLayer.bounds.size);
+            UIGraphicsBeginImageContextWithOptions(backgroundGradientLayer.bounds.size,NO, [UIScreen mainScreen].scale);
             [backgroundGradientLayer renderInContext:UIGraphicsGetCurrentContext()];
             UIImage *backgroundColorImage = UIGraphicsGetImageFromCurrentImageContext();
             UIGraphicsEndImageContext();
