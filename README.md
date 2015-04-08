@@ -21,7 +21,7 @@ Chameleon solves problems that many other color libraries tend to overlook. With
 [● License](https://github.com/VAlexander/Chameleon#-license)  
 [● Contributions](https://github.com/VAlexander/Chameleon#-contributions)   
 [● Documentation](https://github.com/VAlexander/Chameleon#-documentation)  
-[● Storyboard Add-On](https://github.com/VAlexander/Chameleon#storyboard-add-on-)   
+[● Storyboard Add-On](https://github.com/VAlexander/Chameleon#storyboard-add-on)   
 [● Author](https://github.com/VAlexander/Chameleon#-author)   
 [● Special Thanks](https://github.com/VAlexander/Chameleon#-special-thanks)    
 [● To Do List](https://github.com/VAlexander/Chameleon#-to-do-list)  
