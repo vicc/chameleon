@@ -290,7 +290,7 @@
     
     //Run everything through our △H' Function
     CGFloat hDeltaPrime = 0;
-    if (fabsf(H1Prime - H2Prime) <= (180.0 * M_PI/180)) {
+    if (fabs(H1Prime - H2Prime) <= (180.0 * M_PI/180)) {
         
         hDeltaPrime = H2Prime - H1Prime;
         
@@ -307,7 +307,7 @@
     
     //Get Mean H' Value
     CGFloat MeanHPrime = 0;
-    if (fabsf(H1Prime-H2Prime) > (180.0 * M_PI/180)) {
+    if (fabs(H1Prime-H2Prime) > (180.0 * M_PI/180)) {
         
         MeanHPrime = (H1Prime + H2Prime + (360.0 * M_PI/180)) / 2;
         
