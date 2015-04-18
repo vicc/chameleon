@@ -440,8 +440,6 @@
     } else {
         return (luminance > 0.5f) ? hsba(0, 0, 15, alpha) : hsba(192, 2, 95, alpha);
     }
-    
-    return (luminance > 0.5f) ? [UIColor flatBlackColorDark] : [UIColor flatWhiteColor];
 }
 
 + (UIColor *)colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors; {
@@ -664,7 +662,7 @@
     
     //Run everything through our △H' Function
     CGFloat hDeltaPrime = 0;
-    if (fabsf(H1Prime - H2Prime) <= (180.0 * M_PI/180)) {
+    if (fabs(H1Prime - H2Prime) <= (180.0 * M_PI/180)) {
         
         hDeltaPrime = H2Prime - H1Prime;
         
@@ -681,7 +679,7 @@
     
     //Get Mean H' Value
     CGFloat MeanHPrime = 0;
-    if (fabsf(H1Prime-H2Prime) > (180.0 * M_PI/180)) {
+    if (fabs(H1Prime-H2Prime) > (180.0 * M_PI/180)) {
         
         MeanHPrime = (H1Prime + H2Prime + (360.0 * M_PI/180)) / 2;
         
