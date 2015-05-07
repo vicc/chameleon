@@ -403,7 +403,7 @@ Using Chameleon in your App? [Let me know](https://twitter.com/viccsmind). 🌈�
 
 ## 👏 Special Thanks
 
-Huge thanks to [**Alexander List**](https://github.com/alist), [**An Tran**](https://github.com/peacemoon), [**Asia Kwan**](https://github.com/aekwan), [**@Bre7**](https://github.com/bre7), [**Jonathan Hooper**](https://github.com/jmhooper), [**Jose Herran**](https://github.com/jherran), [**Marlon López**](https://twitter.com/MarlonMaxmm), [**Michael Cascio**](https://github.com/cascio), [**Saul López**](https://twitter.com/SaaauuuuL), [**Sophie Fader**](https://github.com/sfader), and [**Vincent Wayne**](https://github.com/smokyonion), for continuously contributing your help, and your time in improving Chameleon. All of you rock! 😆���
+Huge thanks to [**Alexander List**](https://github.com/alist), [**An Tran**](https://github.com/peacemoon), [**Asia Kwan**](https://github.com/aekwan), [**@Bre7**](https://github.com/bre7), [**Jonathan Hooper**](https://github.com/jmhooper), [**Jose Herran**](https://github.com/jherran), [**Marlon López**](https://twitter.com/MarlonMaxmm), [**Michael Cascio**](https://github.com/cascio), [**Saul López**](https://twitter.com/SaaauuuuL), [**Sophie Fader**](https://github.com/sfader), and [**Vincent Wayne**](https://github.com/smokyonion), for continuously contributing your help, and your time in improving Chameleon. All of you rock! 😆
 
 ## 📝 To Do List
 *No particular order.*
