@@ -18,7 +18,6 @@
     //Make buttons into circles
     colorButton1.layer.cornerRadius = colorButton1.bounds.size.width/2;
     colorButton2.layer.cornerRadius = colorButton2.bounds.size.width/2;
-    ;
 }
 
 - (IBAction)randomizeColor1 {
