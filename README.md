@@ -16,24 +16,24 @@ Chameleon is the **first and only** color framework on the market that focuses i
 Chameleon solves problems that many other color libraries tend to overlook. With their distracting and superfluous features, other libraries confuse and misdirect developers. They create extensions that display a few colors, but leave developers to essentially create cohesive color palettes and replace countless lines of `UIColor` code if they desire to switch to a "flat color" themselves. But now, with only a few characters of code, Chameleon does all the heavy lifting.
 
 ## Table of Contents
-[● Product Features](https://github.com/VAlexander/Chameleon#-product-features)  
-[● Requirements](https://github.com/VAlexander/Chameleon#%EF%B8%8F-requirements)  
-[● License](https://github.com/VAlexander/Chameleon#-license)  
-[● Contributions](https://github.com/VAlexander/Chameleon#-contributions)   
-[● Documentation](https://github.com/VAlexander/Chameleon#-documentation)  
-[● Storyboard Add-On](https://github.com/VAlexander/Chameleon#storyboard-add-on)   
-[● Author](https://github.com/VAlexander/Chameleon#-author)   
-[● Special Thanks](https://github.com/VAlexander/Chameleon#-special-thanks)    
-[● To Do List](https://github.com/VAlexander/Chameleon#-to-do-list)  
-[● Change Log](https://github.com/VAlexander/Chameleon#-change-log)  
+[● Product Features](https://github.com/ViccAlexander/Chameleon#-product-features)  
+[● Requirements](https://github.com/ViccAlexander/Chameleon#%EF%B8%8F-requirements)  
+[● License](https://github.com/ViccAlexander/Chameleon#-license)  
+[● Contributions](https://github.com/ViccAlexander/Chameleon#-contributions)   
+[● Documentation](https://github.com/ViccAlexander/Chameleon#-documentation)  
+[● Storyboard Add-On](https://github.com/ViccAlexander/Chameleon#storyboard-add-on)   
+[● Author](https://github.com/ViccAlexander/Chameleon#-author)   
+[● Special Thanks](https://github.com/ViccAlexander/Chameleon#-special-thanks)    
+[● To Do List](https://github.com/ViccAlexander/Chameleon#-to-do-list)  
+[● Change Log](https://github.com/ViccAlexander/Chameleon#-change-log)  
 
 <!--- 
-&nbsp;&nbsp;￮ [Installation](https://github.com/VAlexander/Chameleon#installation)  
-&nbsp;&nbsp;￮ [Usage](https://github.com/VAlexander/Chameleon#usage)  
-&nbsp;&nbsp;￮ [UIColor Methods](https://github.com/VAlexander/Chameleon#uicolor-methods)  
-&nbsp;&nbsp;￮ [UIStatusBarStyle Methods](https://github.com/VAlexander/Chameleon#uistatusbarstyle-methods)    
-&nbsp;&nbsp;￮ [Color Scheme Methods](https://github.com/VAlexander/Chameleon#color-schemes-methods)    
-&nbsp;&nbsp;￮ [Flatify Methods (Beta)](https://github.com/VAlexander/Chameleon#flatify-methods-beta) 
+&nbsp;&nbsp;￮ [Installation](https://github.com/ViccAlexander/Chameleon#installation)  
+&nbsp;&nbsp;￮ [Usage](https://github.com/ViccAlexander/Chameleon#usage)  
+&nbsp;&nbsp;￮ [UIColor Methods](https://github.com/ViccAlexander/Chameleon#uicolor-methods)  
+&nbsp;&nbsp;￮ [UIStatusBarStyle Methods](https://github.com/ViccAlexander/Chameleon#uistatusbarstyle-methods)    
+&nbsp;&nbsp;￮ [Color Scheme Methods](https://github.com/ViccAlexander/Chameleon#color-schemes-methods)    
+&nbsp;&nbsp;￮ [Flatify Methods (Beta)](https://github.com/ViccAlexander/Chameleon#flatify-methods-beta) 
 --->
 
 ## 🌟 Product Features
@@ -110,7 +110,7 @@ If you're like me and love to use storyboard, Chameleon's got you covered. We've
 * Uses Apple LLVM compiler 5.1
 
 ## 🔑 License
-Chameleon is released and distributed under the terms and conditions of the [MIT license](https://github.com/VAlexander/Chameleon/blob/master/LICENSE.md).
+Chameleon is released and distributed under the terms and conditions of the [MIT license](https://github.com/ViccAlexander/Chameleon/blob/master/LICENSE.md).
 
 ## 👥 Contributions
 If you run into problems, please open up an issue. I also actively welcome pull requests. By contributing to Chameleon you agree that your contributions will be licensed under its MIT license.
@@ -121,13 +121,13 @@ If you use the Chameleon framework in your app I would love to hear about it! Dr
 All methods, properties, and types available in the Chameleon Framework are documented below. Although many people are not huge fans of macro files, I have included an optional "shorthand syntax" for each of the methods, properties, and types documented below.
 
 #####Documentation Table of Contents  
-[● Installation](https://github.com/VAlexander/Chameleon#installation)  
-[● Storyboard-Add On](https://github.com/VAlexander/Chameleon#storyboard-add-on-)  
-[● Usage](https://github.com/VAlexander/Chameleon#usage)  
-[● UIColor Methods](https://github.com/VAlexander/Chameleon#uicolor-methods)  
-[● UIStatusBarStyle Methods](https://github.com/VAlexander/Chameleon#uistatusbarstyle-methods)  
-[● Color Scheme Methods](https://github.com/VAlexander/Chameleon#color-schemes-methods)  
-[● Flatify Methods (Beta)](https://github.com/VAlexander/Chameleon#flatify-methods-beta)  
+[● Installation](https://github.com/ViccAlexander/Chameleon#installation)  
+[● Storyboard-Add On](https://github.com/ViccAlexander/Chameleon#storyboard-add-on-)  
+[● Usage](https://github.com/ViccAlexander/Chameleon#usage)  
+[● UIColor Methods](https://github.com/ViccAlexander/Chameleon#uicolor-methods)  
+[● UIStatusBarStyle Methods](https://github.com/ViccAlexander/Chameleon#uistatusbarstyle-methods)  
+[● Color Scheme Methods](https://github.com/ViccAlexander/Chameleon#color-schemes-methods)  
+[● Flatify Methods (Beta)](https://github.com/ViccAlexander/Chameleon#flatify-methods-beta)  
 
 ###Installation
 ####CocoaPods Installation
@@ -146,7 +146,7 @@ If you rather install this framework manually, just drag and drop the Chameleon 
 Note: Don't forget to manually import the *QuartzCore* & *CoreGraphics* framework if you plan on using gradient colors!
 
 ####Storyboard Add-On ![New](http://i.imgur.com/BX3b9ES.png)
-Using Chameleon's awesome palette in Storyboard is easy! Simply download and install [Chameleon Palette](https://github.com/VAlexander/Chameleon/blob/master/Extras/Chameleon.dmg?raw=true).
+Using Chameleon's awesome palette in Storyboard is easy! Simply download and install [Chameleon Palette](https://github.com/ViccAlexander/Chameleon/blob/master/Extras/Chameleon.dmg?raw=true).
 
 Once installed, make sure to restart XCode. You'll find all of Chameleon's colors in the Palette Color Picker whenever they're needed! :)
 
