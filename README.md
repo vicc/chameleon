@@ -426,7 +426,7 @@ Huge thanks to [**Alexander List**](https://github.com/alist), [**An Tran**](htt
 ### 1.2.0
 • Updated Swift syntax to Swift 1.2 *(Fixed by [**@peacemoon**](https://github.com/peacemoon))*.    
 • Split Objective-C & Swift Files into separate folders.  
-• Fixed cocoapods installation error #30. Everything should work out-of-the-box for Objective-C projects.
+• Fixed cocoapods installation error [#30](https://github.com/ViccAlexander/Chameleon/issues/30). Everything should work out-of-the-box for Objective-C projects.
 
 ### 1.1.3
 • Chameleon shorthand is now supported in Swift. *(Thanks to [**@bre7**](https://github.com/bre7))*
