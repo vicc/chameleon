@@ -429,6 +429,21 @@ func preferredStatusBarStyle() -> UIStatusBarStyle {
 }
 ```
 
+Or using swift extensions (no need for sublcassing):
+
+``` swift
+extension UINavigationController {
+    public override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        //Shorthand
+        if let navBarTintColor = self.navigationBar.barTintColor {
+            return StatusBarContrastColorOf(navBarTintColor)
+        } else {
+            return .Default
+        }
+    }
+}
+```
+
 Note: You should set the `backgroundColor` of the `navigationBar`'s `barTintColor` property if you want the status bar text to always contrast the navigation bar. If you're only using a `ViewController` just call this method in that controller's respective class file.
 
 ###Color Schemes Methods
