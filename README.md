@@ -136,15 +136,7 @@ Chameleon is now available on [CocoaPods](http://cocoapods.org). Simply add the 
 pod 'ChameleonFramework'
 ```
 
-If you're working with Swift there's 2 additional steps.  
-
-1) Copy and paste the following into your bridging header file:
-
-``` objective-c
-#import <ChameleonFramework/Chameleon.h>
-```
-
-2) If you'd like to use Chameleon Shorthand in swift, download and drag the following file, [ChameleonShorthand.swift](https://github.com/ViccAlexander/Chameleon/blob/master/Pod/Classes/Swift/ChameleonShorthand.swift), into your project, and you'll be good to go.
+If you're working with Swift there's an additional step. If you'd like to use Chameleon Shorthand, download and drag the following file, [ChameleonShorthand.swift](https://github.com/ViccAlexander/Chameleon/blob/master/Pod/Classes/Swift/ChameleonShorthand.swift), into your project, and you'll be good to go.
 
 ####Manual Installation
 If you rather install this framework manually, just drag and drop the Chameleon folder into your project, and make sure you check the following boxes.
@@ -169,7 +161,7 @@ To use the myriad of features in Chameleon, include the following import:
 
 ###### If you installed Chameleon using cocoapods:
 ``` objective-c
-#import "ChameleonFramework/Chameleon.h"
+#import <ChameleonFramework/Chameleon.h>
 ```
 
 ###### If you installed Chameleon manually:
@@ -486,9 +478,10 @@ NSMutableArray *colorArray = [NSMutableArray alloc] initWithArray:[NSArray array
 ######Swift
 ``` swift
 var colorArray = NSArray(ofColorsWithColorScheme:ColorScheme.Analogous, with:UIColor.flatRedColor(), flatScheme:true)
-```
-
+```  
+  
 #####Chameleon Shorthand:
+######Objective-C
 ``` objective-c
 NSMutableArray *colorArray = [[NSMutableArray alloc] initWithArray:ColorScheme(ColorSchemeAnalogous, FlatRed, YES)];
 ```
@@ -524,13 +517,13 @@ Implementing this feature is so easy, there was no need to build a Chameleon sho
 ######Objective-C
 ```objective-c
 [self flatify];
-```
-
+```  
+  
 ######Swift
 ``` swift
 self.flatify()
-```
-
+```  
+  
 #####Implementing Flatify With Contrasting Colors
 
 We've also built a secondary flatify feature that not only flattens object colors, but also recognizes text and tint colors. After detecting such properties, it applies smart contrast to them, returning either a`flatBlackDark` or `flatWhite` color.
