@@ -2,7 +2,7 @@ Chameleon for iOS
 =========
 
 <p align="center">
-  <img src="http://i.imgur.com/E5hHBMG.gif" alt="Chameleon by Vicc Alexander"/>
+  <img src="http://i.imgur.com/9U9FV4j.png" alt="Chameleon by Vicc Alexander"/>
 </p>
 
 ## Introduction
