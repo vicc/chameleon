@@ -421,7 +421,7 @@ func preferredStatusBarStyle() -> UIStatusBarStyle {
 }
 ```
 
-Or using swift extensions (no need for sublcassing):
+You can also use Swift Extensions (No need for subclassing):
 
 ``` swift
 extension UINavigationController {
