@@ -145,8 +145,6 @@ use_frameworks!
 pod 'ChameleonFramework/Swift'
 ```
 
-**Swift Users:** If you'd like to use Chameleon Shorthand in Swift, download and drag the following file, [ChameleonShorthand.swift](https://github.com/ViccAlexander/Chameleon/blob/master/Pod/Classes/Swift/ChameleonShorthand.swift), into your project, and you'll be good to go (Swift 2 compatible).
-
 ####Manual Installation
 If you rather install this framework manually, just drag and drop the Chameleon folder into your project, and make sure you check the following boxes.
 
