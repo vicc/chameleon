@@ -132,10 +132,17 @@ All methods, properties, and types available in the Chameleon Framework are docu
 ####CocoaPods Installation
 Chameleon is now available on [CocoaPods](http://cocoapods.org). Simply add the following to your project Podfile, and you'll be good to go.
 
+######Objective-C
 ```ruby
 use_frameworks!
 
 pod 'ChameleonFramework'
+```
+######Swift
+```ruby
+use_frameworks!
+
+pod 'ChameleonFramework/Swift'
 ```
 
 **Swift Users:** If you'd like to use Chameleon Shorthand in Swift, download and drag the following file, [ChameleonShorthand.swift](https://github.com/ViccAlexander/Chameleon/blob/master/Pod/Classes/Swift/ChameleonShorthand.swift), into your project, and you'll be good to go (Swift 2 compatible).
