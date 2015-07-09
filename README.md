@@ -145,16 +145,14 @@ use_frameworks!
 pod 'ChameleonFramework/Swift'
 ```
 =======
-If you're working with Swift there's an additional step. If you'd like to use Chameleon Shorthand, download and drag the following file, [ChameleonShorthand.swift](https://github.com/ViccAlexander/Chameleon/blob/master/Pod/Classes/Swift/ChameleonShorthand.swift), into your project, and you'll be good to go.
-
 ####Manual Installation
-If you rather install this framework manually, just drag and drop the Chameleon folder into your project, and make sure you check the following boxes.
+If you rather install this framework manually, just drag and drop the Chameleon folder into your project, and make sure you check the following boxes. Note: Don't forget to manually import the *QuartzCore* & *CoreGraphics* framework if you plan on using gradient colors!
 
 <p align="center">
   <img src="http://i.imgur.com/gDXaF5F.png" alt="Manual Installation"/>
 </p>
 
-Note: Don't forget to manually import the *QuartzCore* & *CoreGraphics* framework if you plan on using gradient colors!
+If you're working with Swift there's an additional step. If you'd like to use Chameleon Shorthand, download and drag the following file, [ChameleonShorthand.swift](https://github.com/ViccAlexander/Chameleon/blob/master/Pod/Classes/Swift/ChameleonShorthand.swift), into your project, and you'll be good to go.
 
 ####Storyboard Add-On ![New](http://i.imgur.com/BX3b9ES.png)
 Using Chameleon's awesome palette in Storyboard is easy! Simply download and install [Chameleon Palette](https://github.com/ViccAlexander/Chameleon/blob/master/Extras/Chameleon.dmg?raw=true).
@@ -632,6 +630,9 @@ Huge thanks to [**Alexander List**](https://github.com/alist), [**An Tran**](htt
 * UIAppearance Convenience Methods
 
 ## 📄 Change Log
+### 1.2.1
+• Added cocoapods support for Swift 2 *(Thanks to [**@bre7**](https://github.com/bre7))*. 
+
 ### 1.2.0
 • Fixed cocoapods installation error [#30](https://github.com/ViccAlexander/Chameleon/issues/30).  
 • Updated Swift syntax to Swift 1.2 *(Fixed by [**@peacemoon**](https://github.com/peacemoon))*.    
