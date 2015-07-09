@@ -144,6 +144,8 @@ use_frameworks!
 
 pod 'ChameleonFramework/Swift'
 ```
+=======
+If you're working with Swift there's an additional step. If you'd like to use Chameleon Shorthand, download and drag the following file, [ChameleonShorthand.swift](https://github.com/ViccAlexander/Chameleon/blob/master/Pod/Classes/Swift/ChameleonShorthand.swift), into your project, and you'll be good to go.
 
 ####Manual Installation
 If you rather install this framework manually, just drag and drop the Chameleon folder into your project, and make sure you check the following boxes.
@@ -428,6 +430,7 @@ func preferredStatusBarStyle() -> UIStatusBarStyle {
 }
 ```
 
+<<<<<<< Updated upstream
 You can also use Swift Extensions (No need for subclassing):
 
 ``` swift
@@ -443,6 +446,8 @@ extension UINavigationController {
 }
 ```
 
+=======
+>>>>>>> Stashed changes
 Note: You should set the `backgroundColor` of the `navigationBar`'s `barTintColor` property if you want the status bar text to always contrast the navigation bar. If you're only using a `ViewController` just call this method in that controller's respective class file.
 
 ###Color Schemes Methods
@@ -500,6 +505,7 @@ NSMutableArray *colorArray = [NSMutableArray alloc] initWithArray:[NSArray array
 ######Swift
 ``` swift
 var colorArray = NSArray(ofColorsWithColorScheme:ColorScheme.Analogous, with:UIColor.flatRedColor(), flatScheme:true)
+<<<<<<< Updated upstream
 ```
 
 #####Chameleon Shorthand:
@@ -514,6 +520,23 @@ var colorArray = ColorSchemeOf(ColorScheme.Analogous, FlatRed(), true)
   
 You can then retrieve each individual color the same way you would normally retrieve any object from an array:
 #####Normal Convention:
+=======
+```  
+  
+#####Chameleon Shorthand:
+######Objective-C
+``` objective-c
+NSMutableArray *colorArray = [[NSMutableArray alloc] initWithArray:ColorScheme(ColorSchemeAnalogous, FlatRed, YES)];
+```
+
+######Swift
+``` swift
+var colorArray = ColorSchemeOf(ColorScheme.Analogous, FlatRed(), true)
+```
+
+You can then retrieve each individual color the same way you would normally retrieve any object from an array:
+
+>>>>>>> Stashed changes
 ######Objective-C
 ```objective-c
 UIColor *firstColor = colorArray[0];
@@ -522,8 +545,13 @@ UIColor *firstColor = colorArray[0];
 ######Swift
 ``` swift
 var firstColor = colorArray[0] as! UIColor
+<<<<<<< Updated upstream
 ```  
   
+=======
+```
+
+>>>>>>> Stashed changes
 ###Flatify Methods (Beta)
 Again, this is the hallmark feature of Chameleon. Although 99% of objects can be identified and recolored, the `Flatify` feature can, as of yet, only be called from a `UIViewController` class. Other controllers will soon be supported. Keep in mind this is a beta feature, and it may not be 100% spot-on. :)
 
@@ -538,6 +566,7 @@ Implementing this feature is so easy, there was no need to build a Chameleon sho
 ######Objective-C
 ```objective-c
 [self flatify];
+<<<<<<< Updated upstream
 ```
 
 ######Swift
@@ -545,6 +574,15 @@ Implementing this feature is so easy, there was no need to build a Chameleon sho
 self.flatify()
 ```
 
+=======
+```  
+  
+######Swift
+``` swift
+self.flatify()
+```  
+  
+>>>>>>> Stashed changes
 #####Implementing Flatify With Contrasting Colors
 
 We've also built a secondary flatify feature that not only flattens object colors, but also recognizes text and tint colors. After detecting such properties, it applies smart contrast to them, returning either a`flatBlackDark` or `flatWhite` color.
