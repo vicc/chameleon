@@ -8,11 +8,11 @@ Pod::Spec.new do |s|
   s.license      		= { :type => "MIT", :file => "LICENSE.md" }
   s.author       		= "Vicc Alexander"
   s.social_media_url   	= "http://twitter.com/ViccsMind"
-  s.platform     		= :ios, "7.0"
+  s.platform     		= :ios
+  s.ios.deployment_target = '7.0'
   s.source       		= { :git => "https://github.com/ViccAlexander/Chameleon.git", 
                      		:tag => s.version.to_s }
-  
-  s.source_files  = 'Pod/Classes/**/*.{h,m}'
+
   s.public_header_files = 'Pod/Classes/Objective-C/**/*.h'
   s.frameworks   = 'UIKit', 'QuartzCore', 'CoreGraphics'
 
@@ -24,7 +24,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'Swift' do |ss|
       ss.ios.deployment_target = '8.0'
-      ss.osx.deployment_target = '10.10'
       ss.source_files = 'Pod/Classes/Swift/ChameleonShorthand.swift'
       ss.dependency 'ChameleonFramework/Default'
   end
