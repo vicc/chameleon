@@ -16,4 +16,16 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Pod/Classes/Objective-C/**/*.h'
   s.frameworks   = 'UIKit', 'QuartzCore', 'CoreGraphics'
 
+  s.default_subspecs = 'Default'
+
+  s.subspec 'Default' do |ss|
+    ss.source_files = 'Pod/Classes/Objective-C/**/*.{h,m}'
+  end
+
+  s.subspec 'Swift' do |ss|
+      ss.ios.deployment_target = '8.0'
+      ss.osx.deployment_target = '10.10'
+      ss.source_files = 'Pod/Classes/Swift/ChameleonShorthand.swift'
+      ss.dependency 'ChameleonFramework/Default'
+  end
 end
