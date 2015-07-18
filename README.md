@@ -87,7 +87,7 @@ With iOS 7, Apple mainstreamed flat colors. Now, with the release of iOS 8, Cham
 
 ### Xcode Quick Help Documentation ![New](http://i.imgur.com/BX3b9ES.png)
 
-Chameleon's documentation, while written as clearly and concisely as possible (Thank [Asia](https://github.com/aekwan) for that!), may still render some slightly confused. But don't fret! Staying true to our vision of simplifying the entire color process, we added Xcode Quick Help's Documentation Support! Simply highlight a Chameleon method or tap it with three fingers to find out more about what it is and what it does!
+Chameleon's documentation, while written as clearly and concisely as possible may still render some slightly confused. But don't fret! Staying true to our vision of simplifying the entire color process, we added Xcode Quick Help's Documentation Support! Simply highlight a Chameleon method or tap it with three fingers to find out more about what it is and what it does!
 
 <p align="center">
   <img src="http://i.imgur.com/p4KkQ9X.png" alt="Xcode Quick Help Documentation"/>
@@ -161,6 +161,10 @@ Once installed, make sure to restart XCode. You'll find all of Chameleon's color
 
 <p align="center">
   <img src="http://i.imgur.com/XqpFUSt.png" alt="Chameleon Palette"/>
+</p>
+
+<p align="center">
+  <img src="http://i.imgur.com/QhhPFHY.gif" alt="Chameleon Palette"/>
 </p>
 
 ###Usage
@@ -302,7 +306,7 @@ ComplementaryFlatColorOf(color)
 ```
 
 ####Contrasting Color
-The contrasting color feature returns either a dark color a light color depending on what the Chameleon algorithm believes is a better choice. You can specify whether the dark or light colors are flat: *([UIColor flatWhiteColor] & [UIColor flatBlackColorDark])* or non-flat *([UIColor whiteColor] & [UIColor blackColor]).*
+The contrasting color feature returns either a dark color a light color depending on what the Chameleon algorithm believes is a better choice. You can specify whether the dark or light colors are flat: *`([UIColor flatWhiteColor]` & `[UIColor flatBlackColorDark]`)* or non-flat *(`[UIColor whiteColor]` & `[UIColor blackColor]`).*
 
 If you're trying to set a `UILabel's textColor` property, make sure you provide the `UILabel's backgroundColor`. If your label has a clear `backgroundColor`, just provide the `backgroundColor` property of the object directly behind the `UILabel`.
 
@@ -330,7 +334,7 @@ ContrastColorOf(backgroundColor, isFlat);
 ContrastColorOf(backgroundColor, isFlat)
 ```
 
-Note: As off Chameleon 1.1.0, *colorWithContrastingBlackOrWhiteColorOn:* is deprecated. Please use the methods listed above.
+Note: As off Chameleon `1.1.0`, *`colorWithContrastingBlackOrWhiteColorOn:`* is deprecated. Please use the methods listed above.
 
 ####Flat Version of Non-Flat Color
 As mentioned previously, this feature is unique to Chameleon. While this feature is in its early stages of operation and can be improved, it is accurate in finding the nearest flat version of any color in the spectrum, and very simple to use:
@@ -390,7 +394,7 @@ GradientColor(gradientStyle, frame, colors);
 GradientColor(gradientStyle, frame, colors)
 ```
 
-Objective-C Note: If you use the Chameleon Shorthand, and use the NSArray literal ```@[]``` to set the array of colors, make sure you add parenthesis around it, or else you'll get an error.
+**Objective-C Note**: If you use the Chameleon Shorthand, and use the `NSArray` literal ```@[]``` to set the array of colors, make sure you add parenthesis around it, or else you'll get an error.
 
 Note: `UIGradientStyleRadial` only uses a maximum of 2 colors at the moment. So if more colors are provided, they will not show.
 
@@ -428,7 +432,6 @@ func preferredStatusBarStyle() -> UIStatusBarStyle {
 }
 ```
 
-<<<<<<< Updated upstream
 You can also use Swift Extensions (No need for subclassing):
 
 ``` swift
@@ -444,9 +447,7 @@ extension UINavigationController {
 }
 ```
 
-=======
->>>>>>> Stashed changes
-Note: You should set the `backgroundColor` of the `navigationBar`'s `barTintColor` property if you want the status bar text to always contrast the navigation bar. If you're only using a `ViewController` just call this method in that controller's respective class file.
+**Note**: You should set the `backgroundColor` of the `navigationBar`'s `barTintColor` property if you want the status bar text to always contrast the navigation bar. If you're only using a `ViewController` just call this method in that controller's respective class file.
 
 ###Color Schemes Methods
 *Note: Due to the limited number of flat colors currently available, color schemes may return results that reuse certain flat colors. Because of this redundancy, we have provided an option to return either a flat color scheme or a non-flat color scheme until more flat colors are added to the inventory.*
@@ -503,24 +504,8 @@ NSMutableArray *colorArray = [NSMutableArray alloc] initWithArray:[NSArray array
 ######Swift
 ``` swift
 var colorArray = NSArray(ofColorsWithColorScheme:ColorScheme.Analogous, with:UIColor.flatRedColor(), flatScheme:true)
-<<<<<<< Updated upstream
 ```
 
-#####Chameleon Shorthand:
-``` objective-c
-NSMutableArray *colorArray = [[NSMutableArray alloc] initWithArray:ColorScheme(ColorSchemeAnalogous, FlatRed, YES)];
-```
-
-######Swift
-``` swift
-var colorArray = ColorSchemeOf(ColorScheme.Analogous, FlatRed(), true)
-```  
-  
-You can then retrieve each individual color the same way you would normally retrieve any object from an array:
-#####Normal Convention:
-=======
-```  
-  
 #####Chameleon Shorthand:
 ######Objective-C
 ``` objective-c
@@ -530,11 +515,10 @@ NSMutableArray *colorArray = [[NSMutableArray alloc] initWithArray:ColorScheme(C
 ######Swift
 ``` swift
 var colorArray = ColorSchemeOf(ColorScheme.Analogous, FlatRed(), true)
-```
+```  
 
 You can then retrieve each individual color the same way you would normally retrieve any object from an array:
 
->>>>>>> Stashed changes
 ######Objective-C
 ```objective-c
 UIColor *firstColor = colorArray[0];
@@ -543,13 +527,8 @@ UIColor *firstColor = colorArray[0];
 ######Swift
 ``` swift
 var firstColor = colorArray[0] as! UIColor
-<<<<<<< Updated upstream
 ```  
-  
-=======
-```
 
->>>>>>> Stashed changes
 ###Flatify Methods (Beta)
 Again, this is the hallmark feature of Chameleon. Although 99% of objects can be identified and recolored, the `Flatify` feature can, as of yet, only be called from a `UIViewController` class. Other controllers will soon be supported. Keep in mind this is a beta feature, and it may not be 100% spot-on. :)
 
@@ -564,7 +543,6 @@ Implementing this feature is so easy, there was no need to build a Chameleon sho
 ######Objective-C
 ```objective-c
 [self flatify];
-<<<<<<< Updated upstream
 ```
 
 ######Swift
@@ -572,15 +550,6 @@ Implementing this feature is so easy, there was no need to build a Chameleon sho
 self.flatify()
 ```
 
-=======
-```  
-  
-######Swift
-``` swift
-self.flatify()
-```  
-  
->>>>>>> Stashed changes
 #####Implementing Flatify With Contrasting Colors
 
 We've also built a secondary flatify feature that not only flattens object colors, but also recognizes text and tint colors. After detecting such properties, it applies smart contrast to them, returning either a`flatBlackDark` or `flatWhite` color.
