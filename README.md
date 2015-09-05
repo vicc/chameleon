@@ -437,12 +437,10 @@ You can also use Swift Extensions (No need for subclassing):
 ``` swift
 extension UINavigationController {
     public override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        guard let navBarTintColor = self.navigationBar.barTintColor else { return .Default }
+
         //Shorthand
-        if let navBarTintColor = self.navigationBar.barTintColor {
-            return StatusBarContrastColorOf(navBarTintColor)
-        } else {
-            return .Default
-        }
+        return StatusBarContrastColorOf(navBarTintColor)
     }
 }
 ```
