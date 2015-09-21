@@ -29,6 +29,10 @@
 
 @implementation UIViewController (Chameleon)
 
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+
 #pragma mark - Runtime
 
 - (void)setShouldContrast:(BOOL)contrast {
@@ -852,5 +856,7 @@
     
     return (luminance > 0.6f) ? UIStatusBarStyleDefault : UIStatusBarStyleLightContent;
 }
+
+#pragma GCC diagnostic pop
 
 @end

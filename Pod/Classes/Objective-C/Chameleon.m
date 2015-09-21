@@ -12,6 +12,9 @@
 
 @implementation Chameleon
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+
 + (void)setGlobalThemeUsingPrimaryColor:(UIColor *)primaryColor
                  withContentStyle:(UIContentStyle)contentStyle {
      
@@ -45,6 +48,7 @@
     [[self class] customizeTabBarWithBarTintColor:FlatWhite andTintColor:primaryColor];
     [[self class] customizeToolbarWithPrimaryColor:primaryColor withContentStyle:contentStyle];
 }
+
 
 + (void)setGlobalThemeUsingPrimaryColor:(UIColor *)primaryColor
                withSecondaryColor:(UIColor *)secondaryColor
@@ -302,7 +306,6 @@
     
     [[UIButton appearance] setTintColor:secondaryContentColor];
     [[UIButton appearance] setBackgroundColor:secondaryColor];
-    
     
     [[UIButton appearanceWhenContainedIn:[UISearchBar class], nil] setTintColor:contentColor];
     [[UIButton appearanceWhenContainedIn:[UISearchBar class], nil] setBackgroundColor:ClearColor];
@@ -747,5 +750,7 @@
     [[UIToolbar appearance] setBarTintColor:primaryColor];
     [[UIToolbar appearance] setClipsToBounds:YES];
 }
+
+#pragma GCC diagnostic pop
 
 @end
