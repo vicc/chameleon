@@ -1,10 +1,8 @@
 Pod::Spec.new do |s|
   s.name         		= "ChameleonFramework"
-  s.version     		= "1.2.1"
-  s.summary      		= "Flat Color Framework for iOS (Obj-C & Swift)"
+  s.version     		= “2.0.0”
+  s.summary      		= "Color Framework for iOS (Obj-C & Swift)"
   s.homepage    		= "https://github.com/ViccAlexander/Chameleon"
-  s.screenshots  		= "http://i.imgur.com/GkcP4e9.png", "http://i.imgur.com/K648Zzr.png", "http://i.imgur.com/QByU4w7.png"
-
   s.license      		= { :type => "MIT", :file => "LICENSE.md" }
   s.author       		= "Vicc Alexander"
   s.social_media_url   	= "http://twitter.com/ViccsMind"

@@ -28,8 +28,8 @@
  */
 
 #import "UIColor+Chameleon.h"
+#import "UIColor+ChameleonPrivate.h"
 #import "ChameleonMacros.h"
-#import "UIColor+CIELAB.h"
 #import <objc/runtime.h>
 
 @implementation UIColor (Chameleon)
@@ -44,6 +44,7 @@
 }
 
 + (UIImage *)gradientImage {
+    
     return objc_getAssociatedObject(self, @selector(gradientImage));
 }
 
@@ -245,7 +246,57 @@
 
 #pragma mark - Chameleon - "Color With" Methods
 
++ (UIColor *)colorWithAverageColorFromImage:(UIImage *)image {
+    
+    return [self colorWithAverageColorFromImage:image withAlpha:1.0];
+}
+
++ (UIColor *)colorWithAverageColorFromImage:(UIImage *)image withAlpha:(CGFloat)alpha {
+    
+    //Work within the RGB colorspoace
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    unsigned char rgba[4];
+    CGContextRef context = CGBitmapContextCreate(rgba, 1, 1, 8, 4, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    
+    //Draw our image down to 1x1 pixels
+    CGContextDrawImage(context, CGRectMake(0, 0, 1, 1), image.CGImage);
+    CGColorSpaceRelease(colorSpace);
+    CGContextRelease(context);
+    
+    //Check if image alpha is 0
+    if (rgba[3] == 0) {
+        
+        CGFloat imageAlpha = ((CGFloat)rgba[3])/255.0;
+        CGFloat multiplier = imageAlpha/255.0;
+        
+        UIColor *averageColor = [UIColor colorWithRed:((CGFloat)rgba[0])*multiplier green:((CGFloat)rgba[1])*multiplier blue:((CGFloat)rgba[2])*multiplier alpha:imageAlpha];
+        
+        //Improve color
+        averageColor = [averageColor colorWithMinimumSaturation:0.15];
+        
+        //Return average color
+        return averageColor;
+    }
+    
+    else {
+        
+        //Get average
+        UIColor *averageColor = [UIColor colorWithRed:((CGFloat)rgba[0])/255.0 green:((CGFloat)rgba[1])/255.0 blue:((CGFloat)rgba[2])/255.0 alpha:alpha];
+        
+        //Improve color
+        averageColor = [averageColor colorWithMinimumSaturation:0.15];
+        
+        //Return average color
+        return averageColor;
+    }
+}
+
 + (UIColor *)colorWithComplementaryFlatColorOf:(UIColor *)color {
+    
+    return [[self class] colorWithComplementaryFlatColorOf:color withAlpha:1.0];
+}
+
++ (UIColor *)colorWithComplementaryFlatColorOf:(UIColor *)color withAlpha:(CGFloat)alpha {
     
     //Check if input UIColor is a gradient aka a pattern
     if (CGColorGetPattern(color.CGColor)) {
@@ -266,18 +317,18 @@
         //Read the RGB values from the context's buffer
         uint8_t *data = CGBitmapContextGetData(ctx);
         color = [UIColor colorWithRed:data[2] / 255.0f
-                                          green:data[1] / 255.0f
-                                           blue:data[0] / 255.0f
-                                          alpha:1];
+                                green:data[1] / 255.0f
+                                 blue:data[0] / 255.0f
+                                alpha:1];
         UIGraphicsEndImageContext();
     }
     
-    // Extract & Check to make sure we have an actual color to work with (Clear returns clear)
-    CGFloat hue, saturation, brightness, alpha;
-    [color getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
+    //Extract & Check to make sure we have an actual color to work with (Clear returns clear)
+    CGFloat hue, saturation, brightness, alpha1;
+    [color getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha1];
     
     //Check if color is transparent
-    if (alpha == 0) {
+    if (alpha1 == 0) {
         return [UIColor clearColor];
     }
     
@@ -298,14 +349,29 @@
     brightness = roundf(brightness);
     
     //Store complimentary nonflat color
-    UIColor *complimentaryNonFlatColor = [UIColor colorWithHue:hue/360.0 saturation:saturation/100.0 brightness:brightness/100.0 alpha:alpha];
+    UIColor *complimentaryNonFlatColor = [UIColor colorWithHue:hue/360.0
+                                                    saturation:saturation/100.0
+                                                    brightness:brightness/100.0
+                                                         alpha:alpha];
     
     //Retrieve LAB values from our complimentary nonflat color & return nearest flat color
-    return [self colorWithFlatVersionOf:complimentaryNonFlatColor];
+    return [self colorWithFlatVersionOf:complimentaryNonFlatColor withAlpha:alpha];
 }
 
 
 + (UIColor *)colorWithFlatVersionOf:(UIColor *)color {
+    
+    //Return flat version with default alpha of 1.0
+    return [[self class] colorWithFlatVersionOf:color withAlpha:1.0];
+}
+
++ (UIColor *)colorWithFlatVersionFrom:(UIColor *)color {
+    
+    //Return flat version with default alpha of 1.0
+    return [[self class] colorWithFlatVersionOf:color withAlpha:1.0];
+}
+
++ (UIColor *)colorWithFlatVersionOf:(UIColor *)color withAlpha:(CGFloat)alpha {
     
     //Check if input UIColor is a gradient aka a pattern
     if (CGColorGetPattern(color.CGColor)) {
@@ -333,25 +399,28 @@
     }
     
     //Create CGFloats to hold our color values
-    CGFloat L, A, B, alpha;
+    CGFloat L, A, B, alpha1;
     
     //Get LAB values for our color
-    [color getLightness:&L valueForA:&A valueForB:&B alpha:&alpha];
+    [color getLightness:&L valueForA:&A valueForB:&B alpha:&alpha1];
     
-    if (![color getLightness:&L valueForA:&A valueForB:&B alpha:&alpha]) {
+    if (![color getLightness:&L valueForA:&A valueForB:&B alpha:&alpha1]) {
         return nil;
     }
     
     //Find the nearest flat color
-    return [self nearestFlatColorForL:L A:A B:B alpha:1.0];
+    return [self nearestFlatColorForL:L A:A B:B alpha:alpha];
 }
 
++ (UIColor *)colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor isFlat:(BOOL)flat {
+    
+    //Return color with default alpha value of 1.0
+    return [[self class] colorWithContrastingBlackOrWhiteColorOn:backgroundColor isFlat:flat alpha:1.0];
+}
 
-/* 
- Deprecated as of version 1.1.0 Please use the method below this one.
-*/
- 
-+ (UIColor *)colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor {
++ (UIColor *)colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor
+                                              isFlat:(BOOL)flat
+                                               alpha:(CGFloat)alpha {
     
     //Check if UIColor is a gradient aka a pattern
     if (CGColorGetPattern(backgroundColor.CGColor)) {
@@ -380,7 +449,8 @@
     
     //Calculate Luminance
     CGFloat luminance;
-    CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha = 0.0;
+    CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha1 = 0.0;
+    [backgroundColor getRed:&red green:&green blue:&blue alpha:&alpha1];
     
     //Check if color is transparent
     if (alpha == 0) {
@@ -388,57 +458,13 @@
     }
     
     // Relative luminance in colorimetric spaces - http://en.wikipedia.org/wiki/Luminance_(relative)
-	red *= 0.2126f; green *= 0.7152f; blue *= 0.0722f;
-    luminance = red + green + blue;
-    
-    return (luminance > 0.5f) ? hsba(0, 0, 15, alpha) : hsba(192, 2, 95, alpha);
-}
-
-+ (UIColor *)colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor isFlat:(BOOL)flat {
-    
-    //Check if UIColor is a gradient aka a pattern
-    if (CGColorGetPattern(backgroundColor.CGColor)) {
-        
-        //Let's find the average color of the image and contrast against that.
-        CGSize size = {1, 1};
-        
-        //Create a 1x1 bitmap context
-        UIGraphicsBeginImageContext(size);
-        CGContextRef ctx = UIGraphicsGetCurrentContext();
-        
-        //Set the interpolation quality to medium
-        CGContextSetInterpolationQuality(ctx, kCGInterpolationMedium);
-        
-        //Draw image scaled down to this 1x1 pixel
-        [[self gradientImage] drawInRect:(CGRect){.size = size} blendMode:kCGBlendModeCopy alpha:1];
-        
-        //Read the RGB values from the context's buffer
-        uint8_t *data = CGBitmapContextGetData(ctx);
-        backgroundColor = [UIColor colorWithRed:data[2] / 255.0f
-                                         green:data[1] / 255.0f
-                                          blue:data[0] / 255.0f
-                                         alpha:1];
-        UIGraphicsEndImageContext();
-    }
-    
-    //Calculate Luminance
-    CGFloat luminance;
-    CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha = 0.0;
-    [backgroundColor getRed:&red green:&green blue:&blue alpha:&alpha];
-    
-    //Check if color is transparent
-    if (alpha == 0) {
-        return [UIColor clearColor];
-    }
-    
-    // Relative luminance in colorimetric spaces - http://en.wikipedia.org/wiki/Luminance_(relative)
-	red *= 0.2126f; green *= 0.7152f; blue *= 0.0722f;
+    red *= 0.2126f; green *= 0.7152f; blue *= 0.0722f;
     luminance = red + green + blue;
     
     if (flat == NO) {
-        return (luminance > 0.5f) ? rgba(0, 0, 0, alpha) : rgba(255, 255, 255, alpha);
+        return (luminance > 0.6f) ? rgba(0, 0, 0, alpha) : rgba(255, 255, 255, alpha);
     } else {
-        return (luminance > 0.5f) ? hsba(0, 0, 15, alpha) : hsba(192, 2, 95, alpha);
+        return (luminance > 0.6f) ? hsba(0, 0, 15, alpha) : hsba(192, 2, 95, alpha);
     }
 }
 
@@ -530,6 +556,69 @@
     }
 }
 
++ (UIColor *)colorWithHexString:(NSString *)string {
+    
+    //Color with string and a defualt alpha value of 1.0
+    return [self colorWithHexString:string withAlpha:1.0];
+}
+
++ (UIColor *)colorWithHexString:(NSString *)string withAlpha:(CGFloat)alpha {
+ 
+    //Quick return in case string is empty
+    if (string.length == 0) {
+        return nil;
+    }
+    
+    //Check to see if we need to add a hashtag
+    if('#' != [string characterAtIndex:0]) {
+        string = [NSString stringWithFormat:@"#%@", string];
+    }
+    
+    //Make sure we have a working string length
+    if (string.length != 7 && string.length != 4) {
+        
+        #ifdef DEBUG
+        NSLog(@"Unsupported string format: %@", string);
+        #endif
+        
+        return nil;
+    }
+    
+    //Check for short hex strings
+    if(string.length == 4) {
+        
+        //Convert to full length hex string
+        string = [NSString stringWithFormat:@"#%@%@%@%@%@%@",
+                     [string substringWithRange:NSMakeRange(1, 1)],[string substringWithRange:NSMakeRange(1, 1)],
+                     [string substringWithRange:NSMakeRange(2, 1)],[string substringWithRange:NSMakeRange(2, 1)],
+                     [string substringWithRange:NSMakeRange(3, 1)],[string substringWithRange:NSMakeRange(3, 1)]];
+    }
+    
+    NSString *redHex = [NSString stringWithFormat:@"0x%@", [string substringWithRange:NSMakeRange(1, 2)]];
+    unsigned red = [[self class] hexValueToUnsigned:redHex];
+    
+    NSString *greenHex = [NSString stringWithFormat:@"0x%@", [string substringWithRange:NSMakeRange(3, 2)]];
+    unsigned green = [[self class] hexValueToUnsigned:greenHex];
+    
+    NSString *blueHex = [NSString stringWithFormat:@"0x%@", [string substringWithRange:NSMakeRange(5, 2)]];
+    unsigned blue = [[self class] hexValueToUnsigned:blueHex];
+    
+    return [UIColor colorWithRed:(float)red/255 green:(float)green/255 blue:(float)blue/255 alpha:alpha];
+}
+
++ (unsigned)hexValueToUnsigned:(NSString *)hexValue {
+    
+    //Define default unsigned value
+    unsigned value = 0;
+    
+    //Scan unsigned value
+    NSScanner *hexValueScanner = [NSScanner scannerWithString:hexValue];
+    [hexValueScanner scanHexInt:&value];
+    
+    //Return found value
+    return value;
+}
+
 #pragma mark - Chameleon - Random Color Methods
 
 + (NSInteger)generateRandomNumberWithMax:(NSInteger)max {
@@ -569,6 +658,12 @@
 }
 
 + (UIColor *)colorWithRandomFlatColorOfShadeStyle:(UIShadeStyle)shadeStyle {
+    
+    //Return color with default alpha value of 1.0
+    return [[self class] colorWithRandomFlatColorOfShadeStyle:shadeStyle withAlpha:1.0];
+}
+
++ (UIColor *)colorWithRandomFlatColorOfShadeStyle:(UIShadeStyle)shadeStyle withAlpha:(CGFloat)alpha {
     
     //Number of colors to choose from
     const NSInteger numberOfPossibleColors = 24;
@@ -616,12 +711,73 @@
             randomColor = [lightColors objectAtIndex:randomColorChosen];
             break;
         }
-    
     }
+    
+    //Return color with correct alpha value
+    randomColor = [randomColor colorWithAlphaComponent:alpha];
     
     return randomColor;
 }
 
+#pragma mark - Chameleon Instance Methods
+
+- (UIColor *)flatten {
+    
+    return [UIColor colorWithFlatVersionFrom:self];
+}
+
+- (UIColor *)darkenByPercentage:(CGFloat)percentage {
+    
+    //Define HSBA values
+    CGFloat h, s, b, a;
+    
+    //Check if HSBA values exist
+    if ([self getHue:&h saturation:&s brightness:&b alpha:&a]) {
+        
+        //Make sure our percentage is greater than 0
+        if (percentage > 0) {
+            b = MIN(b - percentage, 1.0);
+        }
+        
+        //Return darker color
+        return [UIColor colorWithHue:h saturation:s brightness:b alpha:a];
+    }
+    
+    return nil;
+}
+
+- (UIColor *)lightenByPercentage:(CGFloat)percentage {
+    
+    //Define HSBA values
+    CGFloat h, s, b, a;
+    
+    //Check if HSBA values exist
+    if ([self getHue:&h saturation:&s brightness:&b alpha:&a]) {
+        
+        //Make sure our percentage is greater than 0
+        if (percentage > 0) {
+           b = MIN(b + percentage, 1.0);
+        }
+        
+        //Return lighter color
+        return [UIColor colorWithHue:h saturation:s brightness:b alpha:a];
+    }
+    
+    return nil;
+}
+
+- (BOOL)isEqualToColor:(UIColor *)color {
+    
+    //Check if both colors are in the Monochrome / RGB color space
+    if ([self isMonochromeOrRGB] && [color isMonochromeOrRGB]) {
+        
+        //Return comparison
+        return self.RGBAValue == color.RGBAValue;
+    }
+    
+    //Return comparison
+    return [self isEqual:color];
+}
 
 #pragma mark - Chameleon Internal Methods
 
@@ -629,6 +785,67 @@
 + (NSArray *)flatColors {
     
     return @[FlatBlack, FlatBlackDark, FlatBlue, FlatBlueDark, FlatBrown, FlatBrownDark, FlatCoffee, FlatCoffeeDark, FlatForestGreen, FlatForestGreenDark, FlatGray, FlatGrayDark, FlatGreen, FlatGreenDark, FlatLime, FlatLimeDark, FlatMagenta, FlatMagentaDark, FlatMaroon, FlatMaroonDark, FlatMint, FlatMintDark, FlatNavyBlue, FlatNavyBlueDark, FlatOrange, FlatOrangeDark, FlatPink, FlatPinkDark, FlatPlum, FlatPlumDark, FlatPowderBlue, FlatPowderBlueDark, FlatPurple, FlatPurpleDark, FlatRed, FlatRedDark, FlatSand, FlatSandDark, FlatSkyBlue, FlatSkyBlueDark, FlatTeal, FlatTealDark, FlatWatermelon, FlatWatermelonDark, FlatWhite, FlatWhiteDark, FlatYellow, FlatYellowDark];
+}
+
+- (uint32_t)RGBAValue {
+    
+    CGFloat rgba[4];
+    [self getRGBAComponents:rgba];
+    uint8_t red = rgba[0]*255;
+    uint8_t green = rgba[1]*255;
+    uint8_t blue = rgba[2]*255;
+    uint8_t alpha = rgba[3]*255;
+    
+    return (red << 24) + (green << 16) + (blue << 8) + alpha;
+}
+
+- (void)getRGBAComponents:(CGFloat[4])rgba {
+    
+    CGColorSpaceModel model = CGColorSpaceGetModel(CGColorGetColorSpace(self.CGColor));
+    const CGFloat *components = CGColorGetComponents(self.CGColor);
+    switch (model) {
+            
+        case kCGColorSpaceModelMonochrome: {
+            rgba[0] = components[0];
+            rgba[1] = components[0];
+            rgba[2] = components[0];
+            rgba[3] = components[1];
+            break;
+        }
+            
+        case kCGColorSpaceModelRGB: {
+            rgba[0] = components[0];
+            rgba[1] = components[1];
+            rgba[2] = components[2];
+            rgba[3] = components[3];
+            break;
+        }
+            
+        case kCGColorSpaceModelCMYK:
+        case kCGColorSpaceModelDeviceN:
+        case kCGColorSpaceModelIndexed:
+        case kCGColorSpaceModelLab:
+        case kCGColorSpaceModelPattern:
+        case kCGColorSpaceModelUnknown: {
+            
+            #ifdef DEBUG
+            NSLog(@"Unsupported color model: %i", model);
+            #endif
+            
+            rgba[0] = 0.0f;
+            rgba[1] = 0.0f;
+            rgba[2] = 0.0f;
+            rgba[3] = 1.0f;
+            break;
+        }
+    }
+}
+
+//Check if color is in the monochrome or rgb color space
+- (BOOL)isMonochromeOrRGB {
+    
+    CGColorSpaceModel model = CGColorSpaceGetModel(CGColorGetColorSpace(self.CGColor));
+    return model == kCGColorSpaceModelMonochrome || model == kCGColorSpaceModelRGB;
 }
 
 //Calculate the total sum of differences - Euclidian distance
@@ -751,7 +968,7 @@
     [[[self flatColors] objectAtIndex:index] getRed:&red green:&green blue:&blue alpha:nil];
 
     //Return the closest flat color
-    return rgba(red*255, green*255, blue*255, alpha);
+    return rgba(red * 255, green * 255, blue * 255, alpha);
 }
 
 @end

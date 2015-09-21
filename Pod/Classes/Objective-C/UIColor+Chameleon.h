@@ -30,55 +30,77 @@
 #import <UIKit/UIKit.h>
 #import <CoreGraphics/CoreGraphics.h>
 
+#pragma mark - Enums
+
 /**
  *  Defines the gradient style and direction of the gradient color.
+ *
+ *  @since 1.0
  */
 typedef NS_ENUM (NSUInteger, UIGradientStyle) {
     /**
      *  Returns a gradual blend between colors originating at the leftmost point of an object's frame, and ending at the rightmost point of the object's frame.
+     *
+     *  @since 1.0
      */
     UIGradientStyleLeftToRight,
     /**
      *  Returns a gradual blend between colors originating at the center of an object's frame, and ending at all edges of the object's frame. NOTE: Supports a Maximum of 2 Colors.
+     *
+     *  @since 1.0
      */
     UIGradientStyleRadial,
     /**
      *  Returns a gradual blend between colors originating at the topmost point of an object's frame, and ending at the bottommost point of the object's frame.
+     *
+     *  @since 1.0
      */
     UIGradientStyleTopToBottom
 };
 
 /**
  *  Defines the shade of a any flat color.
+ *
+ *  @since 1.0
  */
 typedef NS_ENUM (NSInteger, UIShadeStyle) {
     /**
      *  Returns the light shade version of a flat color.
+     *
+     *  @since 1.0
      */
     UIShadeStyleLight,
     /**
      *  Returns the dark shade version of a flat color.
+     *
+     *  @since 1.0
      */
     UIShadeStyleDark
 };
 
+
 @interface UIColor (Chameleon)
 
-#pragma mark - Chameleon - Instance Variables
+#pragma mark - Instance Variables
+
 /**
  *  Stores an object's UIColor image if the UIColor was created using colorWithPatternImage.
+ *
+ *  @since 1.0
  */
+
 @property (nonatomic, strong) UIImage *gradientImage;
 
-#pragma mark - Chameleon - Quick Shorthand Macros
+#pragma mark - Quick Shorthand Macros
 
-//Quick & Easy Shorthand for RGB x HSB Colors - The reason we don't import our Macro file is to prevent naming conflicts.
+// Quick & Easy Shorthand for RGB x HSB Colors
+// The reason we don't import our Macro file is to prevent naming conflicts.
 #define rgba(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #define rgb(r,g,b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0]
 #define hsba(h,s,b,a) [UIColor colorWithHue:h/360.0f saturation:s/100.0f brightness:b/100.0f alpha:a]
 #define hsb(h,s,b) [UIColor colorWithHue:h/360.0f saturation:s/100.0f brightness:b/100.0f alpha:1.0]
 
-#pragma mark - Chameleon - Light Shades
+#pragma mark - Light Shades
 
 /**
  *  Returns a flat color object whose HSB values are 0.0, 0.0, 0.17 and whose alpha value is 1.0.
@@ -248,186 +270,237 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  */
 + (UIColor *)flatYellowColor;
 
-#pragma mark - Chameleon - Dark Shades
+#pragma mark - Dark Shades
 
 /**
  *  Returns a flat color object whose HSB values are 0.00, 0.00, 0.15 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatBlackColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.62, 0.56, 0.51 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatBlueColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.07, 0.45, 0.31 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatBrownColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.07, 0.34, 0.56 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatCoffeeColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.38, 0.44, 0.31 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatForestGreenColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.51, 0.10, 0.55 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatGrayColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.40, 0.78, 0.68 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatGreenColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.21, 0.81, 0.69 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatLimeColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.78, 0.61, 0.68 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatMagentaColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.01, 0.68, 0.40 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatMaroonColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.47, 0.86, 0.63 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatMintColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.58, 0.45, 0.31 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatNavyBlueColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.07, 1.00, 0.83 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatOrangeColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.91, 0.57, 0.83 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatPinkColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.83, 0.46, 0.31 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatPlumColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.62, 0.28, 0.84 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatPowderBlueColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.70, 0.56, 0.64 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatPurpleColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.02, 0.78, 0.75 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatRedColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.12, 0.30, 0.84 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatSandColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.57, 0.78, 0.73 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatSkyBlueColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.54, 0.54, 0.45 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatTealColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.99, 0.61, 0.85 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatWatermelonColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.57, 0.05, 0.78 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatWhiteColorDark;
 
 /**
  *  Returns a flat color object whose HSB values are 0.11, 1.00, 1.00 and whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatYellowColorDark;
 
-#pragma mark - Chameleon - Special Colors
+#pragma mark - Randomizing Colors
 
 /**
  *  Returns a randomly generated flat color object whose alpha value is 1.0.
  *
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @return A flat @c UIColor object in the HSB colorspace.
+ *
+ *  @since 1.0
  */
+
 + (UIColor *)randomFlatColor;
 
-#pragma mark - ColorWith Methods
+/**
+ *  Returns a randomly generated flat color object with an alpha value of 1.0 in either a light or dark shade.
+ *
+ *  @param shadeStyle Specifies whether the randomly generated flat color should be a light or dark shade.
+ *
+ *  @return A flat @c UIColor object in the HSB colorspace.
+ *
+ *  @since 1.0
+ */
++ (UIColor *)colorWithRandomFlatColorOfShadeStyle:(UIShadeStyle)shadeStyle;
+
+/**
+ *  Returns a randomly generated flat color object with an alpha value of 1.0 in either a light or dark shade.
+ *
+ *  @param shadeStyle Specifies whether the randomly generated flat color should be a light or dark shade.
+ *  @param alpha      The opacity.
+ *
+ *  @return A flat @c UIColor object in the HSB colorspace.
+ *
+ *  @since 2.0
+ */
++ (UIColor *)colorWithRandomFlatColorOfShadeStyle:(UIShadeStyle)shadeStyle withAlpha:(CGFloat)alpha;
+
+#pragma mark - Averaging a Color
+
+/**
+ *  Returns the average color generated by averaging the colors of a specified image.
+ *
+ *  @param image A specified @c UIImage.
+ *
+ *  @return A flat @c UIColor object in the HSB colorspace.
+ *
+ *  @since 2.0
+ */
++ (UIColor *)colorWithAverageColorFromImage:(UIImage *)image;
+
+/**
+ *  Returns the average color generated by averaging the colors of a specified image.
+ *
+ *  @param image A specified @c UIImage.
+ *  @param alpha The opacity.
+ *
+ *  @return A flat @c UIColor object in the HSB colorspace.
+ *
+ *  @since 2.0
+ */
++ (UIColor *)colorWithAverageColorFromImage:(UIImage *)image withAlpha:(CGFloat)alpha;
+
+#pragma mark - Complementary Colors
 
 /**
  *  Creates and returns a complementary flat color object 180 degrees away in the HSB colorspace from the specified color.
@@ -435,17 +508,26 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *  @param color The color whose complementary color is being requested.
  *
  *  @return A flat UIColor object in the HSB colorspace.
+ *
+ *  @since 1.0
  */
+
 + (UIColor *)colorWithComplementaryFlatColorOf:(UIColor *)color;
 
 /**
- *  Creates and returns a flat color object closest to the specified color in the LAB colorspace.
+ *  Creates and returns a complementary flat color object 180 degrees away in the HSB colorspace from the specified color.
  *
- *  @param color The specified color of the flat color that is being requested.
+ *  @param color The color whose complementary color is being requested.
+ *  @param alpha The opacity.
  *
- *  @return A flat UIColor object in the RGB colorspace.
+ *  @return A flat UIColor object in the HSB colorspace.
+ *
+ *  @since 2.0
  */
-+ (UIColor *)colorWithFlatVersionOf:(UIColor *)color;
+
++ (UIColor *)colorWithComplementaryFlatColorOf:(UIColor *)color withAlpha:(CGFloat)alpha;
+
+#pragma mark - Contrasting Colors
 
 /**
  *  Creates and returns either a black or white color object depending on which contrasts more with a specified color.
@@ -454,17 +536,26 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *  @param isFlat Pass YES to return flat color objects.
  *
  *  @return A UIColor object in the HSB colorspace.
+ *
+ *  @since 1.0
  */
+
 + (UIColor *)colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor isFlat:(BOOL)flat;
 
 /**
- *  Returns a randomly generated flat color object with an alpha value of 1.0 in either a light or dark shade.
+ *  Creates and returns either a black or white color object depending on which contrasts more with a specified color.
  *
- *  @param shadeStyle Specifies whether the randomly generated flat color should be a light or dark shade.
- *  
- *  @return A flat UIColor object in the HSB colorspace.
+ *  @param color The specified color of the contrast color that is being requested.
+ *  @param isFlat Pass YES to return flat color objects.
+ *  @param alpha The opacity.
+ *
+ *  @return A UIColor object in the HSB colorspace.
+ *
+ *  @since 2.0
  */
-+ (UIColor *)colorWithRandomFlatColorOfShadeStyle:(UIShadeStyle)shadeStyle;
++ (UIColor *)colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor isFlat:(BOOL)flat alpha:(CGFloat)alpha;
+
+#pragma mark - Gradient Colors
 
 /**
  *  Creates and returns a gradient as a color object with an alpha value of 1.0
@@ -473,22 +564,85 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *  @param frame The frame rectangle, which describes the view’s location and size in its superview’s coordinate system.
  *  @param colors An array of color objects used to create a gradient.
  *
- *  @return A UIColor object using colorWithPattern.
+ *  @return A @c UIColor object using colorWithPattern.
+ *
+ *  @since 2.0
  */
 + (UIColor *)colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors;
 
-#pragma mark - Chameleon Deprecated Methods as of 1.1.0
+#pragma mark - Colors from Hex Strings
 
 /**
- *  Creates and returns either a black or white color object depending on which contrasts more with a specified color.
+ *  Creates and returns a @c UIColor object based on the specified hex string.
  *
- *  @param color The specified color of the contrast color that is being requested.
- *  @param isFlat Pass YES to return flat color objects.
+ *  @param string The hex string.
  *
- *  @deprecated 
+ *  @return A @c UIColor object in the RGB colorspace.
  *
- *  @return A UIColor object in the HSB colorspace.
+ *
+ *  @since 2.0
  */
-+ (UIColor *)colorWithContrastingBlackOrWhiteColorOn:(UIColor *)backgroundColor __attribute((deprecated(" Use -colorWithContrastingBlackOrWhiteColorOn:isFlat: instead (First deprecated in Chameleon 1.1).")));
++ (UIColor *)colorWithHexString:(NSString *)string;
+
+/**
+ *  Creates and returns a @c UIColor object based on the specified hex string.
+ *
+ *  @param string The hex string.
+ *  @param alpha  The opacity.
+ *
+ *  @return A @c UIColor object in the RGB colorspace.
+ *
+ *
+ *  @since 2.0
+ */
++ (UIColor *)colorWithHexString:(NSString *)string withAlpha:(CGFloat)alpha;
+
+#pragma mark - Instance Methods
+
+/**
+ *  Creates and returns a flat color object closest to the specified color in the LAB colorspace.
+ *
+ *  @return A flat version of the specified @c UIColor.
+ *
+ *  @since 2.0
+ */
+- (UIColor *)flatten;
+
+/**
+ *  Creates and returns a darker shade of a specified color in the HSB space.
+ *
+ *  @param percentage The value with which to darken a specified color.
+ *
+ *  @return A @c UIColor object in the HSB space.
+ *
+ *  @since 2.0
+ */
+- (UIColor *)darkenByPercentage:(CGFloat)percentage;
+
+/**
+ *  Creates and returns a lighter shade of a specified color in the HSB space.
+ *
+ *  @param percentage The value with which to lighten a specified color.
+ *
+ *  @return A @c UIColor object in the HSB space.
+ *
+ *  @since 2.0
+ */
+- (UIColor *)lightenByPercentage:(CGFloat)percentage;
+
+#pragma mark - Deprecated Methods
+
+/**
+ *  Creates and returns a flat color object closest to the specified color in the LAB colorspace.
+ *
+ *  @param color The specified color of the flat color that is being requested.
+ *
+ *  @return A flat UIColor object in the RGB colorspace.
+ *
+ *  @since 1.0
+ */
++ (UIColor *)colorWithFlatVersionOf:(UIColor *)color __attribute((deprecated(" Use -flatten: instead (First deprecated in Chameleon 2.0).")));
+
 
 @end
+
