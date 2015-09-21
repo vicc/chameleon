@@ -47,8 +47,6 @@ public func GradientColor(gradientStyle: UIGradientStyle, frame: CGRect, colors:
 }
 
 
-// MARK: - Chameleon - UIStatusBar Methods Shorthand
-
 // MARK: - Chameleon - NSArray Methods Shorthand
 
 //NSArray Methods Shorthand
