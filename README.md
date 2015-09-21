@@ -180,8 +180,16 @@ Once installed, make sure to restart XCode. You'll find all of Chameleon's color
 To use the myriad of features in Chameleon, include the following import:
 
 ###### If you installed Chameleon using cocoapods:
+
+######Objective-C
+
 ``` objective-c
 #import <ChameleonFramework/Chameleon.h>
+```
+
+######Swift:
+``` swift
+import ChameleonFramework
 ```
 
 ###### If you installed Chameleon manually:
@@ -280,7 +288,7 @@ Otherwise, you can perform the following method call to specify whether it shoul
 
 ######Swift
 ``` swift
-UIColor(randomFlatColorOfShadeStyle:UIShadeStyle.Light)
+UIColor(randomFlatColorOfShadeStyle:.Light)
 ```
 
 #####Chameleon Shorthand:
@@ -290,12 +298,12 @@ RandomFlatColorWithShade(UIShadeStyleLight);
 ```
 ######Swift
 ``` swift
-RandomFlatColorWithShade(UIShadeStyle.Light)
+RandomFlatColorWithShade(.Light)
 ```
 
 **UIShadeStyles:**  
--`UIShadeStyleLight`  
--`UIShadeStyleDark`
+- `UIShadeStyleLight` (`UIShadeStyle.Light` in Swift)
+- `UIShadeStyleDark` (`UIShadeStyle.Dark` in Swift)
 
 ####Complementary Colors
 To generate a complementary color, perform the following method call, remembering to specify the color whose complement you want:
@@ -303,12 +311,12 @@ To generate a complementary color, perform the following method call, rememberin
 #####Normal Convention:
 ######Objective-C
 ``` objective-c
-[UIColor colorWithComplementaryFlatColorOf:(UIColor *)color];
+[UIColor colorWithComplementaryFlatColorOf:(UIColor *)someUIColor];
 ```
 
 ######Swift
 ``` swift
-UIColor(complementaryFlatColorOf:UIColor!)
+UIColor(complementaryFlatColorOf:someUIColor)
 ```
 
 #####Chameleon Shorthand:
