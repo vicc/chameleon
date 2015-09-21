@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Pod/Classes/Objective-C/**/*.h'
   s.frameworks   = 'UIKit', 'QuartzCore', 'CoreGraphics'
 
-  s.default_subspecs = 'Default'
+  s.default_subspecs = 'Default' 
 
   s.subspec 'Default' do |ss|
     ss.source_files = 'Pod/Classes/Objective-C/**/*.{h,m}'
