@@ -153,6 +153,9 @@ use_frameworks!
 
 pod 'ChameleonFramework/Swift'
 ```
+
+###### **Note:** Swift support for Chameleon 2.0 is almost complete.
+
 =======
 ####Manual Installation
 If you rather install this framework manually, just drag and drop the Chameleon folder into your project, and make sure you check the following boxes. Note: Don't forget to manually import the *QuartzCore* & *CoreGraphics* framework if you plan on using gradient colors!
