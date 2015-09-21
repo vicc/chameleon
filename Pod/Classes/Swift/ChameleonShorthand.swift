@@ -34,10 +34,6 @@ public func ComplementaryFlatColorOf(color: UIColor) -> UIColor {
     return UIColor(complementaryFlatColorOf: color)
 }
 
-public func FlatVersionOf(color: UIColor) -> UIColor {
-    return UIColor(flatVersionOf: color)
-}
-
 public func RandomFlatColorWithShade(shade: UIShadeStyle) -> UIColor {
     return UIColor(randomFlatColorOfShadeStyle: shade)
 }
@@ -53,18 +49,15 @@ public func GradientColor(gradientStyle: UIGradientStyle, frame: CGRect, colors:
 
 // MARK: - Chameleon - UIStatusBar Methods Shorthand
 
-//UIStatusBar Methods Shorthand
-public func StatusBarContrastColorOf(backgroundColor: UIColor) -> UIStatusBarStyle {
-    return ChameleonStatusBar.statusBarStyleForColor(backgroundColor)
-}
-
 // MARK: - Chameleon - NSArray Methods Shorthand
 
 //NSArray Methods Shorthand
 // TODO Array Extension needed ;)
+
+/*
 public func ColorSchemeOf(colorSchemeType:ColorScheme, color:UIColor, isFlatScheme:Bool) -> Array <UIColor> {
     return NSArray(ofColorsWithColorScheme:colorSchemeType, with:color, flatScheme: isFlatScheme) as! [UIColor]
-}
+}*/
 
 // MARK: - Chameleon - Special Colors Shorthand
 
