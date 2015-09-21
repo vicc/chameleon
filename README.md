@@ -132,10 +132,10 @@ All methods, properties, and types available in Chameleon are documented below.
 [● Storyboard-Add On](https://github.com/ViccAlexander/Chameleon#storyboard-add-on-)  
 [● Usage](https://github.com/ViccAlexander/Chameleon#usage)  
 [● UIColor Methods](https://github.com/ViccAlexander/Chameleon#uicolor-methods)  
-[● Colors From Images]()  
+[● Colors From Images](https://github.com/ViccAlexander/Chameleon#colors-from-images--1)  
 [● UIStatusBarStyle Methods](https://github.com/ViccAlexander/Chameleon#uistatusbarstyle-methods)  
 [● Color Scheme Methods](https://github.com/ViccAlexander/Chameleon#color-schemes-methods)  
-[● Theme Methods](https://github.com/ViccAlexander/Chameleon#theming-methods)  
+[● Theme Methods](https://github.com/ViccAlexander/Chameleon#theme-methods-)  
 
 ###Installation
 ####CocoaPods Installation
@@ -189,14 +189,14 @@ To use the myriad of features in Chameleon, include the following import:
 #import "Chameleon.h"
 ```
 ###UIColor Methods
-[● Flat Colors]()   
-[● Random Colors]()  
-[● Complementary Colors]()  
-[● Contrasting Colors]()  
-[● Flattening Non-Flat Colors]()  
-[● Gradient Colors]()   
-[● Hex Colors]()  
-[● Lighter & Darker Colors]()
+[● Flat Colors](https://github.com/ViccAlexander/Chameleon#flat-colors)   
+[● Random Colors](https://github.com/ViccAlexander/Chameleon#random-colors)  
+[● Complementary Colors](https://github.com/ViccAlexander/Chameleon#complementary-colors)  
+[● Contrasting Colors](https://github.com/ViccAlexander/Chameleon#contrasting-colors)  
+[● Flattening Non-Flat Colors](https://github.com/ViccAlexander/Chameleon#flattening-non-flat-colors)  
+[● Gradient Colors](https://github.com/ViccAlexander/Chameleon#gradient-colors-1)   
+[● Hex Colors](https://github.com/ViccAlexander/Chameleon#hex-colors-)  
+[● Lighter & Darker Colors](https://github.com/ViccAlexander/Chameleon#lighter-and-darker-colors-)
 
 ####Flat Colors
 Using a flat color is as easy as adding any other color in your app (if not easier). For example, to set a view's background property to a flat color with a dark shade, you simply have to do the following:
