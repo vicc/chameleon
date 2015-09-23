@@ -366,9 +366,10 @@
 }
 
 + (UIColor *)colorWithFlatVersionFrom:(UIColor *)color {
-    
+    CGFloat colorAlpha = 0;
+    [color getLightness:nil valueForA:nil valueForB:nil alpha:&colorAlpha];
     //Return flat version with default alpha of 1.0
-    return [[self class] colorWithFlatVersionOf:color withAlpha:1.0];
+    return [[self class] colorWithFlatVersionOf:color withAlpha:colorAlpha];
 }
 
 + (UIColor *)colorWithFlatVersionOf:(UIColor *)color withAlpha:(CGFloat)alpha {
