@@ -27,6 +27,8 @@
  
  */
 
+import UIKit
+
 // MARK: - Chameleon - UIColor Methods Shorthand
 
 //UIColor Methods Shorthand
@@ -46,6 +48,13 @@ public func GradientColor(gradientStyle: UIGradientStyle, frame: CGRect, colors:
     return UIColor(gradientStyle: gradientStyle, withFrame: frame, andColors: colors)
 }
 
+func HexColor(hexString: String, withAlpha alpha: CGFloat = 1.0) -> UIColor {
+    return UIColor(hexString: hexString, withAlpha: alpha)
+}
+
+func AverageColorFromImage(image: UIImage) -> UIColor {
+    return UIColor(averageColorFromImage: image)
+}
 
 // MARK: - Chameleon - NSArray Methods Shorthand
 
@@ -56,6 +65,11 @@ public func GradientColor(gradientStyle: UIGradientStyle, frame: CGRect, colors:
 public func ColorSchemeOf(colorSchemeType:ColorScheme, color:UIColor, isFlatScheme:Bool) -> Array <UIColor> {
     return NSArray(ofColorsWithColorScheme:colorSchemeType, with:color, flatScheme: isFlatScheme) as! [UIColor]
 }*/
+
+func ColorsFromImage(image: UIImage, _ withFlatScheme: Bool) -> NSArray {
+    return NSArray(ofColorsFromImage: UIImage(), withFlatScheme: true)
+}
+
 
 // MARK: - Chameleon - Special Colors Shorthand
 

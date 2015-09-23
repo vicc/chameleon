@@ -373,7 +373,7 @@ As mentioned previously, this feature is unique to Chameleon. While this feature
 
 ######Swift
 ``` swift
-TBA
+UIColor.pinkColor().flatten()
 ```
 
 #### Gradient Colors
@@ -383,19 +383,19 @@ Using a gradient to color an object usually requires a couple of lines of code p
 Chameleon provides three simple gradient styles. Gradients can be created from any number of colors you desire as long as at least two colors are provided. Don't forget that the contrasting text feature is also compatible with gradient colors!
 
 **UIGradientStyles:**
-* `UIGradientStyleLeftToRight`
-* `UIGradientStyleTopToBottom`
-* `UIGradientStyleRadial`
+* `UIGradientStyleLeftToRight` (UIGradientStyle.LeftToRight in Swift)
+* `UIGradientStyleTopToBottom` (UIGradientStyle.TopToBottom in Swift)
+* `UIGradientStyleRadial` (UIGradientStyle.Radial in Swift)
 
 #####Normal Convention:
 ######Objective-C
 ``` objective-c
-[UIColor colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors];
+[UIColor colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray<UIColor *> *)colors];
 ```
 
 ######Swift
 ``` swift
-UIColor(gradientStyle:UIGradientStyle, withFrame:CGRect, andColors:[AnyObject]!)
+UIColor(gradientStyle:UIGradientStyle, withFrame:CGRect, andColors:[UIColor])
 ```
 
 #####Chameleon Shorthand:
@@ -425,7 +425,7 @@ One of the most requested features, *hex colors*, is now available. You can simp
 
 ######Swift
 ``` swift
-TBA
+UIColor(hexString:string]
 ```
 
 #####Chameleon Shorthand:
@@ -436,7 +436,7 @@ HexColor(hexString)
 
 ######Swift
 ``` swift
-TBA
+HexColor(hexString)
 ```
 
 #### Lighter and Darker Colors ![New](http://i.imgur.com/BX3b9ES.png)
@@ -451,7 +451,7 @@ Sometimes all you need is a color a shade lighter or a shade darker. Well for th
 
 ######Swift
 ``` swift
-TBA
+color.lightenByPercentage(percentage: CGFloat)
 ```
 
 You can also generate a darker version of a color:
@@ -464,7 +464,7 @@ You can also generate a darker version of a color:
 
 ######Swift
 ``` swift
-TBA
+color.darkenByPercentage(percentage: CGFloat)
 ```
 
 ### Colors From Images ![New](http://i.imgur.com/BX3b9ES.png)
@@ -478,9 +478,9 @@ To generate a color scheme simply do the following:
 [NSArray arrayOfColorsFromImage:(UIImage *)image withFlatScheme:(BOOL)flatScheme];
 ```
 
-######Swift
+######Swift (**Array extension missing**)
 ``` swift
-TBA
+NSArray(ofColorsFromImage: UIImage, withFlatScheme: Bool)
 ```
 
 #####Chameleon Shorthand:
@@ -491,7 +491,7 @@ ColorsFromImage(image, isFlatScheme)
 
 ######Swift
 ``` swift
-TBA
+ColorsFromImage(image, isFlatScheme)
 ```
 
 To extract the average color from an image, you can also do:
@@ -503,7 +503,7 @@ To extract the average color from an image, you can also do:
 
 ######Swift
 ``` swift
-TBA
+UIColor(averageColorFromImage: UIImage)
 ```
 
 #####Chameleon Shorthand:
@@ -514,7 +514,7 @@ AverageColorFromImage(image)
 
 ######Swift
 ``` swift
-TBA
+AverageColorFromImage(image)
 ```
 
 ###UIStatusBarStyle Methods
@@ -529,7 +529,7 @@ Many apps on the market, even the most popular ones, overlook this aspect of a b
 
 ######Swift
 ``` swift
-TBA
+self.setStatusBarStyle(UIStatusBarStyleContrast)
 ```
 ######**Note**: Make sure that the key *View controller-based status bar appearance* in **Info.plist** is set to `YES`.
 
