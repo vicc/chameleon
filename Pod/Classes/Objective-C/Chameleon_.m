@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Vicc Alexander. All rights reserved.
 //
 
-#import "Chameleon.h"
+#import "Chameleon_.h"
 #import "UILabel+Chameleon.h"
 #import "UIButton+Chameleon.h"
 
