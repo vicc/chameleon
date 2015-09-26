@@ -26,6 +26,61 @@
 
 @implementation UINavigationController (Chameleon)
 
+#pragma mark - Swizzling
+
++ (void)load {
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        Class class = [self class];
+        
+        SEL originalSelector = @selector(viewDidLoad);
+        SEL swizzledSelector = @selector(chameleon_viewDidLoad);
+        
+        Method originalMethod = class_getInstanceMethod(class, originalSelector);
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+        
+        BOOL didAddMethod =
+        class_addMethod(class,
+                        originalSelector,
+                        method_getImplementation(swizzledMethod),
+                        method_getTypeEncoding(swizzledMethod));
+        
+        if (didAddMethod) {
+            class_replaceMethod(class,
+                                swizzledSelector,
+                                method_getImplementation(originalMethod),
+                                method_getTypeEncoding(originalMethod));
+            
+        } else {
+            method_exchangeImplementations(originalMethod, swizzledMethod);
+        }
+    });
+}
+
+- (void)chameleon_viewDidLoad {
+    [self chameleon_viewDidLoad];
+    
+    UIView *heairlineImageView = [self findHairlineImageViewUnder:self.navigationBar];
+    if (heairlineImageView) {
+        heairlineImageView.hidden = YES;
+    }
+}
+
+- (UIImageView *)findHairlineImageViewUnder:(UIView *)view {
+    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
+        return (UIImageView *)view;
+    }
+    for (UIView *subview in view.subviews) {
+        UIImageView *imageView = [self findHairlineImageViewUnder:subview];
+        if (imageView) {
+            return imageView;
+        }
+    }
+    return nil;
+}
+
 #pragma mark - Runtime
 
 - (void)setShouldContrast:(BOOL)contrast {
