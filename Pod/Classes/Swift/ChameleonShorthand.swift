@@ -48,11 +48,11 @@ public func GradientColor(gradientStyle: UIGradientStyle, frame: CGRect, colors:
     return UIColor(gradientStyle: gradientStyle, withFrame: frame, andColors: colors)
 }
 
-func HexColor(hexString: String, withAlpha alpha: CGFloat = 1.0) -> UIColor {
+public func HexColor(hexString: String, withAlpha alpha: CGFloat = 1.0) -> UIColor {
     return UIColor(hexString: hexString, withAlpha: alpha)
 }
 
-func AverageColorFromImage(image: UIImage) -> UIColor {
+public func AverageColorFromImage(image: UIImage) -> UIColor {
     return UIColor(averageColorFromImage: image)
 }
 
@@ -66,7 +66,7 @@ public func ColorSchemeOf(colorSchemeType:ColorScheme, color:UIColor, isFlatSche
     return NSArray(ofColorsWithColorScheme:colorSchemeType, with:color, flatScheme: isFlatScheme) as! [UIColor]
 }*/
 
-func ColorsFromImage(image: UIImage, _ withFlatScheme: Bool) -> NSArray {
+public func ColorsFromImage(image: UIImage, _ withFlatScheme: Bool) -> NSArray {
     return NSArray(ofColorsFromImage: UIImage(), withFlatScheme: true)
 }
 
