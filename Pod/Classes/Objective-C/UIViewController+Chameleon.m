@@ -94,10 +94,6 @@
 
 #pragma mark - Methods
 
-- (void)flatify {
-
-}
-
 
 - (void)setStatusBarStyle:(UIStatusBarStyle)statusBarStyle {
     
