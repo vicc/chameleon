@@ -4,7 +4,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/badge/platform-iOS%207%2B-blue.svg?style=flat" alt="Platform: iOS 7+" />
-    <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift2-compatible-f48041.svg?style=flat" alt="Language: Swift 2" /></a>
+    <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift2-compatible-4BC51D.svg?style=flat" alt="Language: Swift 2" /></a>
     <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
     <a href="https://cocoapods.org/pods/ChameleonFramework"><img src="https://cocoapod-badges.herokuapp.com/v/ChameleonFramework/badge.png" alt="Cocoapods compatible" /></a>
     <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" />
@@ -167,7 +167,7 @@ pod 'ChameleonFramework/Swift'
 =======
 ####Carthage Installation
 Add this to your Cartfile:
-```
+```ruby
 github "ViccAlexander/Chameleon" ~> 2.0
 ```
 
