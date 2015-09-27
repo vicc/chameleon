@@ -149,11 +149,13 @@
         CGFloat Y = [XYZValues[1] floatValue];
         CGFloat Z = [XYZValues[2] floatValue];
         
-        //Run our new XYZ values through our LAB algorithm to convert them into LAB values
-        NSArray *LABValues = [self arrayOfLABValuesForX:X Y:Y Z:Z alpha:alpha1];
-        *L = [LABValues[0] floatValue];
-        *A = [LABValues[1] floatValue];
-        *B = [LABValues[2] floatValue];
+        if (L != nil && A != nil && B != nil) {
+            //Run our new XYZ values through our LAB algorithm to convert them into LAB values
+            NSArray *LABValues = [self arrayOfLABValuesForX:X Y:Y Z:Z alpha:alpha1];
+            *L = [LABValues[0] floatValue];
+            *A = [LABValues[1] floatValue];
+            *B = [LABValues[2] floatValue];
+        }
         
         return YES;
     }
