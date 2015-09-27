@@ -673,7 +673,23 @@ Using Chameleon in your App? [Let me know](https://twitter.com/viccsmind). 🌈�
 
 ## 📄 Change Log
 
+### 2.0.2
+
+* Carthage support added. (By [@bre7](https://github.com/bre7))
+* Demo project added. (By [@bre7](https://github.com/bre7))
+* Shields added to `README`. (By [@bre7](https://github.com/bre7))
+* Fixed *'Wrong Navigation Bar Color'* bug. ([#51](https://github.com/ViccAlexander/Chameleon/issues/51)) (By [@bre7](https://github.com/bre7))
+* Fixed *'Flatten'* bug. ([#53](https://github.com/ViccAlexander/Chameleon/issues/53)) (By [@bre7](https://github.com/bre7))
+* Fixed *'EXC_BAD_ACCESS Error'* issue. ([#57](https://github.com/ViccAlexander/Chameleon/issues/57)) (By [@bre7](https://github.com/bre7))
+* Several swift functions were made public. (By [@dexter505](https://github.com/dexter505))
+
+### 2.0.1
+
+* Fixed *'ColorWithFlatVersionOf'* bug. ([#50](https://github.com/ViccAlexander/Chameleon/pull/50)) (By [@bre7](https://github.com/bre7))
+
 ### 2.0.0
+
+* Added support for hex colors, colors from images, themes, and lighten and darken by percentage methods. (By [@ViccAlexander](https://github.com/ViccAlexander)) 
 
 ###### Added Methods  
 
