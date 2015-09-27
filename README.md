@@ -168,7 +168,7 @@ pod 'ChameleonFramework/Swift'
 ####Carthage Installation
 Add this to your Cartfile:
 ```ruby
-github "ViccAlexander/Chameleon" ~> 2.0
+github "ViccAlexander/Chameleon"
 ```
 
 =======
