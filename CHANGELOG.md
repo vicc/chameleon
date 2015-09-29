@@ -4,10 +4,6 @@
 
 [Full Changelog](https://github.com/ViccAlexander/Chameleon/compare/2.0.2.2...HEAD)
 
-**Implemented enhancements:**
-
-- Add nullability annotations [\#58](https://github.com/ViccAlexander/Chameleon/issues/58)
-
 **Fixed bugs:**
 
 - Cocoapod Error: Chameleon.h not found [\#60](https://github.com/ViccAlexander/Chameleon/issues/60)
@@ -27,14 +23,7 @@
 
 **Implemented enhancements:**
 
-- Updating Swift to 2.0 [\#46](https://github.com/ViccAlexander/Chameleon/issues/46)
-- Add Carthage support [\#37](https://github.com/ViccAlexander/Chameleon/issues/37)
 - Carthage support [\#52](https://github.com/ViccAlexander/Chameleon/pull/52) ([bre7](https://github.com/bre7))
-
-**Fixed bugs:**
-
-- flatten bug [\#53](https://github.com/ViccAlexander/Chameleon/issues/53)
-- Wrong navigation bar color [\#51](https://github.com/ViccAlexander/Chameleon/issues/51)
 
 **Closed issues:**
 
@@ -64,7 +53,6 @@
 **Closed issues:**
 
 - \[Gradient color\] - Invalid context 0x0 error [\#44](https://github.com/ViccAlexander/Chameleon/issues/44)
-- Update for Swift 2.0 and IOS 9? [\#38](https://github.com/ViccAlexander/Chameleon/issues/38)
 
 **Merged pull requests:**
 
@@ -134,20 +122,12 @@
 
 - Replaced the reserved word for with the word with in arrayOfColorsWithCo... [\#11](https://github.com/ViccAlexander/Chameleon/pull/11) ([sfader](https://github.com/sfader))
 
-**Closed issues:**
-
-- Update for iOS 8? [\#9](https://github.com/ViccAlexander/Chameleon/issues/9)
-
 ## [1.1.1](https://github.com/ViccAlexander/Chameleon/tree/1.1.1) (2014-09-02)
 [Full Changelog](https://github.com/ViccAlexander/Chameleon/compare/1.1.0...1.1.1)
 
 **Implemented enhancements:**
 
 - Switch to HSB colors [\#5](https://github.com/ViccAlexander/Chameleon/issues/5)
-
-**Closed issues:**
-
-- Chameleon 1.1.0 broke colorWithContrastingBlackOrWhiteColorOn [\#7](https://github.com/ViccAlexander/Chameleon/issues/7)
 
 ## [1.1.0](https://github.com/ViccAlexander/Chameleon/tree/1.1.0) (2014-08-22)
 [Full Changelog](https://github.com/ViccAlexander/Chameleon/compare/1.0.0...1.1.0)
