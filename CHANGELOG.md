@@ -1,5 +1,10 @@
 ## 📄 Change Log
 
+### 2.0.3
+
+* Added `hidesNavigationBarHairline` boolean to UINavigationController, and by default it is now set to `NO`. (#64) 
+* Improved Quick-Look Documentation for Theme Methods
+
 ### 2.0.2
 
 * Carthage support added. (By [@bre7](https://github.com/bre7))
