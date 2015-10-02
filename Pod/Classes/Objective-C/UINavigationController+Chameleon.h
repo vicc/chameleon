@@ -22,4 +22,11 @@
  */
 - (void)setStatusBarStyle:(UIStatusBarStyle)statusBarStyle;
 
+/**
+ *  Hides the hairline view at the bottom of a navigation bar. The default value is @c NO.
+ *
+ *  @since 2.0.3
+ */
+@property (nonatomic, assign) BOOL hidesNavigationBarHairline;
+
 @end

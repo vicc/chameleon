@@ -12,7 +12,7 @@
 @interface UIViewController (Chameleon)
 
 /**
- *  Sets the color theme for the specified view controller.
+ *  Sets the color theme for the specified view controller using a primary color and the specified content style.
  *
  *  @param primaryColor   The primary color.
  *  @param contentStyle   The contentStyle.
@@ -23,7 +23,7 @@
                  withContentStyle:(UIContentStyle)contentStyle;
 
 /**
- *  Sets the color theme for the specified view controller.
+ *  Sets the color theme for the specified view controller using a primary color, secondary color, and the specified content style.
  *
  *  @param primaryColor   The primary color.
  *  @param secondaryColor The secondary color.
@@ -36,7 +36,7 @@
                   andContentStyle:(UIContentStyle)contentStyle;
 
 /**
- *  Sets the color theme for the specified view controller.
+ *  Sets the color theme for the specified view controller using a primary color, secondary color, font name, and the specified content style.
  *
  *  @param primaryColor   The primary color.
  *  @param secondaryColor The secondary color.
