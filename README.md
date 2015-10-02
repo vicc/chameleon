@@ -651,7 +651,7 @@ But what if you want a different theme for a specific `UIViewController?` No pro
 
 ###### **Note:** In order for the status bar style to automatically be set using a theme, you need to make sure that the *View controller-based status bar appearance* key in **Info.plist** is set to `NO`.
 
-#### Bonus: Navigation Bar Hairline
+#### Navigation Bar Hairline
 
 ![No Hairline](http://i.imgur.com/tjwx53y.png)
 
