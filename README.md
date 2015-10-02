@@ -651,14 +651,28 @@ But what if you want a different theme for a specific `UIViewController?` No pro
 
 ###### **Note:** In order for the status bar style to automatically be set using a theme, you need to make sure that the *View controller-based status bar appearance* key in **Info.plist** is set to `NO`.
 
+#### Bonus: Navigation Bar Hairline
+
+![No Hairline](http://i.imgur.com/tjwx53y.png)
+
+As of `2.0.3` the navigation bar hairline view is no longer hidden by default. However, if you're seeking a true flat look (like the image above), you can hide the hairline at the bottom of the navigation bar by doing the following: 
+
+######Objective-C
+```objective-c
+[self.navigationController setHidesNavigationBarHairline:YES];
+
+//or
+
+self.navigationController.hidesNavigationBarHairline = YES;
+```
+
 ## 👑 Author
-Chameleon was developed by **Vicc Alexander** [(@ViccsMind)](https://twitter.com/viccsmind).
+Chameleon was developed by **Vicc Alexander** [(@ViccsMind)](https://twitter.com/viccsmind). It is currently maintained by [@ViccAlexander](https://github.com/ViccAlexander) and [@Bre7](https://github.com/bre7).
 
 Using Chameleon in your App? [Let me know](https://twitter.com/viccsmind). 🌈📲  
 
-## 📝 To Do List
-*No particular order.*  
-• ~~Cocoapods Support~~ ![1.0.1](http://i.imgur.com/8Li5aRR.png)  
+## 📝 To Do List 
+* ~~Cocoapods Support~~ ![1.0.1](http://i.imgur.com/8Li5aRR.png)  
 * ~~Table of Contents~~ ![1.0.1](http://i.imgur.com/8Li5aRR.png)  
 * ~~Storyboard Color Picker Add-On~~ ![1.1.0](http://i.imgur.com/Py4QvaK.png)  
 * ~~Xcode In-App Documentation~~ ![1.1.0](http://i.imgur.com/Py4QvaK.png)  
@@ -670,8 +684,10 @@ Using Chameleon in your App? [Let me know](https://twitter.com/viccsmind). 🌈�
 * ~~Swift Support~~ ![1.1.3](http://i.imgur.com/WgpBlLo.png)     
 * ~~Color Scheme From Images~~ ![2.0.0](http://i.imgur.com/HdE8kjQ.png)  
 * ~~UIAppearance Convenience Methods~~  ![2.0.0](http://i.imgur.com/HdE8kjQ.png)  
+* ~~Add option to hide `NavigationBar` hairline~~ ![2.0.3](http://i.imgur.com/DmlOKPJ.png)
+* Allow Gradient Colors to Adapt To Frame Changes
 
 ## 📄 Change Log
 
-### Check CHANGELOG.MD
+### See [Changelog.md](https://github.com/ViccAlexander/Chameleon/blob/master/CHANGELOG.md) 👀
 
