@@ -128,9 +128,9 @@ If you're like me and love to use storyboard, Chameleon's got you covered. We've
 Chameleon is released and distributed under the terms and conditions of the [MIT license](https://github.com/ViccAlexander/Chameleon/blob/master/LICENSE.md).
 
 ## 👥 Contributions
-If you run into problems, please open up an issue. I also actively welcome pull requests. By contributing to Chameleon you agree that your contributions will be licensed under its MIT license.
+If you run into problems, please open up an issue. We also actively welcome pull requests. By contributing to Chameleon you agree that your contributions will be licensed under its MIT license.
 
-If you use Chameleon in your app I would love to hear about it! Drop me a line on [twitter](http://twitter.com/viccsmind).
+If you use Chameleon in your app we would love to hear about it! Drop Vicc a line on [twitter](http://twitter.com/viccsmind).
 
 ## 📗 Documentation
 All methods, properties, and types available in Chameleon are documented below.   
