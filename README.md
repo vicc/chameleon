@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/downloads-5689%2Fmonth-ffc003.svg?style=flat" alt="Downloads" />
+    <img src="https://img.shields.io/badge/downloads-5,896+-ffc003.svg?style=flat" alt="Downloads" />
     <img src="https://img.shields.io/badge/platform-iOS%207%2B-blue.svg?style=flat" alt="Platform: iOS 7+" />
     <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift2-compatible-4BC51D.svg?style=flat" alt="Language: Swift 2" /></a>
     <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
@@ -74,7 +74,7 @@ With a plethora of color choices available for text, it's difficult to choose on
 Oh... Chameleon works with the status bar as well. : )
 
 <p align="center">
-  <img src="http://i.imgur.com/rTz01Qb.gif" alt="Status Bar"/>
+  <img src="http://s29.postimg.org/i1syd7bkn/Contrast.gif" alt="Status Bar"/>
 </p>
 
 ### Themes ![Beta](http://i.imgur.com/JyYiUJq.png) ![New](http://i.imgur.com/BX3b9ES.png)
