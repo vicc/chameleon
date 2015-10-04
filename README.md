@@ -60,13 +60,19 @@ Chameleon equips you with 3 different classes of flat color schemes that can be 
 
 ###### Analogous Flat Color Scheme
 
-![Analogous Scheme](http://i.imgur.com/cPAkSWA.png)
+<p align="center">
+  <img src="http://i.imgur.com/cPAkSWA.png" alt="Analogous Scheme"/>
+</p>
 
 ###### Complementary Flat Color Scheme
-![Complementary Scheme](http://i.imgur.com/kisXJsu.png)
+<p align="center">
+  <img src="http://i.imgur.com/kisXJsu.png" alt="Complementary Scheme"/>
+</p>
 
 ###### Triadic Flat Color Scheme
-![Triadic Scheme](http://i.imgur.com/Cy452jQ.png)
+<p align="center">
+  <img src="http://i.imgur.com/Cy452jQ.png" alt="Triadic Scheme"/>
+</p>
 
 ### Contrasting Text
 With a plethora of color choices available for text, it's difficult to choose one that all users will appreciate and be able to read. Whether you're in doubt of your text and tint color choices, or afraid to let users customize their profile colors because it may disturb the legibility or usability of the app, you no longer have to worry. With Chameleon, you can ensure that all text stands out independent of the background color.
@@ -82,7 +88,7 @@ Oh... Chameleon works with the status bar as well. : )
 Chameleon now allows you easily theme your app with as little as **one line of code**. You can set a theme for all your views, and for specific views as well.
 
 <p align="center">
-  <img src="http://i.imgur.com/NoCCXIy.png" alt="Themes"/>
+  <img src="http://i.imgur.com/UWrmtkG.png" alt="Themes"/>
 </p>
 
 ### Colors From Images ![New](http://i.imgur.com/BX3b9ES.png)
