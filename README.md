@@ -88,7 +88,7 @@ Oh... Chameleon works with the status bar as well. : )
 Chameleon now allows you easily theme your app with as little as **one line of code**. You can set a theme for all your views, and for specific views as well.
 
 <p align="center">
-  <img src="http://i.imgur.com/UWrmtkG.png" alt="Themes"/>
+  <img src="http://i.imgur.com/ypfqpIn.png" alt="Themes"/>
 </p>
 
 ### Colors From Images ![New](http://i.imgur.com/BX3b9ES.png)
@@ -123,7 +123,6 @@ If you're like me and love to use storyboard, Chameleon's got you covered. We've
 <p align="center">
   <img src="http://i.imgur.com/QhhPFHY.gif" alt="Chameleon Palette"/>
 </p>
-
 
 ## ⚠️ Requirements
 
