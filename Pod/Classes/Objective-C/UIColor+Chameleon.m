@@ -367,7 +367,7 @@
 
 + (UIColor *)colorWithFlatVersionFrom:(UIColor *)color {
     //Return flat version with default alpha of 1.0
-    return [[self class] colorWithFlatVersionOf:color withAlpha:colorAlpha];
+    return [[self class] colorWithFlatVersionOf:color withAlpha:1.0];
 }
 
 + (UIColor *)colorWithFlatVersionOf:(UIColor *)color withAlpha:(CGFloat)alpha {
