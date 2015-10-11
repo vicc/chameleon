@@ -121,8 +121,6 @@
 
 - (UIStatusBarStyle)chameleon_preferredStatusBarStyle {
     
-    [self chameleon_preferredStatusBarStyle];
-    
     if (self.shouldContrast) {
 
         CGRect statusBarFrame = [UIApplication sharedApplication].statusBarFrame;
