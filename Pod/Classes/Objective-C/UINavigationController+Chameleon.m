@@ -15,7 +15,9 @@
 
 #import "NSArray+Chameleon.h"
 #import "UIColor+Chameleon.h"
+#if TARGET_OS_IOS
 #import "UIViewController+Chameleon.h"
+#endif
 
 @interface UINavigationController ()
 
@@ -150,6 +152,7 @@
 
 #pragma mark - Public Methods
 
+#if TARGET_OS_IOS
 - (void)setStatusBarStyle:(UIStatusBarStyle)statusBarStyle {
     
     if (statusBarStyle == UIStatusBarStyleContrast) {
@@ -169,9 +172,11 @@
         
     }
 }
+#endif
 
 #pragma mark - Private Methods
 
+#if TARGET_OS_IOS
 - (UIStatusBarStyle)preferredStatusBarStyle {
     
     [super preferredStatusBarStyle];
@@ -210,5 +215,6 @@
     
     return (luminance > 0.6f) ? UIStatusBarStyleDefault : UIStatusBarStyleLightContent;
 }
+#endif
 
 @end
