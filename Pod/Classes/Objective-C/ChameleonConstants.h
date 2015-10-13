@@ -14,7 +14,9 @@
  *
  *  @since 2.0
  */
+#if TARGET_OS_IOS
 extern const UIStatusBarStyle UIStatusBarStyleContrast;
+#endif
 
 @interface ChameleonConstants : NSObject
 

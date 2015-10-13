@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.social_media_url   	= "http://twitter.com/ViccsMind"
   s.platform     		= :ios
   s.ios.deployment_target = '7.0'
+  s.tvos.deployment_target = '9.0'
   s.source       		= { :git => "https://github.com/ViccAlexander/Chameleon.git", 
                      		:tag => s.version.to_s }
 
@@ -20,6 +21,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Default' do |ss|
     ss.source_files = 'Pod/Classes/Objective-C/**/*.{h,m}'
+    ss.tvos.exclude_files = 'Pod/Classes/Objective-C/{UIViewController,UIButton}+Chameleon.*'
   end
 
   s.subspec 'Swift' do |ss|

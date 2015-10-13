@@ -8,7 +8,9 @@
 
 #import "ChameleonConstants.h"
 
+#if TARGET_OS_IOS
 const UIStatusBarStyle UIStatusBarStyleContrast = 100;
+#endif
 
 @implementation ChameleonConstants
 
