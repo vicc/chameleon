@@ -22,7 +22,7 @@
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     
     //Extract the data we need
-    unsigned char *rawData = (unsigned char *) calloc(height * width * 4, sizeof(unsigned char));
+    unsigned char *rawData = calloc(height * width * 4, sizeof(unsigned char));
     NSUInteger bytesPerPixel = 4;
     NSUInteger bytesPerRow = bytesPerPixel * width;
     NSUInteger bitsPerComponent = 8;
