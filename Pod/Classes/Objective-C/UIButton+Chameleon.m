@@ -10,14 +10,9 @@
 
 @implementation UIButton (Chameleon)
 
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-
 - (void)setSubstituteFontName:(NSString *)name UI_APPEARANCE_SELECTOR {
     
-    self.font = [UIFont fontWithName:name size:self.font.pointSize];
+    self.titleLabel.font = [UIFont fontWithName:name size:self.titleLabel.font.pointSize];
 }
-
-#pragma GCC diagnostic pop
 
 @end
