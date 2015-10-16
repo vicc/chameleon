@@ -16,7 +16,9 @@
 #import "NSArray+Chameleon.h"
 #import "UIColor+Chameleon.h"
 #import "UINavigationController+Chameleon.h"
+#if TARGET_OS_IOS
 #import "UIViewController+Chameleon.h"
+#endif
 
 @interface Chameleon : NSObject
 
