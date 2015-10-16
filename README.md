@@ -3,8 +3,7 @@
 </p>
 
 <p align="center">
-<a href="https://gratipay.com/chameleon/"><img src="https://img.shields.io/gratipay/JSFiddle.svg" alt="Support Chameleon" /></a>
-    <img src="https://img.shields.io/badge/downloads-7,990+-ffc003.svg?style=flat" alt="Downloads"/>
+    <img src="https://img.shields.io/badge/downloads-11,310+-ffc003.svg?style=flat" alt="Downloads"/>
     <img src="https://img.shields.io/badge/platform-iOS%207%2B-blue.svg?style=flat" alt="Platform: iOS 7+"/>
     <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift2-compatible-4BC51D.svg?style=flat" alt="Language: Swift 2" /></a>
     <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
