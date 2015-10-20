@@ -446,7 +446,7 @@ One of the most requested features, *hex colors*, is now available. You can simp
 
 ######Swift
 ``` swift
-UIColor(hexString:string]
+UIColor(hexString:string)
 ```
 
 #####Chameleon Shorthand:
