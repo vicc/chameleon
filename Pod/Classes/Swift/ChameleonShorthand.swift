@@ -93,14 +93,22 @@ public func AverageColorFromImage(image: UIImage) -> UIColor {
     return UIColor(averageColorFromImage: image)
 }
 
-// MARK: - NSArray Methods Shorthand
+// MARK: - Array Methods Shorthand
 
 // TODO Array Extension needed ;)
 
-/*
-public func ColorSchemeOf(colorSchemeType:ColorScheme, color:UIColor, isFlatScheme:Bool) -> Array <UIColor> {
-    return NSArray(ofColorsWithColorScheme:colorSchemeType, with:color, flatScheme: isFlatScheme) as! [UIColor]
-}*/
+/**
+Generates and creates an array of 5 color objects in the HSB colorspace from the specified color.
+
+- parameter colorSchemeType: The color scheme with which to select colors using a specified color.
+- parameter color:           The specified color which the color scheme is built around.
+- parameter isFlatScheme:    Pass *true* to return flat color objects.
+
+- returns: An array of 5 color objects in the HSB colorspace.
+*/
+public func ColorSchemeOf(colorSchemeType:ColorScheme, _ color:UIColor, _ isFlatScheme:Bool) -> [UIColor] {
+    return NSArray(ofColorsWithColorScheme: colorSchemeType, usingColor: color, withFlatScheme: isFlatScheme) as! [UIColor]
+}
 
 /**
 Generates and creates an array of 5 color objects in the HSB colorspace that appear most often in a specified image.
