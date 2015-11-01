@@ -925,7 +925,7 @@
 + (UIColor *)nearestFlatColorForL:(CGFloat)l1 A:(CGFloat)a1 B:(CGFloat)b1 alpha:(CGFloat)alpha{
     
     //Keep track of our index
-    float index = 0;
+    int index = 0;
     
     //Start with a random big number to make sure the first comparison gets saved.
     float smallestDistance = 1000000;
