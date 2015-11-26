@@ -23,6 +23,7 @@ FOUNDATION_EXPORT const unsigned char ChameleonVersionString[];
 #import "UIColor+ChameleonPrivate.h"
 #import "UIImage+ChameleonPrivate.h"
 #import "UIView+ChameleonPrivate.h"
+#import "UIAppearance+Swift.h"
 
 #import "NSArray+Chameleon.h"
 #import "UIColor+Chameleon.h"

@@ -17,6 +17,4 @@ class ViewController: UIViewController {
         
         view.backgroundColor = FlatYellow()
     }
-
 }
-

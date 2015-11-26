@@ -61,7 +61,7 @@ public func RandomFlatColorWithShade(shade: UIShadeStyle) -> UIColor {
  
  - returns: A UIColor object in the HSB colorspace.
  */
-public func ContrastColorOf(backgroundColor: UIColor, _ returnFlat: Bool) -> UIColor {
+public func ContrastColorOf(backgroundColor: UIColor, returnFlat: Bool) -> UIColor {
     return UIColor(contrastingBlackOrWhiteColorOn: backgroundColor, isFlat: returnFlat)
 }
 
@@ -74,7 +74,7 @@ public func ContrastColorOf(backgroundColor: UIColor, _ returnFlat: Bool) -> UIC
  
  - returns: A UIColor object using colorWithPattern.
  */
-public func GradientColor(gradientStyle: UIGradientStyle, _ frame: CGRect, _ colors: [UIColor]) -> UIColor {
+public func GradientColor(gradientStyle: UIGradientStyle, frame: CGRect, colors: [UIColor]) -> UIColor {
     return UIColor(gradientStyle: gradientStyle, withFrame: frame, andColors: colors)
 }
 
@@ -106,7 +106,7 @@ Generates and creates an array of 5 color objects in the HSB colorspace from the
 
 - returns: An array of 5 color objects in the HSB colorspace.
 */
-public func ColorSchemeOf(colorSchemeType:ColorScheme, _ color:UIColor, _ isFlatScheme:Bool) -> [UIColor] {
+public func ColorSchemeOf(colorSchemeType:ColorScheme, color:UIColor, isFlatScheme:Bool) -> [UIColor] {
     return NSArray(ofColorsWithColorScheme: colorSchemeType, usingColor: color, withFlatScheme: isFlatScheme) as! [UIColor]
 }
 
@@ -118,7 +118,7 @@ Generates and creates an array of 5 color objects in the HSB colorspace that app
 
 - returns: An array of 5 color objects in the HSB colorspace.
 */
-public func ColorsFromImage(image: UIImage, _ withFlatScheme: Bool) -> [UIColor] {
+public func ColorsFromImage(image: UIImage, withFlatScheme: Bool) -> [UIColor] {
     // TODO: Remove forced casting
     return NSArray(ofColorsFromImage: UIImage(), withFlatScheme: true) as! [UIColor]
 }
