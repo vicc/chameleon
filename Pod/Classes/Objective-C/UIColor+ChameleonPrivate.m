@@ -100,12 +100,12 @@
         fabs(b - bc) > threshold || fabs(a - ac) > threshold) {
         
         // Check for grays
-        if (abs(r - g < 0.03f && fabs(r - b) < 0.03f)) {
+        if (fabs(r - g) < 0.03f && fabs(r - b) < 0.03f) {
             
             if (fabs(rc - gc) < 0.03f && (fabs(rc - bc) < 0.03f)) {
                 return NO;
             }
-                
+            
         }
         
         return YES;
