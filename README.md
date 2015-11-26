@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/downloads-33,104+-ffc003.svg?style=flat" alt="Downloads"/>
-    <img src="https://img.shields.io/badge/platform-iOS%207%2B-blue.svg?style=flat" alt="Platform: iOS 7+"/>
+    <img src="https://img.shields.io/badge/downloads-33,743+-ffc003.svg?style=flat" alt="Downloads"/>
+    <img src="https://img.shields.io/badge/platform-iOS%207%2B-blue.svg?style=flat" alt="Platform: iOS 8+"/>
     <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift2-compatible-4BC51D.svg?style=flat" alt="Language: Swift 2" /></a>
     <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
     <a href="https://cocoapods.org/pods/ChameleonFramework"><img src="https://cocoapod-badges.herokuapp.com/v/ChameleonFramework/badge.png" alt="Cocoapods compatible" /></a>
