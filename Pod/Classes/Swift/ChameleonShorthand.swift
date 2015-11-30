@@ -120,7 +120,7 @@ Generates and creates an array of 5 color objects in the HSB colorspace that app
 */
 public func ColorsFromImage(image: UIImage, withFlatScheme: Bool) -> [UIColor] {
     // TODO: Remove forced casting
-    return NSArray(ofColorsFromImage: UIImage(), withFlatScheme: true) as! [UIColor]
+    return NSArray(ofColorsFromImage: image, withFlatScheme: withFlatScheme) as! [UIColor]
 }
 
 
