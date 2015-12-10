@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Swift' do |ss|
       ss.ios.deployment_target = '8.0'
+      ss.tvos.deployment_target = '9.0'
       ss.source_files = 'Pod/Classes/Swift/ChameleonShorthand.swift'
       ss.dependency 'ChameleonFramework/Default'
   end
