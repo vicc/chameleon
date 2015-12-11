@@ -51,7 +51,7 @@ With Chameleon, you can easily stop tinkering with RGB values, wasting hours fig
 Chameleon features over 24 hand-picked colors that come in both light and dark shades. 
 
 <p align="center">
-  <img src="http://i.imgur.com/Hs8ICtJ.png" alt="Swatches"/>
+  <img src="http://i.imgur.com/wkGGWkN.png" alt="Swatches"/>
 </p>
 
 ### Flat Color Schemes
