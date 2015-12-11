@@ -20,7 +20,7 @@ With Chameleon, you can easily stop tinkering with RGB values, wasting hours fig
 ### Features
 
 <p align="center">
-  <img src="http://i.imgur.com/BCSA9Ez.png" alt="Features"/>
+  <img src="http://i.imgur.com/lA4J37o.png" alt="Features"/>
 </p>
 
 ## Table of Contents
