@@ -3,12 +3,13 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/downloads-41,714+-ffc003.svg?style=flat" alt="Downloads"/>
+    <img src="https://img.shields.io/badge/downloads-44,582+-ffc003.svg?style=flat" alt="Downloads"/>
     <img src="https://img.shields.io/badge/platform-iOS%208%2B-blue.svg?style=flat" alt="Platform: iOS 8+"/>
     <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift2-compatible-4BC51D.svg?style=flat" alt="Language: Swift 2" /></a>
     <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
     <a href="https://cocoapods.org/pods/ChameleonFramework"><img src="https://cocoapod-badges.herokuapp.com/v/ChameleonFramework/badge.png" alt="Cocoapods compatible" /></a>
-    <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" />
+    <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" /> <br><br>
+    <img src="https://img.shields.io/gratipay/viccalexander.svg?style=social&label=Donate" alt="Donate" />
 </p>
 
 ## Introduction
