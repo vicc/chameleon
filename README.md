@@ -9,7 +9,7 @@
     <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
     <a href="https://cocoapods.org/pods/ChameleonFramework"><img src="https://cocoapod-badges.herokuapp.com/v/ChameleonFramework/badge.png" alt="Cocoapods compatible" /></a>
     <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" /> <br><br>
-    <img src="https://img.shields.io/gratipay/viccalexander.svg?style=social&label=Donate" alt="Donate" />
+    <img src="https://img.shields.io/badge/Donate-%241%2Fweek-yellow.svg?style=social&link=https://gratipay.com/chameleon/" alt="Donate" />
 </p>
 
 ## Introduction
@@ -128,7 +128,7 @@ If you're like me and love to use storyboard, Chameleon's got you covered. We've
 
 ## 🌈📲  Featured Apps ![New](http://i.imgur.com/BX3b9ES.png)
 
-###### In an upcoming update we'll begin showcasing some of the best apps using Chameleon. If you'd like to see your app featured here, add it here [here](https://airtable.com/shrr1WK6dLQBZfXV0).
+###### In an upcoming update we'll begin showcasing some of the best apps making use of Chameleon. If you'd like to see your app featured in this section, make sure to add it [here](https://airtable.com/shrr1WK6dLQBZfXV0).
 
 ## ⚠️ Requirements
 
@@ -682,7 +682,7 @@ self.navigationController.hidesNavigationBarHairline = YES;
 Chameleon was developed by **Vicc Alexander** [(@ViccsMind)](https://twitter.com/viccsmind) in 2014. Currently, it is being maintained by [@ViccAlexander](https://github.com/ViccAlexander) and [@Bre7](https://github.com/bre7).
 
 ##### Support ☕️
-If you enjoy Chameleon and would like to buy us a coffee we'd appreciate it. <img src="https://img.shields.io/gratipay/viccalexander.svg?style=social&label=Donate" alt="Donate" />
+If you enjoy Chameleon and would like to buy us a coffee we'd appreciate it. <img <img src="https://img.shields.io/badge/Donate-%241%2Fweek-yellow.svg?style=social&link=https://gratipay.com/chameleon/" alt="Donate" />
 
 ## 📝 To Do List 
 * ~~Cocoapods Support~~ ![1.0.1](http://i.imgur.com/8Li5aRR.png)  
