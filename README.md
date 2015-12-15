@@ -24,9 +24,12 @@ With Chameleon, you can easily stop tinkering with RGB values, wasting hours fig
   <img src="http://i.imgur.com/lA4J37o.png" alt="Features"/>
 </p>
 
+### App Using Chameleon ���![New](http://i.imgur.com/BX3b9ES.png)
+
+###### In an upcoming update we'll begin showcasing some of the best apps making use of Chameleon. If you'd like to see your app featured in this section, make sure to add it [here](https://airtable.com/shrr1WK6dLQBZfXV0).
+
 ## Table of Contents
 [● Product Features](https://github.com/ViccAlexander/Chameleon#-product-features)  
-[● Featured Apps](https://github.com/ViccAlexander/Chameleon#-featured-apps)   
 [● Requirements](https://github.com/ViccAlexander/Chameleon#%EF%B8%8F-requirements)  
 [● License](https://github.com/ViccAlexander/Chameleon#-license)  
 [● Contributions](https://github.com/ViccAlexander/Chameleon#-contributions)   
@@ -125,10 +128,6 @@ If you're like me and love to use storyboard, Chameleon's got you covered. We've
 <p align="center">
   <img src="http://i.imgur.com/QhhPFHY.gif" alt="Chameleon Palette"/>
 </p>
-
-## 🌈📲  Featured Apps ![New](http://i.imgur.com/BX3b9ES.png)
-
-###### In an upcoming update we'll begin showcasing some of the best apps making use of Chameleon. If you'd like to see your app featured in this section, make sure to add it [here](https://airtable.com/shrr1WK6dLQBZfXV0).
 
 ## ⚠️ Requirements
 
