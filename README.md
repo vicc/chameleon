@@ -24,9 +24,9 @@ With Chameleon, you can easily stop tinkering with RGB values, wasting hours fig
   <img src="http://i.imgur.com/lA4J37o.png" alt="Features"/>
 </p>
 
-### App Using Chameleon Ì†º![New](http://i.imgur.com/BX3b9ES.png)
+### App Showcase ![New](http://i.imgur.com/BX3b9ES.png)
 
-###### In an upcoming update we'll begin showcasing some of the best apps making use of Chameleon. If you'd like to see your app featured in this section, make sure to add it [here](https://airtable.com/shrr1WK6dLQBZfXV0).
+###### In an upcoming update we'll begin showcasing some of the best apps and companies making use of Chameleon. If you'd like to see your app featured in this section, make sure to add it [here](https://airtable.com/shrr1WK6dLQBZfXV0).
 
 ## Table of Contents
 [‚óè Product Features](https://github.com/ViccAlexander/Chameleon#-product-features)  
