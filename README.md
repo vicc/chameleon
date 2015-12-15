@@ -26,6 +26,7 @@ With Chameleon, you can easily stop tinkering with RGB values, wasting hours fig
 
 ## Table of Contents
 [● Product Features](https://github.com/ViccAlexander/Chameleon#-product-features)  
+[● Featured Apps](https://github.com/ViccAlexander/Chameleon#-featured-apps)   
 [● Requirements](https://github.com/ViccAlexander/Chameleon#%EF%B8%8F-requirements)  
 [● License](https://github.com/ViccAlexander/Chameleon#-license)  
 [● Contributions](https://github.com/ViccAlexander/Chameleon#-contributions)   
@@ -84,7 +85,7 @@ Oh... Chameleon works with the status bar as well. : )
   <img src="http://s29.postimg.org/i1syd7bkn/Contrast.gif" alt="Status Bar"/>
 </p>
 
-### Themes ![Beta](http://i.imgur.com/JyYiUJq.png) ![New](http://i.imgur.com/BX3b9ES.png)
+### Themes ![Beta](http://i.imgur.com/JyYiUJq.png)
 
 Chameleon now allows you easily theme your app with as little as **one line of code**. You can set a theme for all your views, and for specific views as well.
 
@@ -92,7 +93,7 @@ Chameleon now allows you easily theme your app with as little as **one line of c
   <img src="http://i.imgur.com/ypfqpIn.png" alt="Themes"/>
 </p>
 
-### Colors From Images ![New](http://i.imgur.com/BX3b9ES.png)
+### Colors From Images 
 
 Chameleon allows you to seamlessly extract non-flat or flat color schemes from images without hassle. You can also generate the average color from an image with ease. You can now mold the UI colors of a profile, or product based on an image!
 
@@ -109,7 +110,7 @@ With iOS 7 & 8, Apple mainstreamed flat colors. Now, with the release of iOS 9, 
 
 ![](http://i.imgur.com/2jN72eh.png)
 
-### Xcode Quick Help Documentation ![New](http://i.imgur.com/BX3b9ES.png)
+### Xcode Quick Help Documentation
 
 Chameleon's documentation, while written as clearly and concisely as possible may still render some slightly confused. But don't fret! Staying true to our vision of simplifying the entire color process, we added Xcode Quick Help's Documentation Support! Simply highlight a Chameleon method or tap it with three fingers to find out more about what it is and what it does!
 
@@ -117,13 +118,17 @@ Chameleon's documentation, while written as clearly and concisely as possible ma
   <img src="http://i.imgur.com/p4KkQ9X.png" alt="Xcode Quick Help Documentation"/>
 </p>
   
-### Storyboard Palette ![New](http://i.imgur.com/BX3b9ES.png)
+### Storyboard Palette
 
 If you're like me and love to use storyboard, Chameleon's got you covered. We've provided you with a quick and easy way to access Chameleon colors right from Storyboard, and any other app that uses the color picker (i.e. TextEdit).
 
 <p align="center">
   <img src="http://i.imgur.com/QhhPFHY.gif" alt="Chameleon Palette"/>
 </p>
+
+## 🌈📲  Featured Apps ![New](http://i.imgur.com/BX3b9ES.png)
+
+###### In an upcoming update we'll begin showcasing some of the best apps using Chameleon. If you'd like to see your app featured here, add it here [here](https://airtable.com/shrr1WK6dLQBZfXV0).
 
 ## ⚠️ Requirements
 
@@ -435,7 +440,7 @@ GradientColor(gradientStyle, frame, colors)
 
 Note: `UIGradientStyleRadial` only uses a maximum of 2 colors at the moment. So if more colors are provided, they will not show.
 
-#### Hex Colors ![New](http://i.imgur.com/BX3b9ES.png)
+#### Hex Colors
 
 One of the most requested features, *hex colors*, is now available. You can simply provide a hex string with or without a *#* sign:
 
@@ -461,7 +466,7 @@ HexColor(hexString)
 HexColor(hexString)
 ```
 
-#### Lighter and Darker Colors ![New](http://i.imgur.com/BX3b9ES.png)
+#### Lighter and Darker Colors
 
 Sometimes all you need is a color a shade lighter or a shade darker. Well for those rare, but crucial moments, Chameleon's got you covered. You can now lighten any color the following way:
 
@@ -489,7 +494,7 @@ You can also generate a darker version of a color:
 color.darkenByPercentage(percentage: CGFloat)
 ```
 
-### Colors From Images ![New](http://i.imgur.com/BX3b9ES.png)
+### Colors From Images
 
 Chameleon now supports the extraction of colors from images. You can either generate both flat and non-flat color schemes from an image, or easily extract the average color.
 
@@ -540,7 +545,7 @@ AverageColorFromImage(image)
 ```
 
 ###UIStatusBarStyle Methods
-####Contrasting UIStatusBarStyle ![New](http://i.imgur.com/BX3b9ES.png)
+####Contrasting UIStatusBarStyle
 Many apps on the market, even the most popular ones, overlook this aspect of a beautiful app: the status bar style. Chameleon has done something no other framework has... it has created a new status bar style: `UIStatusBarStyleContrast`. Whether you have a `ViewController` embedded in a `NavigationController`, or not, you can do the following:
 
 #####Normal Convention:
@@ -635,7 +640,7 @@ UIColor *firstColor = colorArray[0];
 var firstColor = colorArray[0] as! UIColor
 ```  
 
-###Theme Methods ![New](http://i.imgur.com/BX3b9ES.png)
+###Theme Methods
 
 With Chameleon, you can now specify a global color theme with simply one line of code (It even takes care of dealing with the status bar style as well)! Here's one of three methods to get you started. `ContentStyle` allows you to decide whether text and a few other elements should be white, black, or whichever contrasts more over any UI element's `backgroundColor`. 
 
@@ -674,9 +679,10 @@ self.navigationController.hidesNavigationBarHairline = YES;
 ```
 
 ## 👑 Author
-Chameleon was developed by **Vicc Alexander** [(@ViccsMind)](https://twitter.com/viccsmind). It is currently maintained by [@ViccAlexander](https://github.com/ViccAlexander) and [@Bre7](https://github.com/bre7).
+Chameleon was developed by **Vicc Alexander** [(@ViccsMind)](https://twitter.com/viccsmind) in 2014. Currently, it is being maintained by [@ViccAlexander](https://github.com/ViccAlexander) and [@Bre7](https://github.com/bre7).
 
-Using Chameleon in your App? [Let me know](https://twitter.com/viccsmind). 🌈📲  
+##### Support ☕️
+If you enjoy Chameleon and would like to buy us a coffee we'd appreciate it. <img src="https://img.shields.io/gratipay/viccalexander.svg?style=social&label=Donate" alt="Donate" />
 
 ## 📝 To Do List 
 * ~~Cocoapods Support~~ ![1.0.1](http://i.imgur.com/8Li5aRR.png)  
