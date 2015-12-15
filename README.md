@@ -682,7 +682,7 @@ self.navigationController.hidesNavigationBarHairline = YES;
 Chameleon was developed by **Vicc Alexander** [(@ViccsMind)](https://twitter.com/viccsmind) in 2014. Currently, it is being maintained by [@ViccAlexander](https://github.com/ViccAlexander) and [@Bre7](https://github.com/bre7).
 
 ##### Support ☕️
-If you enjoy Chameleon and would like to buy us a coffee we'd appreciate it. <img <img src="https://img.shields.io/badge/Donate-%241%2Fweek-yellow.svg?style=social&link=https://gratipay.com/chameleon/" alt="Donate" />
+If you enjoy Chameleon and would like to buy us a coffee we'd appreciate it. <a href="https://gratipay.com/chameleon/"><img src="https://img.shields.io/badge/Donate-%241%2Fweek-yellow.svg?style=social" alt="Donate"/></a>
 
 ## 📝 To Do List 
 * ~~Cocoapods Support~~ ![1.0.1](http://i.imgur.com/8Li5aRR.png)  
