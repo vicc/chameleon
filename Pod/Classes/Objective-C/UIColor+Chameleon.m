@@ -657,6 +657,7 @@
     }
     
     return [self flatColors][randomColorChosen];
+<<<<<<< HEAD
 }
 
 + (UIColor *)colorWithRandomColorInArray:(NSArray *)colors {
@@ -692,6 +693,8 @@
     
     //Return
     return randomColor;
+=======
+>>>>>>> origin/master
 }
 
 + (UIColor *)colorWithRandomFlatColorOfShadeStyle:(UIShadeStyle)shadeStyle {
@@ -1018,7 +1021,11 @@
     //Collect the RGB Values of the color where the smallest difference was found
     CGFloat red, green, blue;
     [[self flatColors][index] getRed:&red green:&green blue:&blue alpha:nil];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     //Return the closest flat color
     return rgba(red * 255, green * 255, blue * 255, alpha);
 }

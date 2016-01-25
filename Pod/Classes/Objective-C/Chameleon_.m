@@ -9,6 +9,7 @@
 #import "Chameleon_.h"
 #import "UILabel+Chameleon.h"
 #import "UIButton+Chameleon.h"
+#import "UIAppearance+Swift.h"
 
 @implementation Chameleon
 
@@ -16,8 +17,8 @@
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 
 + (void)setGlobalThemeUsingPrimaryColor:(UIColor *)primaryColor
-                 withContentStyle:(UIContentStyle)contentStyle {
-     
+                       withContentStyle:(UIContentStyle)contentStyle {
+    
     if (contentStyle == UIContentStyleContrast) {
         
         if ([ContrastColor(primaryColor, YES) isEqual:FlatWhite]) {
@@ -34,7 +35,7 @@
         
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     }
-
+    
     [[self class] customizeBarButtonItemWithPrimaryColor:primaryColor contentStyle:contentStyle];
     [[self class] customizeButtonWithPrimaryColor:primaryColor withContentStyle:contentStyle];
     [[self class] customizeNavigationBarWithPrimaryColor:primaryColor withContentStyle:contentStyle];
@@ -47,12 +48,13 @@
     [[self class] customizeSwitchWithPrimaryColor:primaryColor];
     [[self class] customizeTabBarWithBarTintColor:FlatWhite andTintColor:primaryColor];
     [[self class] customizeToolbarWithPrimaryColor:primaryColor withContentStyle:contentStyle];
+    [[self class] customizeImagePickerControllerWithPrimaryColor:primaryColor withContentStyle:contentStyle];
 }
 
 
 + (void)setGlobalThemeUsingPrimaryColor:(UIColor *)primaryColor
-               withSecondaryColor:(UIColor *)secondaryColor
-                  andContentStyle:(UIContentStyle)contentStyle {
+                     withSecondaryColor:(UIColor *)secondaryColor
+                        andContentStyle:(UIContentStyle)contentStyle {
     
     if (contentStyle == UIContentStyleContrast) {
         
@@ -83,12 +85,13 @@
     [[self class] customizeSwitchWithPrimaryColor:primaryColor andSecondaryColor:secondaryColor];
     [[self class] customizeTabBarWithBarTintColor:FlatWhite andTintColor:primaryColor];
     [[self class] customizeToolbarWithPrimaryColor:primaryColor withContentStyle:contentStyle];
+    [[self class] customizeImagePickerControllerWithPrimaryColor:primaryColor withContentStyle:contentStyle];
 }
 
 + (void)setGlobalThemeUsingPrimaryColor:(UIColor *)primaryColor
-               withSecondaryColor:(UIColor *)secondaryColor
-                    usingFontName:(NSString *)fontName
-                  andContentStyle:(UIContentStyle)contentStyle {
+                     withSecondaryColor:(UIColor *)secondaryColor
+                          usingFontName:(NSString *)fontName
+                        andContentStyle:(UIContentStyle)contentStyle {
     
     if (contentStyle == UIContentStyleContrast) {
         
@@ -122,40 +125,40 @@
     [[self class] customizeSwitchWithPrimaryColor:primaryColor andSecondaryColor:secondaryColor];
     [[self class] customizeTabBarWithBarTintColor:FlatWhite andTintColor:primaryColor];
     [[self class] customizeToolbarWithPrimaryColor:primaryColor withContentStyle:contentStyle];
-    
+    [[self class] customizeImagePickerControllerWithPrimaryColor:primaryColor withContentStyle:contentStyle];
     
     /*
      
-    if (contentStyle == UIContentStyleContrast) {
-        
-        if ([ContrastColor(primaryColor, YES) isEqual:FlatWhite]) {
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-        } else {
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-        }
-        
-    } else if (contentStyle == UIContentStyleLight) {
-        
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-        
-    } else {
-        
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-    }
-    
-    [[self class] customizeBarButtonItemWithPrimaryColor:primaryColor fontName:fontName fontSize:18 contentStyle:contentStyle];
-    [[self class] customizeButtonWithPrimaryColor:primaryColor fontName:fontName fontSize:17 contentStyle:contentStyle];
-    [[self class] customizeLabelWithPrimaryColor:primaryColor fontName:fontName fontSize:18 withContentStyle:contentStyle];
-    [[self class] customizePageControlWithPrimaryColor:primaryColor withContentStyle:contentStyle];
-    [[self class] customizeProgressViewWithPrimaryColor:primaryColor andSecondaryColor:secondaryColor];
-    [[self class] customizeSearchBarWithPrimaryColor:primaryColor withContentStyle:contentStyle];
-    [[self class] customizeSliderWithPrimaryColor:primaryColor andSecondaryColor:secondaryColor];
-    [[self class] customizeStepperWithPrimaryColor:primaryColor withContentStyle:contentStyle];
-    [[self class] customizeSwitchWithPrimaryColor:primaryColor andSecondaryColor:secondaryColor];
-    [[self class] customizeTabBarWithBarTintColor:FlatWhite tintColor:primaryColor fontName:fontName fontSize:11];
-    [[self class] customizeToolbarWithPrimaryColor:primaryColor withContentStyle:contentStyle];
-    
-    */
+     if (contentStyle == UIContentStyleContrast) {
+     
+     if ([ContrastColor(primaryColor, YES) isEqual:FlatWhite]) {
+     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+     } else {
+     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+     }
+     
+     } else if (contentStyle == UIContentStyleLight) {
+     
+     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+     
+     } else {
+     
+     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+     }
+     
+     [[self class] customizeBarButtonItemWithPrimaryColor:primaryColor fontName:fontName fontSize:18 contentStyle:contentStyle];
+     [[self class] customizeButtonWithPrimaryColor:primaryColor fontName:fontName fontSize:17 contentStyle:contentStyle];
+     [[self class] customizeLabelWithPrimaryColor:primaryColor fontName:fontName fontSize:18 withContentStyle:contentStyle];
+     [[self class] customizePageControlWithPrimaryColor:primaryColor withContentStyle:contentStyle];
+     [[self class] customizeProgressViewWithPrimaryColor:primaryColor andSecondaryColor:secondaryColor];
+     [[self class] customizeSearchBarWithPrimaryColor:primaryColor withContentStyle:contentStyle];
+     [[self class] customizeSliderWithPrimaryColor:primaryColor andSecondaryColor:secondaryColor];
+     [[self class] customizeStepperWithPrimaryColor:primaryColor withContentStyle:contentStyle];
+     [[self class] customizeSwitchWithPrimaryColor:primaryColor andSecondaryColor:secondaryColor];
+     [[self class] customizeTabBarWithBarTintColor:FlatWhite tintColor:primaryColor fontName:fontName fontSize:11];
+     [[self class] customizeToolbarWithPrimaryColor:primaryColor withContentStyle:contentStyle];
+     
+     */
 }
 
 #pragma mark - UIBarButtonItem
@@ -182,13 +185,13 @@
             break;
         }
     }
-
+    
     [[UIBarButtonItem appearance] setTintColor:primaryColor];
     [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTintColor:contentColor];
     [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTintColor:contentColor];
     [[UIBarButtonItem appearanceWhenContainedIn:[UIToolbar class], nil] setTintColor:contentColor];
     
-
+    
 }
 
 + (void)customizeBarButtonItemWithPrimaryColor:(UIColor *)primaryColor
@@ -224,7 +227,7 @@
     
     if ([UIFont fontWithName:fontName size:fontSize]) {
         [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitleTextAttributes:@{ NSForegroundColorAttributeName:contentColor,
-                                                                NSFontAttributeName:[UIFont fontWithName:fontName size:fontSize]} forState:UIControlStateNormal];
+                                                                                                            NSFontAttributeName:[UIFont fontWithName:fontName size:fontSize]} forState:UIControlStateNormal];
     }
 }
 
@@ -256,7 +259,6 @@
     [[UIButton appearance] setTintColor:contentColor];
     [[UIButton appearance] setBackgroundColor:primaryColor];
     
-    
     [[UIButton appearanceWhenContainedIn:[UISearchBar class], nil] setTintColor:contentColor];
     [[UIButton appearanceWhenContainedIn:[UISearchBar class], nil] setBackgroundColor:ClearColor];
     
@@ -270,9 +272,6 @@
     [[UIButton appearanceWhenContainedIn:[UIStepper class], nil] setBackgroundColor:ClearColor];
     
     [[UIButton appearance] setTitleShadowColor:ClearColor forState:UIControlStateNormal];
-    
-    
-    
 }
 
 + (void)customizeButtonWithPrimaryColor:(UIColor *)primaryColor
@@ -320,8 +319,46 @@
     [[UIButton appearanceWhenContainedIn:[UIStepper class], nil] setBackgroundColor:ClearColor];
     
     [[UIButton appearance] setTitleShadowColor:ClearColor forState:UIControlStateNormal];
-    
 }
+
+#pragma mark - UIImagePickerController
+
++ (void)customizeImagePickerControllerWithPrimaryColor:(UIColor *)primaryColor withContentStyle:(UIContentStyle)contentStyle {
+    
+    UIColor *contentColor;
+    switch (contentStyle) {
+        case UIContentStyleContrast: {
+            contentColor = ContrastColor(primaryColor, NO);
+            break;
+        }
+        case UIContentStyleLight: {
+            contentColor = [UIColor whiteColor];
+            break;
+        }
+        case UIContentStyleDark: {
+            contentColor = FlatBlackDark;
+            break;
+        }
+        default: {
+            contentColor = ContrastColor(primaryColor, NO);
+            break;
+        }
+    }
+    
+    //Workaround for Swift http://stackoverflow.com/a/28765193
+    [[UIButton appearanceWhenContainedWithin:@[[UIView class],[UIImagePickerController class]]] setBackgroundColor:ClearColor];
+    [[UIButton appearanceWhenContainedWithin:@[[UIView class],[UIImagePickerController class]]] setTintColor:ClearColor];
+    [[UIButton appearanceWhenContainedWithin:@[[UINavigationBar class],[UIImagePickerController class]]] setBackgroundColor:ClearColor];
+    [[UIButton appearanceWhenContainedWithin:@[[UINavigationBar class],[UIImagePickerController class]]] setTintColor:contentColor];
+    [[UIButton appearanceWhenContainedWithin:@[[UITableViewCell class],[UIImagePickerController class]]] setBackgroundColor:ClearColor];
+    
+    //[[UIButton appearanceWhenContainedInInstancesOfClasses:@[[UIView class],[UIImagePickerController class]]] setBackgroundColor:ClearColor];
+    //[[UIButton appearanceWhenContainedInInstancesOfClasses:@[[UIView class],[UIImagePickerController class]]] setTintColor:contentColor];
+    //[[UIButton appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class],[UIImagePickerController class]]] setBackgroundColor:ClearColor];
+    //[[UIButton appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class],[UIImagePickerController class]]] setTintColor:contentColor];
+    //[[UIButton appearanceWhenContainedInInstancesOfClasses:@[[UITableViewCell class],[UIImagePickerController class]]] setBackgroundColor:ClearColor];
+}
+
 
 #pragma mark - UILabel
 
@@ -391,7 +428,7 @@
     [[UINavigationBar appearance] setTintColor:contentColor];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:contentColor}];
     [[UINavigationBar appearance] setShadowImage:[UIImage new]];
-//    [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    //    [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
 }
 
 + (void)customizeNavigationBarWithBarColor:(UIColor *)barColor
@@ -402,7 +439,7 @@
     [[UINavigationBar appearance] setTintColor:buttonColor];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:textColor}];
     [[UINavigationBar appearance] setShadowImage:[UIImage new]];
-//    [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    //    [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
 }
 
 + (void)customizeNavigationBarWithBarColor:(UIColor *)barColor
@@ -414,7 +451,7 @@
     [[UINavigationBar appearance] setBarTintColor:barColor];
     [[UINavigationBar appearance] setTintColor:buttonColor];
     [[UINavigationBar appearance] setShadowImage:[UIImage new]];
-//    [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    //    [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     
     if ([UIFont fontWithName:fontName size:fontSize]) {
         [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName:textColor, NSFontAttributeName:[UIFont fontWithName:fontName size:fontSize] }];
@@ -594,7 +631,7 @@
     UIFont *font = [UIFont fontWithName:fontName size:fontSize];
     if (font) {
         [[UISegmentedControl appearance] setTitleTextAttributes:@{NSFontAttributeName:font}
-                                                 forState:UIControlStateNormal];
+                                                       forState:UIControlStateNormal];
     }
 }
 

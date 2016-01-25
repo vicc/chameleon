@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		0CA0FCE11C56B4250022EB5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0FCE01C56B4250022EB5B /* main.m */; };
 		0CA0FCE41C56B4250022EB5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0FCE31C56B4250022EB5B /* AppDelegate.m */; };
 		0CA0FCE71C56B4250022EB5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0FCE61C56B4250022EB5B /* ViewController.m */; };
@@ -24,6 +25,19 @@
 		0CA0FCFC1C56B67E0022EB5B /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E71BB4D62500C30559 /* UINavigationController+Chameleon.m */; };
 		0CA0FCFD1C56B67E0022EB5B /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E91BB4D62500C30559 /* UIView+ChameleonPrivate.m */; };
 		0CA0FCFE1C56B67E0022EB5B /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935EB1BB4D62500C30559 /* UIViewController+Chameleon.m */; };
+=======
+		0C6D34721C07B98400A7BF83 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240093F81BB4517400932727 /* Chameleon.framework */; };
+		0C6D34731C07B98400A7BF83 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 240093F81BB4517400932727 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C8DABA81C07AC3800B28FE2 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8DABA61C07AC3800B28FE2 /* UIAppearance+Swift.m */; };
+		0C8DABAB1C07B00000B28FE2 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E21BB4D62500C30559 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C8DABAC1C07B00800B28FE2 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C8DABA51C07AC3800B28FE2 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C8DABB51C07B5EA00B28FE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8DABB41C07B5EA00B28FE2 /* main.m */; };
+		0C8DABB81C07B5EA00B28FE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8DABB71C07B5EA00B28FE2 /* AppDelegate.m */; };
+		0C8DABBB1C07B5EA00B28FE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8DABBA1C07B5EA00B28FE2 /* ViewController.m */; };
+		0C8DABBE1C07B5EA00B28FE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8DABBC1C07B5EA00B28FE2 /* Main.storyboard */; };
+		0C8DABC01C07B5EA00B28FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8DABBF1C07B5EA00B28FE2 /* Assets.xcassets */; };
+		0C8DABC31C07B5EA00B28FE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8DABC11C07B5EA00B28FE2 /* LaunchScreen.storyboard */; };
+>>>>>>> origin/master
 		240093FC1BB4517400932727 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 240093FB1BB4517400932727 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		245935EC1BB4D62500C30559 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935D41BB4D62500C30559 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		245935ED1BB4D62500C30559 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935D51BB4D62500C30559 /* Chameleon_.m */; };
@@ -39,7 +53,10 @@
 		245935F71BB4D62500C30559 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935DF1BB4D62500C30559 /* UIColor+Chameleon.m */; };
 		245935F81BB4D62500C30559 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E01BB4D62500C30559 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		245935F91BB4D62500C30559 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E11BB4D62500C30559 /* UIColor+ChameleonPrivate.m */; };
+<<<<<<< HEAD
 		245935FA1BB4D62500C30559 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E21BB4D62500C30559 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+=======
+>>>>>>> origin/master
 		245935FB1BB4D62500C30559 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E31BB4D62500C30559 /* UIImage+ChameleonPrivate.m */; };
 		245935FC1BB4D62500C30559 /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E41BB4D62500C30559 /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		245935FD1BB4D62500C30559 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E51BB4D62500C30559 /* UILabel+Chameleon.m */; };
@@ -58,7 +75,32 @@
 		247EB8B91BB61F76009B4904 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240093F81BB4517400932727 /* Chameleon.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0C6D34741C07B98400A7BF83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240093EF1BB4517400932727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 240093F71BB4517400932727;
+			remoteInfo = Chameleon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0C6D34761C07B98400A7BF83 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0C6D34731C07B98400A7BF83 /* Chameleon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		0CA0FCDD1C56B4250022EB5B /* ChameleonDemo-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChameleonDemo-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA0FCE01C56B4250022EB5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0CA0FCE21C56B4250022EB5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +111,20 @@
 		0CA0FCEB1C56B4250022EB5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CA0FCEE1C56B4250022EB5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CA0FCF01C56B4250022EB5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+=======
+		0C8DABA51C07AC3800B28FE2 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "../Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		0C8DABA61C07AC3800B28FE2 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "../Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		0C8DABB11C07B5EA00B28FE2 /* ChameleonDemo-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChameleonDemo-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8DABB41C07B5EA00B28FE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C8DABB61C07B5EA00B28FE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C8DABB71C07B5EA00B28FE2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C8DABB91C07B5EA00B28FE2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C8DABBA1C07B5EA00B28FE2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C8DABBD1C07B5EA00B28FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C8DABBF1C07B5EA00B28FE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C8DABC21C07B5EA00B28FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C8DABC41C07B5EA00B28FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+>>>>>>> origin/master
 		240093F81BB4517400932727 /* Chameleon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Chameleon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		240093FB1BB4517400932727 /* Chameleon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chameleon.h; sourceTree = "<group>"; };
 		240093FD1BB4517400932727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,10 +163,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+<<<<<<< HEAD
 		0CA0FCDA1C56B4250022EB5B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+=======
+		0C8DABAE1C07B5EA00B28FE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6D34721C07B98400A7BF83 /* Chameleon.framework in Frameworks */,
+>>>>>>> origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +196,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		0CA0FCDE1C56B4250022EB5B /* ChameleonDemo-ObjC */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +217,28 @@
 			isa = PBXGroup;
 			children = (
 				0CA0FCE01C56B4250022EB5B /* main.m */,
+=======
+		0C8DABB21C07B5EA00B28FE2 /* ChameleonDemo-Objc */ = {
+			isa = PBXGroup;
+			children = (
+				0C8DABB61C07B5EA00B28FE2 /* AppDelegate.h */,
+				0C8DABB71C07B5EA00B28FE2 /* AppDelegate.m */,
+				0C8DABB91C07B5EA00B28FE2 /* ViewController.h */,
+				0C8DABBA1C07B5EA00B28FE2 /* ViewController.m */,
+				0C8DABBC1C07B5EA00B28FE2 /* Main.storyboard */,
+				0C8DABBF1C07B5EA00B28FE2 /* Assets.xcassets */,
+				0C8DABC11C07B5EA00B28FE2 /* LaunchScreen.storyboard */,
+				0C8DABC41C07B5EA00B28FE2 /* Info.plist */,
+				0C8DABB31C07B5EA00B28FE2 /* Supporting Files */,
+			);
+			path = "ChameleonDemo-Objc";
+			sourceTree = "<group>";
+		};
+		0C8DABB31C07B5EA00B28FE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C8DABB41C07B5EA00B28FE2 /* main.m */,
+>>>>>>> origin/master
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,7 +248,11 @@
 			children = (
 				240093FA1BB4517400932727 /* Chameleon */,
 				247EB8A81BB61EB3009B4904 /* ChameleonDemo */,
+<<<<<<< HEAD
 				0CA0FCDE1C56B4250022EB5B /* ChameleonDemo-ObjC */,
+=======
+				0C8DABB21C07B5EA00B28FE2 /* ChameleonDemo-Objc */,
+>>>>>>> origin/master
 				240093F91BB4517400932727 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -171,7 +262,11 @@
 			children = (
 				240093F81BB4517400932727 /* Chameleon.framework */,
 				247EB8A71BB61EB3009B4904 /* ChameleonDemo.app */,
+<<<<<<< HEAD
 				0CA0FCDD1C56B4250022EB5B /* ChameleonDemo-ObjC.app */,
+=======
+				0C8DABB11C07B5EA00B28FE2 /* ChameleonDemo-Objc.app */,
+>>>>>>> origin/master
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +276,7 @@
 			children = (
 				240093FB1BB4517400932727 /* Chameleon.h */,
 				245936041BB4D62D00C30559 /* ChameleonShorthand.swift */,
+				240093FB1BB4517400932727 /* Chameleon.h */,
 				245935D41BB4D62500C30559 /* Chameleon_.h */,
 				245935D51BB4D62500C30559 /* Chameleon_.m */,
 				245935D61BB4D62500C30559 /* ChameleonConstants.h */,
@@ -205,6 +301,11 @@
 				245935E91BB4D62500C30559 /* UIView+ChameleonPrivate.m */,
 				245935EA1BB4D62500C30559 /* UIViewController+Chameleon.h */,
 				245935EB1BB4D62500C30559 /* UIViewController+Chameleon.m */,
+<<<<<<< HEAD
+=======
+				0C8DABA51C07AC3800B28FE2 /* UIAppearance+Swift.h */,
+				0C8DABA61C07AC3800B28FE2 /* UIAppearance+Swift.m */,
+>>>>>>> origin/master
 				240093FD1BB4517400932727 /* Info.plist */,
 			);
 			path = Chameleon;
@@ -243,13 +344,15 @@
 				245935EE1BB4D62500C30559 /* ChameleonConstants.h in Headers */,
 				245935F81BB4D62500C30559 /* UIColor+ChameleonPrivate.h in Headers */,
 				245936021BB4D62500C30559 /* UIViewController+Chameleon.h in Headers */,
-				245935FA1BB4D62500C30559 /* UIImage+ChameleonPrivate.h in Headers */,
+				0C8DABAB1C07B00000B28FE2 /* UIImage+ChameleonPrivate.h in Headers */,
+				0C8DABAC1C07B00800B28FE2 /* UIAppearance+Swift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+<<<<<<< HEAD
 		0CA0FCDC1C56B4250022EB5B /* ChameleonDemo-ObjC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CA0FCF31C56B4250022EB5B /* Build configuration list for PBXNativeTarget "ChameleonDemo-ObjC" */;
@@ -257,14 +360,32 @@
 				0CA0FCD91C56B4250022EB5B /* Sources */,
 				0CA0FCDA1C56B4250022EB5B /* Frameworks */,
 				0CA0FCDB1C56B4250022EB5B /* Resources */,
+=======
+		0C8DABB01C07B5EA00B28FE2 /* ChameleonDemo-Objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C8DABC51C07B5EA00B28FE2 /* Build configuration list for PBXNativeTarget "ChameleonDemo-Objc" */;
+			buildPhases = (
+				0C8DABAD1C07B5EA00B28FE2 /* Sources */,
+				0C8DABAE1C07B5EA00B28FE2 /* Frameworks */,
+				0C8DABAF1C07B5EA00B28FE2 /* Resources */,
+				0C6D34761C07B98400A7BF83 /* Embed Frameworks */,
+>>>>>>> origin/master
 			);
 			buildRules = (
 			);
 			dependencies = (
+<<<<<<< HEAD
 			);
 			name = "ChameleonDemo-ObjC";
 			productName = "ChameleonDemo-ObjC";
 			productReference = 0CA0FCDD1C56B4250022EB5B /* ChameleonDemo-ObjC.app */;
+=======
+				0C6D34751C07B98400A7BF83 /* PBXTargetDependency */,
+			);
+			name = "ChameleonDemo-Objc";
+			productName = "ChameleonDemo-Objc";
+			productReference = 0C8DABB11C07B5EA00B28FE2 /* ChameleonDemo-Objc.app */;
+>>>>>>> origin/master
 			productType = "com.apple.product-type.application";
 		};
 		240093F71BB4517400932727 /* Chameleon */ = {
@@ -312,8 +433,13 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Vicc Alexander";
 				TargetAttributes = {
+<<<<<<< HEAD
 					0CA0FCDC1C56B4250022EB5B = {
 						CreatedOnToolsVersion = 7.2;
+=======
+					0C8DABB01C07B5EA00B28FE2 = {
+						CreatedOnToolsVersion = 7.1.1;
+>>>>>>> origin/master
 					};
 					240093F71BB4517400932727 = {
 						CreatedOnToolsVersion = 7.0;
@@ -338,12 +464,17 @@
 			targets = (
 				240093F71BB4517400932727 /* Chameleon */,
 				247EB8A61BB61EB3009B4904 /* ChameleonDemo */,
+<<<<<<< HEAD
 				0CA0FCDC1C56B4250022EB5B /* ChameleonDemo-ObjC */,
+=======
+				0C8DABB01C07B5EA00B28FE2 /* ChameleonDemo-Objc */,
+>>>>>>> origin/master
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+<<<<<<< HEAD
 		0CA0FCDB1C56B4250022EB5B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,6 +482,15 @@
 				0CA0FCEF1C56B4250022EB5B /* LaunchScreen.storyboard in Resources */,
 				0CA0FCEC1C56B4250022EB5B /* Assets.xcassets in Resources */,
 				0CA0FCEA1C56B4250022EB5B /* Main.storyboard in Resources */,
+=======
+		0C8DABAF1C07B5EA00B28FE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8DABC31C07B5EA00B28FE2 /* LaunchScreen.storyboard in Resources */,
+				0C8DABC01C07B5EA00B28FE2 /* Assets.xcassets in Resources */,
+				0C8DABBE1C07B5EA00B28FE2 /* Main.storyboard in Resources */,
+>>>>>>> origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +514,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< HEAD
 		0CA0FCD91C56B4250022EB5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,6 +533,15 @@
 				0CA0FCF41C56B67E0022EB5B /* Chameleon_.m in Sources */,
 				0CA0FCE11C56B4250022EB5B /* main.m in Sources */,
 				0CA0FCFE1C56B67E0022EB5B /* UIViewController+Chameleon.m in Sources */,
+=======
+		0C8DABAD1C07B5EA00B28FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8DABBB1C07B5EA00B28FE2 /* ViewController.m in Sources */,
+				0C8DABB81C07B5EA00B28FE2 /* AppDelegate.m in Sources */,
+				0C8DABB51C07B5EA00B28FE2 /* main.m in Sources */,
+>>>>>>> origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +558,7 @@
 				245936051BB4D62D00C30559 /* ChameleonShorthand.swift in Sources */,
 				245936031BB4D62500C30559 /* UIViewController+Chameleon.m in Sources */,
 				245935FF1BB4D62500C30559 /* UINavigationController+Chameleon.m in Sources */,
+				0C8DABA81C07AC3800B28FE2 /* UIAppearance+Swift.m in Sources */,
 				245936011BB4D62500C30559 /* UIView+ChameleonPrivate.m in Sources */,
 				245935ED1BB4D62500C30559 /* Chameleon_.m in Sources */,
 				245935F71BB4D62500C30559 /* UIColor+Chameleon.m in Sources */,
@@ -425,19 +576,41 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0C6D34751C07B98400A7BF83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 240093F71BB4517400932727 /* Chameleon */;
+			targetProxy = 0C6D34741C07B98400A7BF83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+<<<<<<< HEAD
 		0CA0FCE81C56B4250022EB5B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0CA0FCE91C56B4250022EB5B /* Base */,
+=======
+		0C8DABBC1C07B5EA00B28FE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C8DABBD1C07B5EA00B28FE2 /* Base */,
+>>>>>>> origin/master
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		0CA0FCED1C56B4250022EB5B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0CA0FCEE1C56B4250022EB5B /* Base */,
+=======
+		0C8DABC11C07B5EA00B28FE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C8DABC21C07B5EA00B28FE2 /* Base */,
+>>>>>>> origin/master
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -461,6 +634,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 		0CA0FCF11C56B4250022EB5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -469,10 +643,23 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viccalexander.ChameleonDemo-ObjC";
+=======
+		0C8DABC61C07B5EA00B28FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "ChameleonDemo-Objc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viccalexander.ChameleonDemo-Objc";
+>>>>>>> origin/master
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		0CA0FCF21C56B4250022EB5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -481,6 +668,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viccalexander.ChameleonDemo-ObjC";
+=======
+		0C8DABC71C07B5EA00B28FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "ChameleonDemo-Objc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viccalexander.ChameleonDemo-Objc";
+>>>>>>> origin/master
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -640,6 +839,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< HEAD
 		0CA0FCF31C56B4250022EB5B /* Build configuration list for PBXNativeTarget "ChameleonDemo-ObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -647,6 +847,16 @@
 				0CA0FCF21C56B4250022EB5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+=======
+		0C8DABC51C07B5EA00B28FE2 /* Build configuration list for PBXNativeTarget "ChameleonDemo-Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C8DABC61C07B5EA00B28FE2 /* Debug */,
+				0C8DABC71C07B5EA00B28FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+>>>>>>> origin/master
 		};
 		240093F21BB4517400932727 /* Build configuration list for PBXProject "Chameleon" */ = {
 			isa = XCConfigurationList;

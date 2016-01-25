@@ -1,13 +1,12 @@
 //
 //  ViewController.m
-//  ChameleonDemo-ObjC
+//  ChameleonDemo-Objc
 //
-//  Created by Vicc Alexander on 1/25/16.
-//  Copyright © 2016 Vicc Alexander. All rights reserved.
+//  Created by Vicc Alexander on 11/26/15.
+//  Copyright © 2015 Vicc Alexander. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "Chameleon.h"
 
 @interface ViewController ()
 
@@ -20,7 +19,7 @@
     //Super
     [super viewDidLoad];
     
-    //Set Background Color
+    //Set View Background
     self.view.backgroundColor = FlatYellow;
 }
 

@@ -1,5 +1,20 @@
 ## 📄 Change Log
 
+### 2.0.5
+
+* Theme Support for UIImagePickerController (#83)
+* Objective-C Demo Project
+* Fixed Erroneous Swift Method Naming Convention Warnings
+* Bumped up the minimum version of iOS to `8.0`.
+* Fixed `If-Else` Statement Logic (#48)
+* Removed cast for `calloc` (#76).
+
+### 2.0.4
+
+* Minor Fixes.
+* Simplified `arrayOfColorsWithColorScheme` (#68)
+* `colorWithFlatVersionFrom` alpha bug fix (#69)
+
 ### 2.0.3
 
 * Added `hidesNavigationBarHairline` boolean to UINavigationController, and by default it is now set to `NO`. (#64) 
