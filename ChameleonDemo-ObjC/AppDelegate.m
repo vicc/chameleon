@@ -18,9 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     //Set global theme
-    //[Chameleon setGlobalThemeUsingPrimaryColor:FlatMint withSecondaryColor:FlatBlue andContentStyle:UIContentStyleContrast];
-    
-    [Chameleon setGlobalThemeUsingPrimaryColor:FlatMint withContentStyle:UIContentStyleContrast];
+    [Chameleon setGlobalThemeUsingPrimaryColor:FlatMint withSecondaryColor:FlatBlue andContentStyle:UIContentStyleContrast];
     
     
     return YES;

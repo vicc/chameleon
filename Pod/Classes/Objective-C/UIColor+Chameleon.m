@@ -499,7 +499,7 @@
             [backgroundGradientLayer renderInContext:UIGraphicsGetCurrentContext()];
             UIImage *backgroundColorImage = UIGraphicsGetImageFromCurrentImageContext();
             UIGraphicsEndImageContext();
-            
+        
             [self setGradientImage:backgroundColorImage];
             return [UIColor colorWithPatternImage:backgroundColorImage];
         }
@@ -509,7 +509,7 @@
             
             //Specific the spread of the gradient (For now this gradient only takes 2 locations)
             CGFloat locations[2] = {0.0, 1.0};
-            
+
             //Default to the RGB Colorspace
             CGColorSpaceRef myColorspace = CGColorSpaceCreateDeviceRGB();
             CFArrayRef arrayRef = (__bridge CFArrayRef)cgColors;
@@ -517,7 +517,7 @@
             //Create our Fradient
             CGGradientRef myGradient = CGGradientCreateWithColors(myColorspace, arrayRef, locations);
             
-            
+ 
             // Normalise the 0-1 ranged inputs to the width of the image
             CGPoint myCentrePoint = CGPointMake(0.5 * frame.size.width, 0.5 * frame.size.height);
             float myRadius = MIN(frame.size.width, frame.size.height) * 1.0;
@@ -565,7 +565,7 @@
 }
 
 + (UIColor *)colorWithHexString:(NSString *)string withAlpha:(CGFloat)alpha {
-    
+ 
     //Quick return in case string is empty
     if (string.length == 0) {
         return nil;
@@ -579,9 +579,9 @@
     //Make sure we have a working string length
     if (string.length != 7 && string.length != 4) {
         
-#ifdef DEBUG
+        #ifdef DEBUG
         NSLog(@"Unsupported string format: %@", string);
-#endif
+        #endif
         
         return nil;
     }
@@ -591,9 +591,9 @@
         
         //Convert to full length hex string
         string = [NSString stringWithFormat:@"#%@%@%@%@%@%@",
-                  [string substringWithRange:NSMakeRange(1, 1)],[string substringWithRange:NSMakeRange(1, 1)],
-                  [string substringWithRange:NSMakeRange(2, 1)],[string substringWithRange:NSMakeRange(2, 1)],
-                  [string substringWithRange:NSMakeRange(3, 1)],[string substringWithRange:NSMakeRange(3, 1)]];
+                     [string substringWithRange:NSMakeRange(1, 1)],[string substringWithRange:NSMakeRange(1, 1)],
+                     [string substringWithRange:NSMakeRange(2, 1)],[string substringWithRange:NSMakeRange(2, 1)],
+                     [string substringWithRange:NSMakeRange(3, 1)],[string substringWithRange:NSMakeRange(3, 1)]];
     }
     
     NSString *redHex = [NSString stringWithFormat:@"0x%@", [string substringWithRange:NSMakeRange(1, 2)]];
@@ -657,7 +657,6 @@
     }
     
     return [self flatColors][randomColorChosen];
-<<<<<<< HEAD
 }
 
 + (UIColor *)colorWithRandomColorInArray:(NSArray *)colors {
@@ -693,8 +692,6 @@
     
     //Return
     return randomColor;
-=======
->>>>>>> origin/master
 }
 
 + (UIColor *)colorWithRandomFlatColorOfShadeStyle:(UIShadeStyle)shadeStyle {
@@ -745,7 +742,7 @@
             
         case UIShadeStyleLight:
         default: {
-            
+        
             NSArray *lightColors = @[FlatBlack, FlatBlue, FlatBrown, FlatCoffee, FlatForestGreen, FlatGray, FlatGreen, FlatLime, FlatMagenta, FlatMaroon, FlatMint, FlatNavyBlue, FlatOrange, FlatPink, FlatPlum, FlatPowderBlue, FlatPurple, FlatRed, FlatSand, FlatSkyBlue, FlatTeal, FlatWatermelon, FlatWhite, FlatYellow];
             
             randomColor = lightColors[randomColorChosen];
@@ -786,7 +783,7 @@
     return nil;
 }
 
-- (NSString *)hexStringValue {
+- (NSString *)hexValue {
     
     UIColor *currentColor = self;
     if (CGColorGetNumberOfComponents(self.CGColor) < 4) {
@@ -799,6 +796,7 @@
     }
     
     return [NSString stringWithFormat:@"#%02X%02X%02X", (int)((CGColorGetComponents(currentColor.CGColor))[0]*255.0), (int)((CGColorGetComponents(currentColor.CGColor))[1]*255.0), (int)((CGColorGetComponents(currentColor.CGColor))[2]*255.0)];
+    
 }
 
 - (UIColor *)lightenByPercentage:(CGFloat)percentage {
@@ -811,7 +809,7 @@
         
         //Make sure our percentage is greater than 0
         if (percentage > 0) {
-            b = MIN(b + percentage, 1.0);
+           b = MIN(b + percentage, 1.0);
         }
         
         //Return lighter color
@@ -883,9 +881,9 @@
         case kCGColorSpaceModelPattern:
         case kCGColorSpaceModelUnknown: {
             
-#ifdef DEBUG
+            #ifdef DEBUG
             NSLog(@"Unsupported color model: %i", model);
-#endif
+            #endif
             
             rgba[0] = 0.0f;
             rgba[1] = 0.0f;
@@ -908,7 +906,7 @@
 //More info: http://en.wikipedia.org/wiki/Color_difference
 + (float)totalSumOfDifferencesFroml1:(CGFloat)L1 l2:(CGFloat)L2 a1:(CGFloat)A1
                                   a2:(CGFloat)A2 b1:(CGFloat)B1 b2:(CGFloat)B2 {
-    
+
     //Get C Values in LCH from LAB Values
     CGFloat C1 = sqrt(pow(A1, 2) + pow(B1, 2));
     CGFloat C2 = sqrt(pow(A2, 2) + pow(B2, 2));
@@ -1016,16 +1014,12 @@
             }
         }
     }
-    
+
     
     //Collect the RGB Values of the color where the smallest difference was found
     CGFloat red, green, blue;
     [[self flatColors][index] getRed:&red green:&green blue:&blue alpha:nil];
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> origin/master
     //Return the closest flat color
     return rgba(red * 255, green * 255, blue * 255, alpha);
 }

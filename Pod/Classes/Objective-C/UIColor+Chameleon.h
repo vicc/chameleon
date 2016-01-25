@@ -623,7 +623,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  */
 + (UIColor *)colorWithHexString:(NSString *)string withAlpha:(CGFloat)alpha;
 
-#pragma mark - Other Cool Methods
+#pragma mark - Instance Methods
 
 /**
  *  Creates and returns a flat color object closest to the specified color in the LAB colorspace.
@@ -648,13 +648,13 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
 /**
  *  @author Vicc Alexander
  *
- *  Returns the hexidecimal string value for the specified color.
+ *  Returns the hex string value for the specified color.
  *
  *  @return An @NSString object.
  *
  *  @since 2.1.0
  */
-- (NSString *)hexStringValue;
+- (NSString *)hexValue;
 
 /**
  *  Creates and returns a lighter shade of a specified color in the HSB space.
