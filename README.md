@@ -192,7 +192,7 @@ If you rather install this framework manually, just drag and drop the Chameleon 
 
 If you're working with Swift and are manually installing Chameleon, there's an additional step. Make sure to download and drag the following file, [ChameleonShorthand.swift](https://github.com/ViccAlexander/Chameleon/blob/master/Pod/Classes/Swift/ChameleonShorthand.swift), into your project, and you'll be good to go.
 
-####Storyboard Add-On ![New](http://i.imgur.com/BX3b9ES.png)
+####Storyboard Add-On
 Using Chameleon's awesome palette in Storyboard is easy! Simply download and install [Chameleon Palette](https://github.com/ViccAlexander/Chameleon/blob/master/Extras/Chameleon.dmg?raw=true).
 
 Once installed, make sure to restart XCode. You'll find all of Chameleon's colors in the Palette Color Picker whenever they're needed! :)
@@ -284,7 +284,7 @@ view.backgroundColor = FlatGreen()
 ```
 
 ####Random Colors
-There are two ways to generate a random flat color. If you have no preference as to whether you want a light shade or a dark shade, you can do the following:
+There are four ways to generate a random flat color. If you have no preference as to whether you want a light shade or a dark shade, you can do the following:
 
 #####Normal Convention:
 ######Objective-C
@@ -333,6 +333,56 @@ RandomFlatColorWithShade(.Light)
 **UIShadeStyles:**  
 - `UIShadeStyleLight` (`UIShadeStyle.Light` in Swift)
 - `UIShadeStyleDark` (`UIShadeStyle.Dark` in Swift)
+
+##### Choosing A Random Color From a List of Colors ![New](http://i.imgur.com/BX3b9ES.png)
+
+If you need to be a bit more selective and only display a random color from a set list of colors, you can use the following method:
+
+#####Normal Convention:
+######Objective-C
+``` objective-c
+[UIColor colorWithRandomColorInArray:@[FlatWhite, FlatRed, FlatBlue]];
+```
+
+######Swift
+``` swift
+TBA
+```
+
+#####Chameleon Shorthand:
+######Objective-C
+``` objective-c
+RandomFlatColorInArray(@[FlatWhite, FlatRed, FlatBlue]) 
+```
+######Swift
+``` swift
+TBA
+```
+
+##### Choosing A Random Flat Color But Excluding A Few ![New](http://i.imgur.com/BX3b9ES.png)
+
+Last but certainly not least, you can also choose form the list of random colors and exclude the ones you don't want. For example say you want to randomly select a flat color for a user's profile, but don't want to use any blacks, grays, or whites. You can simply do:
+
+#####Normal Convention:
+######Objective-C
+``` objective-c
+[UIColor colorWithRandomFlatColorExcludingColorsInArray:@[FlatBlack, FlatBlackDark, FlatGray, FlatGrayDark, FlatWhite, FlatWhiteDark]];
+```
+
+######Swift
+``` swift
+TBA
+```
+
+#####Chameleon Shorthand:
+######Objective-C
+``` objective-c
+RandomFlatColorExcluding(@[FlatBlack, FlatBlackDark, FlatGray, FlatGrayDark, FlatWhite, FlatWhiteDark]) 
+```
+######Swift
+``` swift
+TBA
+```
 
 ####Complementary Colors
 To generate a complementary color, perform the following method call, remembering to specify the color whose complement you want:
@@ -463,6 +513,19 @@ HexColor(hexString)
 ######Swift
 ``` swift
 HexColor(hexString)
+```
+#### Hex Values ![New](http://i.imgur.com/BX3b9ES.png)
+
+Retrieving the `hexValue` of a UIColor is just as easy.
+
+######Objective-C
+``` objective-c
+[FlatGreen hexValue]; //Returns @"2ecc71"
+```
+
+######Swift
+``` swift
+FlatGreen.hexValue //Returns @"2ecc71"
 ```
 
 #### Lighter and Darker Colors
