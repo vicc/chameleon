@@ -136,7 +136,7 @@
             return UIStatusBarStyleLightContent;
             
         } else {
-            return UIStatusBarStyleDefault;
+            return [self chameleon_preferredStatusBarStyle];
         }
     }
 }

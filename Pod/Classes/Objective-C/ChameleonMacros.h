@@ -99,6 +99,8 @@
 #define AverageColorFromImage(image) [UIColor colorWithAverageColorFromImage:image]
 #define AverageColorFromImageWithAlpha(image, alpha) [UIColor colorWithAverageColorFromImage:image withAlpha:alpha]
 
+#define RandomFlatColorInArray(colors) [UIColor colorWithRandomColorInArray:colors]
+#define RandomFlatColorExcluding(colors) [UIColor colorWithRandomFlatColorExcludingColorsInArray:colors];
 #define RandomFlatColorWithShade(shade) [UIColor colorWithRandomFlatColorOfShadeStyle:shade]
 #define RandomFlatColorWithShadeAndAlpha(shade, alpha) [UIColor colorWithRandomFlatColorOfShadeStyle:shade withAlpha:alpha]
 

@@ -453,6 +453,32 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
 + (UIColor *)randomFlatColor;
 
 /**
+ *  @author Vicc Alexander
+ *
+ *  Returns a randomly generated flat color object NOT found in the specified array.
+ *
+ *  @param excludedColors An array specifying which colors NOT to return.
+ *
+ *  @return A flat @c UIColor object in the HSB colorspace.
+ *
+ *  @since 2.1.0
+ */
++ (UIColor *)colorWithRandomFlatColorExcludingColorsInArray:(NSArray *)colors;
+
+/**
+ *  @author Vicc Alexander
+ *
+ *  Returns a randomly generated color object found in the specified array.
+ *
+ *  @param colors An array specifying which colors to return.
+ *
+ *  @return A flat @c UIColor object in the HSB colorspace.
+ *
+ *  @since 2.1.0
+ */
++ (UIColor *)colorWithRandomColorInArray:(NSArray *)colors;
+
+/**
  *  Returns a randomly generated flat color object with an alpha value of 1.0 in either a light or dark shade.
  *
  *  @param shadeStyle Specifies whether the randomly generated flat color should be a light or dark shade.
@@ -464,7 +490,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
 + (UIColor *)colorWithRandomFlatColorOfShadeStyle:(UIShadeStyle)shadeStyle;
 
 /**
- *  Returns a randomly generated flat color object with an alpha value of 1.0 in either a light or dark shade.
+ *  Returns a randomly generated flat color object in either a light or dark shade.
  *
  *  @param shadeStyle Specifies whether the randomly generated flat color should be a light or dark shade.
  *  @param alpha      The opacity.
@@ -597,7 +623,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  */
 + (UIColor *)colorWithHexString:(NSString *)string withAlpha:(CGFloat)alpha;
 
-#pragma mark - Instance Methods
+#pragma mark - Other Cool Methods
 
 /**
  *  Creates and returns a flat color object closest to the specified color in the LAB colorspace.
@@ -618,6 +644,17 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *  @since 2.0
  */
 - (UIColor *)darkenByPercentage:(CGFloat)percentage;
+
+/**
+ *  @author Vicc Alexander
+ *
+ *  Returns the hexidecimal string value for the specified color.
+ *
+ *  @return An @NSString object.
+ *
+ *  @since 2.1.0
+ */
+- (NSString *)hexStringValue;
 
 /**
  *  Creates and returns a lighter shade of a specified color in the HSB space.
