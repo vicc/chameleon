@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/platform-iOS%208%2B-blue.svg?style=flat" alt="Platform: iOS 8+"/>
     <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift2-compatible-4BC51D.svg?style=flat" alt="Language: Swift 2" /></a>
     <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
-    <a href="https://cocoapods.org/pods/ChameleonFramework"><img src="https://cocoapod-badges.herokuapp.com/v/ChameleonFramework/badge.png" alt="Cocoapods compatible" /></a>
+    <a href="https://cocoapods.org/pods/ChameleonFramework"><img src="https://cocoapod-badges.herokuapp.com/v/ChameleonFramework/badge.png" alt="CocoaPods compatible" /></a>
     <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" /> <br><br>
     <a href="https://gratipay.com/chameleon/"><img src="https://img.shields.io/badge/Donate-%241%2Fweek-yellow.svg?style=social" alt="Donate"/></a>
 </p>
@@ -747,7 +747,7 @@ Chameleon was developed by **Vicc Alexander** [(@ViccsMind)](https://twitter.com
 If you enjoy Chameleon and would like to buy us a coffee we'd appreciate it. <a href="https://gratipay.com/chameleon/"><img src="https://img.shields.io/badge/Donate-%241%2Fweek-yellow.svg?style=social" alt="Donate"/></a>
 
 ## 📝 To Do List 
-* ~~Cocoapods Support~~ ![1.0.1](http://i.imgur.com/8Li5aRR.png)  
+* ~~CocoaPods Support~~ ![1.0.1](http://i.imgur.com/8Li5aRR.png)  
 * ~~Table of Contents~~ ![1.0.1](http://i.imgur.com/8Li5aRR.png)  
 * ~~Storyboard Color Picker Add-On~~ ![1.1.0](http://i.imgur.com/Py4QvaK.png)  
 * ~~Xcode In-App Documentation~~ ![1.1.0](http://i.imgur.com/Py4QvaK.png)  
