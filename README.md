@@ -208,7 +208,7 @@ Once installed, make sure to restart XCode. You'll find all of Chameleon's color
 ###Usage
 To use the myriad of features in Chameleon, include the following import:
 
-###### If you installed Chameleon using cocoapods:
+###### If you installed Chameleon using CocoaPods:
 
 ######Objective-C
 
