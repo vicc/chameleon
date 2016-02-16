@@ -195,7 +195,7 @@ If you're working with Swift and are manually installing Chameleon, there's an a
 ####Storyboard Add-On
 Using Chameleon's awesome palette in Storyboard is easy! Simply download and install [Chameleon Palette](https://github.com/ViccAlexander/Chameleon/blob/master/Extras/Chameleon.dmg?raw=true).
 
-Once installed, make sure to restart XCode. You'll find all of Chameleon's colors in the Palette Color Picker whenever they're needed! :)
+Once installed, make sure to restart Xcode. You'll find all of Chameleon's colors in the Palette Color Picker whenever they're needed! :)
 
 <p align="center">
   <img src="http://i.imgur.com/XqpFUSt.png" alt="Chameleon Palette"/>
