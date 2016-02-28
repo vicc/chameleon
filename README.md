@@ -740,6 +740,11 @@ As of `2.0.3` the navigation bar hairline view is no longer hidden by default. H
 self.navigationController.hidesNavigationBarHairline = YES;
 ```
 
+######Swift
+``` swift
+self.navigationController?.hidesNavigationBarHairline = true
+``` 
+
 ## 👑 Author
 Chameleon was developed by **Vicc Alexander** [(@ViccsMind)](https://twitter.com/viccsmind) in 2014. Currently, it is being maintained by [@ViccAlexander](https://github.com/ViccAlexander) and [@Bre7](https://github.com/bre7).
 
