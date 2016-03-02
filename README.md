@@ -741,7 +741,7 @@ self.navigationController.hidesNavigationBarHairline = YES;
 ```
 
 ######Swift
-``` swift
+```swift
 self.navigationController?.hidesNavigationBarHairline = true
 ``` 
 
