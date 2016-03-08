@@ -148,13 +148,13 @@ All methods, properties, and types available in Chameleon are documented below.
 
 #####Documentation Table of Contents  
 [● Installation](https://github.com/ViccAlexander/Chameleon#installation)  
-[● Storyboard-Add On](https://github.com/ViccAlexander/Chameleon#storyboard-add-on-)  
+[● Storyboard-Add On](https://github.com/ViccAlexander/Chameleon#storyboard-add-on)  
 [● Usage](https://github.com/ViccAlexander/Chameleon#usage)  
 [● UIColor Methods](https://github.com/ViccAlexander/Chameleon#uicolor-methods)  
-[● Colors From Images](https://github.com/ViccAlexander/Chameleon#colors-from-images--1)  
+[● Colors From Images](https://github.com/ViccAlexander/Chameleon#colors-from-images)  
 [● UIStatusBarStyle Methods](https://github.com/ViccAlexander/Chameleon#uistatusbarstyle-methods)  
 [● Color Scheme Methods](https://github.com/ViccAlexander/Chameleon#color-schemes-methods)  
-[● Theme Methods](https://github.com/ViccAlexander/Chameleon#theme-methods-)  
+[● Theme Methods](https://github.com/ViccAlexander/Chameleon#theme-methods)  
 
 ###Installation
 ####CocoaPods Installation
