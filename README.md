@@ -34,7 +34,8 @@ With Chameleon, you can easily stop tinkering with RGB values, wasting hours fig
 [● License](https://github.com/ViccAlexander/Chameleon#-license)  
 [● Contributions](https://github.com/ViccAlexander/Chameleon#-contributions)   
 [● Documentation](https://github.com/ViccAlexander/Chameleon#-documentation)  
-[● Storyboard Add-On](https://github.com/ViccAlexander/Chameleon#storyboard-add-on)   
+[● Storyboard Add-On](https://github.com/ViccAlexander/Chameleon#storyboard-add-on)
+[● Sketch Add-On](https://github.com/ViccAlexander/Chameleon#sketch-add-on)
 [● Author](https://github.com/ViccAlexander/Chameleon#-author)   
 [● Special Thanks](https://github.com/ViccAlexander/Chameleon#-special-thanks)    
 [● To Do List](https://github.com/ViccAlexander/Chameleon#-to-do-list)  
@@ -173,8 +174,6 @@ use_frameworks!
 pod 'ChameleonFramework/Swift'
 ```
 
-###### **Note:** Swift support for Chameleon 2.0 is almost complete.
-
 =======
 ####Carthage Installation
 Add this to your Cartfile:
@@ -204,6 +203,9 @@ Once installed, make sure to restart Xcode. You'll find all of Chameleon's color
 <p align="center">
   <img src="http://i.imgur.com/QhhPFHY.gif" alt="Chameleon Palette"/>
 </p>
+
+####Sketch Add-On
+Using Chameleon's awesome palette in Sketch is easy! Simply download and install [Sketch Palette](https://github.com/ViccAlexander/Chameleon/blob/master/Extras/Chameleon.sketchpalette?raw=true).
 
 ###Usage
 To use the myriad of features in Chameleon, include the following import:
