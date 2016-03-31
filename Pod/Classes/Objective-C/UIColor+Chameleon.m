@@ -520,7 +520,7 @@
  
             // Normalise the 0-1 ranged inputs to the width of the image
             CGPoint myCentrePoint = CGPointMake(0.5 * frame.size.width, 0.5 * frame.size.height);
-            float myRadius = MIN(frame.size.width, frame.size.height) * 1.0;
+            float myRadius = MIN(frame.size.width, frame.size.height) * 0.5;
             
             // Draw our Gradient
             CGContextDrawRadialGradient (UIGraphicsGetCurrentContext(), myGradient, myCentrePoint,
