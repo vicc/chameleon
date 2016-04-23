@@ -335,3 +335,77 @@ public func FlatWhiteDark() -> UIColor {
 public func FlatYellowDark() -> UIColor {
 	return UIColor.flatYellowColorDark() 
 }
+
+// MARK: - Social Colors Shorthand
+
+public func TwitterColor() -> UIColor {
+  return UIColor.twitterColor()
+}
+
+public func FacebookColor() -> UIColor {
+  return UIColor.facebookColor()
+}
+
+public func TumblrColor() -> UIColor {
+  return UIColor.tumblrColor()
+}
+
+public func PinterestColor() -> UIColor {
+  return UIColor.pinterestColor()
+}
+
+public func GooglePlusColor() -> UIColor {
+  return UIColor.googlePlusColor()
+}
+
+public func LinkedInColor() -> UIColor {
+  return UIColor.linkedInColor()
+}
+
+public func InstagramColor() -> UIColor {
+  return UIColor.instagramColor()
+}
+
+public func DropboxColor() -> UIColor {
+  return UIColor.dropboxColor()
+}
+
+public func GitHubColor() -> UIColor {
+  return UIColor.githubColor()
+}
+
+public func SpotifyColor() -> UIColor {
+  return UIColor.spotifyColor()
+}
+
+public func SoundcloudColor() -> UIColor {
+  return UIColor.soundcloudColor()
+}
+
+public func DribbbleColor() -> UIColor {
+  return UIColor.dribbbleColor()
+}
+
+public func SnapchatColor() -> UIColor {
+  return UIColor.snapchatColor()
+}
+
+public func VineColor() -> UIColor {
+  return UIColor.vineColor()
+}
+
+public func YouTubeColor() -> UIColor {
+  return UIColor.youtubeColor()
+}
+
+public func FoursquareColor() -> UIColor {
+  return UIColor.foursquareColor()
+}
+
+public func XingColor() -> UIColor {
+  return UIColor.xingColor()
+}
+
+public func PeriscopeColor() -> UIColor {
+  return UIColor.periscopeColor()
+}
