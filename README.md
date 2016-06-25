@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/downloads-154,614+-ffc003.svg?style=flat" alt="Downloads"/>
+    <img src="https://img.shields.io/badge/downloads-207,000+-ffc003.svg?style=flat" alt="Downloads"/>
     <img src="https://img.shields.io/badge/platform-iOS%208%2B-blue.svg?style=flat" alt="Platform: iOS 8+"/>
-    <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift2-compatible-4BC51D.svg?style=flat" alt="Language: Swift 2" /></a>
+    <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift-2.2-4BC51D.svg?style=flat" alt="Language: Swift" /></a>
     <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
     <a href="https://cocoapods.org/pods/ChameleonFramework"><img src="https://cocoapod-badges.herokuapp.com/v/ChameleonFramework/badge.png" alt="CocoaPods compatible" /></a>
     <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" /> <br><br>
@@ -158,6 +158,9 @@ All methods, properties, and types available in Chameleon are documented below.
 [● Theme Methods](https://github.com/ViccAlexander/Chameleon#theme-methods)  
 
 ###Installation
+
+Swift 3 version maintained in a separate branch until it's release.
+
 ####CocoaPods Installation
 Chameleon is now available on [CocoaPods](http://cocoapods.org). Simply add the following to your project Podfile, and you'll be good to go.
 
