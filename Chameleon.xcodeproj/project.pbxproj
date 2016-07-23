@@ -342,6 +342,7 @@
 					};
 					240093F71BB4517400932727 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 					247EB8A61BB61EB3009B4904 = {
 						CreatedOnToolsVersion = 7.0;
@@ -618,6 +619,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -637,6 +639,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.viccalexander.Chameleon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
