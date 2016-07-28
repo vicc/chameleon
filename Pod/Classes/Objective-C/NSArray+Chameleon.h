@@ -45,13 +45,13 @@ typedef NS_ENUM(NSInteger, ColorScheme){
      */
     ColorSchemeAnalogous,
     /**
-     *  Colors that are opposite each other on the color wheel are considered to be complementary colors (example: red and green). The high contrast of complementary colors creates a vibrant look especially when used at full saturation. This color scheme must be managed well so it is not jarring. Complementary colors are tricky to use in large doses, but work well when you want something to stand out. Complementary colors are really bad for text.
+     *  A triadic color scheme uses colors that are evenly spaced around the color wheel. Triadic color harmonies tend to be quite vibrant, even if you use pale or unsaturated versions of your hues. To use a triadic harmony successfully, the colors should be carefully balanced - let one color dominate and use the two others for accent.
      *
      *  @since 1.0
      */
     ColorSchemeTriadic,
     /**
-     *  A triadic color scheme uses colors that are evenly spaced around the color wheel. Triadic color harmonies tend to be quite vibrant, even if you use pale or unsaturated versions of your hues. To use a triadic harmony successfully, the colors should be carefully balanced - let one color dominate and use the two others for accent.
+     *  Colors that are opposite each other on the color wheel are considered to be complementary colors (example: red and green). The high contrast of complementary colors creates a vibrant look especially when used at full saturation. This color scheme must be managed well so it is not jarring. Complementary colors are tricky to use in large doses, but work well when you want something to stand out. Complementary colors are really bad for text.
      *
      *  @since 1.0
      */
