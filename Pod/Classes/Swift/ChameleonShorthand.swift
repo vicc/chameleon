@@ -136,14 +136,14 @@ public func RandomFlatColor() -> UIColor {
 }
 
 public func ClearColor() -> UIColor {
-    return UIColor.clear()
+    return UIColor.clear
 }
 
 
 // MARK: - Light Shades Shorthand
 
 public func FlatBlack() -> UIColor {
-	return UIColor.flatBlack() 
+	return UIColor.flatBlack()
 }
 
 public func FlatBlue() -> UIColor {
