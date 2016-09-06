@@ -136,7 +136,7 @@ public func RandomFlatColor() -> UIColor {
 }
 
 public func ClearColor() -> UIColor {
-    return UIColor.clear()
+    return UIColor.clear
 }
 
 
