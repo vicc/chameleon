@@ -9,36 +9,59 @@
 /* Begin PBXBuildFile section */
 		240093FC1BB4517400932727 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 240093FB1BB4517400932727 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		245935EC1BB4D62500C30559 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935D41BB4D62500C30559 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		245935ED1BB4D62500C30559 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935D51BB4D62500C30559 /* Chameleon_.m */; settings = {ASSET_TAGS = (); }; };
+		245935ED1BB4D62500C30559 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935D51BB4D62500C30559 /* Chameleon_.m */; };
 		245935EE1BB4D62500C30559 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935D61BB4D62500C30559 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		245935EF1BB4D62500C30559 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935D71BB4D62500C30559 /* ChameleonConstants.m */; settings = {ASSET_TAGS = (); }; };
+		245935EF1BB4D62500C30559 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935D71BB4D62500C30559 /* ChameleonConstants.m */; };
 		245935F01BB4D62500C30559 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935D81BB4D62500C30559 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		245935F11BB4D62500C30559 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935D91BB4D62500C30559 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		245935F21BB4D62500C30559 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935DA1BB4D62500C30559 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		245935F31BB4D62500C30559 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935DB1BB4D62500C30559 /* NSArray+Chameleon.m */; settings = {ASSET_TAGS = (); }; };
+		245935F31BB4D62500C30559 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935DB1BB4D62500C30559 /* NSArray+Chameleon.m */; };
 		245935F41BB4D62500C30559 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935DC1BB4D62500C30559 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		245935F51BB4D62500C30559 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935DD1BB4D62500C30559 /* UIButton+Chameleon.m */; settings = {ASSET_TAGS = (); }; };
+		245935F51BB4D62500C30559 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935DD1BB4D62500C30559 /* UIButton+Chameleon.m */; };
 		245935F61BB4D62500C30559 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935DE1BB4D62500C30559 /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		245935F71BB4D62500C30559 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935DF1BB4D62500C30559 /* UIColor+Chameleon.m */; settings = {ASSET_TAGS = (); }; };
+		245935F71BB4D62500C30559 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935DF1BB4D62500C30559 /* UIColor+Chameleon.m */; };
 		245935F81BB4D62500C30559 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E01BB4D62500C30559 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		245935F91BB4D62500C30559 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E11BB4D62500C30559 /* UIColor+ChameleonPrivate.m */; settings = {ASSET_TAGS = (); }; };
+		245935F91BB4D62500C30559 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E11BB4D62500C30559 /* UIColor+ChameleonPrivate.m */; };
 		245935FA1BB4D62500C30559 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E21BB4D62500C30559 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		245935FB1BB4D62500C30559 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E31BB4D62500C30559 /* UIImage+ChameleonPrivate.m */; settings = {ASSET_TAGS = (); }; };
+		245935FB1BB4D62500C30559 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E31BB4D62500C30559 /* UIImage+ChameleonPrivate.m */; };
 		245935FC1BB4D62500C30559 /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E41BB4D62500C30559 /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		245935FD1BB4D62500C30559 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E51BB4D62500C30559 /* UILabel+Chameleon.m */; settings = {ASSET_TAGS = (); }; };
+		245935FD1BB4D62500C30559 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E51BB4D62500C30559 /* UILabel+Chameleon.m */; };
 		245935FE1BB4D62500C30559 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E61BB4D62500C30559 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		245935FF1BB4D62500C30559 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E71BB4D62500C30559 /* UINavigationController+Chameleon.m */; settings = {ASSET_TAGS = (); }; };
+		245935FF1BB4D62500C30559 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E71BB4D62500C30559 /* UINavigationController+Chameleon.m */; };
 		245936001BB4D62500C30559 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E81BB4D62500C30559 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		245936011BB4D62500C30559 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E91BB4D62500C30559 /* UIView+ChameleonPrivate.m */; settings = {ASSET_TAGS = (); }; };
+		245936011BB4D62500C30559 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E91BB4D62500C30559 /* UIView+ChameleonPrivate.m */; };
 		245936021BB4D62500C30559 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935EA1BB4D62500C30559 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		245936031BB4D62500C30559 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935EB1BB4D62500C30559 /* UIViewController+Chameleon.m */; settings = {ASSET_TAGS = (); }; };
-		245936051BB4D62D00C30559 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245936041BB4D62D00C30559 /* ChameleonShorthand.swift */; settings = {ASSET_TAGS = (); }; };
+		245936031BB4D62500C30559 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935EB1BB4D62500C30559 /* UIViewController+Chameleon.m */; };
+		245936051BB4D62D00C30559 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245936041BB4D62D00C30559 /* ChameleonShorthand.swift */; };
 		247EB8AA1BB61EB3009B4904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EB8A91BB61EB3009B4904 /* AppDelegate.swift */; };
 		247EB8AC1BB61EB3009B4904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EB8AB1BB61EB3009B4904 /* ViewController.swift */; };
 		247EB8AF1BB61EB3009B4904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247EB8AD1BB61EB3009B4904 /* Main.storyboard */; };
 		247EB8B11BB61EB3009B4904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247EB8B01BB61EB3009B4904 /* Assets.xcassets */; };
 		247EB8B41BB61EB3009B4904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247EB8B21BB61EB3009B4904 /* LaunchScreen.storyboard */; };
 		247EB8B91BB61F76009B4904 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240093F81BB4517400932727 /* Chameleon.framework */; };
+		303B27A81C120CE00003795C /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E11BB4D62500C30559 /* UIColor+ChameleonPrivate.m */; };
+		303B27AA1C120CE00003795C /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935DB1BB4D62500C30559 /* NSArray+Chameleon.m */; };
+		303B27AB1C120CE00003795C /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E51BB4D62500C30559 /* UILabel+Chameleon.m */; };
+		303B27AC1C120CE00003795C /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E31BB4D62500C30559 /* UIImage+ChameleonPrivate.m */; };
+		303B27AD1C120CE00003795C /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935D71BB4D62500C30559 /* ChameleonConstants.m */; };
+		303B27AE1C120CE00003795C /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245936041BB4D62D00C30559 /* ChameleonShorthand.swift */; };
+		303B27B01C120CE00003795C /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E71BB4D62500C30559 /* UINavigationController+Chameleon.m */; };
+		303B27B11C120CE00003795C /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935E91BB4D62500C30559 /* UIView+ChameleonPrivate.m */; };
+		303B27B21C120CE00003795C /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935D51BB4D62500C30559 /* Chameleon_.m */; };
+		303B27B31C120CE00003795C /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935DF1BB4D62500C30559 /* UIColor+Chameleon.m */; };
+		303B27B61C120CE00003795C /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935DC1BB4D62500C30559 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303B27B71C120CE00003795C /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E41BB4D62500C30559 /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303B27B81C120CE00003795C /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935DA1BB4D62500C30559 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303B27B91C120CE00003795C /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 240093FB1BB4517400932727 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303B27BA1C120CE00003795C /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935D41BB4D62500C30559 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303B27BB1C120CE00003795C /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E61BB4D62500C30559 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303B27BC1C120CE00003795C /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935D91BB4D62500C30559 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303B27BD1C120CE00003795C /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E81BB4D62500C30559 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303B27BE1C120CE00003795C /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935DE1BB4D62500C30559 /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303B27BF1C120CE00003795C /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935D81BB4D62500C30559 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303B27C01C120CE00003795C /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935D61BB4D62500C30559 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303B27C11C120CE00003795C /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E01BB4D62500C30559 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303B27C31C120CE00003795C /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E21BB4D62500C30559 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +100,8 @@
 		247EB8B01BB61EB3009B4904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		247EB8B31BB61EB3009B4904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		247EB8B51BB61EB3009B4904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		303B27C81C120CE00003795C /* Chameleon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Chameleon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		303B27C91C120CE00003795C /* tvOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "tvOS-Info.plist"; path = "/Volumes/Storage/Projects/Nuudles/OpenSource/Chameleon/tvOS-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +117,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				247EB8B91BB61F76009B4904 /* Chameleon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303B27B41C120CE00003795C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +144,7 @@
 			children = (
 				240093F81BB4517400932727 /* Chameleon.framework */,
 				247EB8A71BB61EB3009B4904 /* ChameleonDemo.app */,
+				303B27C81C120CE00003795C /* Chameleon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +179,7 @@
 				245935EB1BB4D62500C30559 /* UIViewController+Chameleon.m */,
 				240093FB1BB4517400932727 /* Chameleon.h */,
 				240093FD1BB4517400932727 /* Info.plist */,
+				303B27C91C120CE00003795C /* tvOS-Info.plist */,
 			);
 			path = Chameleon;
 			sourceTree = "<group>";
@@ -187,6 +221,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		303B27B51C120CE00003795C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303B27B61C120CE00003795C /* UIButton+Chameleon.h in Headers */,
+				303B27B71C120CE00003795C /* UILabel+Chameleon.h in Headers */,
+				303B27B81C120CE00003795C /* NSArray+Chameleon.h in Headers */,
+				303B27B91C120CE00003795C /* Chameleon.h in Headers */,
+				303B27BA1C120CE00003795C /* Chameleon_.h in Headers */,
+				303B27BB1C120CE00003795C /* UINavigationController+Chameleon.h in Headers */,
+				303B27BC1C120CE00003795C /* ChameleonMacros.h in Headers */,
+				303B27BD1C120CE00003795C /* UIView+ChameleonPrivate.h in Headers */,
+				303B27BE1C120CE00003795C /* UIColor+Chameleon.h in Headers */,
+				303B27BF1C120CE00003795C /* ChameleonEnums.h in Headers */,
+				303B27C01C120CE00003795C /* ChameleonConstants.h in Headers */,
+				303B27C11C120CE00003795C /* UIColor+ChameleonPrivate.h in Headers */,
+				303B27C31C120CE00003795C /* UIImage+ChameleonPrivate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -225,6 +279,24 @@
 			productReference = 247EB8A71BB61EB3009B4904 /* ChameleonDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		303B27A61C120CE00003795C /* Chameleon-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 303B27C51C120CE00003795C /* Build configuration list for PBXNativeTarget "Chameleon-tvOS" */;
+			buildPhases = (
+				303B27A71C120CE00003795C /* Sources */,
+				303B27B41C120CE00003795C /* Frameworks */,
+				303B27B51C120CE00003795C /* Headers */,
+				303B27C41C120CE00003795C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chameleon-tvOS";
+			productName = Chameleon;
+			productReference = 303B27C81C120CE00003795C /* Chameleon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -257,6 +329,7 @@
 			projectRoot = "";
 			targets = (
 				240093F71BB4517400932727 /* Chameleon */,
+				303B27A61C120CE00003795C /* Chameleon-tvOS */,
 				247EB8A61BB61EB3009B4904 /* ChameleonDemo */,
 			);
 		};
@@ -277,6 +350,13 @@
 				247EB8B41BB61EB3009B4904 /* LaunchScreen.storyboard in Resources */,
 				247EB8B11BB61EB3009B4904 /* Assets.xcassets in Resources */,
 				247EB8AF1BB61EB3009B4904 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303B27C41C120CE00003795C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +388,23 @@
 			files = (
 				247EB8AC1BB61EB3009B4904 /* ViewController.swift in Sources */,
 				247EB8AA1BB61EB3009B4904 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303B27A71C120CE00003795C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303B27A81C120CE00003795C /* UIColor+ChameleonPrivate.m in Sources */,
+				303B27AA1C120CE00003795C /* NSArray+Chameleon.m in Sources */,
+				303B27AB1C120CE00003795C /* UILabel+Chameleon.m in Sources */,
+				303B27AC1C120CE00003795C /* UIImage+ChameleonPrivate.m in Sources */,
+				303B27AD1C120CE00003795C /* ChameleonConstants.m in Sources */,
+				303B27AE1C120CE00003795C /* ChameleonShorthand.swift in Sources */,
+				303B27B01C120CE00003795C /* UINavigationController+Chameleon.m in Sources */,
+				303B27B11C120CE00003795C /* UIView+ChameleonPrivate.m in Sources */,
+				303B27B21C120CE00003795C /* Chameleon_.m in Sources */,
+				303B27B31C120CE00003795C /* UIColor+Chameleon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +582,51 @@
 			};
 			name = Release;
 		};
+		303B27C61C120CE00003795C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viccalexander.Chameleon;
+				PRODUCT_NAME = Chameleon;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		303B27C71C120CE00003795C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viccalexander.Chameleon;
+				PRODUCT_NAME = Chameleon;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -511,6 +653,15 @@
 			buildConfigurations = (
 				247EB8B61BB61EB3009B4904 /* Debug */,
 				247EB8B71BB61EB3009B4904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		303B27C51C120CE00003795C /* Build configuration list for PBXNativeTarget "Chameleon-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				303B27C61C120CE00003795C /* Debug */,
+				303B27C71C120CE00003795C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
