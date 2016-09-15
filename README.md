@@ -226,6 +226,12 @@ To use the myriad of features in Chameleon, include the following import:
 import ChameleonFramework
 ```
 
+###### If you installed Chameleon using Carthage:
+
+``` swift
+import Chameleon
+```
+
 ###### If you installed Chameleon manually:
 ``` objective-c
 #import "Chameleon.h"
