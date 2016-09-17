@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		0C6D34721C07B98400A7BF83 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240093F81BB4517400932727 /* Chameleon.framework */; };
 		0C6D34731C07B98400A7BF83 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 240093F81BB4517400932727 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C8A5DE71D8D4B7D00B71D95 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8A5DE61D8D4B7D00B71D95 /* KeyboardViewController.m */; };
+		0C8A5DEB1D8D4B7D00B71D95 /* ChameleonExtension-ObjC.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C8A5DE31D8D4B7D00B71D95 /* ChameleonExtension-ObjC.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0C8A5DF21D8D4EB400B71D95 /* UIApplication+CHSharedApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C8A5DF01D8D4EB400B71D95 /* UIApplication+CHSharedApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C8A5DF31D8D4EB400B71D95 /* UIApplication+CHSharedApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8A5DF11D8D4EB400B71D95 /* UIApplication+CHSharedApplication.m */; };
+		0C8A5DF41D8D545C00B71D95 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240093F81BB4517400932727 /* Chameleon.framework */; };
+		0C8A5DFC1D8D54EF00B71D95 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8A5DFB1D8D54EF00B71D95 /* KeyboardViewController.swift */; };
+		0C8A5E001D8D54EF00B71D95 /* ChameleonExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C8A5DF91D8D54EF00B71D95 /* ChameleonExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0C8A5E041D8D54F600B71D95 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240093F81BB4517400932727 /* Chameleon.framework */; };
 		0C8DABA81C07AC3800B28FE2 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8DABA61C07AC3800B28FE2 /* UIAppearance+Swift.m */; };
 		0C8DABAB1C07B00000B28FE2 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935E21BB4D62500C30559 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C8DABAC1C07B00800B28FE2 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C8DABA51C07AC3800B28FE2 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -59,6 +67,20 @@
 			remoteGlobalIDString = 240093F71BB4517400932727;
 			remoteInfo = Chameleon;
 		};
+		0C8A5DE91D8D4B7D00B71D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240093EF1BB4517400932727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C8A5DE21D8D4B7D00B71D95;
+			remoteInfo = "ChameleonExtension-ObjC";
+		};
+		0C8A5DFE1D8D54EF00B71D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240093EF1BB4517400932727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C8A5DF81D8D54EF00B71D95;
+			remoteInfo = ChameleonExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,9 +95,40 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0C8A5DDE1D8D496B00B71D95 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0C8A5E001D8D54EF00B71D95 /* ChameleonExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8A5DEF1D8D4B7D00B71D95 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0C8A5DEB1D8D4B7D00B71D95 /* ChameleonExtension-ObjC.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C8A5DE31D8D4B7D00B71D95 /* ChameleonExtension-ObjC.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ChameleonExtension-ObjC.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8A5DE51D8D4B7D00B71D95 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		0C8A5DE61D8D4B7D00B71D95 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		0C8A5DE81D8D4B7D00B71D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8A5DF01D8D4EB400B71D95 /* UIApplication+CHSharedApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+CHSharedApplication.h"; path = "Pod/Classes/Objective-C/UIApplication+CHSharedApplication.h"; sourceTree = SOURCE_ROOT; };
+		0C8A5DF11D8D4EB400B71D95 /* UIApplication+CHSharedApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+CHSharedApplication.m"; path = "Pod/Classes/Objective-C/UIApplication+CHSharedApplication.m"; sourceTree = SOURCE_ROOT; };
+		0C8A5DF91D8D54EF00B71D95 /* ChameleonExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChameleonExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8A5DFB1D8D54EF00B71D95 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		0C8A5DFD1D8D54EF00B71D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C8DABA51C07AC3800B28FE2 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "../Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
 		0C8DABA61C07AC3800B28FE2 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "../Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
 		0C8DABB11C07B5EA00B28FE2 /* ChameleonDemo-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChameleonDemo-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +179,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0C8A5DE01D8D4B7D00B71D95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8A5DF41D8D545C00B71D95 /* Chameleon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8A5DF61D8D54EF00B71D95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8A5E041D8D54F600B71D95 /* Chameleon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C8DABAE1C07B5EA00B28FE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +221,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C8A5DE41D8D4B7D00B71D95 /* ChameleonExtension-ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				0C8A5DE51D8D4B7D00B71D95 /* KeyboardViewController.h */,
+				0C8A5DE61D8D4B7D00B71D95 /* KeyboardViewController.m */,
+				0C8A5DE81D8D4B7D00B71D95 /* Info.plist */,
+			);
+			path = "ChameleonExtension-ObjC";
+			sourceTree = "<group>";
+		};
+		0C8A5DFA1D8D54EF00B71D95 /* ChameleonExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0C8A5DFB1D8D54EF00B71D95 /* KeyboardViewController.swift */,
+				0C8A5DFD1D8D54EF00B71D95 /* Info.plist */,
+			);
+			path = ChameleonExtension;
+			sourceTree = "<group>";
+		};
 		0C8DABB21C07B5EA00B28FE2 /* ChameleonDemo-Objc */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +270,8 @@
 				240093FA1BB4517400932727 /* Chameleon */,
 				247EB8A81BB61EB3009B4904 /* ChameleonDemo */,
 				0C8DABB21C07B5EA00B28FE2 /* ChameleonDemo-Objc */,
+				0C8A5DE41D8D4B7D00B71D95 /* ChameleonExtension-ObjC */,
+				0C8A5DFA1D8D54EF00B71D95 /* ChameleonExtension */,
 				240093F91BB4517400932727 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -192,6 +282,8 @@
 				240093F81BB4517400932727 /* Chameleon.framework */,
 				247EB8A71BB61EB3009B4904 /* ChameleonDemo.app */,
 				0C8DABB11C07B5EA00B28FE2 /* ChameleonDemo-Objc.app */,
+				0C8A5DE31D8D4B7D00B71D95 /* ChameleonExtension-ObjC.appex */,
+				0C8A5DF91D8D54EF00B71D95 /* ChameleonExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,6 +319,8 @@
 				245935EB1BB4D62500C30559 /* UIViewController+Chameleon.m */,
 				0C8DABA51C07AC3800B28FE2 /* UIAppearance+Swift.h */,
 				0C8DABA61C07AC3800B28FE2 /* UIAppearance+Swift.m */,
+				0C8A5DF01D8D4EB400B71D95 /* UIApplication+CHSharedApplication.h */,
+				0C8A5DF11D8D4EB400B71D95 /* UIApplication+CHSharedApplication.m */,
 				240093FD1BB4517400932727 /* Info.plist */,
 			);
 			path = Chameleon;
@@ -264,6 +358,7 @@
 				245935F01BB4D62500C30559 /* ChameleonEnums.h in Headers */,
 				245935EE1BB4D62500C30559 /* ChameleonConstants.h in Headers */,
 				245935F81BB4D62500C30559 /* UIColor+ChameleonPrivate.h in Headers */,
+				0C8A5DF21D8D4EB400B71D95 /* UIApplication+CHSharedApplication.h in Headers */,
 				245936021BB4D62500C30559 /* UIViewController+Chameleon.h in Headers */,
 				0C8DABAB1C07B00000B28FE2 /* UIImage+ChameleonPrivate.h in Headers */,
 				0C8DABAC1C07B00800B28FE2 /* UIAppearance+Swift.h in Headers */,
@@ -273,6 +368,40 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0C8A5DE21D8D4B7D00B71D95 /* ChameleonExtension-ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C8A5DEC1D8D4B7D00B71D95 /* Build configuration list for PBXNativeTarget "ChameleonExtension-ObjC" */;
+			buildPhases = (
+				0C8A5DDF1D8D4B7D00B71D95 /* Sources */,
+				0C8A5DE01D8D4B7D00B71D95 /* Frameworks */,
+				0C8A5DE11D8D4B7D00B71D95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChameleonExtension-ObjC";
+			productName = "ChameleonExtension-ObjC";
+			productReference = 0C8A5DE31D8D4B7D00B71D95 /* ChameleonExtension-ObjC.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0C8A5DF81D8D54EF00B71D95 /* ChameleonExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C8A5E031D8D54EF00B71D95 /* Build configuration list for PBXNativeTarget "ChameleonExtension" */;
+			buildPhases = (
+				0C8A5DF51D8D54EF00B71D95 /* Sources */,
+				0C8A5DF61D8D54EF00B71D95 /* Frameworks */,
+				0C8A5DF71D8D54EF00B71D95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChameleonExtension;
+			productName = ChameleonExtension;
+			productReference = 0C8A5DF91D8D54EF00B71D95 /* ChameleonExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		0C8DABB01C07B5EA00B28FE2 /* ChameleonDemo-Objc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C8DABC51C07B5EA00B28FE2 /* Build configuration list for PBXNativeTarget "ChameleonDemo-Objc" */;
@@ -281,11 +410,13 @@
 				0C8DABAE1C07B5EA00B28FE2 /* Frameworks */,
 				0C8DABAF1C07B5EA00B28FE2 /* Resources */,
 				0C6D34761C07B98400A7BF83 /* Embed Frameworks */,
+				0C8A5DEF1D8D4B7D00B71D95 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				0C6D34751C07B98400A7BF83 /* PBXTargetDependency */,
+				0C8A5DEA1D8D4B7D00B71D95 /* PBXTargetDependency */,
 			);
 			name = "ChameleonDemo-Objc";
 			productName = "ChameleonDemo-Objc";
@@ -317,10 +448,12 @@
 				247EB8A31BB61EB3009B4904 /* Sources */,
 				247EB8A41BB61EB3009B4904 /* Frameworks */,
 				247EB8A51BB61EB3009B4904 /* Resources */,
+				0C8A5DDE1D8D496B00B71D95 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0C8A5DFF1D8D54EF00B71D95 /* PBXTargetDependency */,
 			);
 			name = ChameleonDemo;
 			productName = ChameleonDemo;
@@ -333,18 +466,29 @@
 		240093EF1BB4517400932727 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Vicc Alexander";
 				TargetAttributes = {
+					0C8A5DE21D8D4B7D00B71D95 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					0C8A5DF81D8D54EF00B71D95 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					0C8DABB01C07B5EA00B28FE2 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0800;
 					};
 					240093F71BB4517400932727 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 					247EB8A61BB61EB3009B4904 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -364,11 +508,27 @@
 				240093F71BB4517400932727 /* Chameleon */,
 				247EB8A61BB61EB3009B4904 /* ChameleonDemo */,
 				0C8DABB01C07B5EA00B28FE2 /* ChameleonDemo-Objc */,
+				0C8A5DE21D8D4B7D00B71D95 /* ChameleonExtension-ObjC */,
+				0C8A5DF81D8D54EF00B71D95 /* ChameleonExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0C8A5DE11D8D4B7D00B71D95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8A5DF71D8D54EF00B71D95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C8DABAF1C07B5EA00B28FE2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,6 +559,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0C8A5DDF1D8D4B7D00B71D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8A5DE71D8D4B7D00B71D95 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8A5DF51D8D54EF00B71D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8A5DFC1D8D54EF00B71D95 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C8DABAD1C07B5EA00B28FE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,6 +590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				245935F91BB4D62500C30559 /* UIColor+ChameleonPrivate.m in Sources */,
+				0C8A5DF31D8D4EB400B71D95 /* UIApplication+CHSharedApplication.m in Sources */,
 				245935F51BB4D62500C30559 /* UIButton+Chameleon.m in Sources */,
 				245935F31BB4D62500C30559 /* NSArray+Chameleon.m in Sources */,
 				245935FD1BB4D62500C30559 /* UILabel+Chameleon.m in Sources */,
@@ -445,6 +622,16 @@
 			isa = PBXTargetDependency;
 			target = 240093F71BB4517400932727 /* Chameleon */;
 			targetProxy = 0C6D34741C07B98400A7BF83 /* PBXContainerItemProxy */;
+		};
+		0C8A5DEA1D8D4B7D00B71D95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C8A5DE21D8D4B7D00B71D95 /* ChameleonExtension-ObjC */;
+			targetProxy = 0C8A5DE91D8D4B7D00B71D95 /* PBXContainerItemProxy */;
+		};
+		0C8A5DFF1D8D54EF00B71D95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C8A5DF81D8D54EF00B71D95 /* ChameleonExtension */;
+			targetProxy = 0C8A5DFE1D8D54EF00B71D95 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -484,31 +671,96 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0C8A5DED1D8D4B7D00B71D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = "ChameleonExtension-ObjC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viccalexander.ChameleonDemo-Objc.ChameleonExtension-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0C8A5DEE1D8D4B7D00B71D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = "ChameleonExtension-ObjC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viccalexander.ChameleonDemo-Objc.ChameleonExtension-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0C8A5E011D8D54EF00B71D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = ChameleonExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viccalexander.ChameleonDemo.ChameleonExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0C8A5E021D8D54EF00B71D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = ChameleonExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viccalexander.ChameleonDemo.ChameleonExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		0C8DABC61C07B5EA00B28FE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "ChameleonDemo-Objc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viccalexander.ChameleonDemo-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		0C8DABC71C07B5EA00B28FE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "ChameleonDemo-Objc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viccalexander.ChameleonDemo-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -525,8 +777,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -573,8 +827,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -594,6 +850,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -606,6 +863,7 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -618,6 +876,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -626,6 +885,7 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -637,36 +897,58 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.viccalexander.Chameleon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		247EB8B61BB61EB3009B4904 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChameleonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.viccalexander.ChameleonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		247EB8B71BB61EB3009B4904 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChameleonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.viccalexander.ChameleonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0C8A5DEC1D8D4B7D00B71D95 /* Build configuration list for PBXNativeTarget "ChameleonExtension-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C8A5DED1D8D4B7D00B71D95 /* Debug */,
+				0C8A5DEE1D8D4B7D00B71D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C8A5E031D8D54EF00B71D95 /* Build configuration list for PBXNativeTarget "ChameleonExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C8A5E011D8D54EF00B71D95 /* Debug */,
+				0C8A5E021D8D54EF00B71D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0C8DABC51C07B5EA00B28FE2 /* Build configuration list for PBXNativeTarget "ChameleonDemo-Objc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
