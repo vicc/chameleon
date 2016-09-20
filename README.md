@@ -134,7 +134,7 @@ If you're like me and love to use storyboard, Chameleon's got you covered. We've
 
 * Objective-C or Swift
 * Requires a minimum of iOS 7.0 for Objective-C (No active development for anything earlier, but may work with 6.0) and a minimum of iOS 8.0 for Swift.
-* Requires Xcode 6.3 for use in any iOS Project
+* Requires Xcode 8.0 for use in any iOS Project
 
 ## 🔑 License
 Chameleon is released and distributed under the terms and conditions of the [MIT license](https://github.com/ViccAlexander/Chameleon/blob/master/LICENSE.md).
@@ -244,11 +244,11 @@ Using a flat color is as easy as adding any other color in your app (if not easi
 
 ######Objective-C
 ``` objective-c
-self.view.backgroundColor = [UIColor flatGreenColorDark];
+self.view.backgroundColor = [UIColor flatGreenDarkColor];
 ```
 ######Swift
 ``` swift
-view.backgroundColor = UIColor.flatGreenColorDark()
+view.backgroundColor = .flatGreenDark
 ```
 
 #####Chameleon Shorthand:
@@ -271,7 +271,7 @@ self.view.backgroundColor = [UIColor flatGreenColor];
 ```
 ######Swift
 ``` swift
-view.backgroundColor = UIColor.flatGreenColor()
+view.backgroundColor = .flatGreen
 ```
 
 #####Chameleon Shorthand:
@@ -295,7 +295,7 @@ self.view.backgroundColor = [UIColor randomFlatColor];
 ```
 ######Swift
 ``` swift
-view.backgroundColor = UIColor.randomFlatColor()
+view.backgroundColor = .randomFlat
 ```
 
 #####Chameleon Shorthand:
@@ -319,7 +319,7 @@ Otherwise, you can perform the following method call to specify whether it shoul
 
 ######Swift
 ``` swift
-UIColor(randomFlatColorOfShadeStyle:.Light)
+UIColor(randomFlatColorOfShadeStyle:.light)
 ```
 
 #####Chameleon Shorthand:
@@ -329,12 +329,12 @@ RandomFlatColorWithShade(UIShadeStyleLight);
 ```
 ######Swift
 ``` swift
-RandomFlatColorWithShade(.Light)
+RandomFlatColorWithShade(.light)
 ```
 
 **UIShadeStyles:**  
-- `UIShadeStyleLight` (`UIShadeStyle.Light` in Swift)
-- `UIShadeStyleDark` (`UIShadeStyle.Dark` in Swift)
+- `UIShadeStyleLight` (`UIShadeStyle.light` in Swift)
+- `UIShadeStyleDark` (`UIShadeStyle.dark` in Swift)
 
 ##### Choosing A Random Color From a List of Colors ![New](http://i.imgur.com/BX3b9ES.png)
 
@@ -451,7 +451,7 @@ As mentioned previously, this feature is unique to Chameleon. While this feature
 
 ######Swift
 ``` swift
-UIColor.pinkColor().flatten()
+UIColor.pink.flatten()
 ```
 
 #### Gradient Colors
