@@ -763,6 +763,22 @@
     return [UIColor colorWithFlatVersionFrom:self];
 }
 
+- (NSString *)hexValue {
+    
+    UIColor *currentColor = self;
+    if (CGColorGetNumberOfComponents(self.CGColor) < 4) {
+        const CGFloat *components = CGColorGetComponents(self.CGColor);
+        currentColor = [UIColor colorWithRed:components[0] green:components[0] blue:components[0] alpha:components[1]];
+    }
+    
+    if (CGColorSpaceGetModel(CGColorGetColorSpace(currentColor.CGColor)) != kCGColorSpaceModelRGB) {
+        return [NSString stringWithFormat:@"#FFFFFF"];
+    }
+    
+    return [NSString stringWithFormat:@"#%02X%02X%02X", (int)((CGColorGetComponents(currentColor.CGColor))[0]*255.0), (int)((CGColorGetComponents(currentColor.CGColor))[1]*255.0), (int)((CGColorGetComponents(currentColor.CGColor))[2]*255.0)];
+    
+}
+
 - (UIColor *)darkenByPercentage:(CGFloat)percentage {
     
     //Define HSBA values
@@ -783,22 +799,6 @@
     return nil;
 }
 
-- (NSString *)hexValue {
-    
-    UIColor *currentColor = self;
-    if (CGColorGetNumberOfComponents(self.CGColor) < 4) {
-        const CGFloat *components = CGColorGetComponents(self.CGColor);
-        currentColor = [UIColor colorWithRed:components[0] green:components[0] blue:components[0] alpha:components[1]];
-    }
-    
-    if (CGColorSpaceGetModel(CGColorGetColorSpace(currentColor.CGColor)) != kCGColorSpaceModelRGB) {
-        return [NSString stringWithFormat:@"#FFFFFF"];
-    }
-    
-    return [NSString stringWithFormat:@"#%02X%02X%02X", (int)((CGColorGetComponents(currentColor.CGColor))[0]*255.0), (int)((CGColorGetComponents(currentColor.CGColor))[1]*255.0), (int)((CGColorGetComponents(currentColor.CGColor))[2]*255.0)];
-    
-}
-
 - (UIColor *)lightenByPercentage:(CGFloat)percentage {
     
     //Define HSBA values
@@ -810,6 +810,46 @@
         //Make sure our percentage is greater than 0
         if (percentage > 0) {
            b = MIN(b + percentage, 1.0);
+        }
+        
+        //Return lighter color
+        return [UIColor colorWithHue:h saturation:s brightness:b alpha:a];
+    }
+    
+    return nil;
+}
+
+- (UIColor *)desaturateByPercentage:(CGFloat)percentage {
+    
+    //Define HSBA values
+    CGFloat h, s, b, a;
+    
+    //Check if HSBA values exist
+    if ([self getHue:&h saturation:&s brightness:&b alpha:&a]) {
+        
+        //Make sure our percentage is greater than 0
+        if (percentage > 0) {
+            s = MIN(s - percentage, 1.0);
+        }
+        
+        //Return darker color
+        return [UIColor colorWithHue:h saturation:s brightness:b alpha:a];
+    }
+    
+    return nil;
+}
+
+- (UIColor *)saturateByPercentage:(CGFloat)percentage {
+    
+    //Define HSBA values
+    CGFloat h, s, b, a;
+    
+    //Check if HSBA values exist
+    if ([self getHue:&h saturation:&s brightness:&b alpha:&a]) {
+        
+        //Make sure our percentage is greater than 0
+        if (percentage > 0) {
+           s = MIN(s + percentage, 1.0);
         }
         
         //Return lighter color
