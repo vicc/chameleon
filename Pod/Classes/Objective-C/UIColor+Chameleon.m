@@ -558,13 +558,13 @@
     }
 }
 
-+ (UIColor *)colorWithHexString:(NSString *)string {
++ (UIColor * _Nullable)colorWithHexString:(NSString * _Nonnull)string {
     
     //Color with string and a defualt alpha value of 1.0
     return [self colorWithHexString:string withAlpha:1.0];
 }
 
-+ (UIColor *)colorWithHexString:(NSString *)string withAlpha:(CGFloat)alpha {
++ (UIColor * _Nullable)colorWithHexString:(NSString * _Nonnull)string withAlpha:(CGFloat)alpha {
  
     //Quick return in case string is empty
     if (string.length == 0) {

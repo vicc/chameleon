@@ -608,7 +608,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *
  *  @since 2.0
  */
-+ (UIColor *)colorWithHexString:(NSString *)string;
++ (UIColor * _Nullable)colorWithHexString:(NSString* _Nonnull)string;
 
 /**
  *  Creates and returns a @c UIColor object based on the specified hex string.
@@ -621,7 +621,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *
  *  @since 2.0
  */
-+ (UIColor *)colorWithHexString:(NSString *)string withAlpha:(CGFloat)alpha;
++ (UIColor * _Nullable)colorWithHexString:(NSString * _Nonnull)string withAlpha:(CGFloat)alpha;
 
 #pragma mark - Instance Methods
 
