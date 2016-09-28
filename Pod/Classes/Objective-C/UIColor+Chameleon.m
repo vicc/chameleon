@@ -148,99 +148,99 @@
 
 #pragma mark - Chameleon - Dark Shades
 
-+ (UIColor *)flatBlackColorDark {
++ (UIColor *)flatBlackDarkColor {
     return hsb(0, 0, 15);
 }
 
-+ (UIColor *)flatBlueColorDark {
++ (UIColor *)flatBlueDarkColor {
     return hsb(224, 56, 51);
 }
 
-+ (UIColor *)flatBrownColorDark {
++ (UIColor *)flatBrownDarkColor {
     return hsb(25, 45, 31);
 }
 
-+ (UIColor *)flatCoffeeColorDark {
++ (UIColor *)flatCoffeeDarkColor {
     return hsb(25, 34, 56);
 }
 
-+ (UIColor *)flatForestGreenColorDark {
++ (UIColor *)flatForestGreenDarkColor {
     return hsb(135, 44, 31);
 }
 
-+ (UIColor *)flatGrayColorDark {
++ (UIColor *)flatGrayDarkColor {
     return hsb(184, 10, 55);
 }
 
-+ (UIColor *)flatGreenColorDark {
++ (UIColor *)flatGreenDarkColor {
     return hsb(145, 78, 68);
 }
 
-+ (UIColor *)flatLimeColorDark {
++ (UIColor *)flatLimeDarkColor {
     return hsb(74, 81, 69);
 }
 
-+ (UIColor *)flatMagentaColorDark {
++ (UIColor *)flatMagentaDarkColor {
     return hsb(282, 61, 68);
 }
 
-+ (UIColor *)flatMaroonColorDark {
++ (UIColor *)flatMaroonDarkColor {
     return hsb(4, 68, 40);
 }
 
-+ (UIColor *)flatMintColorDark {
++ (UIColor *)flatMintDarkColor {
     return hsb(168, 86, 63);
 }
 
-+ (UIColor *)flatNavyBlueColorDark {
++ (UIColor *)flatNavyBlueDarkColor {
     return hsb(210, 45, 31);
 }
 
-+ (UIColor *)flatOrangeColorDark {
++ (UIColor *)flatOrangeDarkColor {
     return hsb(24, 100, 83);
 }
 
-+ (UIColor *)flatPinkColorDark {
++ (UIColor *)flatPinkDarkColor {
     return hsb(327, 57, 83);
 }
 
-+ (UIColor *)flatPlumColorDark {
++ (UIColor *)flatPlumDarkColor {
     return hsb(300, 46, 31);
 }
 
-+ (UIColor *)flatPowderBlueColorDark {
++ (UIColor *)flatPowderBlueDarkColor {
     return hsb(222, 28, 84);
 }
 
-+ (UIColor *)flatPurpleColorDark {
++ (UIColor *)flatPurpleDarkColor {
     return hsb(253, 56, 64);
 }
 
-+ (UIColor *)flatRedColorDark {
++ (UIColor *)flatRedDarkColor {
     return hsb(6, 78, 75);
 }
 
-+ (UIColor *)flatSandColorDark {
++ (UIColor *)flatSandDarkColor {
     return hsb(42, 30, 84);
 }
 
-+ (UIColor *)flatSkyBlueColorDark {
++ (UIColor *)flatSkyBlueDarkColor {
     return hsb(204, 78, 73);
 }
 
-+ (UIColor *)flatTealColorDark {
++ (UIColor *)flatTealDarkColor {
     return hsb(196, 54, 45);
 }
 
-+ (UIColor *)flatWatermelonColorDark {
++ (UIColor *)flatWatermelonDarkColor {
     return hsb(358, 61, 85);
 }
 
-+ (UIColor *)flatWhiteColorDark {
++ (UIColor *)flatWhiteDarkColor {
     return hsb(204, 5, 78);
 }
 
-+ (UIColor *)flatYellowColorDark {
++ (UIColor *)flatYellowDarkColor {
     return hsb(40, 100, 100);
 }
 
@@ -373,7 +373,7 @@
     return [[self class] colorWithFlatVersionOf:color withAlpha:colorAlpha];
 }
 
-+ (UIColor *)colorWithFlatVersionOf:(UIColor *)color withAlpha:(CGFloat)alpha {
++ (UIColor * _Nullable)colorWithFlatVersionOf:(UIColor *)color withAlpha:(CGFloat)alpha {
     
     //Check if input UIColor is a gradient aka a pattern
     if (CGColorGetPattern(color.CGColor)) {
@@ -659,7 +659,7 @@
     return [self flatColors][randomColorChosen];
 }
 
-+ (UIColor *)colorWithRandomColorInArray:(NSArray *)colors {
++ (UIColor * _Nullable)colorWithRandomColorInArray:(NSArray *)colors {
     
     UIColor *randomColor;
     if (colors.count) {
@@ -779,7 +779,7 @@
     
 }
 
-- (UIColor *)darkenByPercentage:(CGFloat)percentage {
+- (UIColor * _Nullable)darkenByPercentage:(CGFloat)percentage {
     
     //Define HSBA values
     CGFloat h, s, b, a;
@@ -799,7 +799,7 @@
     return nil;
 }
 
-- (UIColor *)lightenByPercentage:(CGFloat)percentage {
+- (UIColor * _Nullable)lightenByPercentage:(CGFloat)percentage {
     
     //Define HSBA values
     CGFloat h, s, b, a;
@@ -819,7 +819,7 @@
     return nil;
 }
 
-- (UIColor *)desaturateByPercentage:(CGFloat)percentage {
+- (UIColor * _Nullable)desaturateByPercentage:(CGFloat)percentage {
     
     //Define HSBA values
     CGFloat h, s, b, a;
@@ -839,7 +839,7 @@
     return nil;
 }
 
-- (UIColor *)saturateByPercentage:(CGFloat)percentage {
+- (UIColor * _Nullable)saturateByPercentage:(CGFloat)percentage {
     
     //Define HSBA values
     CGFloat h, s, b, a;
