@@ -819,7 +819,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *
  *  @since 2.1.0
  */
-+ (UIColor *)colorWithRandomFlatColorExcludingColorsInArray:(NSArray *)colors;
++ (UIColor *)colorWithRandomFlatColorExcludingColorsInArray:(NSArray<UIColor *> * _Nonnull)colors;
 
 /**
  *  @author Vicc Alexander
@@ -832,7 +832,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *
  *  @since 2.1.0
  */
-+ (UIColor * _Nullable)colorWithRandomColorInArray:(NSArray *)colors;
++ (UIColor * _Nullable)colorWithRandomColorInArray:(NSArray<UIColor *> * _Nonnull)colors;
 
 /**
  *  Returns a randomly generated flat color object with an alpha value of 1.0 in either a light or dark shade.
@@ -950,7 +950,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *
  *  @since 2.0
  */
-+ (UIColor *)colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors;
++ (UIColor *)colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray<UIColor *> * _Nonnull)colors;
 
 #pragma mark - Colors from Hex Strings
 

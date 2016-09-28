@@ -470,7 +470,7 @@
     }
 }
 
-+ (UIColor *)colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray *)colors; {
++ (UIColor *)colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray<UIColor *> * _Nonnull)colors; {
     
     //Create our background gradient layer
     CAGradientLayer *backgroundGradientLayer = [CAGradientLayer layer];
@@ -659,7 +659,7 @@
     return [self flatColors][randomColorChosen];
 }
 
-+ (UIColor * _Nullable)colorWithRandomColorInArray:(NSArray *)colors {
++ (UIColor * _Nullable)colorWithRandomColorInArray:(NSArray<UIColor *> *)colors {
     
     UIColor *randomColor;
     if (colors.count) {
@@ -680,7 +680,7 @@
     return randomColor;
 }
 
-+ (UIColor *)colorWithRandomFlatColorExcludingColorsInArray:(NSArray *)colors {
++ (UIColor *)colorWithRandomFlatColorExcludingColorsInArray:(NSArray<UIColor *> *)colors {
     
     //Set random flat color
     UIColor *randomColor = [[self class] randomFlatColor];
