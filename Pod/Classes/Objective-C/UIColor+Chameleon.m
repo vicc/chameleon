@@ -373,7 +373,7 @@
     return [[self class] colorWithFlatVersionOf:color withAlpha:colorAlpha];
 }
 
-+ (UIColor *)colorWithFlatVersionOf:(UIColor *)color withAlpha:(CGFloat)alpha {
++ (UIColor * _Nullable)colorWithFlatVersionOf:(UIColor *)color withAlpha:(CGFloat)alpha {
     
     //Check if input UIColor is a gradient aka a pattern
     if (CGColorGetPattern(color.CGColor)) {
@@ -659,7 +659,7 @@
     return [self flatColors][randomColorChosen];
 }
 
-+ (UIColor *)colorWithRandomColorInArray:(NSArray *)colors {
++ (UIColor * _Nullable)colorWithRandomColorInArray:(NSArray *)colors {
     
     UIColor *randomColor;
     if (colors.count) {
@@ -779,7 +779,7 @@
     
 }
 
-- (UIColor *)darkenByPercentage:(CGFloat)percentage {
+- (UIColor * _Nullable)darkenByPercentage:(CGFloat)percentage {
     
     //Define HSBA values
     CGFloat h, s, b, a;
@@ -799,7 +799,7 @@
     return nil;
 }
 
-- (UIColor *)lightenByPercentage:(CGFloat)percentage {
+- (UIColor * _Nullable)lightenByPercentage:(CGFloat)percentage {
     
     //Define HSBA values
     CGFloat h, s, b, a;
@@ -819,7 +819,7 @@
     return nil;
 }
 
-- (UIColor *)desaturateByPercentage:(CGFloat)percentage {
+- (UIColor * _Nullable)desaturateByPercentage:(CGFloat)percentage {
     
     //Define HSBA values
     CGFloat h, s, b, a;
@@ -839,7 +839,7 @@
     return nil;
 }
 
-- (UIColor *)saturateByPercentage:(CGFloat)percentage {
+- (UIColor * _Nullable)saturateByPercentage:(CGFloat)percentage {
     
     //Define HSBA values
     CGFloat h, s, b, a;

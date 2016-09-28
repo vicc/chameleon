@@ -832,7 +832,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *
  *  @since 2.1.0
  */
-+ (UIColor *)colorWithRandomColorInArray:(NSArray *)colors;
++ (UIColor * _Nullable)colorWithRandomColorInArray:(NSArray *)colors;
 
 /**
  *  Returns a randomly generated flat color object with an alpha value of 1.0 in either a light or dark shade.
@@ -999,7 +999,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *
  *  @since 2.0
  */
-- (UIColor *)darkenByPercentage:(CGFloat)percentage;
+- (UIColor * _Nullable)darkenByPercentage:(CGFloat)percentage;
 
 /**
  *  @author Vicc Alexander
@@ -1021,7 +1021,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *
  *  @since 2.0
  */
-- (UIColor *)lightenByPercentage:(CGFloat)percentage;
+- (UIColor * _Nullable)lightenByPercentage:(CGFloat)percentage;
 
 #pragma mark - Deprecated Methods
 
