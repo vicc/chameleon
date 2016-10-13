@@ -14,12 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        Chameleon.setGlobalThemeUsingPrimaryColor(FlatMint(),
-            withSecondaryColor: FlatBlue(),
-            andContentStyle: UIContentStyle.Contrast)
+        Chameleon.setGlobalThemeUsingPrimaryColor(.flatPlum,
+            withSecondaryColor: .flatBlue,
+            andContentStyle: .contrast)
         
         return true
     }
