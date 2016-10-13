@@ -19,7 +19,7 @@
 		0C8DABC01C07B5EA00B28FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8DABBF1C07B5EA00B28FE2 /* Assets.xcassets */; };
 		0C8DABC31C07B5EA00B28FE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8DABC11C07B5EA00B28FE2 /* LaunchScreen.storyboard */; };
 		240093FC1BB4517400932727 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 240093FB1BB4517400932727 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2403826B1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 240382691DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.h */; };
+		2403826B1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 240382691DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2403826C1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403826A1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.m */; };
 		245935EC1BB4D62500C30559 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935D41BB4D62500C30559 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		245935ED1BB4D62500C30559 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935D51BB4D62500C30559 /* Chameleon_.m */; };
@@ -264,9 +264,9 @@
 				240093FC1BB4517400932727 /* Chameleon.h in Headers */,
 				245935EC1BB4D62500C30559 /* Chameleon_.h in Headers */,
 				245935FE1BB4D62500C30559 /* UINavigationController+Chameleon.h in Headers */,
-				2403826B1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.h in Headers */,
 				245935F11BB4D62500C30559 /* ChameleonMacros.h in Headers */,
 				245936001BB4D62500C30559 /* UIView+ChameleonPrivate.h in Headers */,
+				2403826B1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.h in Headers */,
 				245935F61BB4D62500C30559 /* UIColor+Chameleon.h in Headers */,
 				245935F01BB4D62500C30559 /* ChameleonEnums.h in Headers */,
 				245935EE1BB4D62500C30559 /* ChameleonConstants.h in Headers */,

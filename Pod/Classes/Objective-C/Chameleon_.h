@@ -14,6 +14,7 @@
 #import "ChameleonMacros.h"
 
 #import "NSArray+Chameleon.h"
+#import "UIColor+ChameleonSocialColors.h"
 #import "UIColor+Chameleon.h"
 #import "UINavigationController+Chameleon.h"
 #import "UIViewController+Chameleon.h"
