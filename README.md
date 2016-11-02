@@ -12,6 +12,13 @@
     <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" /> <br><br>
 </p>
 
+## Swift 3
+
+To use the Swift 3 version, add this to your Podfile (until 2.2 or higher is released):
+```ruby
+pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+```
+
 ## Introduction
 
 **Chameleon** is a lightweight, yet powerful, color framework for iOS (Objective-C & Swift). It is built on the idea that software applications should function effortlessly while simultaneously maintaining their beautiful interfaces.
