@@ -6,11 +6,18 @@
     <img src="https://img.shields.io/cocoapods/dt/ChameleonFramework.svg?maxAge=86400" alt="Downloads"/>  
     <img src="https://img.shields.io/cocoapods/at/ChameleonFramework.svg?maxAge=86400" alt="Apps"/>
     <img src="https://img.shields.io/badge/platform-iOS%208%2B-blue.svg?style=flat" alt="Platform: iOS 8+"/>
-    <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift-2.2-4BC51D.svg?style=flat" alt="Language: Swift" /></a>
+    <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift-3-4BC51D.svg?style=flat" alt="Language: Swift" /></a>
     <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
     <a href="https://cocoapods.org/pods/ChameleonFramework"><img src="https://cocoapod-badges.herokuapp.com/v/ChameleonFramework/badge.png" alt="CocoaPods compatible" /></a>
     <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" /> <br><br>
 </p>
+
+## Swift 3
+
+To use the Swift 3 version, add this to your Podfile (until 2.2 or higher is released):
+```ruby
+pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+```
 
 ## Introduction
 
@@ -38,15 +45,6 @@ With Chameleon, you can easily stop tinkering with RGB values, wasting hours fig
 [● Author](https://github.com/ViccAlexander/Chameleon#-author)   
 [● To Do List](https://github.com/ViccAlexander/Chameleon#-to-do-list)  
 [● Change Log](https://github.com/ViccAlexander/Chameleon#-change-log)  
-
-<!--- 
-&nbsp;&nbsp;￮ [Installation](https://github.com/ViccAlexander/Chameleon#installation)  
-&nbsp;&nbsp;￮ [Usage](https://github.com/ViccAlexander/Chameleon#usage)  
-&nbsp;&nbsp;￮ [UIColor Methods](https://github.com/ViccAlexander/Chameleon#uicolor-methods)  
-&nbsp;&nbsp;￮ [UIStatusBarStyle Methods](https://github.com/ViccAlexander/Chameleon#uistatusbarstyle-methods)    
-&nbsp;&nbsp;￮ [Color Scheme Methods](https://github.com/ViccAlexander/Chameleon#color-schemes-methods)    
-&nbsp;&nbsp;￮ [Flatify Methods (Beta)](https://github.com/ViccAlexander/Chameleon#flatify-methods-beta) 
---->
 
 ## 🌟 Product Features
 
@@ -263,7 +261,7 @@ self.view.backgroundColor = [UIColor flatGreenColorDark];
 ```
 ######Swift
 ``` swift
-view.backgroundColor = UIColor.flatGreenColorDark()
+view.backgroundColor = UIColor.flatGreenDark
 ```
 
 #####Chameleon Shorthand:
@@ -286,7 +284,7 @@ self.view.backgroundColor = [UIColor flatGreenColor];
 ```
 ######Swift
 ``` swift
-view.backgroundColor = UIColor.flatGreenColor()
+view.backgroundColor = UIColor.flatGreen
 ```
 
 #####Chameleon Shorthand:
@@ -310,7 +308,7 @@ self.view.backgroundColor = [UIColor randomFlatColor];
 ```
 ######Swift
 ``` swift
-view.backgroundColor = UIColor.randomFlatColor()
+view.backgroundColor = UIColor.randomFlat()
 ```
 
 #####Chameleon Shorthand:
@@ -466,7 +464,7 @@ As mentioned previously, this feature is unique to Chameleon. While this feature
 
 ######Swift
 ``` swift
-UIColor.pinkColor().flatten()
+UIColor.pink.flatten()
 ```
 
 #### Gradient Colors
@@ -693,7 +691,7 @@ NSMutableArray *colorArray = [NSMutableArray alloc] initWithArray:[NSArray array
 
 ######Swift
 ``` swift
-var colorArray = NSArray(ofColorsWithColorScheme:ColorScheme.Analogous, with:UIColor.flatRedColor(), flatScheme:true)
+var colorArray = NSArray(ofColorsWithColorScheme:ColorScheme.Analogous, with:UIColor.flatRed, flatScheme:true)
 ```
 
 #####Chameleon Shorthand:
