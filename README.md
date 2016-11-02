@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/cocoapods/dt/ChameleonFramework.svg?maxAge=86400" alt="Downloads"/>  
     <img src="https://img.shields.io/cocoapods/at/ChameleonFramework.svg?maxAge=86400" alt="Apps"/>
     <img src="https://img.shields.io/badge/platform-iOS%208%2B-blue.svg?style=flat" alt="Platform: iOS 8+"/>
-    <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift-3-4BC51D.svg?style=flat" alt="Language: Swift" /></a>
+    <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/language-swift%203-4BC51D.svg?style=flat" alt="Language: Swift 3" /></a>
     <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
     <a href="https://cocoapods.org/pods/ChameleonFramework"><img src="https://cocoapod-badges.herokuapp.com/v/ChameleonFramework/badge.png" alt="CocoaPods compatible" /></a>
     <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" /> <br><br>
