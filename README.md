@@ -731,8 +731,8 @@ To set a global theme, you can do the following in your app delegate:
 
 ######Swift
 ``` swift
-Chameleon.setGlobalThemeUsingPrimaryColor(.flatPlum(),
-                                                  withSecondaryColor: .flatBlue(),
+Chameleon.setGlobalThemeUsingPrimaryColor(.flatPlum,
+                                                  withSecondaryColor: .flatBlue,
                                                   andContentStyle: .contrast)
 ```
 
