@@ -16,7 +16,7 @@
 
 To use the Swift 3 version, add this to your Podfile (until 2.2 or higher is released):
 ```ruby
-pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+    pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git', :branch => 'swift3'
 ```
 
 ## Introduction
@@ -728,6 +728,14 @@ To set a global theme, you can do the following in your app delegate:
 ``` objective-c
 [Chameleon setGlobalThemeUsingPrimaryColor:(UIColor *)color withContentStyle:(UIContentStyle)contentStyle];
 ```
+
+######Swift
+``` swift
+Chameleon.setGlobalThemeUsingPrimaryColor(.flatPlum(),
+                                                  withSecondaryColor: .flatBlue(),
+                                                  andContentStyle: .contrast)
+```
+
 
 But what if you want a different theme for a specific `UIViewController?` No problem, Chameleon allows you to override the global theme in any `UIViewController` and `UINavigationController`, by simply doing the following:
 
