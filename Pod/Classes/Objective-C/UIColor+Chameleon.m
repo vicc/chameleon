@@ -244,6 +244,80 @@
     return hsb(40, 100, 100);
 }
 
+#pragma mark - Chameleon - Social Colors
+
++ (UIColor *)twitterColor {
+  return hsb(200, 70, 100);
+}
+
++ (UIColor *)facebookColor {
+  return hsb(217, 74, 62);
+}
+
++ (UIColor *)tumblrColor {
+  return hsb(214, 60, 38);
+}
+
++ (UIColor *)pinterestColor {
+  return hsb(4, 79, 81);
+}
+
++ (UIColor *)googlePlusColor {
+  return hsb(5, 90, 88);
+}
+
++ (UIColor *)linkedInColor {
+  return hsb(204, 74, 74);
+}
+
++ (UIColor *)instagramColor {
+  return hsb(205, 85, 54);
+}
+
++ (UIColor *)dropboxColor {
+  return hsb(210, 85, 89);
+}
+
++ (UIColor *)githubColor {
+  return hsb(264, 68, 47);
+}
+
++ (UIColor *)spotifyColor {
+  return hsb(73, 100, 77);
+}
+
++ (UIColor *)soundcloudColor {
+  return hsb(14, 100, 100);
+}
+
++ (UIColor *)dribbbleColor {
+  return hsb(337, 64, 96);
+}
+
++ (UIColor *)snapchatColor {
+  return hsb(59, 100, 100);
+}
+
++ (UIColor *)vineColor {
+  return hsb(165, 100, 86);
+}
+
++ (UIColor *)foursquareColor {
+  return hsb(344, 71, 98);
+}
+
++ (UIColor *)youtubeColor {
+  return hsb(4, 78, 88);
+}
+
++ (UIColor *)xingColor {
+  return hsb(178, 72, 40);
+}
+
++ (UIColor *)periscopeColor {
+  return hsb(195, 67, 0);
+}
+
 #pragma mark - Chameleon - "Color With" Methods
 
 + (UIColor *)colorWithAverageColorFromImage:(UIImage *)image {
