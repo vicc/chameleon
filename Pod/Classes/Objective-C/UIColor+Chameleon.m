@@ -358,6 +358,86 @@
     return [self colorWithFlatVersionOf:complimentaryNonFlatColor withAlpha:alpha];
 }
 
++ (NSArray <UIColor *> *)colorsAnalogousWithFlatColorOf:(UIColor *)color {
+    
+    return [[self class] colorsAnalogousWithFlatColorOf:color withAlpha:1];
+}
+
++ (NSArray <UIColor *> *)colorsAnalogousWithFlatColorOf:(UIColor *)color withAlpha:(CGFloat)alpha {
+    
+    //Check if input UIColor is a gradient aka a pattern
+    if (CGColorGetPattern(color.CGColor)) {
+        
+        //Let's find the average color of the image and contrast against that.
+        CGSize size = {1, 1};
+        
+        //Create a 1x1 bitmap context
+        UIGraphicsBeginImageContext(size);
+        CGContextRef ctx = UIGraphicsGetCurrentContext();
+        
+        //Set the interpolation quality to medium
+        CGContextSetInterpolationQuality(ctx, kCGInterpolationMedium);
+        
+        //Draw image scaled down to this 1x1 pixel
+        [[self gradientImage] drawInRect:(CGRect){.size = size} blendMode:kCGBlendModeCopy alpha:1];
+        
+        //Read the RGB values from the context's buffer
+        uint8_t *data = CGBitmapContextGetData(ctx);
+        color = [UIColor colorWithRed:data[2] / 255.0f
+                                green:data[1] / 255.0f
+                                 blue:data[0] / 255.0f
+                                alpha:1];
+        UIGraphicsEndImageContext();
+    }
+    
+    //Extract & Check to make sure we have an actual color to work with (Clear returns clear)
+    CGFloat hue, saturation, brightness, alpha1;
+    [color getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha1];
+    
+    //Check if color is transparent
+    if (alpha1 == 0) {
+        return @[[UIColor clearColor],[UIColor clearColor]];
+    }
+    
+    //Multiply our value by their max values to convert
+    hue *= 360;
+    saturation *= 100;
+    brightness *= 100;
+    
+    //Select 2 colors with a hue 30 degrees away on the colorwheel (i.e. for 50 it would be 20 and 80).
+    CGFloat firstHue = hue + 30.0f;
+    if (firstHue > 360.f) {
+        firstHue -= 360.0f;
+    }
+    
+    CGFloat secondHue = hue - 30.0f;
+    if (secondHue < 360.f) {
+        secondHue += 360.0f;
+    }
+    
+    //Round to the nearest whole number after multiplying
+    firstHue = roundf(firstHue);
+    secondHue = roundf(secondHue);
+    saturation = roundf(saturation);
+    brightness = roundf(brightness);
+    
+    //Store the first analogous nonflat color
+    UIColor *firstAnalogousNonFlatColor = [UIColor colorWithHue:firstHue/360.0
+                                                     saturation:saturation/100.0
+                                                     brightness:brightness/100.0
+                                                          alpha:alpha];
+    
+    //Store the first second nonflat color
+    UIColor *secondAnalogousNonFlatColor = [UIColor colorWithHue:secondHue/360.0
+                                                      saturation:saturation/100.0
+                                                      brightness:brightness/100.0
+                                                           alpha:alpha];
+    
+    //Retrieve LAB values from our analogous nonflat colors, get their nearest flat colors
+    //and return with inside an array
+    NSArray *analogourColors = @[[self colorWithFlatVersionOf:firstAnalogousNonFlatColor withAlpha:alpha], [self colorWithFlatVersionOf:secondAnalogousNonFlatColor withAlpha:alpha]];
+    return analogourColors;
+}
 
 + (UIColor *)colorWithFlatVersionOf:(UIColor *)color {
     
