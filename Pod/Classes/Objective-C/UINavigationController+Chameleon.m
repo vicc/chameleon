@@ -62,8 +62,6 @@
 }
 
 - (void)chameleon_viewDidLoad {
-   
-    [self chameleon_viewDidLoad];
     
     UIView *hairlineImageView = [self findHairlineImageViewUnder:self.navigationBar];
     
