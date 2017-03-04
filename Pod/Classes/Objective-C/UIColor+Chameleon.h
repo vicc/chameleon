@@ -909,6 +909,28 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
 
 + (UIColor *)colorWithComplementaryFlatColorOf:(UIColor *)color withAlpha:(CGFloat)alpha;
 
+#pragma mark - Analogous Colors
+
+/**
+ *  Creates and returns an array containing 2 analogous flat color objects 30 degrees
+ away in the HSB colorspace from the specified color from both sides.
+ *
+ *  @param color The color whose analogous colors are being requested.
+ *
+ *  @return An array containing two flat UIColor object in the HSB colorspace.
+ */
++ (NSArray <UIColor *> *)colorsAnalogousWithFlatColorOf:(UIColor *)color;
+
+/**
+ *  Creates and returns an array containing 2 analogous flat color objects 30 degrees
+ away in the HSB colorspace from the specified color from both sides.
+ *
+ *  @param color The color whose analogous colors are being requested.
+ *
+ *  @return An array containing two flat UIColor object in the HSB colorspace.
+ */
++ (NSArray <UIColor *> *)colorsAnalogousWithFlatColorOf:(UIColor *)color withAlpha:(CGFloat)alpha;
+
 #pragma mark - Contrasting Colors
 
 /**
