@@ -64,6 +64,8 @@
             return [self complementaryColorSchemeFromHue:h Saturation:s Brightness:b flat:isFlatScheme];
         case ColorSchemeTriadic:
             return [self triadicColorSchemeFromHue:h Saturation:s Brightness:b flat:isFlatScheme];
+        case ColorSchemeSplitComplementary:
+            return [self splitComplementaryColorSchemeFromHue:h Saturation:s Brightness:b flat:isFlatScheme];
         default:
             NSAssert(0, @"Oops! Unrecognized color scheme provided as random color.");
     }
@@ -93,6 +95,9 @@
         case ColorSchemeTriadic:
             if (isFlatScheme) return [self triadicColorSchemeFromHue:h Saturation:s Brightness:b flat:YES];
             else return [self triadicColorSchemeFromHue:h Saturation:s Brightness:b flat:NO];
+        case ColorSchemeSplitComplementary:
+            if (isFlatScheme) return [self splitComplementaryColorSchemeFromHue:h Saturation:s Brightness:b flat:YES];
+            else return [self splitComplementaryColorSchemeFromHue:h Saturation:s Brightness:b flat:NO];
             default:
             NSAssert(0, @"Oops! Unrecognized color scheme provided as random color.");
     }
@@ -543,6 +548,79 @@
     
     return @[firstColor, secondColor, thirdColor, fourthColor, fifthColor];
 }
+
+// Creates an array of 5 colors, both 150 degrees and 210 degrees away from the predefined colors on both sides which is basically 30 away from both side of a predefined color's complementary
++ (NSArray *)splitComplementaryColorSchemeFromHue:(CGFloat)h Saturation:(CGFloat)s Brightness:(CGFloat)b flat:(BOOL)isFlat  {
+    
+    UIColor *firstColor = [UIColor colorWithHue:[[self class] add:150 to:h]/360
+                                     saturation:(7*s/6)/100
+                                     brightness:(b-5)/100
+                                          alpha:1.0];
+    
+    UIColor *secondColor = [UIColor colorWithHue:[[self class] add:150 to:h]/360
+                                      saturation:s/100
+                                      brightness:(b+9)/100
+                                           alpha:1.0];
+    
+    UIColor *thirdColor = [UIColor colorWithHue:h/360
+                                     saturation:s/100
+                                     brightness:b/100
+                                          alpha:1.0];
+    
+    UIColor *fourthColor = [UIColor colorWithHue:[[self class] add:210 to:h]/360
+                                      saturation:(7*s/6)/100
+                                      brightness:(b-5)/100
+                                           alpha:1.0];
+    
+    UIColor *fifthColor = [UIColor colorWithHue:[[self class] add:210 to:h]/360
+                                     saturation:s/100
+                                     brightness:(b-30)/100
+                                          alpha:1.0];
+    
+    if (isFlat) {
+        
+        //Flatten colors
+        firstColor = [firstColor flatten];
+        secondColor = [secondColor flatten];
+        thirdColor = [thirdColor flatten];
+        fourthColor = [fourthColor flatten];
+        fifthColor = [fifthColor flatten];
+        
+        //Make sure returned colors are unique
+        
+        //Inner Colors
+        if ([secondColor isEqual:thirdColor]) {
+            secondColor = [[secondColor darkenByPercentage:0.25] flatten];
+        }
+        
+        if ([thirdColor isEqual:fourthColor]) {
+            fourthColor = [[fourthColor darkenByPercentage:0.25] flatten];
+        }
+        
+        if ([firstColor isEqual:thirdColor]) {
+            firstColor = [[firstColor darkenByPercentage:0.25] flatten];
+        }
+        
+        if ([fifthColor isEqual:thirdColor]) {
+            fifthColor = [[fifthColor darkenByPercentage:0.25] flatten];
+        }
+        
+        //Outer Colors
+        
+        if ([firstColor isEqual:secondColor]) {
+            firstColor = [[firstColor darkenByPercentage:0.25] flatten];
+        }
+        
+        
+        if ([fourthColor isEqual:fifthColor]) {
+            fifthColor = [[fifthColor darkenByPercentage:0.25] flatten];
+        }
+        
+    }
+    
+    return @[firstColor, secondColor, thirdColor, fourthColor, fifthColor];
+}
+
 
 #pragma mark - Helper Methods for Color Schemes
 
