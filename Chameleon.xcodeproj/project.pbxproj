@@ -19,6 +19,8 @@
 		0C8DABC01C07B5EA00B28FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8DABBF1C07B5EA00B28FE2 /* Assets.xcassets */; };
 		0C8DABC31C07B5EA00B28FE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8DABC11C07B5EA00B28FE2 /* LaunchScreen.storyboard */; };
 		240093FC1BB4517400932727 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 240093FB1BB4517400932727 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2403826B1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 240382691DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2403826C1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403826A1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.m */; };
 		245935EC1BB4D62500C30559 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935D41BB4D62500C30559 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		245935ED1BB4D62500C30559 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935D51BB4D62500C30559 /* Chameleon_.m */; };
 		245935EE1BB4D62500C30559 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935D61BB4D62500C30559 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -98,6 +100,8 @@
 		240093F81BB4517400932727 /* Chameleon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Chameleon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		240093FB1BB4517400932727 /* Chameleon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chameleon.h; sourceTree = "<group>"; };
 		240093FD1BB4517400932727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		240382691DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonSocialColors.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonSocialColors.h"; sourceTree = SOURCE_ROOT; };
+		2403826A1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonSocialColors.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonSocialColors.m"; sourceTree = SOURCE_ROOT; };
 		245935D41BB4D62500C30559 /* Chameleon_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = SOURCE_ROOT; };
 		245935D51BB4D62500C30559 /* Chameleon_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = SOURCE_ROOT; };
 		245935D61BB4D62500C30559 /* ChameleonConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = SOURCE_ROOT; };
@@ -238,6 +242,8 @@
 				245935DD1BB4D62500C30559 /* UIButton+Chameleon.m */,
 				245935DE1BB4D62500C30559 /* UIColor+Chameleon.h */,
 				245935DF1BB4D62500C30559 /* UIColor+Chameleon.m */,
+				240382691DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.h */,
+				2403826A1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.m */,
 				245935E01BB4D62500C30559 /* UIColor+ChameleonPrivate.h */,
 				245935E11BB4D62500C30559 /* UIColor+ChameleonPrivate.m */,
 				245935E21BB4D62500C30559 /* UIImage+ChameleonPrivate.h */,
@@ -299,6 +305,7 @@
 				245935FE1BB4D62500C30559 /* UINavigationController+Chameleon.h in Headers */,
 				245935F11BB4D62500C30559 /* ChameleonMacros.h in Headers */,
 				245936001BB4D62500C30559 /* UIView+ChameleonPrivate.h in Headers */,
+				2403826B1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.h in Headers */,
 				245935F61BB4D62500C30559 /* UIColor+Chameleon.h in Headers */,
 				245935F01BB4D62500C30559 /* ChameleonEnums.h in Headers */,
 				245935EE1BB4D62500C30559 /* ChameleonConstants.h in Headers */,
@@ -498,6 +505,7 @@
 				245936011BB4D62500C30559 /* UIView+ChameleonPrivate.m in Sources */,
 				245935ED1BB4D62500C30559 /* Chameleon_.m in Sources */,
 				245935F71BB4D62500C30559 /* UIColor+Chameleon.m in Sources */,
+				2403826C1DAFE29300B6B2F3 /* UIColor+ChameleonSocialColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

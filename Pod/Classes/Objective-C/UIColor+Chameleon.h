@@ -273,6 +273,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *  @return A flat UIColor object in the HSB colorspace.
  */
 @property(class, nonatomic, readonly) UIColor *flatYellowColor;
+
 #else
 
 /**
@@ -615,6 +616,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *  @return A flat @c UIColor object in the HSB colorspace.
  */
 @property(class, nonatomic, readonly) UIColor *flatYellowDarkColor;
+
 #else
 
 /**
@@ -784,9 +786,11 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
  *  @return A flat @c UIColor object in the HSB colorspace.
  */
 + (UIColor *)flatYellowDarkColor;
+
 #endif
 
 #pragma mark - Randomizing Colors
+
 #if UIKIT_DEFINE_AS_PROPERTIES
 /**
  *  Returns a randomly generated flat color object whose alpha value is 1.0.
