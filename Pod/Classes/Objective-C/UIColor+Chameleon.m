@@ -590,6 +590,9 @@
         return nil;
     }
     
+    //Eliminate any whitespace before proceding
+    string = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    
     //Check to see if we need to add a hashtag
     if('#' != [string characterAtIndex:0]) {
         string = [NSString stringWithFormat:@"#%@", string];
