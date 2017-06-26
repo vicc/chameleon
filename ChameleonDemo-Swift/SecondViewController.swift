@@ -9,7 +9,7 @@
 //  - Attribution: image #1 - 500px.com
 
 import UIKit
-import  ChameleonFramework
+import  Chameleon
 
 class SecondViewController: UIViewController {
     @IBOutlet weak var sampleOneImageView: UIImageView!
