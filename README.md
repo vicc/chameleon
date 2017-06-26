@@ -476,6 +476,8 @@ Chameleon provides three simple gradient styles. Gradients can be created from a
 **UIGradientStyles:**
 * `UIGradientStyleLeftToRight` (UIGradientStyle.LeftToRight in Swift)
 * `UIGradientStyleTopToBottom` (UIGradientStyle.TopToBottom in Swift)
+* `UIGradientStyleTopLeftToBottomRight` (UIGradientStyle.TopLeftToBottomRight in Swift)
+* `UIGradientStyleTopRightToBottomLeft` (UIGradientStyle.TopRightToBottomLeft in Swift)
 * `UIGradientStyleRadial` (UIGradientStyle.Radial in Swift)
 
 ##### Normal Convention:
