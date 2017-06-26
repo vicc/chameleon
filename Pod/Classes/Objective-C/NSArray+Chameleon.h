@@ -55,7 +55,11 @@ typedef NS_ENUM(NSInteger, ColorScheme){
      *
      *  @since 1.0
      */
-    ColorSchemeComplementary
+    ColorSchemeComplementary,
+    /**
+     *  Rather than the point opposite the key color on the wheel, the split complementary takes the two colors directly on either side of the complementary color. This allows for a nicer range of colors while still not deviating from the basic harmony between the key color and the complementary color.
+     */
+    ColorSchemeSplitComplementary
 };
 
 @interface NSArray (Chameleon)
