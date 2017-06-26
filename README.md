@@ -308,7 +308,7 @@ self.view.backgroundColor = [UIColor randomFlatColor];
 ```
 ###### Swift
 ``` swift
-view.backgroundColor = UIColor.randomFlat()
+view.backgroundColor = UIColor.randomFlat
 ```
 
 ##### Chameleon Shorthand:

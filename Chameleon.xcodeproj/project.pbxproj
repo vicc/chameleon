@@ -43,12 +43,19 @@
 		245936021BB4D62500C30559 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 245935EA1BB4D62500C30559 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		245936031BB4D62500C30559 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 245935EB1BB4D62500C30559 /* UIViewController+Chameleon.m */; };
 		245936051BB4D62D00C30559 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245936041BB4D62D00C30559 /* ChameleonShorthand.swift */; };
+		246492FC1F0094DB001E4F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246492FB1F0094DB001E4F26 /* AppDelegate.swift */; };
+		246493011F0094DB001E4F26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246492FF1F0094DB001E4F26 /* Main.storyboard */; };
+		246493031F0094DB001E4F26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246493021F0094DB001E4F26 /* Assets.xcassets */; };
+		246493061F0094DB001E4F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246493041F0094DB001E4F26 /* LaunchScreen.storyboard */; };
 		247EB8AA1BB61EB3009B4904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EB8A91BB61EB3009B4904 /* AppDelegate.swift */; };
 		247EB8AC1BB61EB3009B4904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EB8AB1BB61EB3009B4904 /* ViewController.swift */; };
 		247EB8AF1BB61EB3009B4904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247EB8AD1BB61EB3009B4904 /* Main.storyboard */; };
 		247EB8B11BB61EB3009B4904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247EB8B01BB61EB3009B4904 /* Assets.xcassets */; };
 		247EB8B41BB61EB3009B4904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247EB8B21BB61EB3009B4904 /* LaunchScreen.storyboard */; };
 		247EB8B91BB61F76009B4904 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240093F81BB4517400932727 /* Chameleon.framework */; };
+		24D08ECB1F00954100D9F1A7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D08EC91F00953A00D9F1A7 /* FirstViewController.swift */; };
+		24D08ECC1F00954100D9F1A7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D08ECA1F00953A00D9F1A7 /* SecondViewController.swift */; };
+		24D08ECD1F00958200D9F1A7 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240093F81BB4517400932727 /* Chameleon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +123,12 @@
 		245935EA1BB4D62500C30559 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = SOURCE_ROOT; };
 		245935EB1BB4D62500C30559 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = SOURCE_ROOT; };
 		245936041BB4D62D00C30559 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = SOURCE_ROOT; };
+		246492F91F0094DB001E4F26 /* ChameleonDemo-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChameleonDemo-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		246492FB1F0094DB001E4F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		246493001F0094DB001E4F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		246493021F0094DB001E4F26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		246493051F0094DB001E4F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		246493071F0094DB001E4F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		247EB8A71BB61EB3009B4904 /* ChameleonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChameleonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		247EB8A91BB61EB3009B4904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		247EB8AB1BB61EB3009B4904 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +136,8 @@
 		247EB8B01BB61EB3009B4904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		247EB8B31BB61EB3009B4904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		247EB8B51BB61EB3009B4904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D08EC91F00953A00D9F1A7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		24D08ECA1F00953A00D9F1A7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +153,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246492F61F0094DB001E4F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D08ECD1F00958200D9F1A7 /* Chameleon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +205,7 @@
 				240093FA1BB4517400932727 /* Chameleon */,
 				247EB8A81BB61EB3009B4904 /* ChameleonDemo */,
 				0C8DABB21C07B5EA00B28FE2 /* ChameleonDemo-Objc */,
+				246492FA1F0094DB001E4F26 /* ChameleonDemo-Swift */,
 				240093F91BB4517400932727 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -192,6 +216,7 @@
 				240093F81BB4517400932727 /* Chameleon.framework */,
 				247EB8A71BB61EB3009B4904 /* ChameleonDemo.app */,
 				0C8DABB11C07B5EA00B28FE2 /* ChameleonDemo-Objc.app */,
+				246492F91F0094DB001E4F26 /* ChameleonDemo-Swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +255,20 @@
 				240093FD1BB4517400932727 /* Info.plist */,
 			);
 			path = Chameleon;
+			sourceTree = "<group>";
+		};
+		246492FA1F0094DB001E4F26 /* ChameleonDemo-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				246492FB1F0094DB001E4F26 /* AppDelegate.swift */,
+				24D08EC91F00953A00D9F1A7 /* FirstViewController.swift */,
+				24D08ECA1F00953A00D9F1A7 /* SecondViewController.swift */,
+				246492FF1F0094DB001E4F26 /* Main.storyboard */,
+				246493021F0094DB001E4F26 /* Assets.xcassets */,
+				246493041F0094DB001E4F26 /* LaunchScreen.storyboard */,
+				246493071F0094DB001E4F26 /* Info.plist */,
+			);
+			path = "ChameleonDemo-Swift";
 			sourceTree = "<group>";
 		};
 		247EB8A81BB61EB3009B4904 /* ChameleonDemo */ = {
@@ -310,6 +349,23 @@
 			productReference = 240093F81BB4517400932727 /* Chameleon.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		246492F81F0094DB001E4F26 /* ChameleonDemo-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2464930A1F0094DB001E4F26 /* Build configuration list for PBXNativeTarget "ChameleonDemo-Swift" */;
+			buildPhases = (
+				246492F51F0094DB001E4F26 /* Sources */,
+				246492F61F0094DB001E4F26 /* Frameworks */,
+				246492F71F0094DB001E4F26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChameleonDemo-Swift";
+			productName = "ChameleonDemo-Swift";
+			productReference = 246492F91F0094DB001E4F26 /* ChameleonDemo-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
 		247EB8A61BB61EB3009B4904 /* ChameleonDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 247EB8B81BB61EB3009B4904 /* Build configuration list for PBXNativeTarget "ChameleonDemo" */;
@@ -333,8 +389,8 @@
 		240093EF1BB4517400932727 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0800;
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Vicc Alexander";
 				TargetAttributes = {
 					0C8DABB01C07B5EA00B28FE2 = {
@@ -343,6 +399,9 @@
 					240093F71BB4517400932727 = {
 						CreatedOnToolsVersion = 7.0;
 						LastSwiftMigration = 0800;
+					};
+					246492F81F0094DB001E4F26 = {
+						CreatedOnToolsVersion = 9.0;
 					};
 					247EB8A61BB61EB3009B4904 = {
 						CreatedOnToolsVersion = 7.0;
@@ -366,6 +425,7 @@
 				240093F71BB4517400932727 /* Chameleon */,
 				247EB8A61BB61EB3009B4904 /* ChameleonDemo */,
 				0C8DABB01C07B5EA00B28FE2 /* ChameleonDemo-Objc */,
+				246492F81F0094DB001E4F26 /* ChameleonDemo-Swift */,
 			);
 		};
 /* End PBXProject section */
@@ -385,6 +445,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246492F71F0094DB001E4F26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246493061F0094DB001E4F26 /* LaunchScreen.storyboard in Resources */,
+				246493031F0094DB001E4F26 /* Assets.xcassets in Resources */,
+				246493011F0094DB001E4F26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +501,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		246492F51F0094DB001E4F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D08ECC1F00954100D9F1A7 /* SecondViewController.swift in Sources */,
+				24D08ECB1F00954100D9F1A7 /* FirstViewController.swift in Sources */,
+				246492FC1F0094DB001E4F26 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		247EB8A31BB61EB3009B4904 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,6 +543,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				0C8DABC21C07B5EA00B28FE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		246492FF1F0094DB001E4F26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246493001F0094DB001E4F26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		246493041F0094DB001E4F26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246493051F0094DB001E4F26 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -522,14 +618,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -572,14 +674,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -651,6 +759,57 @@
 			};
 			name = Release;
 		};
+		246493081F0094DB001E4F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "ChameleonDemo-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viccalexander.ChameleonDemo-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		246493091F0094DB001E4F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "ChameleonDemo-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viccalexander.ChameleonDemo-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		247EB8B61BB61EB3009B4904 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -703,6 +862,15 @@
 			buildConfigurations = (
 				240094011BB4517400932727 /* Debug */,
 				240094021BB4517400932727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2464930A1F0094DB001E4F26 /* Build configuration list for PBXNativeTarget "ChameleonDemo-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246493081F0094DB001E4F26 /* Debug */,
+				246493091F0094DB001E4F26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
