@@ -57,7 +57,13 @@ typedef NS_ENUM (NSUInteger, UIGradientStyle) {
      *
      *  @since 1.0
      */
-    UIGradientStyleTopToBottom
+    UIGradientStyleTopToBottom,
+    /**
+     * Returns a gradual blend between colours originating at the bottom-leftmost point and ending at the top-rightmost point of an object's frame.
+     *
+     * Custom
+     */
+    UIGradientStyleDiagonal
 };
 
 /**
