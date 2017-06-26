@@ -57,7 +57,8 @@ typedef NS_ENUM (NSUInteger, UIGradientStyle) {
      *
      *  @since 1.0
      */
-    UIGradientStyleTopToBottom
+    UIGradientStyleTopToBottom,
+    UIGradientStyleDiagonal
 };
 
 /**

@@ -9,7 +9,7 @@
 import UIKit
 import  Chameleon
 
-class FirstViewController: UIViewController {
+class FirstViewController: UITableViewController {
     
     @IBOutlet weak var randomFlatColorLabel: UILabel!
     
@@ -21,11 +21,11 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var beforeFlatteningColorLabel: UILabel!
     
-    @IBOutlet weak var gradientColorLabel: UILabel!
-    
     @IBOutlet weak var lighterColorLabel: UILabel!
     
     @IBOutlet weak var darkerColorLabel: UILabel!
+
+    @IBOutlet weak var gradientColorLabel: UILabel!
     
     @IBOutlet weak var gradientComponentColorOneLabel: UILabel!
     

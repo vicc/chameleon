@@ -11,10 +11,8 @@
 import UIKit
 import  Chameleon
 
-class SecondViewController: UIViewController {
+class SecondViewController: UITableViewController {
     @IBOutlet weak var sampleOneImageView: UIImageView!
-
-    @IBOutlet weak var sampleTwoImageView: UIImageView!
     
     @IBOutlet weak var sampleOneAverageColorLabel: UILabel!
 
@@ -27,7 +25,9 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var sampleOneComponentColorFourLabel: UILabel!
     
     @IBOutlet weak var sampleOneComponentColorFiveLabel: UILabel!
-    
+
+    @IBOutlet weak var sampleTwoImageView: UIImageView!
+
     @IBOutlet weak var sampleTwoAverageColorLabel: UILabel!
     
     @IBOutlet weak var sampleTwoComponentColorOneLabel: UILabel!

@@ -539,6 +539,25 @@
             return [UIColor colorWithPatternImage:backgroundColorImage];
         }
             
+        case UIGradientStyleDiagonal: {
+            
+            //Set out gradient's colors
+            backgroundGradientLayer.colors = cgColors;
+            
+            //Specify the direction our gradient will take
+            [backgroundGradientLayer setStartPoint:CGPointMake(0.0, 1.0)];
+            [backgroundGradientLayer setEndPoint:CGPointMake(1.0, 0.0)];
+            
+            //Convert our CALayer to a UIImage object
+            UIGraphicsBeginImageContextWithOptions(backgroundGradientLayer.bounds.size,NO, [UIScreen mainScreen].scale);
+            [backgroundGradientLayer renderInContext:UIGraphicsGetCurrentContext()];
+            UIImage *backgroundColorImage = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+            
+            [self setGradientImage:backgroundColorImage];
+            return [UIColor colorWithPatternImage:backgroundColorImage];
+        }
+
         case UIGradientStyleTopToBottom:
         default: {
             
