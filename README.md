@@ -87,7 +87,7 @@ Oh... Chameleon works with the status bar as well. : )
 
 ### Themes ![Beta](http://i.imgur.com/JyYiUJq.png)
 
-Chameleon now allows you easily theme your app with as little as **one line of code**. You can set a theme for all your views, and for specific views as well.
+Chameleon now allows you to easily theme your app with as little as **one line of code**. You can set a theme for all your views, and for specific views as well.
 
 <p align="center">
   <img src="http://i.imgur.com/ypfqpIn.png" alt="Themes"/>
@@ -112,7 +112,7 @@ With iOS 7 & 8, Apple mainstreamed flat colors. Now, with the release of iOS 9, 
 
 ### Xcode Quick Help Documentation
 
-Chameleon's documentation, while written as clearly and concisely as possible may still render some slightly confused. But don't fret! Staying true to our vision of simplifying the entire color process, we added Xcode Quick Help's Documentation Support! Simply highlight a Chameleon method or tap it with three fingers to find out more about what it is and what it does!
+Chameleon's documentation, while written as clearly and concisely as possible, may still render some slightly confused. But don't fret! Staying true to our vision of simplifying the entire color process, we added Xcode Quick Help's Documentation Support! Simply highlight a Chameleon method or tap it with three fingers to find out more about what it is and what it does!
 
 <p align="center">
   <img src="http://i.imgur.com/p4KkQ9X.png" alt="Xcode Quick Help Documentation"/>
@@ -209,7 +209,7 @@ Once installed, make sure to restart Xcode. You'll find all of Chameleon's color
 </p>
 
 ##### Photoshop Add-On
-Using Chameleon's awesome palette in Sketch is easy! Simply download and install [Photoshop Palette](https://github.com/ViccAlexander/Chameleon/blob/master/Extras/Chameleon_Photoshop.aco?raw=true).
+Using Chameleon's awesome palette in Photoshop is easy! Simply download and install [Photoshop Palette](https://github.com/ViccAlexander/Chameleon/blob/master/Extras/Chameleon_Photoshop.aco?raw=true).
 
 ##### Sketch Add-On
 Using Chameleon's awesome palette in Sketch is easy! Simply download and install [Sketch Palette](https://github.com/ViccAlexander/Chameleon/blob/master/Extras/Chameleon.sketchpalette?raw=true).
@@ -376,7 +376,7 @@ TBA
 
 ##### Choosing A Random Flat Color But Excluding A Few ![New](http://i.imgur.com/BX3b9ES.png)
 
-Last but certainly not least, you can also choose form the list of random colors and exclude the ones you don't want. For example say you want to randomly select a flat color for a user's profile, but don't want to use any blacks, grays, or whites. You can simply do:
+Last but certainly not least, you can also choose from the list of random colors and exclude the ones you don't want. For example say you want to randomly select a flat color for a user's profile, but don't want to use any blacks, grays, or whites. You can simply do:
 
 ##### Normal Convention:
 ###### Objective-C
@@ -425,7 +425,7 @@ ComplementaryFlatColorOf(color)
 ```
 
 #### Contrasting Colors
-The contrasting color feature returns either a dark color a light color depending on what the Chameleon algorithm believes is a better choice. You can specify whether the dark or light colors are flat: *`([UIColor flatWhiteColor]` & `[UIColor flatBlackColorDark]`)* or non-flat *(`[UIColor whiteColor]` & `[UIColor blackColor]`).*
+The contrasting color feature returns either a dark color or a light color depending on what the Chameleon algorithm believes is a better choice. You can specify whether the dark or light colors are flat: *`([UIColor flatWhiteColor]` & `[UIColor flatBlackColorDark]`)* or non-flat *(`[UIColor whiteColor]` & `[UIColor blackColor]`).*
 
 If you're trying to set a `UILabel's textColor` property, make sure you provide the `UILabel's backgroundColor`. If your label has a clear `backgroundColor`, just provide the `backgroundColor` property of the object directly behind the `UILabel`.
 
