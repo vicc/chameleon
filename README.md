@@ -209,7 +209,7 @@ Once installed, make sure to restart Xcode. You'll find all of Chameleon's color
 </p>
 
 ##### Photoshop Add-On
-Using Chameleon's awesome palette in Sketch is easy! Simply download and install [Photoshop Palette](https://github.com/ViccAlexander/Chameleon/blob/master/Extras/Chameleon_Photoshop.aco?raw=true).
+Using Chameleon's awesome palette in Photoshop is easy! Simply download and install [Photoshop Palette](https://github.com/ViccAlexander/Chameleon/blob/master/Extras/Chameleon_Photoshop.aco?raw=true).
 
 ##### Sketch Add-On
 Using Chameleon's awesome palette in Sketch is easy! Simply download and install [Sketch Palette](https://github.com/ViccAlexander/Chameleon/blob/master/Extras/Chameleon.sketchpalette?raw=true).
