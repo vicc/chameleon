@@ -728,7 +728,10 @@ To set a global theme, you can do the following in your app delegate:
 ``` objective-c
 [Chameleon setGlobalThemeUsingPrimaryColor:(UIColor *)color withContentStyle:(UIContentStyle)contentStyle];
 ```
-
+###### Swift
+``` swift
+Chameleon.setGlobalThemeUsingPrimaryColor(FlatBlackDark(), with: UIContentStyle.light)
+```
 But what if you want a different theme for a specific `UIViewController?` No problem, Chameleon allows you to override the global theme in any `UIViewController` and `UINavigationController`, by simply doing the following:
 
 ##### Normal Convention:
