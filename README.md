@@ -445,12 +445,12 @@ UIColor(contrastingBlackOrWhiteColorOn:UIColor!, isFlat:Bool)
 ##### Chameleon Shorthand:
 ###### Objective-C
 ``` objective-c
-ContrastColor(backgroundColor, isFlat);
+ContrastColorOf(backgroundColor, isFlat);
 ```
 
 ###### Swift
 ``` swift
-ContrastColor(backgroundColor, isFlat)
+ContrastColorOf(backgroundColor, isFlat)
 ```
 
 #### Flattening Non-Flat Colors
