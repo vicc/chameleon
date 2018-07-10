@@ -1,5 +1,8 @@
 # Created by https://www.gitignore.io/
 
+## Finder
+.DS_Store
+
 ## Build generated
 build/
 DerivedData
