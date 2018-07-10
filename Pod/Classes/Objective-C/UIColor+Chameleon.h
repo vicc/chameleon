@@ -105,7 +105,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
 
 #pragma mark - Light Shades
 
-#if UIKIT_DEFINE_AS_PROPERTIES
+#ifdef UIKIT_DEFINE_AS_PROPERTIES
 /**
  *  Returns a flat color object whose HSB values are 0.0, 0.0, 0.17 and whose alpha value is 1.0.
  *
@@ -447,7 +447,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
 
 #pragma mark - Dark Shades
 
-#if UIKIT_DEFINE_AS_PROPERTIES
+#ifdef UIKIT_DEFINE_AS_PROPERTIES
 /**
  *  Returns a flat color object whose HSB values are 0.00, 0.00, 0.15 and whose alpha value is 1.0.
  *
@@ -787,7 +787,7 @@ typedef NS_ENUM (NSInteger, UIShadeStyle) {
 #endif
 
 #pragma mark - Randomizing Colors
-#if UIKIT_DEFINE_AS_PROPERTIES
+#ifdef UIKIT_DEFINE_AS_PROPERTIES
 /**
  *  Returns a randomly generated flat color object whose alpha value is 1.0.
  *
