@@ -82,7 +82,7 @@ With a plethora of color choices available for text, it's difficult to choose on
 Oh... Chameleon works with the status bar as well. : )
 
 <p align="center">
-  <img src="http://s29.postimg.org/i1syd7bkn/Contrast.gif" alt="Status Bar"/>
+  <img src="https://i.imgur.com/jvtRK8D.gif" alt="Status Bar"/>
 </p>
 
 ### Themes ![Beta](http://i.imgur.com/JyYiUJq.png)
