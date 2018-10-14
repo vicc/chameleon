@@ -933,6 +933,7 @@
             break;
         }
             
+        case kCGColorSpaceModelXYZ:
         case kCGColorSpaceModelCMYK:
         case kCGColorSpaceModelDeviceN:
         case kCGColorSpaceModelIndexed:
