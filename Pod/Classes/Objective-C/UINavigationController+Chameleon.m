@@ -30,12 +30,11 @@
 
 #pragma mark - Swizzling
 
-+ (void)load {
-    
+__attribute__((constructor)) static void chameleon_swizzleUINavigationController(void) {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        Class class = [self class];
+        Class class = [UINavigationController class];
         
         SEL originalSelector = @selector(viewDidLoad);
         SEL swizzledSelector = @selector(chameleon_viewDidLoad);
