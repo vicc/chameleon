@@ -62,12 +62,11 @@
 
 #pragma mark - Swizzling
 
-+ (void)load {
-    
+__attribute__((constructor)) static void chameleon_swizzleUIViewController(void) {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        Class class = [self class];
+        Class class = [UIViewController class];
         
         SEL originalSelector = @selector(preferredStatusBarStyle);
         SEL swizzledSelector = @selector(chameleon_preferredStatusBarStyle);
