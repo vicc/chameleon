@@ -950,6 +950,8 @@
             rgba[3] = 1.0f;
             break;
         }
+            
+        default: break;
     }
 }
 
