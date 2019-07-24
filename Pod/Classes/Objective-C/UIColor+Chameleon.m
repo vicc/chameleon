@@ -950,7 +950,9 @@
             rgba[3] = 1.0f;
             break;
         }
-    }
+		case kCGColorSpaceModelXYZ:
+			break;
+	}
 }
 
 //Check if color is in the monochrome or rgb color space
