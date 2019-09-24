@@ -42,7 +42,7 @@ class SecondViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: tabBarController?.tabBar.tintColor ?? UIColor.gray]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor.rawValue: tabBarController?.tabBar.tintColor ?? UIColor.gray]
         navigationController?.navigationBar.barTintColor = tabBarController?.tabBar.barTintColor ?? UIColor.lightGray
         sampleOneImageView.image = #imageLiteral(resourceName: "SampleImageOne")
         sampleTwoImageView.image = #imageLiteral(resourceName: "SampleImageTwo")
@@ -54,7 +54,7 @@ class SecondViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: tabBarController?.tabBar.tintColor ?? UIColor.gray]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor.rawValue: tabBarController?.tabBar.tintColor ?? UIColor.gray]
         navigationController?.navigationBar.barTintColor = tabBarController?.tabBar.barTintColor ?? UIColor.lightGray
     }
     
