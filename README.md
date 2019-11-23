@@ -6,15 +6,15 @@
     <img src="https://img.shields.io/cocoapods/dt/ChameleonFramework.svg?maxAge=86400" alt="Downloads"/>  
     <img src="https://img.shields.io/cocoapods/at/ChameleonFramework.svg?maxAge=86400" alt="Apps"/>
     <img src="https://img.shields.io/badge/platform-iOS%208%2B-blue.svg?style=flat" alt="Platform: iOS 8+"/>
-    <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/language-swift%203-4BC51D.svg?style=flat" alt="Language: Swift 3" /></a>
+    <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/language-swift%203-4BC51D.svg?style=flat" alt="Language: Swift 5" /></a>
     <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
     <a href="https://cocoapods.org/pods/ChameleonFramework"><img src="https://cocoapod-badges.herokuapp.com/v/ChameleonFramework/badge.png" alt="CocoaPods compatible" /></a>
     <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" /> <br><br>
 </p>
 
-## Swift 3
+## Swift 5
 
-To use the Swift 3 version, add this to your Podfile (until 2.2 or higher is released):
+To use the Swift 5 version:
 ```ruby
 pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 ```
@@ -158,8 +158,6 @@ All methods, properties, and types available in Chameleon are documented below.
 [● Theme Methods](https://github.com/ViccAlexander/Chameleon#theme-methods)  
 
 ### Installation
-
-###### Note: Swift 3 version maintained in a separate branch until it's release.
 
 #### CocoaPods Installation
 Chameleon is now available on [CocoaPods](http://cocoapods.org). Simply add the following to your project Podfile, and you'll be good to go.
