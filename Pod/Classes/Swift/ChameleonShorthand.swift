@@ -38,7 +38,7 @@ Creates and returns a complementary flat color object 180 degrees away in the HS
 
 - returns: A flat UIColor object in the HSB colorspace.
 */
-public func ComplementaryFlatColorOf(color: UIColor) -> UIColor {
+public func ComplementaryFlatColorOf(_ color: UIColor) -> UIColor {
     return UIColor(complementaryFlatColorOf: color)
 }
 
@@ -61,7 +61,7 @@ public func RandomFlatColorWithShade(shade: UIShadeStyle) -> UIColor {
  
  - returns: A UIColor object in the HSB colorspace.
  */
-public func ContrastColorOf(backgroundColor: UIColor, returnFlat: Bool) -> UIColor {
+public func ContrastColorOf(_ backgroundColor: UIColor, returnFlat: Bool) -> UIColor {
     return UIColor(contrastingBlackOrWhiteColorOn: backgroundColor, isFlat: returnFlat)
 }
 
@@ -89,7 +89,7 @@ public func HexColor(hexString: String, _ alpha: CGFloat = 1.0) -> UIColor? {
  
  - returns: A flat UIColor object in the HSB colorspace.
  */
-public func AverageColorFromImage(image: UIImage) -> UIColor {
+public func AverageColorFromImage(_ image: UIImage) -> UIColor {
     return UIColor(averageColorFrom: image)
 }
 
@@ -118,7 +118,7 @@ Generates and creates an array of 5 color objects in the HSB colorspace that app
 
 - returns: An array of 5 color objects in the HSB colorspace.
 */
-public func ColorsFromImage(image: UIImage, withFlatScheme: Bool) -> [UIColor] {
+public func ColorsFromImage(_ image: UIImage, withFlatScheme: Bool) -> [UIColor] {
     // TODO: Remove forced casting
     return NSArray(ofColorsFrom: image, withFlatScheme: withFlatScheme) as! [UIColor]
 }
