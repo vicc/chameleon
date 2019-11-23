@@ -74,7 +74,7 @@ public func ContrastColorOf(backgroundColor: UIColor, returnFlat: Bool) -> UICol
  
  - returns: A UIColor object using colorWithPattern.
  */
-public func GradientColor(gradientStyle: UIGradientStyle, frame: CGRect, colors: [UIColor]) -> UIColor {
+public func GradientColor(_ gradientStyle: UIGradientStyle, frame: CGRect, colors: [UIColor]) -> UIColor {
     return UIColor(gradientStyle: gradientStyle, withFrame: frame, andColors: colors)
 }
 
