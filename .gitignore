@@ -45,3 +45,5 @@ Pods/
 Carthage/Build
 Carthage.checkout
 Carthage.build
+
+xcshareddata/
