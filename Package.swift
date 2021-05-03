@@ -9,27 +9,29 @@ let package = Package(
         .iOS(.v8)
     ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "Chameleon",
             targets: ["Chameleon"]),
+        .library(
+            name: "ChameleonSwift",
+            targets: ["ChameleonSwift"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Chameleon",
-            dependencies: [],
-            path:"Sources"
+            path:"Pod/Classes/Objective-C"
         ),
-        .testTarget(
-            name: "ChameleonTests",
+//        .target(
+//            name: "Chameleons",
+//           // dependencies: ["Chameleon/Default"],
+//            path:"Chameleon", resources: [.process("Chameleon/Info.plist")]
+//        ),
+        .target(
+            name: "ChameleonSwift",
             dependencies: ["Chameleon"],
-            path:"Tests"
+            path:"Pod/Classes/Swift"
         )
     ]
 )
